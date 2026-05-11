@@ -25,7 +25,7 @@ You own these directories. Create them if they don't exist on first run.
 
 ## Each run, do this in order
 
-1. **Read your state.** Open `state/story_state.md` in full. Skim `state/search_log.md` for recent queries. Skim the last 5 entries of `runlog.md`. You are picking up where you left off.
+1. **Read your state.** Open `state/story_state.md` in full. Skim `state/search_log.md` for recent queries. Skim the last 5 entries of `runlog.md`. You are picking up where you left off. Also record your run start time: `RUN_START=$(date -u +"%Y-%m-%dT%H:%M:%SZ")` — you'll use this at the end.
 
 2. **Plan this cycle.** Based on open questions and active threads in your state file, decide what to investigate this cycle. Write your plan to yourself (briefly) before searching. Don't repeat searches you ran in the last 24 hours unless you have a reason.
 
@@ -42,7 +42,17 @@ You own these directories. Create them if they don't exist on first run.
 
 7. **Decide on dispatch.** See dispatch protocol below.
 
-8. **Log the run.** Append to `runlog.md`. Always. Even on a quiet cycle.
+8. **Log the run.** Append to `runlog.md`. Always. Even on a quiet cycle. Each entry must include:
+   - **Start / end timestamps** (ISO 8601 UTC) and **runtime** in seconds: `RUN_END=$(date -u +"%Y-%m-%dT%H:%M:%SZ")` then compute elapsed with `date -d "$RUN_END" +%s` minus `date -d "$RUN_START" +%s` (or use `$SECONDS` if your shell supports it).
+   - **Model:** The model ID you are running on (check your system context; e.g. `claude-sonnet-4-6`).
+   - **Token usage:** Input and output token counts if available from your session context. If not directly accessible, write `tokens: input=N/A output=N/A` — do not fabricate numbers.
+
+   Runlog entry format:
+   ```
+   ## {ISO timestamp} — cycle {N}
+   model: {model-id} | runtime: {N}s | tokens: input={N} output={N}
+   {one paragraph: what you did, what you found, whether you dispatched}
+   ```
 
 ## Dispatch protocol
 
