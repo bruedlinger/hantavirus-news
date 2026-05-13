@@ -1,11 +1,11 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-13 (Cycle 20)*
+*Last updated: 2026-05-13 (Cycle 21)*
 
 ---
 
 ## Summary
 
-An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 13, 2026 (Cycle 19): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of Cycle 19 (10:39 UTC May 13). hantacase.com (May 13): 0 deaths in France. **No hantavirus deaths since May 2 (now 11 days)**. **NEW (Cycle 19)**: French President Macron (May 13, Nairobi) declared situation "under control," called for **EU-wide coordination** with WHO setting protocols meeting "most demanding standards." Health Minister Rist: no widespread circulation, no mutation. All 22 French contacts now hospitalized. **NEW (Cycle 19)**: Minnesota monitoring 1 person who had brief overseas contact with a ship passenger who tested positive — no symptoms, daily monitoring (MDH, May 12). **Illinois endemic hantavirus case — UNRELATED** (different strain, rodent droppings, not ANDV). **RIVM (Cycle 18)**: 26 Dutch repatriated passengers all tested negative on initial screening; in 6-week quarantine. **Arrowe Park RESOLVED**: all 22 discharged to 42-day home quarantine. **DUTCH HOSPITAL WORKERS**: 12 Radboudumc workers in 6-week quarantine — no positives as of May 11 9pm; hospital no longer disclosing staff status. **10 St Helena/Ascension contacts**: being transported to UK for NHS HCID supervision — none symptomatic. **Spanish case**: Stable in UATAN; fever + O2 desaturation ongoing, no HPS progression. **UNCONFIRMED**: hantacount.com "2 French cases" still unverifiable. US: 1 confirmed case (Nebraska); 2 King County WA plane contacts monitored; Minnesota 1 downstream contact. UK: 2 confirmed British cases; 1 probable Tristan da Cunha (stable, no lab). WHO DON601 still 404 (19 cycles). CDC situation page updated May 12 but still says "no US cases" — 8 days after HHS confirmation. MV Hondius en route Rotterdam (ETA May 17 evening, 27 aboard: 17 Filipino/4 Dutch/4 Ukrainian/1 Russian/1 Polish crew).
+An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 13, 2026 (Cycle 21): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of Cycle 21 (16:03 UTC May 13). hantacase.com (May 13): 0 deaths in France. **No hantavirus deaths since May 2 (now 11 days)**. **NEW (Cycle 21)**: UKHSA updated to May 13 — **6 of ~22 Arrowe Park passengers discharged home** on May 13 (all PCR negative; 45-day home isolation begins); remaining Arrowe Park contacts all asymptomatic/negative. **NEW THREAD (Cycle 21)**: One medic on Ascension Island developed symptoms but tested **NEGATIVE** for hantavirus (samples brought to UK May 8); testing continues for unrelated illness. **Macron (Cycle 19)**: declared France situation "under control," called for EU-wide coordination. All 22 French contacts now hospitalized. **RIVM (Cycle 18)**: 26 Dutch repatriated passengers all tested negative on initial screening; in 6-week quarantine. **DUTCH HOSPITAL WORKERS**: 12 Radboudumc workers in 6-week quarantine — no positives as of May 11 9pm; hospital no longer disclosing staff status. **10 St Helena/Ascension contacts**: being transported to UK for NHS HCID supervision — none symptomatic. **Spanish case**: Stable in UATAN; fever + O2 desaturation ongoing, no HPS progression. **UNCONFIRMED**: hantacount.com "2 French cases" still unverifiable. US: 1 confirmed case (Nebraska, Dr. Steve Kornfeld, physician); 2 King County WA plane contacts monitored; Minnesota 1 downstream contact. UK: 2 confirmed British cases; 1 probable Tristan da Cunha (stable, no lab). WHO DON601 still 404 (21 cycles). CDC situation page updated May 12 but still says "no US cases" — 9+ days after HHS confirmation. MV Hondius en route Rotterdam (ETA May 17-18, 27 aboard).
 
 ---
 
@@ -121,6 +121,22 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **CDC containment policy**: Passengers who opt to go home "will not fly commercial" — private or medical transport required
 - **MV Hondius ship captain**: Made statement thanking passengers/crew for "kindness, patience during challenging weeks" (post-disembarkation)
 - **Source**: CDC, WHO, NBC News, ABC News, Euronews, CBS News, NL Times, French Health Minister Rist (May 11), HHS (May 11), UKHSA (May 11), CNews/Lecornu (May 11)
+
+### Cycle 21 Findings (2026-05-13 16:01–16:03 UTC)
+
+- **UKHSA UPDATED TO MAY 13 (NEW)**: First May 13 UKHSA update. Key items:
+  - **Arrowe Park partial discharges**: 6 of the ~22 Arrowe Park Hospital passengers returned home on May 13 to begin 45-day home isolation with "tailored support packages." All tested PCR negative for hantavirus. Remaining contacts still asymptomatic with negative test results.
+  - **Ascension Island medic thread (NEW)**: One medic on Ascension Island developed symptoms. Samples tested **NEGATIVE for hantavirus** when brought to UK on May 8. Testing continues to determine if this represents an unrelated illness. This appears to be a healthcare worker who treated MV Hondius passengers at Ascension Island.
+  - **10 St Helena/Ascension contacts**: Still being relocated to UK under NHS HCID network supervision. Process confirmed ongoing.
+  - **General risk**: "All testing of contacts has been negative for hantavirus. The risk to the general public remains very low."
+- **French patient (Bichat ECMO) — STILL ALIVE**: hantacase.com (May 13): 1 case, 0 deaths. French patient remains alive on ECMO at Bichat. No death as of 16:03 UTC. Now ~22+ hours on ECMO from when ALERT was dispatched.
+- **Spanish patient (UATAN) — STABLE**: No new May 13 afternoon updates found. Last info from morning: symptoms continue (low-grade fever, slight O2 desaturation), "no relevant changes," clinical evolution "favorable." No HPS progression.
+- **ECDC (May 13)**: Confirmed no new cases/deaths from earlier fetch (Cycle 20). Counts unchanged.
+- **Tristan da Cunha**: No lab confirmation. Still probable. No new developments.
+- **WHO DON601**: Still 404 — **21st consecutive cycle**.
+- **ABC News live**: Most recent entry still 5:27 AM EDT (09:27 UTC May 13). No new entries this afternoon.
+- **Ascension Island medic thread assessment**: Negative test result means this person is NOT a new hantavirus case. Thread is tracked but resolved (negative). The medic's unrelated illness is being investigated separately. No alert warranted.
+- **No dispatch warranted**: Quiet cycle. Digest already sent today at 10:39 UTC. No second digest. No alert-tier events. UKHSA Arrowe Park discharges are expected logistical resolution; Ascension Island medic tested negative.
 
 ### Cycle 20 Findings (2026-05-13 13:10–13:14 UTC)
 

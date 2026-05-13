@@ -10,8 +10,9 @@
 
   DATA SOURCES:
   - Status bar values        → state/story_state.md (Confirmed facts section)
-  - Dispatch cards           → dispatches/YYYY-MM-DD-*.md (today's date only)
+  - Today's alerts           → dispatches/YYYY-MM-DD-*-alert.md (today's date, alerts only)
   - News check entries       → runlog.md (today's date entries only)
+  - Previous day digest      → dispatches/YYYY-MM-DD-*-digest.md (yesterday's date)
   - Yesterday link filename  → ls hantavirus-*.html 2>/dev/null | sort | tail -1
 -->
 <html lang="en">
@@ -283,19 +284,21 @@
   .check-findings .fi-value.flag-new   { color: #90c8a0; }
   .check-findings .fi-value.flag-quiet { color: #7b7f96; }
 
-  footer {
-    border-top: 1px solid var(--border);
-    padding-top: 20px;
-    margin-top: 20px;
+  .prev-day-link {
+    margin-top: 12px;
     font-size: 12px;
-    color: var(--muted);
-    display: flex;
-    align-items: center;
-    gap: 8px;
   }
 
-  footer a { color: var(--link); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
+  .prev-day-link a { color: var(--link); text-decoration: none; }
+  .prev-day-link a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--muted);
+  }
 
   strong { color: var(--text); font-weight: 600; }
 
@@ -348,34 +351,27 @@
 
 <!--
   ===========================================================
-  DISPATCHES SECTION
+  TODAY'S ALERTS SECTION
   ===========================================================
-  Source: all files in dispatches/ matching today's date prefix (YYYY-MM-DD-*.md).
-  Order: reverse chronological — most recent dispatch first.
+  Source: dispatches/YYYY-MM-DD-*-alert.md matching today's UTC date ONLY.
+  No digests appear here — digests belong in the Previous Day section.
+  Order: reverse chronological — most recent alert first.
   Give the first (topmost) <details> the `open` attribute; all others start collapsed.
-
-  ALERT dispatch  → class="dispatch-alert"  + <span class="badge badge-alert">Alert</span>
-  DIGEST dispatch → class="dispatch-digest" + <span class="badge badge-digest">Digest</span>
 
   TIMESTAMP FORMAT: "{Month} {D}, {YYYY} at {H:MM AM/PM} UTC"
   Example: "May 13, 2026 at 7:24 PM UTC"
-
-  DIGEST SUBLINE: If the digest was sent after midnight UTC and covers the previous
-  calendar day's events, add a <span class="subline"> below the timestamp explaining this.
-  Example: "Covering late May 12 developments caught in the overnight check"
-  Omit the subline if the digest clearly covers today's events.
 
   BODY CONTENT: Render each markdown section (## What changed, ## Why this matters,
   ## What I'm watching next, ## Sources) as an <h3> + <ul> or <p> inside .dispatch-body.
   Preserve inline source links as <a href="..."> tags.
   Convert markdown **bold** to <strong>, *italic* to <em>.
 
-  If there are no dispatches today:
-  <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No dispatches today.</p>
+  If there are no alerts today:
+  <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No alerts today.</p>
   ===========================================================
 -->
 <section id="dispatches">
-  <h2>Today's Dispatches &mdash; {{MONTH_D_YYYY}}</h2>
+  <h2>Today's Alerts &mdash; {{MONTH_D_YYYY}}</h2>
 
   <!-- ALERT — most recent, starts open -->
   <details class="dispatch-alert" open>
@@ -421,23 +417,6 @@
     </div>
   </details>
 
-  <!-- DIGEST — with optional subline when it covers the previous day -->
-  <details class="dispatch-digest">
-    <summary>
-      <span class="chevron">&#9658;</span>
-      <span class="badge badge-digest">Digest</span>
-      <span class="summary-inner">
-        <span class="headline">{{DIGEST_HEADLINE}}</span>
-        <span class="timestamp">{{MONTH_D_YYYY}} at {{TIME_READABLE}}</span>
-        <!-- Include this subline only if the digest covers the previous day's events: -->
-        <span class="subline">Covering late {{PREV_DATE}} developments caught in the overnight check</span>
-      </span>
-    </summary>
-    <div class="dispatch-body">
-      <!-- same body structure as ALERT -->
-    </div>
-  </details>
-
 </section>
 
 <!--
@@ -460,17 +439,20 @@
     · No dispatch → class="quiet"    icon="—" (&mdash;)
                     text: "No dispatch — {brief reason, e.g. 'quiet check; no new developments'}"
 
-  FINDINGS TABLE (.check-findings):
-  Parse each numbered item from the runlog paragraph into a labeled row.
-  Do NOT dump the raw prose. Extract and structure every finding.
+  FINDINGS TABLES (.check-findings):
+  Parse each numbered item from the runlog entry into one of two labeled sub-sections:
+    "New findings"        — confirmed new facts, verified reports, resolved threads this cycle
+    "Things we're following" — active threads, speculative leads, gaps being tracked, future items
+
+  Do NOT dump the raw prose. Extract and structure every finding into its sub-section.
 
   .fi-label  = short topic/location string, e.g. "France / Bichat", "WHO report", "New thread"
                Keep under ~14 chars where possible.
   .fi-value  = the finding, plus one color class:
     flag-alert  (red)   — clinical deterioration, new exposure, new confirmed case
     flag-new   (green)  — genuinely new development, thread resolved positively, new fact
-    flag-quiet  (gray)  — no change since last check, still pending, background/context item
-    (no class)          — neutral update, logistical note
+    flag-quiet  (gray)  — no change since last check, still pending, stalled thread
+    (no class)          — neutral update, active thread being watched
   ===========================================================
 -->
 <section id="checks">
@@ -488,9 +470,9 @@
     <div class="check-body">
       <div class="check-dispatch-note alerted">
         <span class="note-icon">&#9888;</span>
-        Alert dispatched &mdash; {{ALERT_SHORT}} (see dispatch above)
+        Alert dispatched &mdash; {{ALERT_SHORT}} (see alerts above)
       </div>
-      <div class="check-section-label">Findings</div>
+      <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
           <span class="fi-label">{{LABEL}}</span>
@@ -500,36 +482,19 @@
           <span class="fi-label">{{LABEL}}</span>
           <span class="fi-value flag-new"><strong>New:</strong> {{DETAIL}}</span>
         </li>
-        <li>
-          <span class="fi-label">{{LABEL}}</span>
-          <span class="fi-value">{{NEUTRAL_DETAIL}}</span>
-        </li>
-        <li>
-          <span class="fi-label">{{LABEL}}</span>
-          <span class="fi-value flag-quiet">{{NO_CHANGE_NOTE}}</span>
-        </li>
-        <!-- one <li> per numbered finding in the runlog entry -->
+        <!-- one <li> per confirmed new fact/report from this check -->
       </ul>
-    </div>
-  </details>
-
-  <!-- Check where a digest was dispatched -->
-  <details class="check-entry">
-    <summary>
-      <span class="chevron">&#9658;</span>
-      <span class="summary-inner">
-        <span class="headline">{{CHECK_HEADLINE}}</span>
-        <span class="timestamp">{{TIME_READABLE}}</span>
-      </span>
-    </summary>
-    <div class="check-body">
-      <div class="check-dispatch-note digested">
-        <span class="note-icon">&#9656;</span>
-        Digest dispatched covering {{COVERAGE_PERIOD}} (see digest above)
-      </div>
-      <div class="check-section-label">Findings</div>
+      <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
-        <!-- findings rows -->
+        <li>
+          <span class="fi-label">{{LABEL}}</span>
+          <span class="fi-value">{{THREAD_OR_LEAD}}</span>
+        </li>
+        <li>
+          <span class="fi-label">{{LABEL}}</span>
+          <span class="fi-value flag-quiet">{{STALLED_THREAD}}</span>
+        </li>
+        <!-- one <li> per active thread, speculative lead, or gap being tracked -->
       </ul>
     </div>
   </details>
@@ -548,9 +513,13 @@
         <span class="note-icon">&mdash;</span>
         No dispatch &mdash; {{BRIEF_REASON}}
       </div>
-      <div class="check-section-label">Findings</div>
+      <div class="check-section-label">New findings</div>
       <ul class="check-findings">
-        <!-- findings rows -->
+        <!-- findings rows; use flag-quiet if nothing new -->
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <!-- active threads and speculative leads -->
       </ul>
     </div>
   </details>
@@ -558,15 +527,62 @@
 </section>
 
 <!--
-  FOOTER — link to the most recently archived daily page.
-  Determine filename: ls hantavirus-*.html 2>/dev/null | sort | tail -1
+  ===========================================================
+  PREVIOUS DAY SECTION
+  ===========================================================
+  Source: dispatches/YYYY-MM-DD-*-digest.md for yesterday's UTC date.
+  Render the digest as a card (dispatch-digest styling), starts open.
+  Below the card, add a link to the archived full briefing.
+
+  Archived filename: ls hantavirus-*.html 2>/dev/null | sort | tail -1
   Convert the YYYY-MM-DD in that filename to a readable date for the link text.
   Example: hantavirus-2026-05-12.html → "May 12, 2026"
-  If no archived file exists yet, render: <span>No previous briefing available.</span>
+
+  If no digest or archived file exists yet (first run ever), render the placeholder text.
+  ===========================================================
 -->
+<section id="previous-day">
+  <h2>Previous Day &mdash; {{YESTERDAY_MONTH_D_YYYY}}</h2>
+
+  <!-- Yesterday's digest card — starts open -->
+  <details class="dispatch-digest" open>
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-digest">Digest</span>
+      <span class="summary-inner">
+        <span class="headline">{{DIGEST_HEADLINE}}</span>
+        <span class="timestamp">{{YESTERDAY_MONTH_D_YYYY}} at {{DIGEST_TIME_READABLE}}</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li>{{BULLET_1}}</li>
+        <!-- one <li> per bullet in ## What changed -->
+      </ul>
+      <h3>Why this matters</h3>
+      <p>{{WHY}}</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>{{NEXT_1}}</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="{{URL}}">{{SOURCE_TITLE}}</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- Link to archived full briefing — or placeholder if none exists -->
+  <div class="prev-day-link">
+    <a href="{{YESTERDAY_FILENAME}}">&larr; Full briefing for {{YESTERDAY_DATE_READABLE}}</a>
+  </div>
+  <!-- If no archived file: <span style="color: var(--muted); font-size: 12px;">No previous briefing available.</span> -->
+
+</section>
+
 <footer>
-  <span>&larr;</span>
-  <a href="{{YESTERDAY_FILENAME}}">View previous briefing ({{YESTERDAY_DATE_READABLE}})</a>
+  <span style="color: var(--muted); font-size: 11px;">Hantavirus Monitor &mdash; {{WEEKDAY_MONTH_D_YYYY}}</span>
 </footer>
 
 </body>

@@ -61,17 +61,21 @@ You own these directories. Create them if they don't exist on first run.
 
    **What to include:**
    - **Status bar:** current case count, death count, number of countries with post-disembarkation cases, and this run's end time formatted as `H:MM AM/PM UTC` (use `date -u +"%-I:%M %p UTC"`).
-   - **Dispatches section:** all files in `dispatches/` whose name begins with today's UTC date (`YYYY-MM-DD-*.md`). Render in reverse chronological order, most recent first, with the top entry expanded (`open` attribute). Parse each dispatch .md into the card HTML shown in `template.html` — headline, timestamp, and all four body sections. For a DIGEST sent after midnight UTC that covers the previous day's events, add the italic subline below the timestamp explaining what period it covers.
-   - **News Checks section:** all `runlog.md` entries whose ISO timestamp starts with today's UTC date. Render in reverse chronological order. Write a fresh one-sentence headline for each (do not copy the raw runlog paragraph verbatim). Parse the numbered findings into the `.check-findings` labeled-row table, applying `flag-alert` / `flag-new` / `flag-quiet` color classes appropriately. Include the dispatch banner (alerted / digested / quiet) at the top of each expanded body.
-   - **Footer link:** find the most recently archived page with `ls hantavirus-*.html 2>/dev/null | sort | tail -1`. Convert its `YYYY-MM-DD` filename to a readable date for the link text. If no archived file exists yet, omit the link.
+   - **Today's Alerts section:** only ALERT-tier dispatches matching today's UTC date (`dispatches/YYYY-MM-DD-*-alert.md`). Render in reverse chronological order, most recent first, with the top entry expanded. Do not include the daily digest here. If no alerts today, render the "No alerts today" placeholder text.
+   - **News Checks section:** all `runlog.md` entries whose ISO timestamp starts with today's UTC date. Render in reverse chronological order. Write a fresh one-sentence headline for each (do not copy the runlog paragraph verbatim). Each expanded check body has two labeled sub-sections:
+     - **New findings** — confirmed new facts, verified reports, resolved threads this cycle. Use the `.check-findings` labeled-row table with `flag-alert` / `flag-new` / `flag-quiet` color classes.
+     - **Things we're following** — active threads under investigation, speculative leads, gaps being tracked, items to check in future cycles. Same `.check-findings` table format; use `flag-quiet` for stalled threads, no class for active ones.
+     Include the dispatch banner (alerted / digested / quiet) at the top of each expanded body, before both sub-sections.
+   - **Previous day section:** rendered from the most recent digest file for yesterday's date (`dispatches/YYYY-MM-DD-*-digest.md`). Render the digest as a card (same structure as alert cards, using digest card styling). Below the card, add a link to the archived briefing (`hantavirus-YYYY-MM-DD.html` for yesterday). If no digest exists yet (e.g., first run ever), render a placeholder. Determine yesterday's filename with: `ls hantavirus-*.html 2>/dev/null | sort | tail -1`.
 
-   **Archiving on daily digest:** When you dispatch a daily digest, before writing the new `index.html`:
+   **Archiving on first run of a new day:** When you detect it is the first run of a new UTC day (before writing the digest or the new `index.html`):
    1. Check whether `index.html` exists.
    2. If it does, read its `<title>` tag to find the date it covers (format: `Hantavirus Monitor — Month D, YYYY`).
    3. Convert that date to `YYYY-MM-DD` and move the file: `mv index.html hantavirus-YYYY-MM-DD.html`
-   4. Then write the fresh `index.html` for today.
+   4. Write the digest for yesterday.
+   5. Then write the fresh `index.html` for today.
 
-   This archiving step applies **only** when dispatching a daily digest — not on alerts or quiet cycles, which simply overwrite `index.html` in place.
+   On all other runs (not first-of-day), simply overwrite `index.html` in place — no archiving.
 
 ## Dispatch protocol
 
@@ -92,7 +96,7 @@ Examples that do NOT qualify, even if widely covered:
 - A passenger interview that adds color but no new facts
 - Stock price movement of the cruise line absent new operational news
 
-**Digest (`outbox/...-digest.md`)** — a daily roll-up of minor updates. Send at most once per day, only if there's actually something to say. If a cycle has nothing alert-worthy AND nothing the user hasn't already heard, do not produce a digest; just log the cycle.
+**Digest (`outbox/...-digest.md`)** — a compact summary of the previous UTC day's events. Produce exactly once per UTC day: on the **first run of each new UTC day** (i.e., when today's UTC date differs from the date of the most recent runlog entry). Summarize all confirmed developments from the prior day — case status, deaths, new contacts, official statements, thread movements. 5–10 bullets, tight. Even if the prior day was quiet, still produce the digest so the Previous day section always has content. Do not produce a digest mid-day; wait for the first run after UTC midnight.
 
 **Dispatch format:**
 ```

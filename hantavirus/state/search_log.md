@@ -2,6 +2,48 @@
 
 ---
 
+## Cycle 21 — 2026-05-13 (16:01–16:03 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient mort décès ECMO May 13 14 2026`
+2. `hantavirus France patient Bichat ECMO retrait guérie recovery May 2026`
+3. `hantavirus Spain UATAN patient condition update May 13 14 2026`
+4. `WHO DON601 hantavirus disease outbreak news 2026`
+5. `hantavirus Tristan da Cunha confirmed lab result positive May 13 14 2026`
+6. `UKHSA hantavirus Saint Helena Ascension contacts arrived UK HCID May 13 14 2026`
+7. `ECDC hantavirus Andes virus update May 14 2026`
+8. `hantavirus update May 13 14 2026 new case death latest`
+9. `hantavirus Ascension Island medic symptoms tested negative UK May 2026`
+
+### Pages fetched
+- hantacase.com/country/france ✓ — May 13: 1 case, 0 deaths; French patient alive
+- ECDC surveillance ✓ — May 13: no new cases/deaths; 8 confirmed + 2 probable + 1 inconclusive; 3 deaths; MV Hondius ETA Rotterdam May 17-18
+- UKHSA gov.uk ✓ — **UPDATED TO MAY 13**: 6 Arrowe Park passengers discharged home (PCR negative); Ascension Island medic tested NEGATIVE May 8; 10 St Helena/Ascension contacts being relocated to UK; all remaining contacts asymptomatic/negative
+- ABC News live ✓ — still 5:27 AM EDT (09:27 UTC May 13); no new entries
+- Tristan da Cunha government airdrop page ✓ — patient "stable," no lab confirmation; no new developments
+- UPI "Britain airlifts hantavirus patients" ✗ — 403 Forbidden
+- ITV "cruise passengers set to leave UK hospital" ✗ — socket error (ECONNREFUSED)
+- WHO DON601 ✗ — 404 (21st consecutive cycle)
+
+### What these queries found
+**Quiet mid-afternoon cycle (16:01 UTC May 13). KEY NEW FINDING**: UKHSA updated to May 13 — 6 Arrowe Park passengers discharged to home isolation (all PCR negative); Ascension Island medic developed symptoms but tested NEGATIVE for hantavirus (May 8); testing ongoing for unrelated illness. French patient still alive on ECMO. No new cases or deaths anywhere.
+
+**NO DISPATCH SENT**: Quiet cycle. Digest already sent at 10:39 UTC today. No alert-tier events. Arrowe Park discharges are expected resolution; Ascension medic tested negative.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient mort décès ECMO May 14 2026` — CRITICAL; death = 4th fatality; now 24+ hours on ECMO
+- `hantavirus France patient Bichat guérie ECMO retrait mai 2026` — CRITICAL; recovery signal
+- `hantavirus Spain UATAN patient May 14 2026 deterioration HPS` — HIGH; HPS progression watch
+- `hantavirus Tristan da Cunha confirmed positive lab result May 14 2026` — HIGH
+- `WHO DON601 hantavirus 2026` — HIGH; 21 cycles
+- `UKHSA hantavirus UK update May 14 2026 Arrowe Park contacts arrived` — MEDIUM; remaining discharges, St Helena HCID arrivals
+- `MV Hondius Rotterdam Netherlands arrival crew decontamination May 17 18 2026` — MEDIUM; ETA approaching
+- `hantavirus Radboudumc medewerkers quarantaine positief resultaat May 2026` — MEDIUM; hospital silent, 6-week window
+- `ECDC hantavirus Andes update May 14 2026` — MEDIUM; daily update ~14:00 UTC
+- `CDC hantavirus US case Andes confirmed situation update May 2026` — LOW; watching for CDC to reconcile
+
+---
+
 ## Cycle 20 — 2026-05-13 (13:10–13:14 UTC)
 
 ### Queries run
