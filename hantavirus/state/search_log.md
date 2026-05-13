@@ -2,6 +2,49 @@
 
 ---
 
+## Cycle 20 — 2026-05-13 (13:10–13:14 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient mort décès ECMO May 13 14 2026`
+2. `hantavirus Spain UATAN patient condition update May 13 2026`
+3. `hantavirus Tristan da Cunha confirmed lab result positive May 13 14 2026`
+4. `WHO DON601 hantavirus disease outbreak news 2026`
+5. `ECDC hantavirus Andes virus update May 13 2026`
+6. `hantavirus update May 13 2026 new case death UKHSA WHO latest`
+7. `MV Hondius Rotterdam Netherlands arrival decontamination May 17 2026 update`
+8. `hantavirus Spain pasajero español UATAN Gomez Ulla mayo 13 2026 estado actualización`
+
+### Pages fetched
+- ECDC surveillance ✓ — **UPDATED TO MAY 13**: 11 cases (8 confirmed + 2 probable + 1 inconclusive), 3 deaths; "No new cases or deaths since previous update"; MV Hondius ETA Rotterdam May 17-18
+- NPR May 13 French patient ✗ — timeout
+- UKHSA gov.uk ✓ — still May 12; 10 contacts from St Helena/Ascension being transported to UK; no new British cases; no May 13 update
+- hantacase.com/country/france ✓ — May 13: 1 case, 0 deaths; French patient alive
+- Wikipedia MV Hondius ✓ — still showing ~May 12 data; French patient on ECMO; no May 13 new developments; Tristan da Cunha still suspected
+- WHO Emergency Event 2026-E000227 ✓ — DON600/DON599 only; no DON601 link
+- ABC News live ✓ — most recent entry 5:25 AM EDT (09:25 UTC May 13); no new entries since Cycle 19; last clinical item was Minnesota monitoring at 1:40 AM EDT
+- WHO DON601 ✗ — 404 (20th consecutive cycle)
+- CDC situation summary ✓ — still May 12; still "no US cases" despite HHS confirmation May 11 (9 days)
+- Japan Times May 13 ✗ — 402 paywall
+
+### What these queries found
+**Quiet mid-day cycle (13:10 UTC May 13). KEY NEW FINDING**: ECDC confirmed updated to May 13, showing no new cases or deaths — first independent confirmation that the morning's status is holding into the afternoon. Spanish patient stable May 13 per multiple Spanish sources. French patient still alive on ECMO. No new cases, deaths, or clinical deteriorations anywhere.
+
+**NO DISPATCH SENT**: Digest already sent at 10:39 UTC today. No alert-tier events. ECDC May 13 confirmation is status-quo, not a development. 
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient mort décès ECMO May 14 2026` — CRITICAL; death = 4th fatality; French patient now 50+ hours on ECMO
+- `hantavirus France patient Bichat guérie ECMO retrait mai 2026` — CRITICAL; recovery signal = weaning off ECMO
+- `hantavirus Spain UATAN patient condition May 14 2026` — HIGH; HPS progression watch
+- `WHO DON601 hantavirus 2026` — HIGH; 20 cycles
+- `hantavirus Tristan da Cunha confirmed positive lab result May 14 2026` — HIGH
+- `UKHSA hantavirus UK update May 13 14 2026 Saint Helena HCID contacts arrived` — MEDIUM; 10 contacts arriving UK
+- `MV Hondius Rotterdam Netherlands arrival crew decontamination May 17 18 2026` — MEDIUM; ETA imminent
+- `hantavirus Radboudumc medewerkers quarantaine positief resultaat May 2026` — MEDIUM; hospital silent but 6-week window
+- `ECDC hantavirus update May 14 2026` — MEDIUM
+- `CDC hantavirus US case Andes virus confirmed situation update May 2026` — LOW; watching for CDC to finally reconcile
+
+---
+
 ## Cycle 19 — 2026-05-13 (10:34–10:39 UTC)
 
 ### Queries run

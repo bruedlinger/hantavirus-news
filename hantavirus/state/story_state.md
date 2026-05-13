@@ -1,5 +1,5 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-13 (Cycle 19)*
+*Last updated: 2026-05-13 (Cycle 20)*
 
 ---
 
@@ -121,6 +121,19 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **CDC containment policy**: Passengers who opt to go home "will not fly commercial" — private or medical transport required
 - **MV Hondius ship captain**: Made statement thanking passengers/crew for "kindness, patience during challenging weeks" (post-disembarkation)
 - **Source**: CDC, WHO, NBC News, ABC News, Euronews, CBS News, NL Times, French Health Minister Rist (May 11), HHS (May 11), UKHSA (May 11), CNews/Lecornu (May 11)
+
+### Cycle 20 Findings (2026-05-13 13:10–13:14 UTC)
+
+- **ECDC UPDATED TO MAY 13 (NEW)**: First confirmation of a May 13 ECDC update. The surveillance page now states "No new cases or deaths have been reported since the previous update." Total remains 11 cases (8 confirmed + 2 probable + 1 inconclusive), 3 deaths. MV Hondius ETA Rotterdam "17 or 18 May." Risk to EU/EEA general population remains "very low."
+- **French patient (Bichat ECMO) — STILL ALIVE**: hantacase.com (May 13): 0 deaths in France. Wikipedia still shows "critical condition" / ECMO ("final stage of supportive care" = clinician's ECMO descriptor, consistent with Cycles 16–19). No death. Now 48+ hours on ECMO with no death reported.
+- **Spanish patient (UATAN) — STABLE with symptoms (May 13)**: Multiple Spanish-language sources published May 13 (Infobae ×2, Libertad Digital, El Correo Gallego live blog) confirm: patient continues with symptoms (low-grade fever, respiratory symptoms) but stable. "No ha experimentado cambios relevantes en las últimas horas" (no relevant changes in last few hours). "Evolución clínica sigue siendo favorable" (clinical evolution continues favorable). No HPS progression.
+- **ABC News live**: Most recent entry still 5:25 AM EDT (09:25 UTC May 13). Last clinical entry was 1:40 AM EDT (~05:40 UTC) re Minnesota monitoring — same as Cycle 19. No new entries.
+- **UKHSA**: Still May 12 update. No new confirmed British cases. 10 contacts from St Helena/Ascension being transported to UK. No May 13 UKHSA update found.
+- **WHO DON601**: Still 404 — **20th consecutive cycle**.
+- **CDC situation page**: Still dated May 12, still states "no cases of Andes virus have been confirmed in the United States" — 9 days after HHS confirmation. Ongoing discrepancy.
+- **Tristan da Cunha**: No new lab confirmation found. Still probable.
+- **MV Hondius**: ETA Rotterdam May 17 or 18. 25 crew + 2 RIVM aboard, no symptoms.
+- **No dispatch warranted**: Quiet cycle. ECDC May 13 confirmation of no new cases is reassuring but not dispatchable — it is a confirmation of status quo, not a development. Spanish patient's May 13 stability is good news but also status-quo continuation. Digest already sent today at 10:39 UTC; protocol bars a second digest. No alert-tier events.
 
 ### Cycle 19 Findings (2026-05-13 10:34–10:39 UTC)
 
