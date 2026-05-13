@@ -2,6 +2,60 @@
 
 ---
 
+## Cycle 19 — 2026-05-13 (10:34–10:39 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient mort décès ECMO May 13 2026`
+2. `hantavirus Spain UATAN patient condition update May 13 2026`
+3. `WHO DON601 hantavirus disease outbreak news 2026`
+4. `hantavirus Tristan da Cunha confirmed lab result positive May 13 2026`
+5. `hantavirus Radboudumc medewerkers quarantaine positief resultaat May 2026`
+6. `hantavirus France "Macron" OR "deuxième cas" OR "second case" May 13 2026`
+7. `hantavirus update May 13 2026 new case death latest ECDC UKHSA`
+8. `hantavirus MV Hondius new case death May 13 2026 latest update`
+9. `hantavirus Minnesota person monitored MV Hondius contact May 2026`
+10. `hantavirus France "deuxième cas" OR "second French case" confirmed positive May 13 2026`
+11. `hantavirus Illinois Winnebago County case unrelated cruise ship rodent 2026`
+
+### Pages fetched
+- Euronews May 13 French patient ✓ — critically ill on ECMO; Macron "under control"
+- Euronews May 13 Macron article ✓ — NEW: Macron (May 13, Nairobi) calls for EU coordination; Health Minister Rist: no mutation, no widespread circulation, all 22 contacts hospitalized
+- hantacase.com France ✓ — 1 case, 0 deaths (May 13); French patient alive
+- Wikipedia MV Hondius ✓ — still May 12 data; no May 13 updates
+- ECDC surveillance ✓ — still May 12 11:30; 11 cases (9+2), 3 deaths; no May 13 update
+- WHO Emergency Event 2026-E000227 ✓ — shows DON599/DON600 only; no DON601 link
+- UKHSA gov.uk ✓ — still May 12; 10 St Helena/Ascension contacts en route UK HCID; no new confirmed British cases
+- Radboudumc ✓ — still May 11 9pm; hospital will not disclose further staff status; no positives
+- government.nl ✓ — still May 12 16:25 CET; MV Hondius en route Rotterdam ETA May 17
+- Minnesota MDH statement ✓ — 1 person monitored who had brief overseas contact with ship passenger who tested positive; no symptoms; daily monitoring
+- connexionfrance.com ✓ — French contacts update: Rennes transfer, all 22 hospitalized; Rist "no widespread circulation"
+- CDC situation page ✓ — UPDATED TO MAY 12 but still says "no US cases of Andes virus confirmed" — continues to contradict HHS May 11 confirmation
+- ABC News live ✓ — most recent entry 1:09 AM EDT May 13 (Minnesota monitoring case); page last updated 5:25 AM EDT
+- ABC7 live ✓ — still 8:31 PM GMT May 12; no new entries; MV Hondius arrival "Sunday or Monday" (May 17-18)
+- ABC7 Chicago ✓ — Illinois case confirmed unrelated (different strain, rodent droppings, no travel)
+- WHO DON601 ✗ — 404 (19th consecutive cycle)
+- NPR May 13 French patient ✗ — socket error
+
+### What these queries found
+**KEY NEW DEVELOPMENT**: Macron EU coordination call (May 13, Nairobi). French patient: still alive on ECMO, 48+ hours. Minnesota monitoring: 1 downstream contact of ship passenger being monitored (no symptoms). Illinois endemic case: confirmed unrelated (different strain). CDC situation page: updated to May 12 but still wrong on US case status. No new deaths, no new confirmed cases.
+
+**DIGEST SENT**: 2026-05-13-1039-digest.md covering Macron EU call, French patient survival, RIVM Dutch negative, UKHSA St Helena/Ascension transfer, Minnesota monitoring.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient mort décès ECMO May 14 2026` — CRITICAL; death = 4th fatality
+- `hantavirus France patient Bichat guérie ECMO retrait mai 2026` — CRITICAL; recovery signal
+- `hantavirus Radboudumc medewerkers quarantaine positief resultaat 2026` — HIGH; but hospital now silent on staff
+- `hantavirus Spain UATAN patient condition May 14 2026` — HIGH; HPS trajectory watch
+- `hantavirus Tristan da Cunha confirmed positive lab result May 14 2026` — HIGH
+- `WHO DON601 hantavirus 2026` — HIGH; 19 cycles
+- `ECDC hantavirus Andes update May 13 2026` — MEDIUM; 14:00 UTC daily; next cycle should check
+- `UKHSA hantavirus UK update May 13 14 2026 Saint Helena HCID contacts arrived` — MEDIUM; 10 contacts arriving UK
+- `MV Hondius Rotterdam Netherlands arrival crew decontamination May 17 2026` — MEDIUM; ETA approaching
+- `hantavirus France Macron European coordination WHO response May 2026` — MEDIUM; follow any official EU/WHO response to Macron's call
+- `CDC hantavirus US case confirmed situation update May 2026` — LOW; watching for CDC to finally reconcile
+
+---
+
 ## Cycle 18 — 2026-05-13 (01:05–01:31 UTC)
 
 ### Queries run
