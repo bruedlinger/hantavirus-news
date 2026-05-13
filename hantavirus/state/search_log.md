@@ -2,6 +2,58 @@
 
 ---
 
+## Cycle 18 — 2026-05-13 (01:05–01:31 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient mort décès ECMO May 13 2026`
+2. `hantavirus Radboudumc medewerkers quarantaine positief 2026`
+3. `WHO DON601 hantavirus disease outbreak news 2026`
+4. `hantavirus France patient Bichat "final stage" OR "stade final" OR "décédée" OR "guérie" May 13 2026`
+5. `hantavirus Spain UATAN patient condition update May 13 2026`
+6. `hantavirus Tristan da Cunha confirmed lab result positive May 13 2026`
+7. `hantavirus MV Hondius update new case death May 13 2026`
+8. `ECDC hantavirus Andes update May 13 2026`
+9. `hantavirus update May 13 2026 new case France death latest`
+
+### Pages fetched
+- hantacase.com/country/france ✓ — May 13 update; 1 case, 0 deaths; French patient alive
+- Wikipedia MV Hondius ✓ — 13-14 May section header exists but no content; still May 12
+- ECDC surveillance ✓ — still May 12 11:30 data; 11 cases (9+2), 3 deaths; no May 13 update
+- UKHSA gov.uk ✓ — still May 12; 10 contacts from St Helena/Ascension en route UK (HCID); none symptomatic
+- RIVM Netherlands ✓ — NEW SOURCE; May 12 15:45; 26 Dutch passengers initial screen all negative; 6-week quarantine with weekly tests + daily GGD monitoring
+- ABC7 live ✓ — last entry 8:31 PM GMT (20:31 UTC) May 12; 4 new entries after Cycle 17 cutoff; all background/operational
+- ABC News live ✓ — last entry 7:57 PM EDT (23:57 UTC) May 12; patient "in serious condition" — alive
+- Radboudumc ✓ — still May 11 9pm; no positives among 12 workers; quarantine continues
+- government.nl ✓ — still May 12 16:25; all Dutch passengers repatriated; crew en route Netherlands
+- WHO DON601 ✗ — 404 (18th consecutive cycle)
+- CBC News ✗ (403 — "final stage of supportive care" = clinician's description of ECMO)
+- Franceinfo ✗ (403 — persistent)
+
+### What these queries found
+**Quiet early-morning cycle (01:05 UTC May 13). No new deaths, no new confirmed cases, no alert-tier developments.**
+
+**French patient**: Still alive on ECMO at Bichat. hantacase.com (May 13): 0 deaths in France. Search results confirm "no hantavirus deaths since May 2." CBC headline "final stage of supportive care" is doctor's clinical description of ECMO itself, not a new deterioration. ABC News last entry 23:57 UTC May 12 — alive and in serious condition.
+
+**NEW — RIVM Netherlands (May 12, 15:45)**: 26 Dutch repatriated passengers all tested negative on initial screening. All in 6-week mandatory quarantine with weekly tests and daily GGD monitoring. Larger than prior tracking (8 Dutch arriving May 10) — suggests more Dutch nationals repatriated subsequently.
+
+**ABC7 new entries (20:09–20:31 UTC May 12 — after Cycle 17 cutoff of 19:37 UTC)**: MV Hondius crew (25+2, no symptoms); King County WA 2 contacts (no symptoms); Nebraska counts (15 quarantine + 1 biocontainment; interviews underway); Jake Rosmarin video tour (human interest). All background — no new clinical information.
+
+**All other threads**: Radboudumc no positives, Spanish patient stable, Tristan da Cunha still probable, WHO DON601 still 404 (18th cycle), ECDC no May 13 update yet, UKHSA still May 12.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient mort décès ECMO May 13 2026` — CRITICAL; death = 4th fatality
+- `hantavirus France pronostic vital Bichat décès guérison May 13 2026` — CRITICAL
+- `hantavirus Radboudumc medewerkers quarantaine positief resultaat May 2026` — HIGH; Dutch HCW test results
+- `hantavirus Spain UATAN patient condition update May 13 2026` — HIGH; HPS progression watch
+- `hantavirus Tristan da Cunha confirmed positive lab result May 13 2026` — HIGH
+- `WHO DON601 hantavirus disease outbreak news 2026` — HIGH; 18 cycles
+- `ECDC hantavirus Andes virus update May 13 2026` — MEDIUM; daily at ~14:00 UTC
+- `UKHSA hantavirus UK update May 13 Saint Helena HCID contacts arrival` — MEDIUM; 10 contacts arriving UK
+- `MV Hondius Rotterdam Netherlands arrival decontamination RIVM GGD May 17 2026` — MEDIUM; ETA May 17
+- `hantavirus France deuxième cas confirmé second case May 13 2026` — MEDIUM; second French case unverified
+
+---
+
 ## Cycle 17 — 2026-05-12 (23:30–23:37 UTC)
 
 ### Queries run

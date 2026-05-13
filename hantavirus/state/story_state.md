@@ -1,11 +1,11 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-12 (Cycle 17)*
+*Last updated: 2026-05-13 (Cycle 18)*
 
 ---
 
 ## Summary
 
-An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 12, 2026 (Cycle 17): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — "pronostic vital engagé" / "severe form, serious condition." Still alive as of Cycle 17 (23:37 UTC May 12). **NEW (Cycle 17)**: UKHSA bringing **10 contacts from St Helena/Ascension Island** to UK for NHS HCID supervision — none symptomatic. **Arrowe Park RESOLVED (NO NEW CASES)**: all 22 discharging to 42-day home quarantine. **DUTCH HOSPITAL WORKERS**: 12 Radboudumc workers in 6-week quarantine — no positives as of May 11 9pm. **Spanish case**: Stable in UATAN; fever + O2 desaturation ongoing, no HPS progression. **UNCONFIRMED**: hantacount.com "2 French cases" still unverifiable. US: 1 confirmed case (Nebraska); 2 King County WA plane contacts monitored. UK: 2 confirmed British cases; 1 probable Tristan da Cunha (stable, no lab). WHO DON601 still 404 (17 cycles). MV Hondius en route Rotterdam (ETA May 17, 27 aboard: 17 Filipino/4 Dutch/4 Ukrainian/1 Russian/1 Polish crew).
+An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 13, 2026 (Cycle 18): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of Cycle 18 (01:05 UTC May 13). hantacase.com (May 13): 0 deaths in France. "No hantavirus deaths since May 2" confirmed. **NEW (Cycle 18)**: RIVM (May 12, 15:45) confirms **26 Dutch repatriated passengers all tested negative** on initial screening; all in 6-week quarantine with weekly tests + daily GGD monitoring. **Arrowe Park RESOLVED (NO NEW CASES)**: all 22 discharged to 42-day home quarantine. **DUTCH HOSPITAL WORKERS**: 12 Radboudumc workers in 6-week quarantine — no positives as of May 11 9pm. **10 St Helena/Ascension contacts**: being transported to UK for NHS HCID supervision — none symptomatic. **Spanish case**: Stable in UATAN; fever + O2 desaturation ongoing, no HPS progression. **UNCONFIRMED**: hantacount.com "2 French cases" still unverifiable. US: 1 confirmed case (Nebraska); 2 King County WA plane contacts monitored. UK: 2 confirmed British cases; 1 probable Tristan da Cunha (stable, no lab). WHO DON601 still 404 (18 cycles). MV Hondius en route Rotterdam (ETA May 17, 27 aboard: 17 Filipino/4 Dutch/4 Ukrainian/1 Russian/1 Polish crew).
 
 ---
 
@@ -121,6 +121,24 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **CDC containment policy**: Passengers who opt to go home "will not fly commercial" — private or medical transport required
 - **MV Hondius ship captain**: Made statement thanking passengers/crew for "kindness, patience during challenging weeks" (post-disembarkation)
 - **Source**: CDC, WHO, NBC News, ABC News, Euronews, CBS News, NL Times, French Health Minister Rist (May 11), HHS (May 11), UKHSA (May 11), CNews/Lecornu (May 11)
+
+### Cycle 18 Findings (2026-05-13 01:05–01:31 UTC)
+
+- **French patient (Bichat ECMO) — STILL ALIVE**: No death. hantacase.com (May 13) confirms 0 deaths in France. ABC News live: no entries since 23:57 UTC May 12; patient still in "serious condition." Search results confirm "no hantavirus deaths since May 2." CBC News headline uses "final stage of supportive care" — clinician's description of ECMO (last-resort intervention), not a new development beyond Cycle 16. Still alive as of Cycle 18 end.
+- **RIVM Netherlands (NEW DETAIL, May 12 15:45)**: **26 Dutch repatriated passengers all tested negative** on initial screening. All in 6-week mandatory quarantine with weekly test repetitions and daily health monitoring by GGD. Larger count than previously tracked (we noted 8 Dutch passengers arriving May 10; RIVM's 26 suggests additional Dutch nationals were repatriated in subsequent flights). No positive results among Dutch nationals.
+- **ABC7 new entries (20:09–20:31 UTC May 12 — after Cycle 17's 19:37 UTC cutoff)**:
+  - 8:09 PM GMT: MV Hondius — 25 crew + 2 medical staff aboard, no symptoms, heading to Netherlands
+  - 8:17 PM GMT: King County WA — 2 residents monitored at home (consistent with Cycle 17 correction to 2)
+  - 8:23 PM GMT: Nebraska — 15 in quarantine, 1 in biocontainment; contact-tracing interviews underway
+  - 8:31 PM GMT: Jake Rosmarin video tour of quarantine room — human interest, no clinical significance
+- **Radboudumc workers**: No new updates. Still May 11 9pm. No positives among 12 quarantined workers.
+- **Spanish patient (UATAN)**: No new updates. Still stable with low-grade fever + O2 desaturation. No HPS progression.
+- **Tristan da Cunha**: No lab confirmation. Still probable. No new developments.
+- **WHO DON601**: Still 404 — **18th consecutive cycle**.
+- **ECDC**: No May 13 update yet (expected ~14:00 UTC). Still 11 cases (9+2), 3 deaths.
+- **UKHSA**: Still May 12 update. 10 contacts from St Helena/Ascension being transported to UK under HCID supervision; none symptomatic.
+- **Government.nl**: Still May 12 16:25. All Dutch passengers repatriated; crew en route Rotterdam (ETA May 17).
+- **No dispatch warranted**: Quiet early-morning cycle (01:05 UTC May 13). No new deaths, no new confirmed cases. RIVM finding (26 Dutch negative) is reassuring but below dispatch threshold. Story in holding pattern. May 13 is a new UTC day with no dispatches yet — will monitor for developments before deciding on today's digest.
 
 ### Cycle 17 Findings (2026-05-12 23:30–23:37 UTC)
 
@@ -415,6 +433,20 @@ See Case Timeline table in Confirmed Facts above.
 ---
 
 ## Sources Consulted
+
+### Cycle 18 (2026-05-13 01:05–01:31 UTC)
+- hantacase.com France (May 13 — 1 case, 0 deaths): https://hantacase.com/country/france
+- RIVM Netherlands (May 12 15:45 — 26 Dutch passengers negative): https://www.rivm.nl/en/hantavirus/current-information
+- ABC7 live (re-fetched — new entries 20:09–20:31 UTC May 12; background): https://abc7.com/live-updates/hantavirus-infection-outbreak-cruise-ship-symptoms-map/19064881/
+- ABC News live (re-fetched — last entry 23:57 UTC May 12; alive): https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955
+- Wikipedia MV Hondius (re-fetched — 13-14 May section header exists, empty): https://en.wikipedia.org/wiki/MV_Hondius_hantavirus_outbreak
+- ECDC surveillance (re-fetched — still May 12 11:30; 11 cases, 3 deaths): https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak
+- UKHSA gov.uk (re-fetched — still May 12; 10 HCID contacts, none symptomatic): https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak
+- Radboudumc (re-fetched — still May 11 9pm; no positives): https://www.radboudumc.nl/en/news-items/2026/radboudumc-admits-patient-with-a-suspected-hantavirus-infection
+- government.nl (re-fetched — still May 12 16:25; crew en route): https://www.government.nl/latest/weblogs/the-work-of-the-ministry-of-foreign-affairs/2026/medical-evacuation-from-cruise-ship-m-v-hondius
+- WHO DON601 ✗ (still 404 — 18th consecutive cycle): https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON601
+- CBC News ✗ (403 — "final stage of supportive care" / ECMO description): https://www.cbc.ca/news/world/hantavirus-france-patient-critically-ill-9.7196985
+- Franceinfo ✗ (403 — persistent): https://www.franceinfo.fr/faits-divers/hantavirus-declare-a-bord-d-un-navire-de-croisiere/hantavirus-27-francais-sous-haute-surveillance-le-pronostic-vital-de-la-francaise-contaminee-est-engage_8000177.html
 
 ### Cycle 17 (2026-05-12 23:30–23:37 UTC)
 - hantacase.com France (updated May 13 — 1 confirmed case, 0 deaths): https://hantacase.com/country/france
