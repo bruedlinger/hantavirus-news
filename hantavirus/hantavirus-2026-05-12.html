@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hantavirus Monitor — May 12, 2026</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ed;
+    --muted: #7b7f96;
+    --alert-bg: #1f1018;
+    --alert-border: #8b1a1a;
+    --alert-badge: #c0392b;
+    --digest-bg: #0f1a1f;
+    --digest-border: #1a4a5a;
+    --digest-badge: #1a6a8a;
+    --check-bg: #131620;
+    --check-border: #252840;
+    --link: #6ab4ff;
+    --dispatched: #1a3a1a;
+    --dispatched-border: #2a5a2a;
+    --no-dispatch: #1a1a2a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 32px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  section > h2 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
+  details[open] summary .chevron {
+    transform: rotate(90deg);
+  }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  summary .subline {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* Dispatch: ALERT */
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
+  .dispatch-alert summary {
+    background: rgba(139, 26, 26, 0.1);
+  }
+
+  .dispatch-alert summary:hover {
+    background: rgba(139, 26, 26, 0.18);
+  }
+
+  /* Dispatch: DIGEST */
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
+  .dispatch-digest summary {
+    background: rgba(26, 74, 90, 0.1);
+  }
+
+  .dispatch-digest summary:hover {
+    background: rgba(26, 74, 90, 0.2);
+  }
+
+  /* News check entries */
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
+  .check-entry summary {
+    background: rgba(37, 40, 64, 0.15);
+  }
+
+  .check-entry summary:hover {
+    background: rgba(37, 40, 64, 0.35);
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .badge-alert { background: var(--alert-badge); color: #fff; }
+  .badge-digest { background: var(--digest-badge); color: #fff; }
+
+  /* Dispatch bodies */
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dispatch-body ul {
+    padding-left: 16px;
+  }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
+  .dispatch-body a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  .dispatch-body a:hover { text-decoration: underline; }
+
+  /* News check bodies */
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .check-dispatch-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
+  .check-dispatch-note .note-icon {
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+
+  .check-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .check-findings {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .check-findings li {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
+  }
+
+  .check-findings li:last-child {
+    border-bottom: none;
+  }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
+  .check-findings .fi-value {
+    color: #c4c6d6;
+    flex: 1;
+  }
+
+  .check-findings .fi-value strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .check-findings .fi-value.flag-alert { color: #e08080; }
+  .check-findings .fi-value.flag-new { color: #90c8a0; }
+  .check-findings .fi-value.flag-quiet { color: #7b7f96; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  footer a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  footer a:hover { text-decoration: underline; }
+
+  strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .story-status .stat span {
+    color: var(--muted);
+    font-size: 11px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hantavirus Monitor</h1>
+  <div class="meta">MV Hondius outbreak &middot; Daily briefing &middot; Tuesday, May 12, 2026</div>
+</header>
+
+<div class="story-status">
+  <div class="stat">11 cases <span>(9 confirmed + 2 probable)</span></div>
+  <div class="stat">3 deaths <span>(aboard ship)</span></div>
+  <div class="stat">6 countries <span>with post-disembarkation cases</span></div>
+  <div class="stat">Last checked <span>7:24 PM UTC</span></div>
+</div>
+
+<section id="dispatches">
+  <h2>Today's Dispatches &mdash; May 12, 2026</h2>
+
+  <!-- ALERT: 7:24 PM -->
+  <details class="dispatch-alert" open>
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">French hantavirus patient deteriorates to ECMO &mdash; critical condition</span>
+        <span class="timestamp">May 12, 2026 at 7:24 PM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>French patient now on ECMO:</strong> The Bichat Hospital (Paris) patient deteriorated from "stable" to "severe form" in "serious condition" per the French Health Minister (~5:42 PM UTC). Bichat physician Xavier Lescure confirmed "extracorporeal circulation to allow the lungs to recover." Wikipedia updated to "very critical condition." Material change from all prior updates, which called her stable. (<a href="https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955">ABC News live</a>, <a href="https://francais.medscape.com/viewarticle/hantavirus-point-situation-2026a1000f9r">Medscape FR</a>)</li>
+        <li><strong>Arrowe Park assessment complete &mdash; no new British cases:</strong> UKHSA confirms all 22 passengers at Arrowe Park Hospital remain asymptomatic; being discharged to 42-day home quarantine. Zero positives from the UK cohort &mdash; thread resolved. (<a href="https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak">UKHSA</a>)</li>
+        <li><strong>No new cases or deaths</strong> otherwise; ECDC still at 11 cases (9+2), 3 deaths.</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>ECMO is the last-resort respiratory intervention for HPS &mdash; reaching it signals the patient's lungs have failed and she is being kept alive artificially. The next 12&ndash;24 hours are the highest-risk window for France's first post-ship fatality; death here would be the 4th confirmed death and the first in Europe post-disembarkation.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>French patient death &mdash; immediate alert trigger; checking every cycle</li>
+        <li>Second French case verification &mdash; aggregator hantacount.com claims 2 confirmed French cases; cannot verify from any primary source yet</li>
+        <li>Radboudumc hospital workers &mdash; 12 in 6-week quarantine since May 7; no positives yet; any confirmed positive = first HCW case = alert</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955">ABC News live updates</a></li>
+        <li><a href="https://francais.medscape.com/viewarticle/hantavirus-point-situation-2026a1000f9r">Medscape FR</a></li>
+        <li><a href="https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak">UKHSA statement</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/MV_Hondius_hantavirus_outbreak">Wikipedia &mdash; MV Hondius outbreak</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC surveillance page</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ALERT: 1:24 PM -->
+  <details class="dispatch-alert">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">Dutch hospital workers quarantined after hantavirus protocol failure</span>
+        <span class="timestamp">May 12, 2026 at 1:24 PM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>Radboudumc (Nijmegen, NL) &mdash; 12 hospital workers placed in 6-week precautionary quarantine</strong> after treating a hantavirus patient evacuated from MV Hondius (May 7) using standard blood-draw protocols instead of required enhanced hantavirus protocols; staff also failed to properly dispose of the patient's urine. Hospital chair acknowledged: <em>"We regret that this has happened at our university medical center."</em> Risk assessed as "low"; no confirmed positives yet. First healthcare worker (HCW) potential exposure event in this outbreak. (<a href="https://www.euronews.com/health/2026/05/12/dutch-hospital-workers-quarantined-after-faulty-procedure-treating-hantavirus-patient">Euronews</a>)</li>
+        <li><strong>Spanish case officially confirmed:</strong> Sanidad's second PCR returned positive; patient upgraded from provisional to confirmed. Now in UATAN (high-level isolation unit, BSL-3 lab). Symptoms ongoing &mdash; low-grade fever, O2 desaturation, respiratory symptoms &mdash; but stable with no obvious clinical deterioration. 13 other Spanish evacuees definitively negative. (<a href="https://www.estrelladigital.es/articulo/espana/sanidad-confirma-positivo-hantavirus-pasajero-espanol-mv-hondius/20260512141658446475.html">Estrella Digital</a>)</li>
+        <li><strong>ECDC updated (11:30 AM UTC):</strong> Official count now 11 cases &mdash; 9 confirmed + 2 probable &mdash; first time ECDC incorporated post-disembarkation cases (Spanish + American). (<a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC</a>)</li>
+        <li><strong>France government decree:</strong> Mandates 42-day hospital quarantine for all 22 contact cases (expanded from 8). No new positives among the 22. French confirmed patient still in ICU at Bichat, stable at time of dispatch. (<a href="https://fr.euronews.com/my-europe/2026/05/12/hantavirus-une-quarantaine-en-hopital-pour-tout-les-cas-contacts">Euronews FR</a>)</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>The Radboudumc protocol failure introduces healthcare workers as a new potential exposure population &mdash; the first time this outbreak has moved beyond the ship's direct social network into the healthcare system. If any of the 12 workers test positive, it would be the first confirmed healthcare transmission in this event and would significantly pressure containment measures at other hospitals treating evacuated patients.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>Test results from the 12 Radboudumc workers (6-week window; any positive = new confirmed HCW case)</li>
+        <li>Spanish patient clinical trajectory &mdash; oxygen desaturation is an active HPS indicator; watching for deterioration or stabilization</li>
+        <li>Arrowe Park 72-hr assessment results (~May 13 9:00 PM UTC &mdash; now resolved, no positives)</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.euronews.com/health/2026/05/12/dutch-hospital-workers-quarantined-after-faulty-procedure-treating-hantavirus-patient">Euronews &mdash; Dutch hospital workers quarantined</a></li>
+        <li><a href="https://www.estrelladigital.es/articulo/espana/sanidad-confirma-positivo-hantavirus-pasajero-espanol-mv-hondius/20260512141658446475.html">Estrella Digital &mdash; Spanish case confirmed</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC surveillance update May 12</a></li>
+        <li><a href="https://fr.euronews.com/my-europe/2026/05/12/hantavirus-une-quarantaine-en-hopital-pour-tout-les-cas-contacts">Euronews FR &mdash; France mandates hospital quarantine</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ALERT: 10:22 AM -->
+  <details class="dispatch-alert">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">Spanish hantavirus patient develops fever and oxygen desaturation</span>
+        <span class="timestamp">May 12, 2026 at 10:22 AM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li>Spanish provisional-positive patient (confirmed asymptomatic as of May 11 at 8:10 PM UTC) has developed <strong>low-grade fever (febrícula) and slight oxygen desaturation</strong> overnight May 11&ndash;12. Multiple Spanish sources confirm: <em>"febrícula y ligera desaturación"</em>; patient is "apparently stable, without obvious clinical deterioration."</li>
+        <li>This <strong>directly contradicts</strong> the 1:03 AM digest, which characterized this patient as asymptomatic and in good condition.</li>
+        <li>Final confirmatory PCR (expected Monday evening) not yet officially published; Wikipedia and multiple outlets treating the case as confirmed positive.</li>
+        <li>13 other Spanish evacuees at Gómez Ulla remain asymptomatic and passed the night without incident.</li>
+        <li>French patient: still in ICU at Bichat Hospital (Paris), stable.</li>
+        <li>WHO has not updated their situation report in over two days &mdash; extraordinary gap.</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>Oxygen desaturation in a hantavirus-positive patient is a direct early indicator of Hantavirus Pulmonary Syndrome (HPS) onset &mdash; fluid accumulating in the lungs. This patient was asymptomatic 14 hours ago. The Spanish case is now clinically active, not just PCR-positive. The pattern mirrors the French patient's trajectory: symptomatic on repatriation &rarr; ICU.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>Spanish clinical trajectory: stabilization or HPS deterioration</li>
+        <li>Spanish final confirmatory PCR result (overdue)</li>
+        <li>French patient at Bichat &mdash; death remains alert threshold</li>
+        <li>Arrowe Park 72-hr window (~May 13 9:00 PM UTC)</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.lematin.ch/story/hantavirus-le-patient-espagnol-teste-positif-a-desormais-des-symptomes-103561557">Le Matin CH</a></li>
+        <li><a href="https://www.elcorreogallego.es/sociedad/2026/05/12/espanol-positivo-hantavirus-febricula-sintomas-respiratorios-aparentemente-estable-130124439.html">El Correo Gallego</a></li>
+        <li><a href="https://www.laregion.es/salud/espanol-aislado-gomez-ulla-presenta-febricula-sintomas-respiratorios-hantavirus_1_20260512-4272317.html">La Región</a></li>
+        <li><a href="https://www.libertaddigital.com/espana/2026-05-12/el-espanol-aislado-en-madrid-por-sospecha-de-hantavirus-presenta-sintomas-respiratorios-y-febricula-1b-7403156/">Libertad Digital</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- DIGEST: 1:03 AM — covers late May 11 -->
+  <details class="dispatch-digest">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-digest">Digest</span>
+      <span class="summary-inner">
+        <span class="headline">Spanish provisional positive raises count to 11; French contacts moved to hospital quarantine</span>
+        <span class="timestamp">May 12, 2026 at 1:03 AM UTC</span>
+        <span class="subline">Covering late May 11 developments caught in the overnight check</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>Spain's first case (provisional):</strong> One of 14 Spanish evacuees at Gómez Ulla Hospital in Madrid tested preliminarily positive. Spanish Health Minister Monica Garcia confirmed at 8:10 PM UTC May 11. Patient asymptomatic and in good condition; final PCR pending. Other 13 Spaniards provisionally negative. If confirmed, Spain is the 6th country with a post-disembarkation case; count rises to 11. (<a href="https://english.news.cn/europe/20260512/6892a180007044bfa7cf134ba9136007/c.html">Xinhua</a>, <a href="https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955">ABC News</a>)</li>
+        <li><strong>France escalates contact management:</strong> 8 of 22 French contact cases transferred from home isolation to reinforced hospital quarantine &mdash; those who shared a flight with a Dutch infected passenger. None symptomatic. PM Lecornu holding 2 daily interministerial meetings. French patient in ICU at Bichat, stable. (<a href="https://www.ici.fr/infos/sante-sciences/hantavirus-la-francaise-contaminee-en-reanimation-dans-un-etat-stable-les-cas-contact-en-quarantaine-renforcee-9672761">ICI.fr</a>)</li>
+        <li><strong>Tristan da Cunha case upgraded to "probable":</strong> UKHSA upgraded from "suspected." Adult male, disembarked April 14, symptoms onset April 28. UK military on island with oxygen/medical equipment. Lab confirmation still pending. (<a href="https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak">UKHSA</a>)</li>
+        <li><strong>Arrowe Park:</strong> 22 people (20 UK nationals + 1 German/UK + 1 Japanese) undergoing 72-hour assessment; all asymptomatic as of dispatch. (<a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC</a>)</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>The Spanish provisional positive &mdash; from a cohort that had been tracking all-negative &mdash; suggests the virus may have spread more widely aboard the ship than the official count reflects. Combined with the French contact escalation, the post-disembarkation phase is the active front.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>Spanish final PCR result</li>
+        <li>French patient outcome (first post-ship death = alert)</li>
+        <li>Arrowe Park 72-hr results (~May 13 9:00 PM UTC)</li>
+        <li>Tristan da Cunha lab confirmation (only sea evacuation available; 6 days)</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://english.news.cn/europe/20260512/6892a180007044bfa7cf134ba9136007/c.html">Xinhua &mdash; Spain preliminary positive</a></li>
+        <li><a href="https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955">ABC News live updates</a></li>
+        <li><a href="https://www.ici.fr/infos/sante-sciences/hantavirus-la-francaise-contaminee-en-reanimation-dans-un-etat-stable-les-cas-contact-en-quarantaine-renforcee-9672761">ICI.fr &mdash; French contacts hospital quarantine</a></li>
+        <li><a href="https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak">UKHSA update</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC surveillance page</a></li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section id="checks">
+  <h2>News Checks &mdash; May 12, 2026</h2>
+
+  <!-- 7:24 PM -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Alert dispatched &mdash; French patient escalated to ECMO; Arrowe Park closed with zero positives</span>
+        <span class="timestamp">7:24 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; French patient on ECMO (see dispatch above)
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">France / Bichat</span>
+          <span class="fi-value flag-alert"><strong>Escalated to ECMO</strong> at ~5:42 PM UTC &mdash; French Health Minister confirms "severe form," physician Xavier Lescure confirms extracorporeal lung support. Wikipedia updated to "very critical condition." No death confirmed as of check end.</span>
+        </li>
+        <li>
+          <span class="fi-label">Arrowe Park (UK)</span>
+          <span class="fi-value flag-new"><strong>Resolved &mdash; zero positives.</strong> UKHSA confirms all 22 asymptomatic; being discharged to 42-day home quarantine.</span>
+        </li>
+        <li>
+          <span class="fi-label">Radboudumc (NL)</span>
+          <span class="fi-value">No new positives among the 12 quarantined workers. Quarantine continues.</span>
+        </li>
+        <li>
+          <span class="fi-label">Spain</span>
+          <span class="fi-value">Patient stable in UATAN; no HPS progression since morning update.</span>
+        </li>
+        <li>
+          <span class="fi-label">Tristan da Cunha</span>
+          <span class="fi-value flag-quiet">Still probable; lab confirmation still pending.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO situation report</span>
+          <span class="fi-value flag-quiet">Still no update &mdash; extraordinary gap now spanning the full outbreak.</span>
+        </li>
+        <li>
+          <span class="fi-label">King County, WA</span>
+          <span class="fi-value flag-quiet">3 residents being monitored (2 plane contacts + 1 ship passenger) &mdash; background item from ~May 7&ndash;8, not a new development.</span>
+        </li>
+        <li>
+          <span class="fi-label">Second French case</span>
+          <span class="fi-value flag-quiet">Still unverified from any primary source. Aggregator claim only.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- 4:40 PM -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">No dispatch &mdash; Filipino crew quarantine confirmed; all patients stable; second French case unverified</span>
+        <span class="timestamp">4:40 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; quiet check; no alert-tier developments; two dispatches already sent today
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Filipino crew</span>
+          <span class="fi-value flag-new"><strong>New:</strong> 21 Filipino crew members from MV Hondius entered 42-day precautionary quarantine in the Netherlands (NL Times, GMA News). They disembarked in Tenerife and were flown to the Netherlands ahead of repatriation to the Philippines.</span>
+        </li>
+        <li>
+          <span class="fi-label">MV Hondius</span>
+          <span class="fi-value flag-new"><strong>Crew count resolved:</strong> Oceanwide Expeditions confirms 25 crew + 2 RIVM medics = 27 total still aboard. ETA Rotterdam: evening May 17.</span>
+        </li>
+        <li>
+          <span class="fi-label">Arrowe Park (UK)</span>
+          <span class="fi-value">PCR testing well underway per UKHSA; all 22 asymptomatic. Window expires ~May 13 9:00 PM UTC.</span>
+        </li>
+        <li>
+          <span class="fi-label">Second French case</span>
+          <span class="fi-value flag-quiet"><strong>Unconfirmed.</strong> Single aggregator (hantacount.com) lists 2 French cases with a May 12 date for Case 2; descriptor inconsistency with actual quarantine policies suggests tracker error. Not counted.</span>
+        </li>
+        <li>
+          <span class="fi-label">Tristan da Cunha</span>
+          <span class="fi-value flag-quiet">Government confirms patient "stable"; no lab confirmation.</span>
+        </li>
+        <li>
+          <span class="fi-label">ECDC</span>
+          <span class="fi-value">11 cases (9+2), 3 deaths &mdash; unchanged from morning update.</span>
+        </li>
+        <li>
+          <span class="fi-label">Spain / France</span>
+          <span class="fi-value flag-quiet">Both patients stable; no changes since prior check.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO situation report</span>
+          <span class="fi-value flag-quiet">Still no update.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- 1:24 PM -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Alert dispatched &mdash; Radboudumc protocol failure; Spanish case confirmed; ECDC count updated to 11</span>
+        <span class="timestamp">1:24 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; Radboudumc hospital workers quarantined (see dispatch above)
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Radboudumc (NL)</span>
+          <span class="fi-value flag-alert"><strong>12 healthcare workers quarantined for 6 weeks</strong> after protocol failure on May 7 &mdash; standard blood-draw procedures used instead of enhanced hantavirus protocols; urine not properly disposed of. Hospital chair acknowledged the failure. Risk assessed "low." No confirmed positives yet. <strong>First HCW exposure event in this outbreak.</strong></span>
+        </li>
+        <li>
+          <span class="fi-label">Spain</span>
+          <span class="fi-value flag-new"><strong>Officially confirmed</strong> by second PCR. Patient transferred to UATAN (BSL-3 isolation). Symptoms ongoing (fever, O2 desaturation) but stable; 13 others definitively negative.</span>
+        </li>
+        <li>
+          <span class="fi-label">ECDC</span>
+          <span class="fi-value flag-new"><strong>Updated to 11 cases (9 confirmed + 2 probable)</strong> &mdash; first time ECDC incorporated post-disembarkation cases (Spanish + American) in official count.</span>
+        </li>
+        <li>
+          <span class="fi-label">France</span>
+          <span class="fi-value">PM Lecornu decree expands mandatory hospital quarantine to all 22 contact cases (up from 8). No new positives. French patient in ICU, stable.</span>
+        </li>
+        <li>
+          <span class="fi-label">Arrowe Park (UK)</span>
+          <span class="fi-value">Testing "well underway"; all 22 asymptomatic.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DG</span>
+          <span class="fi-value flag-quiet">Press conference today: "No sign of a larger outbreak."</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO situation report</span>
+          <span class="fi-value flag-quiet">Still no update &mdash; now 14 consecutive checks with no new report.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- 10:18 AM -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Alert dispatched &mdash; Spanish patient develops fever and oxygen desaturation overnight (HPS indicator)</span>
+        <span class="timestamp">10:18 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; Spanish patient developing HPS symptoms (see dispatch above)
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Spain</span>
+          <span class="fi-value flag-alert"><strong>Overnight deterioration:</strong> Low-grade fever and oxygen desaturation confirmed by multiple Spanish sources. Patient was reported asymptomatic 14 hours earlier. Clinically active HPS onset; mirrors French patient's early trajectory. "Apparently stable" but no confirmatory PCR yet officially indexed.</span>
+        </li>
+        <li>
+          <span class="fi-label">Spain &mdash; others</span>
+          <span class="fi-value">13 other evacuees at Gómez Ulla remain asymptomatic.</span>
+        </li>
+        <li>
+          <span class="fi-label">France / Bichat</span>
+          <span class="fi-value flag-quiet">Still in ICU, stable &mdash; no change.</span>
+        </li>
+        <li>
+          <span class="fi-label">Arrowe Park (UK)</span>
+          <span class="fi-value flag-quiet">22 asymptomatic; 72-hr window ~May 13 9:00 PM UTC.</span>
+        </li>
+        <li>
+          <span class="fi-label">Tristan da Cunha</span>
+          <span class="fi-value flag-quiet">Still probable; no lab confirmation.</span>
+        </li>
+        <li>
+          <span class="fi-label">New thread</span>
+          <span class="fi-value flag-new">Democrata.es reports a woman in Catalonia being monitored due to contact with a deceased person linked to the outbreak &mdash; outside the 14 Gómez Ulla evacuees; not previously tracked.</span>
+        </li>
+        <li>
+          <span class="fi-label">CDC situation page</span>
+          <span class="fi-value flag-quiet">Still showing May 8 data / "no US cases" &mdash; significantly behind.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO situation report</span>
+          <span class="fi-value flag-quiet">Still no update &mdash; extraordinary stretch.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- 1:03 AM -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Digest dispatched &mdash; Spanish provisional positive caught overnight; France escalating contact management</span>
+        <span class="timestamp">1:03 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note digested">
+        <span class="note-icon">&#9656;</span>
+        Digest dispatched covering late May 11 developments (see digest above)
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Spain</span>
+          <span class="fi-value flag-new"><strong>Provisional positive confirmed by Xinhua</strong> &mdash; Spanish Health Minister Monica Garcia announced at 8:10 PM UTC May 11. The story published simultaneously with the prior check's last page fetch, causing it to be missed. Patient asymptomatic and in good condition; 13 others provisionally negative. Case count rises to 11.</span>
+        </li>
+        <li>
+          <span class="fi-label">France</span>
+          <span class="fi-value">8 of 22 contact cases transferred to reinforced hospital quarantine (those who shared a flight with a Dutch infected passenger). PM Lecornu convening twice-daily interministerial meetings. Patient in ICU, stable, no death.</span>
+        </li>
+        <li>
+          <span class="fi-label">Tristan da Cunha</span>
+          <span class="fi-value flag-new">Upgraded to "probable" by UKHSA. Clinical details confirmed: adult male, disembarked April 14, symptoms onset April 28 (diarrhea, then fever).</span>
+        </li>
+        <li>
+          <span class="fi-label">Arrowe Park (UK)</span>
+          <span class="fi-value flag-quiet">22 asymptomatic; testing underway; 72-hr window ~May 13 9:00 PM UTC.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO situation report</span>
+          <span class="fi-value flag-quiet">Still no update &mdash; 12 checks without a new report.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<footer>
+  <span>&larr;</span>
+  <a href="hantavirus-2026-05-11.html">View yesterday's briefing (May 11, 2026)</a>
+</footer>
+
+</body>
+</html>

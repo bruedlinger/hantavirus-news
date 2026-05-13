@@ -22,6 +22,9 @@ You own these directories. Create them if they don't exist on first run.
 - `dispatches/YYYY-MM-DD-HHMM-{tier}.md` — sent dispatches, archived. Tier is `alert` or `digest`.
 - `outbox/` — dispatches written this cycle but not yet sent. The `notify.sh` script processes and clears this.
 - `runlog.md` — append a one-paragraph summary of each run: time, what you did, what you found, whether you dispatched. Keeps the user able to audit you.
+- `index.html` — the live briefing page, regenerated at the end of every run. See step 9.
+- `hantavirus-YYYY-MM-DD.html` — archived daily briefings. Created automatically when a daily digest is dispatched. See step 9.
+- `template.html` — structural reference for generating index.html. Do not modify.
 
 ## Each run, do this in order
 
@@ -53,6 +56,22 @@ You own these directories. Create them if they don't exist on first run.
    model: {model-id} | runtime: {N}s | tokens: input={N} output={N}
    {one paragraph: what you did, what you found, whether you dispatched}
    ```
+
+9. **Generate `index.html`.** After logging, regenerate `index.html` using `template.html` as your structural and CSS reference. This happens on every run without exception.
+
+   **What to include:**
+   - **Status bar:** current case count, death count, number of countries with post-disembarkation cases, and this run's end time formatted as `H:MM AM/PM UTC` (use `date -u +"%-I:%M %p UTC"`).
+   - **Dispatches section:** all files in `dispatches/` whose name begins with today's UTC date (`YYYY-MM-DD-*.md`). Render in reverse chronological order, most recent first, with the top entry expanded (`open` attribute). Parse each dispatch .md into the card HTML shown in `template.html` — headline, timestamp, and all four body sections. For a DIGEST sent after midnight UTC that covers the previous day's events, add the italic subline below the timestamp explaining what period it covers.
+   - **News Checks section:** all `runlog.md` entries whose ISO timestamp starts with today's UTC date. Render in reverse chronological order. Write a fresh one-sentence headline for each (do not copy the raw runlog paragraph verbatim). Parse the numbered findings into the `.check-findings` labeled-row table, applying `flag-alert` / `flag-new` / `flag-quiet` color classes appropriately. Include the dispatch banner (alerted / digested / quiet) at the top of each expanded body.
+   - **Footer link:** find the most recently archived page with `ls hantavirus-*.html 2>/dev/null | sort | tail -1`. Convert its `YYYY-MM-DD` filename to a readable date for the link text. If no archived file exists yet, omit the link.
+
+   **Archiving on daily digest:** When you dispatch a daily digest, before writing the new `index.html`:
+   1. Check whether `index.html` exists.
+   2. If it does, read its `<title>` tag to find the date it covers (format: `Hantavirus Monitor — Month D, YYYY`).
+   3. Convert that date to `YYYY-MM-DD` and move the file: `mv index.html hantavirus-YYYY-MM-DD.html`
+   4. Then write the fresh `index.html` for today.
+
+   This archiving step applies **only** when dispatching a daily digest — not on alerts or quiet cycles, which simply overwrite `index.html` in place.
 
 ## Dispatch protocol
 

@@ -2,6 +2,350 @@
 
 ---
 
+## Cycle 17 — 2026-05-12 (23:30–23:37 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient mort décès ECMO May 13 2026`
+2. `hantavirus Spain UATAN patient condition update May 13 2026`
+3. `hantavirus Radboudumc hospital workers quarantine positive result May 2026`
+4. `hantavirus Tristan da Cunha confirmed lab result May 13 2026`
+5. `WHO DON601 hantavirus disease outbreak news 2026`
+6. `hantavirus France "deuxième cas" OR "second case" Bichat May 13 2026`
+7. `hantavirus MV Hondius update new case death May 13 2026`
+8. `MV Hondius Rotterdam Netherlands arrival crew hantavirus May 13 2026`
+9. `hantavirus update May 13 2026 new case France death`
+10. `hantavirus France "pronostic vital" Bichat May 13 2026`
+
+### Pages fetched
+- hantacase.com/country/france ✓ — Updated May 13; 1 confirmed case, 0 deaths in France (no French death)
+- Archynewsy French patient ✓ — Published May 12; ECMO confirmed; Dr. Lescure quote; no May 13 updates
+- GenomicEpi tracker ✓ — 11 cases, 3 deaths; WHO/ECDC-based; no clinical detail
+- Wikipedia MV Hondius ✓ — Still May 12; no May 13 updates
+- ECDC surveillance ✓ — Still 11 cases (9+2), 3 deaths; May 12 11:30 (no May 13 update yet)
+- UKHSA gov.uk ✓ — Most recent update May 12; **KEY: 10 from St Helena/Ascension being brought to UK**; Arrowe Park discharging
+- ABC News live ✓ — Last entry ~19:39 UTC May 12; no new entries since Cycle 16
+- ABC7 live ✓ — Last entry ~19:37 UTC May 12; King County 2 plane contacts confirmed
+- Radboudumc ✓ — Still May 11 9pm; no positives; quarantine continues
+- government.nl ✓ — May 12 16:25 CET; all Dutch passengers repatriated; ship en route Netherlands
+- WHO DON601 ✗ — 404 (17th consecutive cycle)
+- la1ere.franceinfo.fr ✗ — 403
+- ArcGIS dashboard ✗ — No data loaded (dashboard-only, no HTML content)
+
+### What these queries found
+**Quiet overnight cycle. No new deaths, no new confirmed cases, no clinical deteriorations.**
+
+**French patient**: Still alive on ECMO. hantacase.com (updated May 13) confirms 0 deaths in France. ABC News/ABC7 last updates at ~19:37–19:39 UTC May 12 — nothing new since Cycle 16. "Pronostic vital engagé" language confirmed in French media as of May 12 — consistent with ECMO status already reported. Not a new development.
+
+**NEW DETAIL (UKHSA full text)**: **10 contacts from Saint Helena and Ascension Island being brought to UK** for NHS HCID network supervision. Previously only knew partial detail (7 British at St Helena; 4 still on island as of May 8). Now: 10 total from both territories, being transported to UK, none symptomatic.
+
+**MV Hondius crew nationality breakdown (NEW)**: 17 Filipino, 4 Dutch (incl. 2 RIVM), 4 Ukrainian, 1 Russian, 1 Polish = 27 total. ETA Rotterdam May 17.
+
+**King County WA correction**: 2 plane contacts (not 3); ABC7 confirms 2 residents monitored at home.
+
+**All other threads**: Spanish patient stable (no update), Radboudumc no positives, Tristan da Cunha still probable, WHO DON601 still 404, ECDC no May 13 update yet.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient mort décès ECMO May 13 2026` — CRITICAL; death = 4th fatality
+- `hantavirus France pronostic vital Bichat décès mort guérison May 13 2026` — CRITICAL
+- `hantavirus Radboudumc medewerkers quarantaine positief 2026` — HIGH; Dutch HCW results
+- `hantavirus Spain UATAN patient condition update May 13 2026` — HIGH
+- `hantavirus Tristan da Cunha confirmed positive lab result May 13 2026` — HIGH
+- `WHO DON601 hantavirus 2026` — HIGH; 17 cycles
+- `hantavirus Saint Helena Ascension Island UK HCID contacts May 2026` — MEDIUM; 10 contacts in transit
+- `ECDC hantavirus update May 13 2026` — MEDIUM; daily at ~14:00 UTC
+- `MV Hondius Rotterdam Netherlands arrival decontamination RIVM May 17 2026` — MEDIUM
+- `hantavirus UK Arrowe Park home quarantine May 13 2026` — MEDIUM; 22 now in home quarantine
+
+---
+
+## Cycle 16 — 2026-05-12 (19:24–20:15 UTC)
+
+### Queries run
+1. `hantavirus Arrowe Park Hospital test result UK May 13 2026`
+2. `hantavirus France Bichat patient mort décès stable May 13 2026`
+3. `hantavirus Spain UATAN patient condition update May 13 2026`
+4. `hantavirus Tristan da Cunha confirmed positive lab result May 13 2026`
+5. `hantavirus Radboudumc hospital workers quarantine positive result May 2026`
+6. `WHO DON601 hantavirus disease outbreak news 2026`
+7. `hantavirus France ECMO "forme grave" "serious condition" Bichat patient May 12 2026`
+8. `hantavirus King County Washington state monitoring plane exposure May 2026`
+
+### Pages fetched
+- ABC News live (re-fetch) ✓ — KEY: French patient "severe form, serious condition, ECMO" entry at ~17:42 UTC; King County WA 2 plane contacts entry
+- UKHSA gov.uk (re-fetch) ✓ — Still May 12; all 22 asymptomatic; plans for home discharge; no Arrowe Park positives
+- info.gouv.fr ✗ — 403 (persistent)
+- Radboudumc ✓ — Last update May 11 9pm; no positives among 12 workers; quarantine continues
+- ECDC surveillance ✓ — Still 11 cases (9+2), 3 deaths; no change
+- Wikipedia MV Hondius ✓ — "Very critical condition" for French patient; no May 13 updates; no new deaths
+- WHO DON601 ✗ — 404 (16th consecutive cycle)
+- franceinfo DIRECT ✗ — 403
+- Medscape FR ✓ — ECMO confirmed; Xavier Lescure Bichat quote; "most severe cardiopulmonary form"
+
+### What these queries found
+**KEY FINDING — ALERT**: **French patient on ECMO** — material deterioration from "stable" (Cycles 11–15) to "presenting a severe form" in "serious condition." French Health Minister statement (~17:42 UTC May 12, after Cycle 15 ended at ~16:55 UTC). Bichat physician Xavier Lescure: "extracorporeal circulation to allow the lungs to recover." Wikipedia updated to "very critical condition." This is the last-resort respiratory intervention for HPS. **ALERT dispatched.**
+
+**Arrowe Park RESOLVED — No new British cases**: UKHSA (May 12): all 22 still asymptomatic; being discharged for 42-day home quarantine. Thread closed with zero positives.
+
+**No new confirmed cases, no deaths** otherwise. Spanish patient stable. Tristan da Cunha still probable. Radboudumc no positives. WHO DON601 still 404 (16th cycle).
+
+**King County, WA**: 3 residents monitored (2 plane contacts + 1 ship passenger). Appears to be background from ~May 7-8; not a new development. No symptoms.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient mort décès décédée ECMO May 13 2026` — CRITICAL; death = 4th fatality
+- `hantavirus France "deuxième cas" confirmed second case Bichat May 13 2026` — HIGH; second French case still unverified
+- `hantavirus Radboudumc medewerkers quarantaine positief 2026` — HIGH; Dutch HCW results
+- `hantavirus Spain UATAN patient condition update May 13 2026` — HIGH; HPS progression watch
+- `hantavirus Tristan da Cunha confirmed positive lab result May 13 2026` — HIGH
+- `WHO DON601 hantavirus disease outbreak news 2026` — HIGH; 16 cycles
+- `MV Hondius Rotterdam Netherlands decontamination arrival RIVM May 17 2026` — MEDIUM
+- `hantavirus UK Arrowe Park home quarantine update May 2026` — MEDIUM; follow 22 UK nationals in home quarantine
+- `ECDC hantavirus update May 13 2026` — MEDIUM; daily update at 14:00 UTC
+
+---
+
+## Cycle 15 — 2026-05-12 (~16:40–16:55 UTC)
+
+### Queries run
+1. `hantavirus Arrowe Park test result positive UK May 2026`
+2. `hantavirus Radboudumc hospital workers quarantine result positive May 2026`
+3. `hantavirus Spain UATAN patient condition update May 12 13 2026`
+4. `hantavirus France Bichat patient mort décès stable May 12 13 2026`
+5. `hantavirus Tristan da Cunha confirmed positive lab result May 2026`
+6. `WHO DON601 hantavirus disease outbreak news 2026`
+7. `MV Hondius Rotterdam Netherlands crew arrival decontamination May 2026`
+8. `hantavirus France second case positive Bichat May 12 2026 deux cas`
+9. `hantavirus France deuxième cas confirmé positif 22 contacts mai 2026`
+10. `hantavirus MV Hondius new case update May 12 13 2026 latest`
+
+### Pages fetched
+- UKHSA blog gov.uk (May 12 — testing underway, no results) ✓
+- NL Times Filipino crew quarantine ✗ — 403
+- hantacount.com France (aggregator — 2 confirmed French cases) ✓ — UNVERIFIED
+- ECDC surveillance ✓ — still 11 cases (9+2), 3 deaths; no change
+- Oceanwide Expeditions press release ✓ — 25 crew + 2 RIVM medics, ETA Rotterdam May 17
+- Wikipedia MV Hondius ✓ — 9+2/3 deaths; no change; "stable" French patient
+- Tristan da Cunha government May 11 ✓ — patient "stable," no lab confirmation
+- WHO DON601 ✗ — 404 (15th consecutive cycle)
+- CDC media release ✓ — still May 8, no update
+- info.gouv.fr ✗ — 403 (persistent)
+- CNews May 12 ✗ — 403
+- franceinfo live blog ✗ — 403
+- GMA News ✓ — 21 Filipino crew in Netherlands
+
+### What these queries found
+**Stable cycle. No new confirmed cases, no deaths, no clinical deteriorations.**
+
+**New operational development**: 21 Filipino crew from MV Hondius entered 42-day quarantine in Netherlands (NL Times/GMA News, May 12). Previously only knew 38 Filipinos were "cleared" — these 21 disembarked at Tenerife and were flown to Netherlands for quarantine ahead of repatriation.
+
+**MV Hondius crew count resolved**: Oceanwide (May 11, 21:30 CET) confirms 25 crew + 2 RIVM medics = 27 total aboard, ETA Rotterdam May 17 evening. Resolves the 61 → 25 discrepancy: many crew disembarked at Tenerife.
+
+**Arrowe Park**: UKHSA blog says PCR testing well underway. No positive results. All 22 asymptomatic. 72-hr window expires ~May 13 ~21:00 UTC.
+
+**Second French case (UNCONFIRMED)**: hantacount.com (aggregator) shows 2 French confirmed cases, with Case 2 dated May 12. Cannot verify from any primary source. Descriptor says "45-day home quarantine" but actual protocol is mandatory hospital quarantine — inconsistency undermines credibility. Do not count as confirmed.
+
+**Tristan da Cunha**: Tristan da Cunha government (May 11) confirms patient "stable." No lab result. No HPS. Military team on island.
+
+**WHO DON601**: Still 404 — 15th consecutive cycle.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus Arrowe Park Hospital UK test result positive May 13 2026` — HIGH URGENT; window expires ~May 13 ~21:00 UTC
+- `UKHSA hantavirus update UK British Arrowe Park May 13 2026` — HIGH; check UKHSA directly
+- `hantavirus France second case confirmed deuxième Bichat mai 2026` — MEDIUM; verify/deny second French case
+- `hantavirus France Bichat patient mort décès stable May 13 2026` — HIGH; death = alert
+- `hantavirus Spain UATAN patient condition update May 13 2026` — HIGH; HPS progression watch
+- `hantavirus Radboudumc medewerkers quarantaine resultaat positief 2026` — HIGH; Dutch HCW results
+- `hantavirus Tristan da Cunha lab confirmed positive May 13 2026` — HIGH
+- `WHO DON601 hantavirus 2026` — HIGH; 15 cycles
+- `MV Hondius Rotterdam RIVM decontamination crew arrival May 17 2026` — MEDIUM
+- `hantavirus Filipino crew Netherlands quarantine health May 2026` — MEDIUM
+
+---
+
+## Cycle 14 — 2026-05-12 (13:24–13:55 UTC)
+
+### Queries run
+1. `hantavirus España pasajero síntomas desaturación empeoramiento Gómez Ulla 12 mayo 2026`
+2. `hantavirus France Bichat patient mort décès stable May 12 2026`
+3. `hantavirus Tristan da Cunha confirmed positive lab result May 12 2026`
+4. `hantavirus Arrowe Park Hospital test result UK May 12 2026`
+5. `ECDC hantavirus Andes update May 12 2026`
+6. `hantavirus Spain confirmed case UATAN Gomez Ulla clinical update May 12 2026`
+7. `hantavirus France quarantine hospitalière 22 cas contacts mai 2026`
+8. `hantavirus MV Hondius update new case death May 12 2026`
+
+### Pages fetched
+- Estrella Digital (Sanidad confirms Spanish positive) ✓ — KEY: 2nd PCR confirmed; patient in UATAN; 13 others definitively negative
+- Euronews (Dutch hospital workers at Radboudumc) ✓ — KEY ALERT: 12 workers quarantined 6 weeks; protocol failure blood draw + urine disposal; risk "low"; no positives
+- ECDC surveillance ✓ — Updated May 12 11:30 UTC: 11 cases (9+2), 3 deaths; first post-disembarkation inclusion
+- Euronews FR (France decree) ✓ — 42-day hospital quarantine for all 22; government decree published; patient in ICU stable
+- UKHSA gov.uk ✓ — still May 11; no Arrowe Park results; testing "well underway"
+- Wikipedia MV Hondius ✓ — Rotterdam ETA May 17 (revised); skeleton crew 25+2; "very critical condition" language for French patient (conflicts with official "stable")
+- WHO DON601 ✗ — 404 (14th consecutive cycle)
+- info.gouv.fr ✗ — 403
+
+### What these queries found
+**KEY FINDING — ALERT**: **Radboudumc (Nijmegen) 12 hospital workers quarantined** for 6 weeks after protocol failure treating MV Hondius hantavirus patient on May 7 — standard blood draw instead of enhanced protocols, improper urine disposal. Hospital says risk low. No confirmed positives. First HCW exposure event. ALERT dispatch sent.
+
+**Spanish case officially confirmed**: Sanidad 2nd PCR positive. Patient in UATAN. Still stable with symptoms (fever, O2 desaturation). 13 others definitively negative.
+
+**ECDC updated**: 11 cases (9+2) as of May 12 11:30 UTC — first official inclusion of post-disembarkation cases.
+
+**France decree**: All 22 contact cases mandated to 42-day hospital quarantine by government decree. No new positives.
+
+**Arrowe Park**: ITV Granada (May 12) confirms testing "well under way"; no results; still all asymptomatic.
+
+**Tristan da Cunha**: No lab confirmation found. Still probable.
+
+**WHO DON601**: Still 404 — 14th consecutive cycle.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus Radboudumc hospital workers quarantine positive result May 2026` — HIGH; Dutch HCW test results (6-week window)
+- `hantavirus Radboudumc medewerkers quarantaine resultaat positief 2026` — HIGH; Dutch-language
+- `hantavirus Spain UATAN patient condition update May 12 13 2026` — HIGH; Spanish patient clinical trajectory
+- `hantavirus France Bichat patient mort décès stable May 12 13 2026` — HIGH; French patient death = alert
+- `hantavirus Tristan da Cunha confirmed positive lab result May 12 13 2026` — HIGH
+- `hantavirus Arrowe Park test result positive UK May 13 2026` — HIGH; expires ~May 13 ~21:00 UTC
+- `WHO DON601 hantavirus disease outbreak news 2026` — HIGH; 14 cycles
+- `MV Hondius Rotterdam Netherlands crew arrival GGD May 2026` — MEDIUM; ETA ~May 17
+- `hantavirus Cataluña contacto seguimiento mujer caso May 2026` — MEDIUM; Catalonia contact thread
+
+---
+
+## Cycle 13 — 2026-05-12 (10:18–10:35 UTC)
+
+### Queries run
+1. `hantavirus Spain Gomez Ulla Spanish passenger final PCR confirmed May 12 2026`
+2. `hantavirus France Bichat patient mort décès stable May 12 2026`
+3. `hantavirus Tristan da Cunha confirmed positive lab result May 12 2026`
+4. `hantavirus Arrowe Park Hospital test result UK May 12 2026`
+5. `hantavirus MV Hondius update new case death May 12 2026`
+6. `hantavirus España pasajero síntomas fiebre respiratoria Gómez Ulla 12 mayo 2026`
+7. `WHO DON601 hantavirus disease outbreak news 2026` (blocked who.int)
+
+### Pages fetched
+- Le Matin CH (Spanish patient symptoms) ✓ — KEY: fever + oxygen desaturation; "apparently stable, without obvious clinical deterioration"
+- Democrata.es (Spanish cases overview) ✓ — 4 tracked Spanish cases; Catalonia contact (new thread)
+- Wikipedia MV Hondius ✓ — May 12 entry: "Spanish passenger confirmed positive, exhibits symptoms"
+- WHO DON601 ✗ — 404 (13th consecutive cycle)
+- ABC News live ✓ — no new entries since 00:44 UTC May 12
+- UKHSA gov.uk ✓ — still May 11; no Arrowe Park results; all asymptomatic
+- ECDC surveillance ✓ — still May 11 14:00 data; 9 cases (7+2), 3 deaths
+- France24 nationality ✗ — 403 (persistent)
+
+### What these queries found
+**KEY FINDING — ALERT**: Spanish provisional-positive patient developed **febrícula (low-grade fever) y ligera desaturación (slight oxygen desaturation)** overnight May 11–12. Multiple Spanish-language sources confirm: laregion.es, libertaddigital.com, elcorreogallego.es. This contradicts yesterday's "asymptomatic" characterization. Patient is "apparently stable, without obvious clinical deterioration." Oxygen desaturation is a direct HPS indicator. ALERT dispatch sent.
+
+**New thread — Catalonia contact**: Democrata.es mentions a woman in Catalonia being monitored due to contact with a deceased person linked to the outbreak. Outside the 14 Gómez Ulla evacuees. Status unclear.
+
+**No other material new developments**: French patient stable in ICU. Arrowe Park no results (72-hr expires ~May 13). Tristan da Cunha still probable. WHO DON601 still 404. ECDC still May 11 data.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus España pasajero síntomas desaturación empeoramiento Gómez Ulla May 12 2026` — HIGH; clinical trajectory of Spanish patient
+- `hantavirus Spain passenger oxygen desaturation HPS confirmed May 12 2026` — HIGH
+- `hantavirus Spain confirmed positive PCR final result Gomez Ulla May 12 2026` — HIGH; final PCR overdue
+- `hantavirus Cataluña contacto seguimiento mujer caso May 2026` — MEDIUM; Catalonia contact case
+- `hantavirus France Bichat patient mort décès stable May 12 13 2026` — HIGH; death = alert
+- `hantavirus Tristan da Cunha confirmed positive lab result May 12 13 2026` — HIGH
+- `hantavirus Arrowe Park test result positive UK May 13 2026` — HIGH; window expires ~May 13 ~21:00 UTC
+- `ECDC hantavirus update May 12 2026` — MEDIUM; daily update at 14:00 UTC
+- `MV Hondius Rotterdam Netherlands crew arrival GGD May 2026` — MEDIUM; ETA ~May 15–16
+
+---
+
+## Cycle 11 — 2026-05-11 (22:41–22:45 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient mort décès stable réanimation May 12 2026`
+2. `hantavirus Tristan da Cunha confirmed positive update May 12 2026`
+3. `WHO DON601 hantavirus 2026`
+4. `hantavirus Arrowe Park Hospital results quarantine UK May 12 2026`
+5. `hantavirus California residents monitoring four exposed MV Hondius May 2026`
+6. `hantavirus MV Hondius update May 12 2026 new case death`
+7. `hantavirus MV Hondius new case update May 11 12 2026 latest`
+
+### Pages fetched
+- ICI.fr (French contacts hospital quarantine) ✓ — KEY: 8 contacts to hospital; PM Lecornu 2 daily meetings
+- Europe1.fr (French contacts) ✓ — confirms 8 hospital, 14 home monitoring; patient condition "deteriorated suddenly night May 10-11, remains stable"
+- Franceinfo.fr (French patient health concern) ✗ — 403
+- WHO DON601 ✗ — 404 (11th cycle)
+- Wikipedia MV Hondius ✓ — no updates past May 11 morning; "very critical" language conflicts with French official "stable"
+- ITV Arrowe Park ✗ — socket error
+- UKHSA gov.uk ✓ — still May 11 data; no Arrowe Park results
+- CDC situation page ✓ — still May 8; still "no US cases"
+- ABC News live ✓ — up to 20:10 UTC May 11; no new developments
+- ABC7 live ✓ — up to ~22:00 UTC May 11; 4 CA residents entry (new)
+- ECDC surveillance ✓ — still 9 cases (7+2), 3 deaths; May 11 14:00 cutoff
+- hantavirustracker.io ✗ — ECONNREFUSED (5th consecutive)
+- SCMP (Tristan da Cunha probable case detail) ✓ — adult male, April 14 disembarkation, April 28 symptoms
+- CDPH ✗ — SSL error
+
+### What these queries found
+**New finding 1**: 8 of 22 French contact cases transferred from home to **hospital quarantine** (ICI.fr, Europe1.fr). PM Lecornu: 2 daily interministerial meetings. This is a significant policy escalation but not alert-tier (no new confirmed cases, no deaths). French patient stable in ICU.
+
+**New finding 2**: Tristan da Cunha case now described as **"probable"** (not "suspected") by SCMP/UKHSA. Clinical detail now available: adult male, disembarked April 14, symptoms April 28 (diarrhea then fever). Spouse isolating. UK minister wrote letter. Still awaiting lab confirmation.
+
+**California discrepancy**: ABC7 reports 4 CA residents being monitored vs prior 1. CDPH involved. Discrepancy likely includes air contacts or updated monitoring list. Santa Clara County (Bay Area) confirmed 1 resident asymptomatic.
+
+**No new cases, no new deaths**: Story holding at 10 confirmed/probable, 3 deaths.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient mort décès stable réanimation May 12 2026` — HIGH; French patient in ICU; death is alert threshold
+- `hantavirus France contact hospitalisation résultat positif May 12 2026` — HIGH; 8 contacts in hospital; any positive = new case
+- `hantavirus Tristan da Cunha confirmed positive lab result May 12 2026` — HIGH; probable case; confirmation = alert
+- `hantavirus Arrowe Park Hospital test result positive UK May 12 13 2026` — HIGH; 72-hr expires ~May 13 ~21:00 UTC
+- `WHO DON601 hantavirus 2026` — HIGH; 11 cycles
+- `ECDC hantavirus outbreak update May 12 2026` — MEDIUM; daily update at 14:00 UTC
+- `CDPH California hantavirus MV Hondius residents monitoring 2026` — MEDIUM; clarify 4 vs 1 count
+- `MV Hondius Rotterdam Netherlands crew arrival decontamination GGD May 2026` — MEDIUM; ETA ~May 15–16
+
+---
+
+## Cycle 10 — 2026-05-11 (~18:00–19:00 UTC)
+
+### Queries run
+1. `hantavirus French patient Bichat condition death recovered May 12 2026`
+2. `WHO DON601 hantavirus disease outbreak news 2026`
+3. `hantavirus MV Hondius update new case May 11 12 2026`
+4. `hantavirus UK British passenger case condition update May 2026`
+5. `hantavirus Spanish quarantine Gomez Ulla new case positive May 2026`
+6. `hantavirus Tristan da Cunha British passenger suspected case island 2026`
+7. `"hantavirus" "France" "Bichat" OR "patient" May 11 2026 update evening`
+8. `hantavirus British case Arrowe Park Hospital testing quarantine results May 2026`
+
+### Pages fetched
+- WHO DON601 ✗ — still 404 (10th cycle)
+- Wikipedia MV Hondius ✓ — no updates past May 11 morning
+- UKHSA gov.uk ✓ — PRIMARY SOURCE; 2 confirmed British + 1 suspected (Tristan da Cunha); Arrowe Park 22 people; last updated May 11
+- ITV "passengers back in UK" ✗ — socket error
+- ABC News live updates (entryId=132838414) ✓ — most recent entries ~17:38-17:54 UTC May 11; no French patient update; "won't fly commercial" CDC guidance
+- ABC7 live updates ✓ — latest entry ~17:38 UTC ("won't fly commercial"); no new cases
+- hanta-tracker.app ✗ — 403
+- Euronews UK Army parachute (May 10) ✓ — 6 paratroopers + 2 clinicians, first-ever UK humanitarian airdrop
+- Al Jazeera May 8 (Tristan da Cunha/UK) ✓ — UKHSA confirmed suspected case; St Helena cohort detail
+- Tristan da Cunha government page (May 4) ✓ — No confirmed cases at May 4; self-isolation advised
+- CBC British paratroopers ✗ — 403
+- Euronews May 11 article ✓ — older article (10:15 GMT+2); Tristan da Cunha detail; largely covered
+- CDC situation page ✓ — still May 8; still "no US cases"
+
+### What these queries found
+**Major new finding (missed thread)**: UK military parachuted 6 paratroopers + 2 medics onto Tristan da Cunha on May 10 — first-ever humanitarian airdrop for UK forces. This is in response to a "suspected case" (UKHSA-confirmed since May 8). Island has no airstrip and is 2,400 km from nearest inhabited island (6-day sea voyage from SA). Patient still suspected, not confirmed. This thread was completely missed in all prior cycles.
+
+**British cohort (fully resolved)**: 2 confirmed British cases — British male late 60s (ICU, SA, improving) + British expedition guide (stable, Netherlands). ~20 UK nationals + 1 German/UK + 1 Japanese at Arrowe Park Hospital, Wirral. New nationality: Japanese passenger.
+
+**French patient**: Now confirmed in ICU at Bichat Hospital — "stable." PM Lecornu held Matignon meeting; none of the high-risk French contacts are symptomatic. No death reported.
+
+**Other**: CDC "won't fly commercial" policy for returning passengers. Spanish quarantine (Gomez Ulla) — no new positives. ABC7 ship captain statement. WHO DON601 still 404 (10th cycle).
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient mort décès stable réanimation May 12 2026` — HIGH; French patient in ICU; death is alert threshold
+- `hantavirus Tristan da Cunha confirmed positive update May 12 2026` — HIGH; UK military on island; confirmed case = evacuation crisis
+- `WHO DON601 hantavirus 2026` — HIGH; 10 cycles; may publish overnight
+- `hantavirus Arrowe Park Hospital results quarantine UK May 12 2026` — HIGH; 22 people in 72-hr assessment; any positive = new case
+- `MV Hondius Rotterdam Netherlands crew arrival GGD quarantine May 12 2026` — MEDIUM; ETA ~May 15-16
+- `CDC hantavirus situation page US case update May 12 2026` — MEDIUM
+
+---
+
 ## Cycle 1 — 2026-05-10 (Baseline)
 
 ### Queries run
@@ -174,6 +518,114 @@ Key new finding: MV Hondius departed Tenerife May 11 en route to Rotterdam (ETA 
 
 ---
 
+## Cycle 9 — 2026-05-11 (~17:03–17:35 UTC)
+
+### Queries run
+1. `hantavirus French patient condition update May 11 12 2026 Bichat Paris`
+2. `WHO DON601 hantavirus disease outbreak news May 2026`
+3. `hantavirus MV Hondius update May 11 2026 new case`
+4. `hantavirus American Nebraska biocontainment condition update evening May 11 2026`
+5. `hantavirus Dutch German Swiss survivors hospital status medevac update May 2026`
+6. `hantavirus cases breakdown nationality confirmed May 11 2026 total count`
+
+### Pages fetched
+- ABC News live updates ✓ — no new entries past 4:09 AM EDT (08:09 UTC); entryId in URL was a link artifact
+- Irish Times ✓ — **NEW**: 2 Irish nationals, Air Corps to Baldonnel, Ann Lane named; 5-week HSE quarantine; no infections
+- WHO DON601 ✗ — 404 (9th cycle)
+- hantavirustracker.io ✗ — ECONNREFUSED (4th cycle)
+- ABC7 live updates ✓ — one new entry ~15:28 UTC: US monitoring breakdown (7 states + 2 NJ air contacts); no new cases
+- CDC situation page ✓ — still May 8, still "no US cases"
+- ECDC surveillance page ✓ — still 9 cases (7+2), 3 deaths; 14:00 UTC May 11 cutoff
+- Wikipedia ✓ — no updates past May 11 morning
+- France24 nationality article ✗ — 403
+- Today.com US states map ✗ — 403
+
+### What these queries found
+Quiet cycle. Key new supplementary detail: (1) Irish passengers (2) returned to Dublin via Air Corps; one is Ann Lane (former PA to Mary Robinson); both in 5-week HSE quarantine, no infections. (2) Dutch survivors include ship's doctor (evacuated May 6, stable). (3) SA count confirmed: 2 at NICD, both survivors. (4) US monitoring footprint: 7 state passengers + 2 NJ air contacts beyond the 18 at Nebraska/Atlanta. No new confirmed cases, no deaths, no new WHO/CDC/ECDC updates. French patient still no update past "worsening overnight." WHO DON601 still 404.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus French patient Bichat condition death recovered May 12 2026` — HIGH; 10+ hours since last update; first post-ship death remains alert threshold
+- `WHO DON601 hantavirus 2026` — HIGH; 9 cycles without a new DON is extraordinary
+- `MV Hondius Rotterdam Netherlands crew arrival GGD quarantine May 12 2026` — still watching ETA ~May 15–16
+- `hantavirus UK British passenger case condition update May 2026` — MEDIUM; British case confirmed in WHO data but no condition updates
+- `hantavirus Spanish quarantine Gomez Ulla new case positive May 2026` — MEDIUM; 14 people, 45-day quarantine
+- `CDC hantavirus situation page US case update May 12 2026` — when does CDC finally update?
+
+---
+
+## Cycle 8 — 2026-05-11 (~15:39–16:00 UTC)
+
+### Queries run
+1. `hantavirus Nebraska UNMC press conference results Pillen Gold May 11 2026`
+2. `hantavirus second American Washington DC facility NIH confirmed positive May 11 2026`
+3. `hantavirus French patient Paris hospital condition update May 11 12 2026`
+4. `WHO DON601 hantavirus cruise ship 2026 disease outbreak news`
+5. `MV Hondius Rotterdam Netherlands crew health monitoring hantavirus 2026`
+6. `hantavirus American passengers Atlanta assessment Emory CDC May 11 2026` (follow-up after Atlanta clue in search #2)
+7. `hantavirus French patient Bichat hospital condition May 11 2026 update worsening recovered` (follow-up French thread)
+
+### Pages fetched
+- Al Jazeera (Two more positive) ✓ — duplicate; covers French/American Cycle 4 cases only
+- government.nl (Dutch MV Hondius updates) ✓ — primary source; crew to Netherlands; 6-week home quarantine for Dutch nationals
+- ABC News live updates ✓ — last entry ~15:17 UTC; 16 Nebraska + 2 Atlanta confirmed; biocontainment patient "fatigued but stable"
+- ABC7 live updates ✓ — ~15:15 UTC, includes UNMC conference entries; 2 Americans at Emory confirmed
+- CBS Atlanta (Emory) ✓ — KEY: Georgia residents at Emory; symptomatic American TESTED NEGATIVE per UNMC
+- CDC situation page ✓ — still May 8; still "no US cases"
+- WHO DON601 ✗ — still 404; 8th consecutive cycle
+- hantavirustracker.io ✗ — ECONNREFUSED again
+- France24 live ✗ — 403
+
+### What these queries found
+MAJOR RESOLUTION: Second symptomatic American (Georgia resident) transferred to Emory University Hospital's Serious Communicable Diseases Unit in Atlanta — tested NEGATIVE per UNMC (via CBS Atlanta). The WOWT "Washington D.C." report from Cycle 7 was inaccurate; destination was Emory. US stands at 1 confirmed case only. Full US distribution now confirmed: 16 Nebraska (15 quarantine + 1 biocontainment), 2 Emory Atlanta. Biocontainment patient first condition update: "fatigued but stable." UNMC press conference held at ~14:00 UTC; no new cases or deaths. French patient: no update past Cycle 4 "worsening overnight." WHO DON601 still 404. CDC page still outdated.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus French patient Bichat hospital condition May 12 2026` — French patient deterioration/death/recovery
+- `WHO DON601 hantavirus 2026` — keep checking
+- `MV Hondius Rotterdam arrival crew hantavirus Netherlands GGD May 2026` — Rotterdam due ~May 15–16
+- `hantavirus Dutch German Swiss survivors hospital status May 2026` — medevac'd patients during voyage
+- `CDC hantavirus situation page updated US cases May 12 2026` — when does CDC update?
+
+---
+
+## Cycle 7 — 2026-05-11 (~13:59–14:04 UTC)
+
+### Queries run
+1. `hantavirus second American Nebraska biocontainment update May 2026`
+2. `hantavirus French patient Paris hospital condition May 2026`
+3. `hantavirus WHO DON601 disease outbreak news 2026 May published`
+4. `hantavirus Nebraska press conference Jim Pillen Gold May 11 2026 symptomatic American Washington DC`
+5. `hantavirus American "Washington DC" OR "NIH" OR "Georgetown" transfer biocontainment May 2026`
+6. `hantavirus Nebraska UNMC briefing results second American positive update May 11 2026 afternoon`
+7. `hantavirus second American "tests positive" OR "confirmed" Nebraska OR "Washington" May 11 2026`
+8. `hantavirus France patient dead death OR recovered OR worsened hospital May 11 12 2026`
+9. `hantavirus American passenger "second" positive confirmed Washington DC NIH UNMC update 2026`
+
+### Pages fetched
+- WOWT "Live at 9 AM" ✓ — D.C. transfer mention; pre-conference article; no conference results
+- WOWT "Americans transported" ✓ — confirms D.C. transfer, no facility named
+- WOWT live arrival article ✓ — same pre-conference content, no facility named
+- WHO DON601 ✗ — still 404
+- ABC News live updates ✓ — no entries past 4:09 AM EDT May 11
+- ABC7 live updates ✓ — no entries past 11:44 AM GMT May 11
+- Wikipedia MV Hondius ✓ — no updates past May 11 morning
+- CDC situation page ✓ — still May 8; still "no US cases"
+- Nebraska Public Media ✓ — not updated
+- ECDC surveillance page ✓ — May 11 14:00 update; still 9 cases (7+2), 3 deaths; no post-disembarkation cases
+- hantavirus.one ✓ — new aggregator tracker; 14:02 UTC May 11; 9 cases/3 deaths (WHO-based); treat as aggregator
+- hantavirusmap.com ✗ — 403
+
+### What these queries found
+One new development: **symptomatic second American expected to be transferred to Washington D.C.** (unnamed facility), per WOWT articles published after Cycle 6. This is different from the prior assumption that both Americans would remain in Nebraska's biocontainment system. No test result confirmation for the second American. The 9 AM CDT UNMC press conference results were not yet indexed at cycle end. All other threads unchanged: French patient no update, WHO DON601 still 404, CDC page still May 8.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus Nebraska UNMC press conference results Pillen Gold May 11 2026` — get conference outcome
+- `hantavirus second American Washington DC confirmed positive facility NIH 2026` — facility ID + test result
+- `hantavirus French patient Paris condition death update May 11 12 2026`
+- `WHO DON601 hantavirus 2026` — direct URL + WHO news section
+- `MV Hondius Rotterdam Netherlands crew health monitoring 2026`
+
+---
+
 ## Cycle 6 — 2026-05-11 (~12:53 UTC)
 
 ### Queries run
@@ -208,3 +660,53 @@ Key new finding: MV Hondius departed Tenerife May 11 en route to Rotterdam (ETA 
 - Rotterdam departure update / any crew health news (MEDIUM) — MV Hondius en route Rotterdam
 - CDC situation page update (MEDIUM) — 3 cycles behind now
 - Any Dutch/German/Swiss survivors' status updates (LOW)
+
+---
+
+## Cycle 12 — 2026-05-12 (00:45–01:03 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient mort décès stable réanimation May 12 2026`
+2. `hantavirus Tristan da Cunha confirmed positive lab result May 12 2026`
+3. `hantavirus Arrowe Park Hospital test result UK May 12 2026`
+4. `hantavirus MV Hondius update new case death May 12 2026`
+5. `hantavirus Spain Gomez Ulla passenger positive test Spanish Health Minister Monica Garcia 2026`
+6. `WHO DON601 hantavirus 2026`
+7. `hantavirus France patient Bichat update May 12 2026 état santé`
+8. `ECDC hantavirus Andes virus outbreak update May 12 2026`
+9. `hantavirus Spain Spanish passenger Gomez Ulla positive confirmed May 12 2026`
+
+### Pages fetched
+- Xinhua May 12 (Spain provisional positive, first URL) ✓ — KEY: Garcia confirms provisional positive; asymptomatic; final results pending
+- Xinhua May 12 (Spain provisional positive, second URL) ✓ — confirms same; Garcia quote direct
+- Wikipedia MV Hondius ✓ — mentions Spanish provisional positive; case count ~11; 29 crew remaining (discrepancy vs prior 61)
+- ABC News live ✓ — last entry 8:44 PM EDT May 11 (00:44 UTC May 12); Spanish provisional positive entry at 4:10 PM EDT May 11 (WAS MISSED BY CYCLE 11)
+- UKHSA gov.uk ✓ — still May 11 data; testing "well underway"; all asymptomatic; no Arrowe Park results
+- WHO DON601 ✗ — still 404 (12th consecutive cycle)
+- ECDC surveillance ✓ — still May 11 14:00 data: 9 cases (7+2), 3 deaths; no May 12 update
+- Franceinfo French patient ✗ — 403
+- Xinhua Europe (Spain second article) ✓ — same provisional positive story
+
+### What these queries found
+**KEY FINDING (MISSED BY CYCLE 11)**: Spanish provisional positive PCR at Gómez Ulla Hospital. Announced by Health Minister Monica Garcia at ~20:10 UTC May 11. ABC News live entry at 4:10 PM EDT May 11 (= 20:10 UTC) — Cycle 11 fetched ABC News "up to 20:10 UTC" but logged "no new developments." Xinhua published two articles on May 12 confirming this. Person is asymptomatic, in good condition. Other 13 Spanish evacuees tested provisionally negative. Final results pending. Case count rises to 11.
+
+**No new May 12 developments**: No deaths, no new confirmed cases beyond the Spanish provisional positive (which was actually from May 11 ~20:10 UTC).
+
+**French patient**: Still stable in ICU. Franceinfo title "inquiète" but no actual new deterioration. No death.
+
+**Arrowe Park**: No results. Testing underway. All asymptomatic. Window expires ~May 13 ~21:00 UTC.
+
+**Tristan da Cunha**: Still probable, no lab confirmation.
+
+**WHO DON601**: Still 404 — 12th cycle.
+
+**ECDC**: No May 12 update yet.
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus Spain Gomez Ulla final PCR confirmed positive May 12 2026` — HIGH; provisional result; confirmation = 11th case
+- `hantavirus France Bichat patient mort décès stable May 12 2026` — HIGH; French patient in ICU; death = alert
+- `hantavirus Tristan da Cunha confirmed positive lab result May 12 13 2026` — HIGH; probable case; confirmation = alert
+- `hantavirus Arrowe Park Hospital test result positive UK May 12 13 2026` — HIGH; 72-hr expires ~May 13 ~21:00 UTC
+- `WHO DON601 hantavirus disease outbreak news 2026` — HIGH; 12 cycles without DON601
+- `ECDC hantavirus Andes update May 12 2026` — MEDIUM; expected 14:00 UTC
+- `MV Hondius Rotterdam Netherlands crew arrival decontamination GGD May 2026` — MEDIUM; ETA ~May 15-16

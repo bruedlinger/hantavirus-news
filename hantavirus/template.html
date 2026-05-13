@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!--
+  BRIEFING PAGE TEMPLATE — used by the monitoring agent to generate index.html each run.
+
+  HOW TO USE:
+  1. Copy the full <style> block unchanged into index.html.
+  2. Replace every {{PLACEHOLDER}} with live values derived from your state files.
+  3. Render the #dispatches and #checks sections from today's actual data.
+  4. Remove all HTML comments before writing the final file.
+
+  DATA SOURCES:
+  - Status bar values        → state/story_state.md (Confirmed facts section)
+  - Dispatch cards           → dispatches/YYYY-MM-DD-*.md (today's date only)
+  - News check entries       → runlog.md (today's date entries only)
+  - Yesterday link filename  → ls hantavirus-*.html 2>/dev/null | sort | tail -1
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+  TITLE: "Hantavirus Monitor — {Month} {D}, {YYYY}"
+  Example: "Hantavirus Monitor — May 13, 2026"
+-->
+<title>Hantavirus Monitor — {{MONTH_D_YYYY}}</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ed;
+    --muted: #7b7f96;
+    --alert-bg: #1f1018;
+    --alert-border: #8b1a1a;
+    --alert-badge: #c0392b;
+    --digest-bg: #0f1a1f;
+    --digest-border: #1a4a5a;
+    --digest-badge: #1a6a8a;
+    --check-bg: #131620;
+    --check-border: #252840;
+    --link: #6ab4ff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 32px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  section > h2 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
+  details[open] summary .chevron { transform: rotate(90deg); }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  summary .subline {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
+  .dispatch-alert summary { background: rgba(139, 26, 26, 0.1); }
+  .dispatch-alert summary:hover { background: rgba(139, 26, 26, 0.18); }
+
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
+  .dispatch-digest summary { background: rgba(26, 74, 90, 0.1); }
+  .dispatch-digest summary:hover { background: rgba(26, 74, 90, 0.2); }
+
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
+  .check-entry summary { background: rgba(37, 40, 64, 0.15); }
+  .check-entry summary:hover { background: rgba(37, 40, 64, 0.35); }
+
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .badge-alert  { background: var(--alert-badge);  color: #fff; }
+  .badge-digest { background: var(--digest-badge); color: #fff; }
+
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dispatch-body ul { padding-left: 16px; }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
+  .dispatch-body a { color: var(--link); text-decoration: none; }
+  .dispatch-body a:hover { text-decoration: underline; }
+
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .check-dispatch-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
+  .check-dispatch-note .note-icon { font-size: 11px; flex-shrink: 0; }
+
+  .check-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .check-findings { list-style: none; padding: 0; margin: 0; }
+
+  .check-findings li {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
+  }
+
+  .check-findings li:last-child { border-bottom: none; }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
+  .check-findings .fi-value { color: #c4c6d6; flex: 1; }
+  .check-findings .fi-value strong { color: var(--text); font-weight: 600; }
+  .check-findings .fi-value.flag-alert { color: #e08080; }
+  .check-findings .fi-value.flag-new   { color: #90c8a0; }
+  .check-findings .fi-value.flag-quiet { color: #7b7f96; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  footer a { color: var(--link); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .story-status .stat span { color: var(--muted); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Hantavirus Monitor</h1>
+  <!--
+    META: "MV Hondius outbreak · Daily briefing · {Weekday}, {Month} {D}, {YYYY}"
+    Weekday = full name of today's day in UTC (Monday, Tuesday, …)
+    Get with: date -u +"%A, %B %-d, %Y"   (Linux/macOS)
+  -->
+  <div class="meta">MV Hondius outbreak &middot; Daily briefing &middot; {{WEEKDAY_MONTH_D_YYYY}}</div>
+</header>
+
+<!--
+  STATUS BAR
+  Pull from state/story_state.md. Show the most current numbers from Confirmed facts.
+  {{RUN_TIME_READABLE}} = this run's end time formatted as "H:MM AM/PM UTC"  e.g. "7:24 PM UTC"
+  Get with: date -u +"%-I:%M %p UTC"
+-->
+<div class="story-status">
+  <div class="stat">{{N}} cases <span>({{CONFIRMED}} confirmed + {{PROBABLE}} probable)</span></div>
+  <div class="stat">{{DEATHS}} deaths <span>({{DEATH_CONTEXT}})</span></div>
+  <div class="stat">{{COUNTRIES}} countries <span>with post-disembarkation cases</span></div>
+  <div class="stat">Last checked <span>{{RUN_TIME_READABLE}}</span></div>
+</div>
+
+<!--
+  ===========================================================
+  DISPATCHES SECTION
+  ===========================================================
+  Source: all files in dispatches/ matching today's date prefix (YYYY-MM-DD-*.md).
+  Order: reverse chronological — most recent dispatch first.
+  Give the first (topmost) <details> the `open` attribute; all others start collapsed.
+
+  ALERT dispatch  → class="dispatch-alert"  + <span class="badge badge-alert">Alert</span>
+  DIGEST dispatch → class="dispatch-digest" + <span class="badge badge-digest">Digest</span>
+
+  TIMESTAMP FORMAT: "{Month} {D}, {YYYY} at {H:MM AM/PM} UTC"
+  Example: "May 13, 2026 at 7:24 PM UTC"
+
+  DIGEST SUBLINE: If the digest was sent after midnight UTC and covers the previous
+  calendar day's events, add a <span class="subline"> below the timestamp explaining this.
+  Example: "Covering late May 12 developments caught in the overnight check"
+  Omit the subline if the digest clearly covers today's events.
+
+  BODY CONTENT: Render each markdown section (## What changed, ## Why this matters,
+  ## What I'm watching next, ## Sources) as an <h3> + <ul> or <p> inside .dispatch-body.
+  Preserve inline source links as <a href="..."> tags.
+  Convert markdown **bold** to <strong>, *italic* to <em>.
+
+  If there are no dispatches today:
+  <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No dispatches today.</p>
+  ===========================================================
+-->
+<section id="dispatches">
+  <h2>Today's Dispatches &mdash; {{MONTH_D_YYYY}}</h2>
+
+  <!-- ALERT — most recent, starts open -->
+  <details class="dispatch-alert" open>
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">{{ALERT_HEADLINE}}</span>
+        <span class="timestamp">{{MONTH_D_YYYY}} at {{TIME_READABLE}}</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li>{{BULLET_1}}</li>
+        <!-- one <li> per bullet in ## What changed -->
+      </ul>
+      <h3>Why this matters</h3>
+      <p>{{WHY}}</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>{{NEXT_1}}</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="{{URL}}">{{SOURCE_TITLE}}</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- ALERT — older, starts collapsed (omit `open`) -->
+  <details class="dispatch-alert">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">{{ALERT_HEADLINE}}</span>
+        <span class="timestamp">{{MONTH_D_YYYY}} at {{TIME_READABLE}}</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <!-- same body structure as above -->
+    </div>
+  </details>
+
+  <!-- DIGEST — with optional subline when it covers the previous day -->
+  <details class="dispatch-digest">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-digest">Digest</span>
+      <span class="summary-inner">
+        <span class="headline">{{DIGEST_HEADLINE}}</span>
+        <span class="timestamp">{{MONTH_D_YYYY}} at {{TIME_READABLE}}</span>
+        <!-- Include this subline only if the digest covers the previous day's events: -->
+        <span class="subline">Covering late {{PREV_DATE}} developments caught in the overnight check</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <!-- same body structure as ALERT -->
+    </div>
+  </details>
+
+</section>
+
+<!--
+  ===========================================================
+  NEWS CHECKS SECTION
+  ===========================================================
+  Source: runlog.md entries whose ISO timestamp starts with today's date (UTC).
+  Order: reverse chronological — most recent check first.
+
+  HEADLINE: one tight sentence summarising what the check found and whether anything
+  was dispatched. Write this fresh; do not copy the runlog paragraph verbatim.
+
+  TIMESTAMP FORMAT: time only, "H:MM AM/PM UTC"   e.g. "7:24 PM UTC"
+
+  DISPATCH NOTE (the coloured banner inside .check-body):
+    · Alert sent  → class="alerted"  icon="⚠" (&#9888;)
+                    text: "Alert dispatched — {short headline} (see dispatch above)"
+    · Digest sent → class="digested" icon="▶" (&#9656;)
+                    text: "Digest dispatched covering {period} (see digest above)"
+    · No dispatch → class="quiet"    icon="—" (&mdash;)
+                    text: "No dispatch — {brief reason, e.g. 'quiet check; no new developments'}"
+
+  FINDINGS TABLE (.check-findings):
+  Parse each numbered item from the runlog paragraph into a labeled row.
+  Do NOT dump the raw prose. Extract and structure every finding.
+
+  .fi-label  = short topic/location string, e.g. "France / Bichat", "WHO report", "New thread"
+               Keep under ~14 chars where possible.
+  .fi-value  = the finding, plus one color class:
+    flag-alert  (red)   — clinical deterioration, new exposure, new confirmed case
+    flag-new   (green)  — genuinely new development, thread resolved positively, new fact
+    flag-quiet  (gray)  — no change since last check, still pending, background/context item
+    (no class)          — neutral update, logistical note
+  ===========================================================
+-->
+<section id="checks">
+  <h2>News Checks &mdash; {{MONTH_D_YYYY}}</h2>
+
+  <!-- Check where an alert was dispatched -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">{{CHECK_HEADLINE}}</span>
+        <span class="timestamp">{{TIME_READABLE}}</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; {{ALERT_SHORT}} (see dispatch above)
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">{{LABEL}}</span>
+          <span class="fi-value flag-alert"><strong>{{KEY_FACT}}</strong> {{DETAIL}}</span>
+        </li>
+        <li>
+          <span class="fi-label">{{LABEL}}</span>
+          <span class="fi-value flag-new"><strong>New:</strong> {{DETAIL}}</span>
+        </li>
+        <li>
+          <span class="fi-label">{{LABEL}}</span>
+          <span class="fi-value">{{NEUTRAL_DETAIL}}</span>
+        </li>
+        <li>
+          <span class="fi-label">{{LABEL}}</span>
+          <span class="fi-value flag-quiet">{{NO_CHANGE_NOTE}}</span>
+        </li>
+        <!-- one <li> per numbered finding in the runlog entry -->
+      </ul>
+    </div>
+  </details>
+
+  <!-- Check where a digest was dispatched -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">{{CHECK_HEADLINE}}</span>
+        <span class="timestamp">{{TIME_READABLE}}</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note digested">
+        <span class="note-icon">&#9656;</span>
+        Digest dispatched covering {{COVERAGE_PERIOD}} (see digest above)
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <!-- findings rows -->
+      </ul>
+    </div>
+  </details>
+
+  <!-- Quiet check — no dispatch -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">{{CHECK_HEADLINE}}</span>
+        <span class="timestamp">{{TIME_READABLE}}</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; {{BRIEF_REASON}}
+      </div>
+      <div class="check-section-label">Findings</div>
+      <ul class="check-findings">
+        <!-- findings rows -->
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<!--
+  FOOTER — link to the most recently archived daily page.
+  Determine filename: ls hantavirus-*.html 2>/dev/null | sort | tail -1
+  Convert the YYYY-MM-DD in that filename to a readable date for the link text.
+  Example: hantavirus-2026-05-12.html → "May 12, 2026"
+  If no archived file exists yet, render: <span>No previous briefing available.</span>
+-->
+<footer>
+  <span>&larr;</span>
+  <a href="{{YESTERDAY_FILENAME}}">View previous briefing ({{YESTERDAY_DATE_READABLE}})</a>
+</footer>
+
+</body>
+</html>
