@@ -901,3 +901,54 @@ One new development: **symptomatic second American expected to be transferred to
 - `WHO DON601 hantavirus disease outbreak news 2026` — HIGH; 12 cycles without DON601
 - `ECDC hantavirus Andes update May 12 2026` — MEDIUM; expected 14:00 UTC
 - `MV Hondius Rotterdam Netherlands crew arrival decontamination GGD May 2026` — MEDIUM; ETA ~May 15-16
+
+---
+
+## Cycle 22 — 2026-05-13 (19:00–19:?? UTC)
+
+### Queries run
+1. `hantavirus France Bichat ECMO patient condition update May 13 2026 evening`
+2. `hantavirus British tourist Milan quarantined Italy May 13 2026`
+3. `hantavirus Maryland Kansas exposed residents May 13 2026`
+4. `hantavirus France Bichat patient death décès mort May 13 14 2026 ECMO`
+5. `hantavirus España paciente UATAN Gomez Ulla evolucion 13 mayo 2026 tarde`
+6. `hantavirus Tristan da Cunha laboratory confirmation result May 13 2026`
+7. `"WHO DON601" OR "DON 601" hantavirus Andes 2026`
+8. `hantavirus MV Hondius European countries agreement PCR crew Rotterdam quarantine May 13 2026`
+9. `"Tristan da Cunha" hantavirus May 13 2026 patient lab confirmed island update`
+10. `hantavirus cruise ship new case death confirmed May 13 2026 evening Europe`
+
+### Pages fetched
+- ECDC surveillance ✓ — May 13 14:00; 11 cases, 3 deaths, no changes
+- UKHSA gov.uk ✓ — May 13; 6 Arrowe Park discharged, Ascension medic negative
+- hantacase.com France ✓ — May 13; 1 case, 0 deaths
+- thelocal.it Italy ✓ — 4 quarantined in Italy ALL NEGATIVE; Italian health ministry circular
+- virological.org Palacios preprint ✓ — single zoonotic spillover, 98.7% Argentine ANDV
+- Infobae live blog Spain ✓ — Lescure "next hours determining" + variant; EU PCR agreement; Spanish patient improving on O2
+- Radboudumc ✓ — still May 11 9pm; no positives
+- WHO DON601 ✗ — still 404 (22nd consecutive cycle)
+- Tristan da Cunha news index ✓ — May 13 "thank UK ministers" item; body inaccessible
+- Tristan da Cunha May 13 article ✗ — URL 404
+- ABC News live ✓ — most recent entry 09:27 UTC May 13; no new clinical news
+- ABC7 live ✓ — last entry 11:14 GMT May 13
+
+### What these queries found
+**Quiet afternoon/evening cycle.** No new deaths, no new confirmed cases, no clinical deteriorations. Several new operational/contextual findings:
+
+1. **Italy thread RESOLVED NEGATIVE** — all 4 quarantines (Milan/Sacco, Padua, Calabria, Messina) negative; Italian government 42-day quarantine circular.
+2. **Bichat physician Lescure escalated quote** — "next hours determining," "did not exclude virus variant" (clinician caution, no confirmed mutation; Macron/Rist say no mutation; Palacios preprint shows no variant).
+3. **US monitoring footprint** — formally 10 air-travel contacts across CA, KS, MD, NJ, WA (per Newsweek aggregation); KS and MD added to tracking. None symptomatic.
+4. **EU mandatory PCR agreement** for MV Hondius crew on Rotterdam arrival.
+5. **Spanish patient (UATAN) improvement** — treated with oxygenotherapy, symptoms "improved somewhat" (Health Min García).
+6. **Virological.org Palacios preprint (May 10)** — single zoonotic spillover, 98.7% identity Argentine ANDV; pattern mirrors 2018 Epuyén; previously not tracked.
+7. **WHO DON601** still 404 — 22nd consecutive cycle.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient mort décès ECMO May 14 2026` — HIGH; check overnight
+- `hantavirus Spain UATAN Gomez Ulla patient update May 14 2026` — HIGH; trajectory after O2 therapy
+- `hantavirus Tristan da Cunha laboratory confirmation lab result May 14 2026` — HIGH
+- `WHO DON601 hantavirus 2026` — HIGH; 22 cycles
+- `MV Hondius Rotterdam crew PCR EU agreement quarantine May 14 2026` — MEDIUM
+- `hantavirus second French case Bichat confirmed May 13 14 2026` — MEDIUM; still unverified
+- `hantavirus Radboudumc workers positive May 13 14 2026` — MEDIUM
+- `hantavirus US case new state Kansas Maryland confirmed positive May 14 2026` — MEDIUM
