@@ -356,7 +356,7 @@
   Source: dispatches/YYYY-MM-DD-*-alert.md matching today's UTC date ONLY.
   No digests appear here — digests belong in the Previous Day section.
   Order: reverse chronological — most recent alert first.
-  Give the first (topmost) <details> the `open` attribute; all others start collapsed.
+  All <details> elements start collapsed — do NOT add the `open` attribute to any of them.
 
   TIMESTAMP FORMAT: "{Month} {D}, {YYYY} at {H:MM AM/PM} UTC"
   Example: "May 13, 2026 at 7:24 PM UTC"
@@ -373,8 +373,8 @@
 <section id="dispatches">
   <h2>Today's Alerts &mdash; {{MONTH_D_YYYY}}</h2>
 
-  <!-- ALERT — most recent, starts open -->
-  <details class="dispatch-alert" open>
+  <!-- ALERT — most recent -->
+  <details class="dispatch-alert">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="badge badge-alert">Alert</span>
@@ -544,8 +544,8 @@
 <section id="previous-day">
   <h2>Previous Day &mdash; {{YESTERDAY_MONTH_D_YYYY}}</h2>
 
-  <!-- Yesterday's digest card — starts open -->
-  <details class="dispatch-digest" open>
+  <!-- Yesterday's digest card -->
+  <details class="dispatch-digest">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="badge badge-digest">Digest</span>

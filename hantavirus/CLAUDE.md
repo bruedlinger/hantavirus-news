@@ -61,7 +61,7 @@ You own these directories. Create them if they don't exist on first run.
 
    **What to include:**
    - **Status bar:** current case count, death count, number of countries with post-disembarkation cases, and this run's end time formatted as `H:MM AM/PM UTC` (use `date -u +"%-I:%M %p UTC"`).
-   - **Today's Alerts section:** only ALERT-tier dispatches matching today's UTC date (`dispatches/YYYY-MM-DD-*-alert.md`). Render in reverse chronological order, most recent first, with the top entry expanded. Do not include the daily digest here. If no alerts today, render the "No alerts today" placeholder text.
+   - **Today's Alerts section:** only ALERT-tier dispatches matching today's UTC date (`dispatches/YYYY-MM-DD-*-alert.md`). Render in reverse chronological order, most recent first. All entries start collapsed (no `open` attribute). Do not include the daily digest here. If no alerts today, render the "No alerts today" placeholder text.
    - **News Checks section:** all `runlog.md` entries whose ISO timestamp starts with today's UTC date. Render in reverse chronological order. Write a fresh one-sentence headline for each (do not copy the runlog paragraph verbatim). Each expanded check body has two labeled sub-sections:
      - **New findings** — confirmed new facts, verified reports, resolved threads this cycle. Use the `.check-findings` labeled-row table with `flag-alert` / `flag-new` / `flag-quiet` color classes.
      - **Things we're following** — active threads under investigation, speculative leads, gaps being tracked, items to check in future cycles. Same `.check-findings` table format; use `flag-quiet` for stalled threads, no class for active ones.
