@@ -2,6 +2,54 @@
 
 ---
 
+## Cycle 25 — 2026-05-14 (09:44–10:?? UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès death May 14 2026`
+2. `hantavirus France patient Bichat ECMO recovery amélioration guérie May 14 2026`
+3. `hantavirus update new case death May 14 2026 latest`
+4. `hantavirus Spain UATAN patient update May 14 2026`
+5. `hantavirus Tristan da Cunha laboratory confirmed positive May 14 2026`
+6. `hantavirus "May 14" 2026 case update France Spain death`
+7. `hantavirus US case Kornfeld Nebraska negative retesting CDC May 2026`
+8. `hantavirus France Bichat ECMO patient May 14 2026 état santé condition`
+
+### Pages fetched
+- hantacase.com France ✓ — Still May 13 update: 1 case, 0 deaths. No French death.
+- ECDC surveillance ✓ — Still May 13 14:00 data; 11 cases, 3 deaths; no new cases/deaths.
+- Wikipedia MV Hondius ✓ — Still May 13 data; French patient on ECMO; US case adjusted to "inconclusive"; ETA Rotterdam May 17 evening.
+- CERN Medical Service ✓ — May 13 reassurance for CERN staff; no CERN employees in outbreak; not relevant.
+- ABC News live ✓ — **KEY FINDING**: 9:37 PM EDT May 13 (01:37 UTC May 14) entry: Dr. Kornfeld received subsequent NEGATIVE test results, moved from isolation to quarantine unit. 4:14 PM EDT entry: CDC confirmed retesting ongoing.
+- CDC situation page ✓ — Still May 12 update; still "no confirmed US cases."
+- ABC News origin story ✓ (May 12) — Bird-watching Ushuaia theory largely dismissed; Andes Cordillera now leading theory.
+- ARCGIS dashboard ✗ — No usable data returned.
+- CNN Kornfeld article ✓ (partial) — Dr. Kornfeld named, tested NEGATIVE, moved out of biocontainment.
+- WOWT CDC statement ✓ — CDC confirms "inconclusive" classification; tested negative before arriving Omaha; retesting ongoing; results expected "within a day or so."
+
+### What these queries found
+**MAJOR FINDING (Cycle 25)**: US "confirmed" case (Dr. Kornfeld) is resolving NEGATIVE. Initial positive was pre-arrival/abroad; Nebraska Medicine retesting negative; CDC classifying as "inconclusive." Three-agency discrepancy now resolved. ALERT dispatched.
+
+**French patient**: Still alive. hantacase.com 0 deaths. ECDC no new deaths. No May 14-specific French media updates found (still returning May 13 articles).
+
+**ECDC**: Still May 13 data. 14:00 UTC update expected but not yet available at Cycle 25 time (~09:44 UTC).
+
+**Spanish patient, Tristan da Cunha, MV Hondius**: No new May 14 updates found.
+
+**Origin theory**: Bird-watching Ushuaia landfill dismissed; Andes Cordillera exposure the new leading theory (May 12 article, missed in prior cycles).
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus Kornfeld Nebraska retest result CDC confirmed negative 2026` — HIGH; final retest expected ~May 14 evening
+- `CDC hantavirus US case update May 14 2026 "no cases"` — HIGH; watch for CDC page update and case count change
+- `hantavirus France Bichat patient mort décès ECMO May 14 2026` — CRITICAL; death = 4th fatality
+- `hantavirus France patient Bichat guérie ECMO retrait amélioration mai 14 2026` — CRITICAL; recovery/weaning signal
+- `ECDC hantavirus Andes update May 14 2026` — MEDIUM; expected ~14:00 UTC; watch for count change
+- `WHO DON602 hantavirus 2026` — MEDIUM; watch for updated case count following Kornfeld resolution
+- `hantavirus Tristan da Cunha laboratory confirmed positive May 14 2026` — HIGH
+- `hantavirus Spain UATAN patient update May 14 15 2026` — MEDIUM
+- `hantavirus Radboudumc workers quarantine positive May 14 2026` — MEDIUM
+
+---
+
 ## Cycle 24 — 2026-05-14 (01:03–01:?? UTC)
 
 ### Queries run
