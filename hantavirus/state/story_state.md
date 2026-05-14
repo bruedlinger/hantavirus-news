@@ -1,11 +1,11 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-14 (Cycle 26)*
+*Last updated: 2026-05-14 (Cycle 27)*
 
 ---
 
 ## Summary
 
-An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 14, 2026 (Cycle 26, ~12:30 UTC): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **ECDC confirmed May 14 update (12:00 UTC): no new cases or deaths since May 13.** **US case (Kornfeld)**: PCR negative, serology still pending; remains in National Quarantine Unit, feels "wonderful, 100%" — case still officially "inconclusive" pending blood test results. **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of ECDC May 14 12:00 UTC data; now ~78+ hours on ECMO; no death. **No hantavirus deaths since May 2 (now 12+ days)**. **Spanish patient (UATAN)**: stable, improving trajectory. **MV Hondius**: ETA Rotterdam May 17-18 (3-4 days away). Tristan da Cunha: still probable, no lab confirmation. **No dispatch this cycle** — quiet/stable. Last alert: 2026-05-14-0944-alert.md (Cycle 25).
+An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 14, 2026 (Cycle 27, ~15:15 UTC): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **ECDC May 14 12:00 UTC: no new cases or deaths.** **US case (Kornfeld)**: PCR negative, serology still pending; in National Quarantine Unit, feels "wonderful, 100%" — still technically "inconclusive." **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of ECDC May 14 12:00 UTC; now **~100+ hours on ECMO**; no death. **No hantavirus deaths since May 2 (now 12+ days)**. **Spanish patient (UATAN)**: stable, improving. **MV Hondius**: ETA Rotterdam May 17-18 (~3 days). Oceanwide expected to announce by Friday May 15 on May 29 Iceland sailing. Kansas: 3 contacts transported to KU Health System (May 13), none positive/symptomatic. Tristan da Cunha: still probable, no lab confirmation. **No dispatch this cycle** — quiet/stable. Last alert: 2026-05-14-0944-alert.md (Cycle 25).
 
 ---
 
@@ -121,6 +121,19 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **CDC containment policy**: Passengers who opt to go home "will not fly commercial" — private or medical transport required
 - **MV Hondius ship captain**: Made statement thanking passengers/crew for "kindness, patience during challenging weeks" (post-disembarkation)
 - **Source**: CDC, WHO, NBC News, ABC News, Euronews, CBS News, NL Times, French Health Minister Rist (May 11), HHS (May 11), UKHSA (May 11), CNews/Lecornu (May 11)
+
+### Cycle 27 Findings (2026-05-14 15:13–15:?? UTC)
+
+- **French patient (Bichat ECMO) — STILL ALIVE**: No new death reports found. ECDC May 14 12:00 UTC (confirmed Cycle 26, reconfirmed this cycle via search snippets): no new deaths. French search results still returning May 12-13 articles only. ABC News live blog: no May 14 entries. Patient now **~100+ hours on ECMO** since Cycle 16 alert. Survival continues; no recovery signal found.
+- **Kornfeld (US case) — SEROLOGY STILL PENDING**: Euronews May 14 headline "cleared to leave isolation" — article content confirms this refers to the biocontainment → NQU transition already reported in Cycles 25-26. He is NOT fully released from quarantine. Blood serology tests still pending per Cycle 26 Euronews fetch. CDC situation page: still May 12, still "no confirmed US cases."
+- **WHO DON602**: Not published. DON601 (published May 13) remains most recent DON.
+- **ECDC**: No afternoon update beyond 12:00 UTC data. Still 11 cases, 3 deaths, no new cases/deaths.
+- **Kansas contacts — HOSPITALIZATION (May 13 development, new to state file)**: 3 Kansans with "high-risk" exposure (not ship passengers — contacts of someone who tested positive) transported to **University of Kansas Health System (KU Hospital, Kansas City, KS)** for precautionary observation. None have tested positive; none showing symptoms. KDHE confirmed transport on Wednesday (May 13). Source: KSHB, KCTV5. This escalates from prior "at-home monitoring" status (Cycle 22) to hospital observation.
+- **Oceanwide Expeditions — May 29 sailing decision expected by Friday May 15 (NEW THREAD)**: PBS/AP (May 13): Oceanwide expected "clarity on whether the vessel will sail and the sailing schedule by the end of this week." Specific: May 29 departure from Keflavik, Iceland for summer Arctic cruises. Ship ETA Rotterdam May 17-18 → decontamination → possible 11-day turnaround for Iceland departure. Company said Monday it "did not foresee changes to operations" but reversed course by Wednesday. Decision expected by Friday. Source: PBS/AP (May 13).
+- **Spanish patient (UATAN)**: No new May 14 afternoon updates. Last: "improved somewhat" (oxygenotherapy), no HPS progression.
+- **Tristan da Cunha**: No lab confirmation. Still probable.
+- **MV Hondius**: 27 aboard (25 crew + 2 RIVM), none showing symptoms. ETA Rotterdam May 17-18.
+- **No dispatch warranted**: Quiet cycle. No new cases, no new deaths, no clinical deteriorations. Kansas hospital observation is precautionary (no positives). Oceanwide sailing decision is business news (not clinical). No alert-tier events.
 
 ### Cycle 26 Findings (2026-05-14 12:30–12:33 UTC)
 

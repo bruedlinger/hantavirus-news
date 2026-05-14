@@ -2,6 +2,55 @@
 
 ---
 
+## Cycle 27 — 2026-05-14 (15:13–15:17 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès death May 14 2026`
+2. `hantavirus Kornfeld serology blood test result confirmed negative May 14 2026`
+3. `WHO DON602 hantavirus Andes 2026`
+4. `hantavirus update new case death May 14 2026 latest ECDC WHO afternoon`
+5. `hantavirus Kansas hospital observation transported May 14 2026 monitoring`
+6. `hantavirus France patient guérie ECMO recovery Bichat May 14 2026`
+7. `MV Hondius Rotterdam arrival approach hantavirus crew Netherlands May 2026`
+8. `hantavirus Tristan da Cunha lab confirmed positive result May 14 2026`
+9. `Oceanwide Expeditions hantavirus cruise resume operations MV Hondius May 2026`
+
+### Pages fetched
+- Euronews May 14 Kornfeld "cleared to leave isolation" ✓ — refers to biocontainment→NQU transition (already known); serology not mentioned
+- ECDC Andes outbreak page ✓ — 11 cases, 3 deaths, no new cases/deaths; 12:00 UTC May 14 data confirmed
+- ABC News live blog ✓ — Kansas 3 transported to KU Hospital; most recent entry May 13; no May 14 French patient updates
+- Wikipedia MV Hondius ✓ — still May 13 data; no new developments
+- KSHB KU Health System article ✓ — 3 Kansans in KU Hospital; none positive; none symptomatic; transport confirmed May 13
+- PBS Oceanwide resume article ✓ — operator expects clarity on May 29 sailing by "end of week" (Friday May 15)
+- CDC situation page ✓ — still May 12; still "no confirmed US cases"
+- hantacase.com ✓ — still May 13 update; 0 deaths France; no new data
+
+### What these queries found
+**French patient**: No death. No recovery. ECDC May 14 12:00 confirmed. ABC live still May 13. Patient alive on ECMO ~100+ hours.
+**Kornfeld**: Serology still pending. PCR negative. Euronews May 14 title is misleading — refers to biocontainment→NQU already known.
+**WHO DON602**: Not published.
+**Kansas**: 3 contacts (NOT ship passengers) transported to KU Health System for precautionary hospital observation on May 13. None positive, none symptomatic. May 13 development not previously in state file.
+**Oceanwide**: Expected decision by Friday May 15 on May 29 Iceland sailing. New business/operational thread.
+**MV Hondius crew**: None symptomatic. ETA Rotterdam May 17-18.
+**Tristan da Cunha**: No lab confirmation. Still probable.
+
+**Quiet cycle. No dispatch warranted.**
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat ECMO patient mort décès May 15 2026` — CRITICAL
+- `hantavirus France Bichat ECMO patient guérie recovery May 15 2026` — CRITICAL
+- `Oceanwide Expeditions May 29 sailing decision Iceland MV Hondius cruise` — HIGH; answer expected Friday May 15
+- `hantavirus Kornfeld serology antibody test result cleared released quarantine May 15 2026` — HIGH
+- `MV Hondius Rotterdam arrival May 17 18 2026 crew hantavirus decontamination` — HIGH
+- `hantavirus Kansas KU hospital observation symptoms positive May 15 2026` — HIGH
+- `CDC hantavirus situation update May 15 2026 Kornfeld case resolved` — HIGH
+- `hantavirus Tristan da Cunha lab result confirmed May 15 2026` — HIGH
+- `WHO DON602 hantavirus 2026` — MEDIUM
+- `ECDC hantavirus update May 15 2026` — MEDIUM (daily ~14:00 UTC)
+- `hantavirus Spain UATAN patient discharged recovery May 15 2026` — MEDIUM
+
+---
+
 ## Cycle 26 — 2026-05-14 (12:30–12:33 UTC)
 
 ### Queries run
