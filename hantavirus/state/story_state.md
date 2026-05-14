@@ -1,11 +1,11 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-14 (Cycle 25)*
+*Last updated: 2026-05-14 (Cycle 26)*
 
 ---
 
 ## Summary
 
-An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 14, 2026 (Cycle 25, ~09:44 UTC): **11 confirmed/probable cases, 3 deaths** (CFR ~27%; may drop to 10 if US case formally confirmed negative). **KEY UPDATE (Cycle 25)**: **US "confirmed" case resolving NEGATIVE** — Dr. Stephen Kornfeld (69, Oregon oncologist), the HHS-announced "confirmed US case" from May 11, received **subsequent NEGATIVE PCR results** at Nebraska Medicine and was moved from Biocontainment Unit to Quarantine Unit. CDC classifies as "inconclusive"; retesting results expected within ~24h of May 13 evening. Three-agency discrepancy (WHO=inconclusive, HHS=confirmed, CDC=no US cases) now effectively resolved — HHS's announcement was based on a weak preliminary positive not holding up under retesting. **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of Cycle 25 (~09:44 UTC May 14); 72+ hours on ECMO; no death May 14. hantacase.com (May 13): 0 deaths in France. **No hantavirus deaths since May 2 (now 12+ days)**. **Spanish patient (UATAN)**: oxygenotherapy showing improvement. **ECDC**: still May 13 data, no new cases/deaths. MV Hondius ETA Rotterdam May 17-18. **Origin update**: bird-watching Ushuaia landfill theory largely dismissed; leading theory now Andes Cordillera exposure during prior travel (Patagonia). Tristan da Cunha: still probable, no lab confirmation. **ALERT DISPATCHED (Cycle 25)**: 2026-05-14-0944-alert.md — US case Kornfeld tests negative.
+An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 14, 2026 (Cycle 26, ~12:30 UTC): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **ECDC confirmed May 14 update (12:00 UTC): no new cases or deaths since May 13.** **US case (Kornfeld)**: PCR negative, serology still pending; remains in National Quarantine Unit, feels "wonderful, 100%" — case still officially "inconclusive" pending blood test results. **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of ECDC May 14 12:00 UTC data; now ~78+ hours on ECMO; no death. **No hantavirus deaths since May 2 (now 12+ days)**. **Spanish patient (UATAN)**: stable, improving trajectory. **MV Hondius**: ETA Rotterdam May 17-18 (3-4 days away). Tristan da Cunha: still probable, no lab confirmation. **No dispatch this cycle** — quiet/stable. Last alert: 2026-05-14-0944-alert.md (Cycle 25).
 
 ---
 
@@ -121,6 +121,18 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **CDC containment policy**: Passengers who opt to go home "will not fly commercial" — private or medical transport required
 - **MV Hondius ship captain**: Made statement thanking passengers/crew for "kindness, patience during challenging weeks" (post-disembarkation)
 - **Source**: CDC, WHO, NBC News, ABC News, Euronews, CBS News, NL Times, French Health Minister Rist (May 11), HHS (May 11), UKHSA (May 11), CNews/Lecornu (May 11)
+
+### Cycle 26 Findings (2026-05-14 12:30–12:33 UTC)
+
+- **ECDC UPDATED TO MAY 14 (12:00 UTC)**: ECDC Andes outbreak page updated May 14, data as of 12:00 UTC. **8 confirmed + 2 probable + 1 inconclusive = 11 total. 3 deaths. "No new cases or deaths since previous update."** This is the first May 14 official institutional data point — confirms the French patient is still alive and no new cases have emerged anywhere. Source: ECDC Andes outbreak page (fetched 12:30 UTC May 14).
+- **French patient (Bichat ECMO) — STILL ALIVE**: ECDC May 14 12:00 confirms no new deaths. hantacase.com (May 13): still 0 deaths in France. No May 14 French media death reports found. ABC News live blog: most recent entry May 13 9:43 AM EDT (13:43 UTC) — no May 14 entries. Patient now **~78+ hours on ECMO** from Cycle 16 alert dispatch. Survival continues.
+- **Kornfeld (US "inconclusive" case) — SEROLOGY PENDING**: Euronews (May 14) confirms Kornfeld moved to National Quarantine Unit with 15 others. PCR negative confirmed. **Blood tests (serology/antibodies) still pending** — case will remain technically "inconclusive" until those resolve. Kornfeld told CNN he "feels wonderful, 100%." CDC transcript (May 13): one passenger initially "mildly positive" now called inconclusive; CDC not releasing exact case numbers; voluntary quarantine policy; 100+ CDC staff deployed. CDC briefing emphasized "risk to general public is low."
+- **CDC situation page**: Still May 12 update. Still "no confirmed US cases." Now factually aligned with Kornfeld PCR-negative outcome (though not formally updated to reflect this).
+- **Spanish patient (UATAN)**: No new May 14 updates. Search results reference May 13 status — stable, no HPS progression, oxygenotherapy improving.
+- **Tristan da Cunha**: No new developments. Still probable, no lab confirmation.
+- **MV Hondius**: ETA Rotterdam May 17-18. No new updates.
+- **Wikipedia**: Still showing May 13 data. Notes Kornfeld has a "third test" (serology) pending — consistent with Euronews May 14 "blood tests still pending."
+- **No dispatch warranted**: Quiet stable cycle. ECDC May 14 update confirms status-quo. French patient alive but no recovery. No new cases. No new deaths. Digest already sent today at 01:03 UTC. Alert sent at 09:44 UTC.
 
 ### Cycle 25 Findings (2026-05-14 09:44–10:?? UTC)
 

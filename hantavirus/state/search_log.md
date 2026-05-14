@@ -2,6 +2,54 @@
 
 ---
 
+## Cycle 26 — 2026-05-14 (12:30–12:33 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès death May 14 2026`
+2. `hantavirus Kornfeld Nebraska retest result CDC confirmed negative May 14 2026`
+3. `hantavirus Tristan da Cunha laboratory confirmed positive May 14 2026`
+4. `hantavirus France Bichat patient ECMO recovery guérie décès mort May 14 2026`
+5. `hantavirus update new case death May 14 2026 latest ECDC WHO`
+6. `hantavirus Spain UATAN patient update recovery May 14 2026`
+7. `CDC hantavirus update May 14 2026 US case Kornfeld cleared released`
+8. `ECDC hantavirus Andes cruise ship update May 14 2026 case count`
+
+### Pages fetched
+- Euronews May 14 Kornfeld article ✓ — Kornfeld in NQU, PCR negative, blood tests pending, feels wonderful
+- ECDC Andes outbreak page ✓ — **UPDATED MAY 14 12:00 UTC**: 11 cases, 3 deaths, no new cases/deaths
+- hantacase.com France ✓ — still May 13: 1 case, 0 deaths; no French death
+- CDC situation page ✓ — still May 12; still "no confirmed US cases" (now factually accurate)
+- CDC transcript (May 13) ✓ — Dr. Fitter briefing; voluntary quarantine; 100+ staff deployed; no exact numbers
+- ABC News live blog ✓ — most recent entry May 13 9:43 AM EDT; no May 14 entries
+- Wikipedia MV Hondius ✓ — still May 13; serology pending for Kornfeld; ETA Rotterdam May 17
+- ECDC hantavirus-infection main page ✓ — links to Andes outbreak; Week 20 CDTR published
+- ECDC URL 404 ✓ — alternative ECDC URL 404 as expected
+
+### What these queries found
+**ECDC UPDATED TO MAY 14**: Data as of 12:00 UTC. 11 cases (8+2+1), 3 deaths. "No new cases or deaths." First official May 14 data point — confirms French patient alive and no new developments.
+
+**Kornfeld**: PCR negative. Blood tests (serology) still pending — case technically remains "inconclusive" until those resolve. Now in NQU. Feels "wonderful, 100%."
+
+**French patient**: Still alive. ECDC May 14 confirms 0 new deaths. No French media death reports. ABC News live still May 13.
+
+**Spanish patient, Tristan da Cunha, MV Hondius, Radboudumc**: No new May 14 updates found.
+
+**Quiet, stable cycle. No dispatch warranted.**
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient ECMO mort décès May 14 15 2026` — CRITICAL; death = 4th fatality
+- `hantavirus France Bichat patient guérie ECMO retrait recovery May 15 2026` — CRITICAL; recovery = major positive development
+- `hantavirus Kornfeld blood test serology result confirmed negative May 15 2026` — HIGH; final case resolution
+- `CDC hantavirus situation update May 14 15 2026 US case resolved` — HIGH; watch for CDC page update
+- `hantavirus Tristan da Cunha laboratory confirmed positive May 15 2026` — HIGH
+- `MV Hondius Rotterdam arrival hantavirus crew Netherlands May 17 18 2026` — HIGH (3 days out)
+- `hantavirus Spain UATAN patient update May 15 2026` — MEDIUM
+- `ECDC hantavirus update May 15 2026` — MEDIUM; daily ~14:00 UTC
+- `WHO DON602 hantavirus 2026` — MEDIUM; watch for next DON
+- `hantavirus Radboudumc workers quarantine positive test May 15 2026` — MEDIUM
+
+---
+
 ## Cycle 25 — 2026-05-14 (09:44–10:?? UTC)
 
 ### Queries run
