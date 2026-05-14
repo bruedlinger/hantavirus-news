@@ -2,6 +2,58 @@
 
 ---
 
+## Cycle 28 — 2026-05-14 (19:38–19:40 UTC)
+
+### Queries run
+1. `hantavirus France Bichat ECMO patient death mort décès May 14 2026`
+2. `Oceanwide Expeditions hantavirus May 29 sailing Iceland MV Hondius decision 2026`
+3. `hantavirus Kornfeld serology antibody blood test result cleared May 14 2026`
+4. `hantavirus update new case death May 14 15 2026 evening ECDC WHO latest`
+5. `hantavirus France patient Bichat guérie recovery ECMO retrait May 14 2026`
+6. `MV Hondius Rotterdam arrival schedule hantavirus decontamination May 17 18 2026`
+7. `hantavirus Kansas KU hospital contacts symptoms positive May 14 2026`
+8. `hantavirus Tristan da Cunha laboratory confirmed result May 14 2026`
+9. `hantavirus cruise ship new case evening May 14 2026 latest developments`
+
+### Pages fetched
+- ECDC Andes outbreak page ✓ — confirmed 12:00 UTC update; 11 cases, 3 deaths; no new cases/deaths (once daily update only)
+- hantacase.com ✓ — still May 13 data; 0 deaths in France; page last updated May 13
+- Wikipedia MV Hondius ✓ — still May 13 data; no new May 14 updates
+- WHO DON602 ✓ — 404; not yet published
+- ABC News live blog ✗ — 404 (page moved/expired)
+- ABC7 live updates ✓ — NEW entry ~17:04 UTC May 14: North Dakota 5 individuals; 23 total across 11 states
+- Oceanwide Expeditions press page ✓ — last update May 4; no new statement on May 29 sailing
+- KWCH Kansas May 14 article ✓ — video only; no new clinical info on Kansas 3
+- CIDRAP article ✓ — general 11-case summary; no new developments beyond May 14 morning
+
+### What these queries found
+**French patient**: No death. No recovery. ECDC 12:00 UTC holds as only May 14 data point. ~125+ hours on ECMO. All evening search results still referencing May 12-13 articles.
+**Kornfeld**: Serology still pending. PCR negative confirmed. No change.
+**Oceanwide sailing**: No announcement. Decision still expected "by end of week" (Friday May 15).
+**US monitoring**: **NEW** — ABC7 entry ~17:04 UTC: North Dakota (5 individuals) now confirmed; total 23 people / 11 state health departments. No symptoms anywhere.
+**Kansas 3**: No new clinical updates.
+**MV Hondius**: Still en route Rotterdam. No new updates.
+**Tristan da Cunha**: Still probable. No lab confirmation.
+**WHO DON602**: Still 404.
+**ECDC**: Once-daily update confirmed (12:00 UTC). No evening update expected.
+
+**Quiet evening cycle. No dispatch warranted.**
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat ECMO patient mort décès recovery guérie May 15 2026` — CRITICAL
+- `Oceanwide Expeditions MV Hondius May 29 Iceland sailing cancelled resumed decision May 15 2026` — HIGH; answer likely Friday
+- `hantavirus Kornfeld serology antibody result released cleared quarantine May 15 2026` — HIGH
+- `MV Hondius Rotterdam arrival May 17 18 2026 crew quarantine disembark` — HIGH (2-3 days out)
+- `hantavirus Kansas KU hospital contacts May 15 symptoms positive` — HIGH
+- `CDC hantavirus situation update May 15 2026` — HIGH (may update with expanded monitoring count)
+- `ECDC hantavirus Andes update May 15 2026` — MEDIUM (daily ~14:00 UTC)
+- `hantavirus Tristan da Cunha laboratory result confirmed May 15 2026` — HIGH
+- `WHO DON602 hantavirus 2026` — MEDIUM
+- `hantavirus Spain UATAN patient recovery discharged May 15 2026` — MEDIUM
+- `hantavirus North Dakota monitoring 5 individuals 11 states 23 people May 2026` — MEDIUM; verify if this expands further
+
+---
+
 ## Cycle 27 — 2026-05-14 (15:13–15:17 UTC)
 
 ### Queries run
