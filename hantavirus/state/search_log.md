@@ -2,6 +2,50 @@
 
 ---
 
+## Cycle 29 — 2026-05-14 (22:02–22:06 UTC)
+
+### Queries run
+1. `hantavirus France Bichat ECMO patient mort décès death May 14 15 2026`
+2. `hantavirus Kornfeld serology antibody result cleared quarantine May 14 2026`
+3. `Oceanwide Expeditions MV Hondius May 29 Iceland sailing cancelled decision May 14 15 2026`
+4. `hantavirus update new case death May 14 15 2026 evening latest WHO ECDC`
+5. `hantavirus "41 people" OR "41 Americans" CDC monitoring May 14 2026`
+6. `hantavirus Kornfeld "quarantine unit" OR "NQU" OR "released" OR "serology" May 14 2026`
+
+### Pages fetched
+- ABC7 live blog ✓ — NEW entry ~20:00 UTC: "41 people under monitoring, CDC says"; breakdown: 16 Nebraska + 2 Atlanta + 7 early-disembark + 16 travel contacts; "no Americans positive"
+- Nebraska Medicine quarantine updates ✓ — May 13 last update; all 16 in NQU; no serology result published
+- ECDC Andes outbreak page ✓ — still May 14 12:00 UTC; 11 cases, 3 deaths; no new cases/deaths; no evening update
+- hantacase.com ✓ — still May 13 data; 0 deaths in France
+- WHO DON602 ✗ — 404; not published
+- KNOE Kornfeld article ✓ — confirms biocontainment→NQU move (already known from Cycle 25); serology not mentioned; NOT a full quarantine release
+- Wikipedia ✓ — still May 13 data; no new developments
+- Columbia article ✗ — 403
+
+### What these queries found
+**French patient**: No death. No recovery. All searches return May 12-13 articles. ~130+ hours on ECMO. ECDC confirms no change.
+**Kornfeld**: Serology still pending. All "cleared" headlines refer to biocontainment→NQU move (already known Cycle 25). NOT a full release.
+**Oceanwide sailing**: No announcement. Still "by end of week" (Friday May 15). No update found.
+**CDC "41" statement (NEW, ~20:00 UTC)**: CDC consolidated count = 18 facility-based + 23 state-monitored = 41 total. "No US cases." NOT a new monitoring surge.
+**WHO DON602**: Still 404.
+**ECDC**: No evening update (once-daily policy).
+
+**Quiet evening cycle. No dispatch warranted.**
+
+### What to search next cycle (do NOT repeat for 24h unless critical)
+- `hantavirus France Bichat patient mort décès ECMO May 15 2026` — CRITICAL (always)
+- `hantavirus Kornfeld serology blood test result negative cleared May 15 2026` — HIGH (overdue)
+- `Oceanwide Expeditions MV Hondius May 29 Iceland sailing decision Friday May 15 2026` — HIGH (expected today)
+- `MV Hondius Rotterdam arrival Netherlands crew quarantine May 17 18 2026` — HIGH (2-3 days out)
+- `WHO DON602 hantavirus 2026` — MEDIUM
+- `ECDC hantavirus Andes update May 15 2026` — MEDIUM (daily ~14:00 UTC)
+- `hantavirus Tristan da Cunha confirmed positive laboratory result May 15 2026` — HIGH
+- `hantavirus Kansas KU hospital contacts symptoms positive May 15 2026` — MEDIUM
+- `hantavirus Spain UATAN patient recovery discharged May 15 2026` — MEDIUM
+- `hantavirus CDC situation page update May 15 2026` — MEDIUM (may reflect "no US cases" formal update)
+
+---
+
 ## Cycle 28 — 2026-05-14 (19:38–19:40 UTC)
 
 ### Queries run

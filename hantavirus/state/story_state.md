@@ -1,11 +1,11 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-14 (Cycle 28)*
+*Last updated: 2026-05-14 (Cycle 29)*
 
 ---
 
 ## Summary
 
-An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 14, 2026 (Cycle 28, ~19:40 UTC): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **ECDC May 14 12:00 UTC: no new cases or deaths (only update today).** **US case (Kornfeld)**: PCR negative, serology still pending; in National Quarantine Unit, feels "wonderful, 100%" — still technically "inconclusive." **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of ECDC May 14 12:00 UTC; now **~125+ hours on ECMO**; no death. **No hantavirus deaths since May 2 (now 12+ days)**. **Spanish patient (UATAN)**: stable, improving. **MV Hondius**: ETA Rotterdam May 17-18 (~2-3 days). Oceanwide sailing decision (May 29 Iceland) still pending; expected "end of week" (Friday May 15). Kansas: 3 contacts at KU Health System, no positives/symptoms. **US monitoring: 23 people across 11 state health departments (new: North Dakota 5 individuals, from ABC7 ~17:04 UTC).** Tristan da Cunha: still probable, no lab confirmation. WHO DON602: not published. **No dispatch this cycle** — quiet evening; no new cases/deaths. Last alert: 2026-05-14-0944-alert.md (Cycle 25).
+An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius, a Dutch-flagged expedition cruise ship operated by Oceanwide Expeditions. As of May 14, 2026 (Cycle 29, ~22:06 UTC): **11 confirmed/probable cases, 3 deaths** (CFR ~27%). **ECDC May 14 12:00 UTC: no new cases or deaths (only update today).** **US monitoring (CDC statement ~20:00 UTC)**: 41 people total — 16 Nebraska NQU + 2 Atlanta + 7 early-disembark ship passengers + 16 travel/flight contacts; "no US hantavirus cases." **Kornfeld**: PCR negative, serology still pending; in NQU with 15 others. **CRITICAL (ongoing from Cycle 16)**: French patient at Bichat Hospital (Paris) on **ECMO** — still alive as of ~22:06 UTC; now **~130+ hours on ECMO**; no death. **No hantavirus deaths since May 2 (now 12+ days)**. **Spanish patient (UATAN)**: stable, improving. **MV Hondius**: ETA Rotterdam May 17-18. Oceanwide sailing decision (May 29 Iceland) still pending; expected "end of week" (Friday May 15). Kansas: 3 contacts at KU Health System, no positives/symptoms. Tristan da Cunha: still probable, no lab confirmation. WHO DON602: still 404. **No dispatch this cycle** — quiet evening; CDC's "41" is a reframing of known data; no new cases/deaths. Last alert: 2026-05-14-0944-alert.md (Cycle 25).
 
 ---
 
@@ -121,6 +121,19 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **CDC containment policy**: Passengers who opt to go home "will not fly commercial" — private or medical transport required
 - **MV Hondius ship captain**: Made statement thanking passengers/crew for "kindness, patience during challenging weeks" (post-disembarkation)
 - **Source**: CDC, WHO, NBC News, ABC News, Euronews, CBS News, NL Times, French Health Minister Rist (May 11), HHS (May 11), UKHSA (May 11), CNews/Lecornu (May 11)
+
+### Cycle 29 Findings (2026-05-14 22:02–22:06 UTC)
+
+- **French patient (Bichat ECMO) — STILL ALIVE**: No death found in any source. All search results for French patient still returning May 12-13 articles. No French-language evening death reports indexed. ECDC May 14 12:00 UTC remains the sole official daily data point (no evening update). hantacase.com still May 13 data (0 deaths in France). Patient now **~130+ hours on ECMO** from Cycle 16 alert dispatch. No recovery signal.
+- **CDC comprehensive monitoring count (NEW — ~20:00 UTC May 14)**: CDC formally released a comprehensive breakdown of 41 people under US monitoring: **(1)** 16 at Nebraska NQU (ship repatriated), **(2)** 2 at Atlanta Emory (ship repatriated), **(3)** 7 former ship passengers who left before outbreak declared, **(4)** 16 people exposed during travel including on flights. CDC statement: "no US hantavirus cases." ABC7 live updated headline to "41 people under monitoring" at ~20:00 UTC. **Assessment**: This is NOT a monitoring surge. The 41 = 18 facility-based (already tracked) + 23 state-monitored (already tracked in Cycle 28). CDC is providing for the first time a single consolidated count across all four categories. The "7 early-disembark ship passengers" is new specific detail (previously lumped into general state monitoring). Source: ABC7 live blog ~20:00 UTC entry; CNBC headline "CDC says no US hantavirus cases, 41 people being monitored" (May 14).
+- **Kornfeld serology**: Still pending. Nebraska Medicine page (last updated May 13): all 16 in NQU, none symptomatic, no serology result published. No change.
+- **WHO DON602**: Still 404. Not published.
+- **ECDC**: No update beyond May 14 12:00 UTC. Once-daily policy confirmed.
+- **Oceanwide May 29 sailing decision**: No announcement found. Still expected "by end of week" (Friday May 15).
+- **MV Hondius**: Still en route Rotterdam. ETA May 17-18. No new developments.
+- **Kansas 3 (KU Hospital)**: No new updates.
+- **Tristan da Cunha**: Still probable. No lab confirmation.
+- **No dispatch warranted**: Quiet late-evening cycle. CDC's "41" is a reframing of already-known monitoring data. No new confirmed cases, no new deaths, no clinical deteriorations. Digest and alert already sent today.
 
 ### Cycle 28 Findings (2026-05-14 19:38–19:40 UTC)
 
