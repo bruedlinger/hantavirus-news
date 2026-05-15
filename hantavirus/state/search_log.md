@@ -1411,3 +1411,34 @@ One new development: **symptomatic second American expected to be transferred to
 - `MV Hondius Rotterdam arrival decontamination crew RIVM May 18 2026` — MEDIUM
 - `WHO DON602 hantavirus 2026` — LOW; 32 cycles missing
 - `hantavirus Spain Gomez Ulla final PCR result May 15 2026` — LOW
+
+## Cycle 33 — 2026-05-15 (16:38–16:50 UTC)
+
+### Queries run
+1. `Oceanwide Expeditions May 29 Iceland sailing cancelled announced 2026`
+2. `hantavirus France Bichat patient ECMO mort décès mai 15 2026`
+3. `hantavirus new case death update May 15 2026`
+4. `Kornfeld hantavirus serology antibody result cleared Nebraska May 15 2026`
+5. `hantavirus second American mild symptoms biocontainment Nebraska update May 2026`
+6. `hantavirus US monitoring 16 states CDC May 15 2026`
+7. `WHO DON602 hantavirus outbreak news May 2026`
+8. `Tristan da Cunha hantavirus lab confirmed test result May 2026`
+
+### Pages fetched
+- ABC News Kornfeld serology article ✓ — NEGATIVE confirmed; Dr. Hewlett: "likely false positive"; Kornfeld: "It's nice to be negative for hantavirus"
+- Oceanwide press page ✓ — most recent update May 13; no May 29 announcement; 13 May updates total
+- hantavirus.one ✓ — still 11/3; Kornfeld still "inconclusive" (tracker not yet updated); Australia noted; both Emory patients negative
+
+### What these queries found
+**Kornfeld serology CONFIRMED NEGATIVE — US now has 0 hantavirus cases.** Dr. Angela Hewlett (Nebraska biocontainment director): serology showed "no evidence" of infection; "likely false positive." CDC officially says "no US hantavirus cases" (May 14 statement). Second American at Emory also negative. US monitoring: 41 people across "at least 16 states" (up from 11). Oceanwide May 29 decision: STILL NO ANNOUNCEMENT (press page last updated May 13). French patient: still alive. WHO DON602: still 404 (33rd cycle). Tristan da Cunha: still probable, no lab confirmation.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `Oceanwide Expeditions May 29 Iceland sailing decision Saturday update 2026` — HIGH; decision overdue
+- `hantavirus France Bichat patient ECMO mort décès mai 16 2026` — HIGH; overnight death check
+- `hantavirus new case May 16 2026` — HIGH; routine check
+- `ECDC hantavirus update May 16 2026` — HIGH; daily update expected ~14:00 UTC tomorrow
+- `Kornfeld serology ECDC update inconclusive case resolution 2026` — MEDIUM; ECDC may drop from 11 to 10
+- `MV Hondius Rotterdam arrival decontamination May 18 2026` — MEDIUM; arrival Monday
+- `WHO DON602 hantavirus 2026` — MEDIUM; 33 cycles missing
+- `hantavirus Australia Bullsbrook quarantine New Zealand update May 16 2026` — LOW
+- `hantavirus Spain Gomez Ulla final PCR May 2026` — LOW
