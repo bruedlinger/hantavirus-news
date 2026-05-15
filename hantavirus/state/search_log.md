@@ -1337,3 +1337,41 @@ One new development: **symptomatic second American expected to be transferred to
 - `hantavirus Tristan da Cunha confirmed lab May 15 2026` — MEDIUM
 - `hantavirus new case death May 15 2026` — HIGH; daily check
 - `hantavirus Spain Gomez Ulla final PCR result confirmed May 15 2026` — MEDIUM; Spanish patient final status
+
+---
+
+## Cycle 31 — 2026-05-15 (09:48–10:?? UTC) — First run of new UTC day
+
+### Queries run
+1. `hantavirus France Bichat ECMO patient death update May 15 2026`
+2. `WHO DON602 hantavirus disease outbreak news 2026`
+3. `hantavirus new case death May 15 2026`
+4. `Oceanwide Expeditions May 29 sailing cancelled announcement 2026`
+5. `Scotland hantavirus linked cruise ship 2026`
+6. `Kornfeld hantavirus serology result Nebraska May 15 2026`
+7. `ECDC hantavirus Andes outbreak update May 15 2026`
+8. `hantavirus Spain Gomez Ulla final PCR result May 15 2026`
+9. `hantavirus France patient Bichat mort décès ECMO mai 15 2026`
+10. `MV Hondius Rotterdam ship arrival May 2026 AIS tracking`
+
+### Pages fetched
+- Euronews Kornfeld clearance ✓ — serology unconfirmed; NQU transition; "wonderful"
+- GB News Scotland ✓ — PHS monitoring small number; CVR Glasgow 20 samples; no confirmed Scottish cases
+- hantavirus.one ✓ — 23:45 UTC May 14 data: 11/3; blood tests still pending; no overnight updates
+- ECDC outbreak page ✓ — still May 14 12:00 UTC; 11 cases, 3 deaths; May 15 update not yet published (~14:00 UTC expected)
+- Euronews French contacts ✓ — ALL 26 French contacts negative; Minister Rist May 14 X post; remain hospitalized 3x/week testing
+- hantacase.com France ✓ — 1 case, 0 deaths; last updated May 13; patient still alive
+- WHO DON602 ✗ — still 404 (31st consecutive cycle)
+
+### What these queries found
+**First run of May 15 UTC day — quiet overnight with one notable new finding.** French patient still alive on ECMO (~155+ hours). No death reports anywhere. Most important new fact: **All 26 French contact cases test negative** (Minister Rist, May 14 via X) — updated count from 22 to 26 (includes 4/5 MV Hondius passengers). Scotland: PHS monitoring "small number"; CVR Glasgow tested 20 samples; no confirmed Scottish cases. WHO DON602 still 404. ECDC still May 14 12:00 UTC data. Kornfeld serology still pending. MV Hondius ETA Rotterdam May 18 05:00 CET confirmed by AIS. Oceanwide May 29 decision expected today (Fri May 15). DIGEST produced.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `ECDC hantavirus update May 15 14:00 UTC 2026` — HIGH; check after 14:00 UTC
+- `Oceanwide Expeditions May 29 Iceland sailing cancelled confirmed 2026` — HIGH; decision expected today
+- `hantavirus France Bichat patient ECMO recovery death May 15 16 2026` — HIGH
+- `Kornfeld serology antibody negative result cleared May 15 2026` — MEDIUM
+- `MV Hondius Rotterdam arrival decontamination May 18 2026` — MEDIUM
+- `WHO DON602 hantavirus 2026` — MEDIUM; may publish today
+- `hantavirus Scotland confirmed case Public Health Scotland May 15 2026` — MEDIUM; new thread
+- `hantavirus Spain Gomez Ulla final PCR confirmed 2026` — MEDIUM
