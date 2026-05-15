@@ -1442,3 +1442,35 @@ One new development: **symptomatic second American expected to be transferred to
 - `WHO DON602 hantavirus 2026` — MEDIUM; 33 cycles missing
 - `hantavirus Australia Bullsbrook quarantine New Zealand update May 16 2026` — LOW
 - `hantavirus Spain Gomez Ulla final PCR May 2026` — LOW
+
+## Cycle 34 — 2026-05-15 (19:12–19:20 UTC)
+
+### Queries run
+1. `Oceanwide Expeditions May 29 Iceland sailing cancelled announcement May 15 2026`
+2. `hantavirus France Bichat patient ECMO mort décès mai 15 16 2026`
+3. `hantavirus new case death update May 15 2026`
+4. `hantavirus Argentina rodent genomic sequencing Ushuaia Chile result May 2026`
+5. `Oceanwide Expeditions May 29 Iceland Hondius hantavirus sailing decision Friday 2026`
+6. `hantavirus MV Hondius update May 15 evening 2026 Oceanwide sailing`
+
+### Pages fetched
+- ECDC Andes outbreak page ✓ — May 15 14:00 UTC: 11/3, no new cases/deaths (already in Cycle 32)
+- Oceanwide press page ✓ — still May 13 most recent; no May 29 announcement
+- Virological.org preprint ✓ — same as Cycle 22 tracking; no Chilean Aysén data; single spillover confirmed
+- hantacase.com/france ✓ — still May 13, 0 French deaths
+- Wikipedia MV Hondius ✓ — still May 13 data; no changes
+- CDC Newsroom ✓ — old (May 8); response logistics only, no new guidance
+- ABC7 live blog ✓ — last entry 14:52 UTC (Kornfeld false positive); no evening entries
+
+### What these queries found
+**Quiet Friday evening cycle.** No new cases, no new deaths. French patient still alive (~190+ hours on ECMO). Oceanwide May 29 decision is OVERDUE — promised "by end of week" but it's now 21:15 CET Friday with no announcement; likely slipped to after Rotterdam arrival (May 18). Expert quoted: "outbreak is on the end of its run right now." Argentine rodent genomic sequencing still pending (~4 weeks). ISP Chile deposited 14 Aysén genomes from 2026 cluster — potentially relevant to origin dispute. No dispatch warranted.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `Oceanwide Expeditions May 29 Iceland sailing cancelled postponed announcement 2026` — HIGH; overdue
+- `hantavirus France Bichat patient ECMO mort décès mai 16 2026` — HIGH; overnight check
+- `MV Hondius Rotterdam arrival decontamination RIVM May 18 2026` — HIGH; arrival Monday
+- `hantavirus new case death May 16 2026` — HIGH; routine check
+- `ECDC hantavirus update May 16 2026` — HIGH; daily update ~14:00 UTC
+- `hantavirus Argentina Aysén ISP Chile genomic sequencing cruise ship origin 2026` — MEDIUM; origin dispute
+- `WHO DON602 hantavirus 2026` — MEDIUM; 34th cycle missing
+- `hantavirus Australia Bullsbrook quarantine New Zealand update May 16 2026` — LOW

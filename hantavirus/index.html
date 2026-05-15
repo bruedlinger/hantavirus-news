@@ -114,12 +114,6 @@
     color: var(--muted);
   }
 
-  summary .subline {
-    font-size: 11px;
-    color: var(--muted);
-    font-style: italic;
-  }
-
   .dispatch-alert {
     border: 1px solid var(--alert-border);
     background: var(--alert-bg);
@@ -287,7 +281,7 @@
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: 14px 16px;
-    margin-bottom: 8px;
+    margin-bottom: 32px;
     display: flex;
     flex-wrap: wrap;
     gap: 4px 0;
@@ -312,12 +306,11 @@
 </header>
 
 <div class="story-status">
-  <div class="stat">11 cases <span>(8 confirmed + 2 probable + 1 inconclusive*)</span></div>
-  <div class="stat">3 deaths <span>(no new deaths since May 2)</span></div>
-  <div class="stat">5 countries <span>with post-disembarkation cases</span></div>
-  <div class="stat">Last checked <span>4:50 PM UTC</span></div>
+  <div class="stat">10 cases <span>(8 confirmed + 2 probable; ECDC shows 11 pending Kornfeld correction)</span></div>
+  <div class="stat">3 deaths <span>(Dutch &times;2, German &times;1 &mdash; all aboard or shortly after)</span></div>
+  <div class="stat">6 countries <span>with post-disembarkation cases</span></div>
+  <div class="stat">Last checked <span>7:18 PM UTC</span></div>
 </div>
-<p style="color: var(--muted); font-size: 11px; margin-bottom: 32px; padding-left: 2px;">* US &ldquo;inconclusive&rdquo; case (Kornfeld) now confirmed serology-negative &mdash; CDC says &ldquo;no US hantavirus cases.&rdquo; ECDC count pending update.</p>
 
 <section id="dispatches">
   <h2>Today's Alerts &mdash; May 15, 2026</h2>
@@ -327,182 +320,201 @@
 <section id="checks">
   <h2>News Checks &mdash; May 15, 2026</h2>
 
-  <!-- Cycle 33 — most recent -->
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">Kornfeld serology confirmed negative; CDC declares no US hantavirus cases; Oceanwide May 29 sailing decision still missing</span>
+        <span class="headline">Quiet Friday evening &mdash; Oceanwide sailing decision overdue; expert says outbreak on its end; no new cases</span>
+        <span class="timestamp">7:18 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; quiet cycle; Oceanwide silence below alert threshold; no clinical events
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Oceanwide/May 29</span>
+          <span class="fi-value"><strong>OVERDUE.</strong> No announcement as of 21:15 CET Friday &mdash; past European business hours. Decision was promised "by end of this week." Likely slipped to next week, pending Rotterdam arrival May 18 and RIVM/port health clearance.</span>
+        </li>
+        <li>
+          <span class="fi-label">Origin / Chile</span>
+          <span class="fi-value flag-new"><strong>New thread:</strong> ISP Chile deposited 14 Andes virus genomes from a 2026 Ays&eacute;n cluster. Comparison with cruise ship sequences not yet done &mdash; potentially important for the Ushuaia vs. Chile origin dispute.</span>
+        </li>
+        <li>
+          <span class="fi-label">Expert / trajectory</span>
+          <span class="fi-value flag-new">Infectious disease expert: <strong>"the hantavirus outbreak aboard the MV Hondius is on the end of its run right now."</strong></span>
+        </li>
+        <li>
+          <span class="fi-label">Rodent seqs.</span>
+          <span class="fi-value flag-quiet">Argentine fieldwork still planned; results expected ~4 weeks from mid-May. No genomic comparison yet.</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">France / Bichat</span>
+          <span class="fi-value flag-quiet">~190+ hours on ECMO; alive, no death signal in any source; hantacase.com last updated May 13.</span>
+        </li>
+        <li>
+          <span class="fi-label">MV Hondius</span>
+          <span class="fi-value flag-quiet">En route Rotterdam; ETA May 18 ~05:00 CET. 25 crew + 2 RIVM aboard, none symptomatic.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON602</span>
+          <span class="fi-value flag-quiet">Still 404. 34th consecutive cycle without publication.</span>
+        </li>
+        <li>
+          <span class="fi-label">Tristan da Cunha</span>
+          <span class="fi-value flag-quiet">Still probable, no lab confirmation. No updates this cycle.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Kornfeld serology confirmed false positive &mdash; CDC now says zero US hantavirus cases</span>
         <span class="timestamp">4:42 PM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note quiet">
         <span class="note-icon">&mdash;</span>
-        No dispatch &mdash; Kornfeld false-positive resolution was expected (always &ldquo;inconclusive&rdquo;); no new clinical events
+        No dispatch &mdash; expected resolution; CDC "no US cases" framing already in place since May 14
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
           <span class="fi-label">USA / Kornfeld</span>
-          <span class="fi-value flag-new"><strong>Serology NEGATIVE confirmed.</strong> Dr. Angela Hewlett (Nebraska biocontainment): &ldquo;We didn&rsquo;t see any evidence of that and so it looks like he has not had this illness at all thus far&rdquo; &mdash; &ldquo;I suspect the initial test was a false positive.&rdquo; Kornfeld: &ldquo;It&rsquo;s nice to be negative for hantavirus.&rdquo; Source: ABC News.</span>
+          <span class="fi-value flag-new"><strong>Serology CONFIRMED NEGATIVE.</strong> Dr. Hewlett (Nebraska biocontainment): "We didn&rsquo;t see any evidence&hellip;looks like he has not had this illness at all thus far. I suspect the initial test was a false positive." Kornfeld: "It&rsquo;s nice to be negative for hantavirus." US: <strong>0 confirmed cases.</strong></span>
         </li>
         <li>
-          <span class="fi-label">USA / CDC</span>
-          <span class="fi-value flag-new"><strong>CDC officially: &ldquo;no US hantavirus cases.&rdquo;</strong> May 14 statement. Both Emory Atlanta patients also confirmed negative. 0 US cases at any level.</span>
+          <span class="fi-label">USA / Emory</span>
+          <span class="fi-value flag-new">Both Emory Atlanta patients also confirmed negative. Zero US cases at any level.</span>
         </li>
         <li>
-          <span class="fi-label">USA / monitoring</span>
-          <span class="fi-value flag-new"><strong>41 people across at least 16 states</strong> monitored (up from 11 states). Monitoring expansion only &mdash; no new exposures; none symptomatic. CDC May 14.</span>
-        </li>
-        <li>
-          <span class="fi-label">France / Bichat</span>
-          <span class="fi-value flag-quiet">Still alive on ECMO. hantavirus.one still 11/3. ~186+ hours on ECMO. No death. No recovery signal.</span>
-        </li>
-        <li>
-          <span class="fi-label">Oceanwide / May 29</span>
-          <span class="fi-value flag-quiet">Still no announcement. Press page last updated May 13. Decision was expected &ldquo;by end of this week&rdquo; (Friday May 15) &mdash; now early Friday evening CET.</span>
+          <span class="fi-label">US monitoring</span>
+          <span class="fi-value flag-new">CDC: 41 people across <strong>at least 16 states</strong> being monitored (up from 11 states). Expanded count reflects better enumeration, not new exposures.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">Oceanwide / May 29</span>
-          <span class="fi-value">Iceland sailing decision now overdue. MV Hondius ETA Rotterdam May 18 (Monday); 11-day turnaround to May 29 departure. Decision may slip to weekend announcement.</span>
-        </li>
-        <li>
           <span class="fi-label">France / Bichat</span>
-          <span class="fi-value">~186+ hours on ECMO. Each additional day slightly improves prognosis. Death remains alert threshold.</span>
+          <span class="fi-value flag-quiet">~186+ hours on ECMO; alive; no death in any source.</span>
         </li>
         <li>
-          <span class="fi-label">WHO DON602</span>
-          <span class="fi-value flag-quiet">Still 404 (33rd consecutive cycle). No sign of imminent publication.</span>
+          <span class="fi-label">Oceanwide/May 29</span>
+          <span class="fi-value flag-quiet">Press page last updated May 13; no announcement; expected by end of Friday.</span>
         </li>
         <li>
-          <span class="fi-label">Tristan da Cunha</span>
-          <span class="fi-value flag-quiet">Still probable, no lab confirmation. Patient &ldquo;stable&rdquo; per May 11 airdrop report. No update.</span>
-        </li>
-        <li>
-          <span class="fi-label">MV Hondius</span>
-          <span class="fi-value">ETA Rotterdam May 18 ~05:00 CET. RIVM PCR testing on arrival + after 1 week quarantine. 25 crew + 2 RIVM; all asymptomatic.</span>
+          <span class="fi-label">ECDC</span>
+          <span class="fi-value flag-quiet">Still shows Kornfeld as "inconclusive" (11 cases); correction expected on next daily update.</span>
         </li>
       </ul>
     </div>
   </details>
 
-  <!-- Cycle 32 -->
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">ECDC May 15 confirms no new cases; Australia/NZ passengers begin Perth quarantine; Scientific American challenges outbreak origin</span>
+        <span class="headline">ECDC May 15 confirmed no new cases; Australia/New Zealand join quarantine; origin theory challenged by experts</span>
         <span class="timestamp">2:20 PM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note quiet">
         <span class="note-icon">&mdash;</span>
-        No dispatch &mdash; ECDC confirmed status quo; Australia quarantine precautionary (all negative); origin debate is scientific, not operational
+        No dispatch &mdash; Australia quarantine precautionary (all negative); origin debate scientific, not operational
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">ECDC May 15</span>
-          <span class="fi-value flag-new"><strong>Updated 14:00 UTC:</strong> 11 cases, 3 deaths. &ldquo;No new cases or deaths since previous update.&rdquo; French patient still alive. First official May 15 data point.</span>
+          <span class="fi-label">ECDC / May 15</span>
+          <span class="fi-value flag-quiet">14:00 UTC update: 11 cases (8+2+1), 3 deaths. "No new cases or deaths since previous update."</span>
         </li>
         <li>
           <span class="fi-label">Australia / NZ</span>
-          <span class="fi-value flag-new"><strong>New jurisdiction:</strong> 5 Australians + 1 New Zealander arrived RAAF Base Pearce (Perth) May 15. 3-week minimum quarantine at Bullsbrook facility. All tested negative pre-departure. Health Minister Butler: &ldquo;stronger approach to quarantine arrangements.&rdquo;</span>
+          <span class="fi-value flag-new"><strong>New jurisdiction.</strong> 5 Australians + 1 NZ citizen at RAAF Base Pearce, Perth. 3-week quarantine at Bullsbrook (Centre for National Resilience). All tested negative; none symptomatic. Minister Butler: "stronger approach to quarantine."</span>
         </li>
         <li>
-          <span class="fi-label">Origin theory</span>
-          <span class="fi-value flag-new"><strong>Scientific American:</strong> Named experts dispute birdwatching/landfill hypothesis. Juan Petrina (Tierra del Fuego epi director): &ldquo;there has never been a recorded hantavirus case in Tierra del Fuego province.&rdquo; Chile exposure during 4-month trip proposed as alternative.</span>
+          <span class="fi-label">Origin dispute</span>
+          <span class="fi-value flag-new"><em>Scientific American:</em> Tierra del Fuego epi director: <strong>"there has never been a recorded hantavirus case in Tierra del Fuego province."</strong> Multiple experts propose Chile alternative; dispute Ushuaia/landfill theory.</span>
         </li>
         <li>
-          <span class="fi-label">Argentina / rodents</span>
-          <span class="fi-value flag-new">1 rodent near Ushuaia tested positive for hantavirus. 99.99% genetic similarity across 3 human cases confirms single spillover. Argentina sending genomic material to 4 countries.</span>
-        </li>
-        <li>
-          <span class="fi-label">France / Bichat</span>
-          <span class="fi-value flag-quiet">Still alive on ECMO (~170+ hours). No new developments.</span>
+          <span class="fi-label">Rodent / Ushuaia</span>
+          <span class="fi-value flag-new">1 rodent specimen positive. Genomic sequencing pending. Human cases: 99.99% genetic similarity &mdash; confirms single spillover event.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">Origin / rodents</span>
-          <span class="fi-value">Rodent genomic sequencing pending. If strain matches human cases, may confirm Ushuaia vs. Chile exposure debate.</span>
+          <span class="fi-label">France / Bichat</span>
+          <span class="fi-value flag-quiet">~170+ hours on ECMO; ECDC May 15 confirms 0 new deaths.</span>
         </li>
         <li>
-          <span class="fi-label">Oceanwide / May 29</span>
-          <span class="fi-value flag-quiet">No announcement at cycle end. Press page last updated May 13.</span>
+          <span class="fi-label">Oceanwide/May 29</span>
+          <span class="fi-value">Decision expected today (Fri May 15) &mdash; no announcement as of 2:20 PM UTC.</span>
         </li>
         <li>
-          <span class="fi-label">WHO DON602</span>
-          <span class="fi-value flag-quiet">Still 404 (32nd cycle).</span>
-        </li>
-        <li>
-          <span class="fi-label">Scotland</span>
-          <span class="fi-value flag-quiet">PHS monitoring &ldquo;small number&rdquo;; CVR Glasgow 20 samples analyzed; no confirmed cases.</span>
+          <span class="fi-label">Kornfeld serology</span>
+          <span class="fi-value flag-quiet">Still pending from primary May 15 source at cycle end.</span>
         </li>
       </ul>
     </div>
   </details>
 
-  <!-- Cycle 31 -->
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">All 26 French contacts confirmed negative; Scotland monitoring thread opened; May 14 daily digest dispatched</span>
+        <span class="headline">First run of May 15 &mdash; all 26 French contacts negative; Scotland monitoring confirmed; daily digest dispatched</span>
         <span class="timestamp">9:48 AM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note digested">
         <span class="note-icon">&#9656;</span>
-        Digest dispatched covering May 14 developments (see Previous Day below)
+        Digest dispatched &mdash; covering May 14 developments (see digest in Previous Day below)
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
           <span class="fi-label">France / contacts</span>
-          <span class="fi-value flag-new"><strong>All 26 French contacts NEGATIVE.</strong> French Health Minister Rist (May 14 X post): &ldquo;test&eacute;s n&eacute;gatifs, sans exception.&rdquo; Count revised from 22 to 26 (includes 4 of 5 MV Hondius French passengers + flight contacts). Closes secondary-spread threat in French cohort.</span>
+          <span class="fi-value flag-new"><strong>All 26 French contacts test negative</strong> "without exception" &mdash; Minister Rist (May 14 via X). Includes 4/5 MV Hondius French passengers + flight contacts. All remain hospitalized with 3&times;-weekly testing. Closes secondary-spread threat.</span>
         </li>
         <li>
           <span class="fi-label">Scotland</span>
-          <span class="fi-value flag-new"><strong>New thread:</strong> Public Health Scotland monitoring &ldquo;small number&rdquo; of contacts. CVR Glasgow (high-security lab) analyzed 20 samples. No confirmed Scottish cases. UKHSA coordinating.</span>
+          <span class="fi-value flag-new">Public Health Scotland monitoring "small number" of individuals. CVR Glasgow analyzed 20 samples. <strong>No confirmed cases.</strong></span>
         </li>
         <li>
-          <span class="fi-label">MV Hondius</span>
-          <span class="fi-value flag-new">AIS tracking confirms ETA Rotterdam <strong>May 18 ~05:00 CET</strong>. 25 crew + 2 RIVM; none symptomatic.</span>
-        </li>
-        <li>
-          <span class="fi-label">France / Bichat</span>
-          <span class="fi-value flag-quiet">Still alive on ECMO (~155+ hours). No death. ECDC still May 14 12:00 UTC data (11/3).</span>
-        </li>
-        <li>
-          <span class="fi-label">WHO DON602</span>
-          <span class="fi-value flag-quiet">Still 404 (31st consecutive cycle).</span>
+          <span class="fi-label">MV Hondius / ETA</span>
+          <span class="fi-value flag-new">AIS confirms ETA Rotterdam <strong>May 18 ~05:00 CET.</strong> 25 crew + 2 RIVM aboard, none symptomatic.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">Oceanwide / May 29</span>
-          <span class="fi-value">Decision expected by Friday May 15. No announcement at cycle time.</span>
+          <span class="fi-label">France / Bichat</span>
+          <span class="fi-value flag-quiet">~155+ hours on ECMO; alive; no overnight death reports found.</span>
         </li>
         <li>
-          <span class="fi-label">Kornfeld</span>
-          <span class="fi-value flag-quiet">Serology still pending at this cycle. PCR negative. hantavirus.one 23:45 UTC May 14: &ldquo;blood tests remain pending.&rdquo;</span>
+          <span class="fi-label">Oceanwide/May 29</span>
+          <span class="fi-value">Sailing decision expected today (Fri May 15); no announcement at cycle end.</span>
         </li>
         <li>
-          <span class="fi-label">Spain / UATAN</span>
-          <span class="fi-value flag-quiet">No May 15 updates. Still stable/improving as of May 13.</span>
+          <span class="fi-label">Kornfeld serology</span>
+          <span class="fi-value flag-quiet">Still pending per hantavirus.one (23:45 UTC May 14); case remains "inconclusive."</span>
         </li>
         <li>
-          <span class="fi-label">Tristan da Cunha</span>
-          <span class="fi-value flag-quiet">Still probable, no lab confirmation. No new developments.</span>
+          <span class="fi-label">WHO DON602</span>
+          <span class="fi-value flag-quiet">Still 404. 31st cycle without publication.</span>
         </li>
       </ul>
     </div>
@@ -525,30 +537,29 @@
     <div class="dispatch-body">
       <h3>What changed</h3>
       <ul>
-        <li><strong>WHO DON601 finally published (May 13, data as of 17:00):</strong> After 23 consecutive cycles returning 404, WHO&rsquo;s third Disease Outbreak News report is live. Formally counts 11 cases (8 confirmed + 2 probable + 1 inconclusive), 3 deaths, CFR 27%. WHO classifies the US case as <strong>&ldquo;inconclusive&rdquo; with mixed lab results undergoing retesting</strong>. Near-identical genetic sequences across cases confirm single-spillover event. (<a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON601">WHO DON601</a>)</li>
-        <li><strong>French patient (Bichat, ECMO) &mdash; survived second day:</strong> Bichat physician Xavier Lescure (~13:30 UTC May 13): &ldquo;vital prognosis compromised, next hours will be determining.&rdquo; 12 hours elapsed with no death. hantacase.com: 0 deaths in France. No hantavirus deaths since May 2, now 12 days.</li>
-        <li><strong>Spanish patient (UATAN) improving:</strong> Health Minister M&oacute;nica Garc&iacute;a confirmed patient &ldquo;improved somewhat&rdquo; after oxygenotherapy. First clearly positive trajectory signal since admission.</li>
-        <li><strong>Italy thread resolved negative:</strong> All 4 quarantined persons in Italy tested negative for hantavirus. Italian health ministry issued 42-day quarantine circular.</li>
-        <li><strong>UKHSA May 13 update:</strong> 6 of ~22 Arrowe Park Hospital passengers discharged to 45-day home isolation, all PCR negative. One Ascension Island medic who developed symptoms tested <strong>negative</strong> for hantavirus.</li>
-        <li><strong>EU mandatory PCR agreement:</strong> MV Hondius crew arriving Rotterdam will undergo PCR testing on arrival + after 1-week quarantine.</li>
-        <li><strong>US air-contact monitoring expanded:</strong> Kansas (3) and Maryland (2) added; 10 air-travel contacts across 5 states. None symptomatic.</li>
+        <li><strong>WHO DON601 finally published</strong>: After 23 consecutive cycles returning 404, WHO&rsquo;s third DON is live. 11 cases (8 confirmed + 2 probable + 1 inconclusive), 3 deaths, CFR 27%. WHO classifies US case as "inconclusive" with mixed lab results undergoing retesting. (<a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON601">WHO DON601</a>)</li>
+        <li><strong>French patient (Bichat, ECMO) &mdash; survived second day</strong>: Physician Lescure (~13:30 UTC May 13): "vital prognosis compromised, next hours will be determining." 12 hours elapsed with no death. hantacase.com: 0 deaths in France. No hantavirus deaths since May 2. (<a href="https://hantacase.com/country/france">hantacase.com</a>)</li>
+        <li><strong>Spanish patient (UATAN) improving</strong>: Health Minister Garc&iacute;a confirmed patient "improved somewhat" after oxygenotherapy. First positive trajectory signal since admission.</li>
+        <li><strong>Italy thread resolved negative</strong>: All 4 quarantined persons in Italy tested negative. 42-day quarantine circular issued.</li>
+        <li><strong>UKHSA May 13 update</strong>: 6 of ~22 Arrowe Park passengers discharged to 45-day home isolation. Ascension Island medic tested <strong>negative</strong> for hantavirus. (<a href="https://www.gov.uk/government/publications/hantavirus-outbreak-investigation-and-management-of-contacts/">UKHSA gov.uk</a>)</li>
+        <li><strong>EU mandatory PCR agreement</strong>: MV Hondius crew will undergo PCR on Rotterdam arrival + after 1-week quarantine. ETA now May 18 ~05:00 CET.</li>
+        <li><strong>US air-contact monitoring expanded</strong>: Kansas (3) and Maryland (2) added; 10 air-travel contacts across 5 states. None symptomatic.</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>WHO DON601&rsquo;s long-delayed publication resolves the most persistent open thread and its &ldquo;inconclusive&rdquo; US characterization created a notable WHO/HHS divergence. French patient survival past Lescure&rsquo;s &ldquo;next hours&rdquo; window was the best clinical signal of the day. Containment picture held: no new cases, no new deaths, Italy&rsquo;s four quarantines all clear.</p>
+      <p>WHO DON601&rsquo;s long-delayed publication resolves the most persistent open thread. French patient surviving past Lescure&rsquo;s "next hours" window is the best clinical signal of the day. Containment held all day: no new cases, no new deaths, Italy&rsquo;s four quarantines all clear.</p>
       <h3>What I'm watching next</h3>
       <ul>
-        <li>French patient on ECMO: death remains alert threshold</li>
-        <li>Spanish patient trajectory in UATAN: improving, but HPS not yet excluded</li>
-        <li>MV Hondius Rotterdam arrival (ETA May 18 ~05:00 CET): EU mandatory PCR testing of 27 crew</li>
-        <li>WHO/HHS/CDC US case reconciliation: three agencies with divergent positions</li>
+        <li>French patient on ECMO: each additional day slightly improves prognosis; death remains alert threshold</li>
+        <li>Spanish patient trajectory: improving, but O2 desaturation means HPS not yet excluded</li>
+        <li>MV Hondius Rotterdam arrival (ETA May 18 ~05:00 CET): EU mandatory PCR testing of crew</li>
+        <li>WHO/HHS US case reconciliation</li>
       </ul>
       <h3>Sources</h3>
       <ul>
         <li><a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON601">WHO DON601</a></li>
         <li><a href="https://hantacase.com/country/france">hantacase.com &mdash; France</a></li>
-        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC Andes outbreak surveillance</a></li>
-        <li><a href="https://www.gov.uk/government/publications/hantavirus-outbreak-investigation-and-management-of-contacts/hantavirus-outbreak-2026-investigation-and-management-of-contacts">UKHSA contact management update</a></li>
-        <li><a href="https://abcnews.com/International/live-updates/hantavirus-live-updates-mv-hondius-canary-islands/?id=132746955">ABC News live updates</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC Andes hantavirus outbreak page</a></li>
+        <li><a href="https://www.gov.uk/government/publications/hantavirus-outbreak-investigation-and-management-of-contacts/hantavirus-outbreak-2026-investigation-and-management-of-contacts">UKHSA gov.uk</a></li>
       </ul>
     </div>
   </details>
@@ -556,6 +567,7 @@
   <div class="prev-day-link">
     <a href="hantavirus-2026-05-14.html">&larr; Full briefing for May 14, 2026</a>
   </div>
+
 </section>
 
 <footer>
