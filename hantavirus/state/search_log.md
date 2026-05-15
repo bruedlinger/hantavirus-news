@@ -1299,3 +1299,41 @@ One new development: **symptomatic second American expected to be transferred to
 - `hantavirus second French case Bichat confirmed May 13 14 2026` — MEDIUM; still unverified
 - `hantavirus Radboudumc workers positive May 13 14 2026` — MEDIUM
 - `hantavirus US case new state Kansas Maryland confirmed positive May 14 2026` — MEDIUM
+
+---
+
+## Cycle 30 — 2026-05-14 (23:47–23:57 UTC)
+
+### Queries run
+1. `hantavirus France Bichat ECMO patient condition update May 14 15 2026 overnight`
+2. `WHO DON602 hantavirus disease outbreak news 2026`
+3. `Kornfeld hantavirus serology result Nebraska biocontainment May 14 2026`
+4. `Oceanwide Expeditions May 29 sailing decision Iceland cancelled 2026`
+5. `hantavirus new case confirmed death May 14 15 2026`
+6. `MV Hondius Rotterdam arrival crew quarantine decontamination Netherlands May 2026`
+7. `hantavirus Tristan da Cunha confirmed laboratory May 14 15 2026`
+8. `hantavirus passenger lawsuit maritime legal claim Oceanwide 2026`
+9. `hantavirus Argentina Patagonia Ushuaia rodent testing ANMAT index case 2026`
+10. `ECDC hantavirus Andes outbreak update May 14 15 2026 new`
+11. `hantavirus outbreak May 15 2026 update latest news`
+12. `hantavirus French patient Bichat décès mort ECMO nuit mai 15 2026`
+
+### Pages fetched
+- Oceanwide May 13 press update ✓ — ETA Rotterdam confirmed May 18 (Monday); 25 crew + 2 RIVM; no sailing schedule comments
+- hantavirus.one ✓ — last refreshed May 14 14:41 UTC; still 11/3; no overnight changes
+- Tristan da Cunha airdrop article (May 11) ✓ — patient "stable"; no lab confirmation; no updates
+- WHO DON602 ✗ — still 404 (Cycle 30 consecutive)
+- ECDC outbreak page ✓ — still May 14 12:00 UTC; 11 cases, 3 deaths; no changes
+
+### What these queries found
+**Quiet overnight cycle.** No new cases, no new deaths. French patient still alive; no death reports in any source. WHO DON602 still unpublished. Kornfeld serology pending. Oceanwide ETA Rotterdam now specifically May 18 (Monday). Legal analysis articles published but no actual lawsuits filed. Tristan da Cunha patient "stable," still probable. No dispatch warranted.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient ECMO décès mort update May 15 2026` — HIGH; overnight death check
+- `Oceanwide Expeditions sailing decision May 29 announcement May 15 2026` — HIGH; decision expected Friday
+- `WHO DON602 hantavirus 2026` — HIGH; 30 cycles without it
+- `Kornfeld serology antibody result Nebraska May 15 2026` — MEDIUM
+- `MV Hondius Rotterdam arrival May 18 crew quarantine Netherlands` — MEDIUM; arrival Monday
+- `hantavirus Tristan da Cunha confirmed lab May 15 2026` — MEDIUM
+- `hantavirus new case death May 15 2026` — HIGH; daily check
+- `hantavirus Spain Gomez Ulla final PCR result confirmed May 15 2026` — MEDIUM; Spanish patient final status

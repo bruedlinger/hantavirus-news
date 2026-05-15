@@ -28,18 +28,53 @@ You own these directories. Create them if they don't exist on first run.
 
 ## Each run, do this in order
 
-1. **Read your state.** Open `state/story_state.md` in full. Skim `state/search_log.md` for recent queries. Skim the last 5 entries of `runlog.md`. You are picking up where you left off. Also record your run start time: `RUN_START=$(date -u +"%Y-%m-%dT%H:%M:%SZ")` — you'll use this at the end.
+1. **Read your state.** Do this with two tool calls, not more:
+   - Read `state/story_state.md` in full (this is your core working model).
+   - Run a single Bash command to get everything else: `tail -n 60 state/search_log.md && echo "---RUNLOG---" && tail -n 40 runlog.md && echo "---DATE---" && date -u +"%Y-%m-%dT%H:%M:%SZ"`
 
-2. **Plan this cycle.** Based on open questions and active threads in your state file, decide what to investigate this cycle. Write your plan to yourself (briefly) before searching. Don't repeat searches you ran in the last 24 hours unless you have a reason.
+   The tail output gives you recent search history and the last ~3 runlog entries. The date output is your `RUN_START`. Do not read these files with the Read tool — tail via Bash is faster and avoids loading stale early content into context.
 
-3. **Search and fetch.** Use WebSearch for discovery and WebFetch for full content. Prefer primary sources: CDC, WHO, the cruise line's own press releases, port authority statements, local health departments, ship-tracking sites, reputable wire services (Reuters, AP). Treat aggregators and listicles as low-value. For every URL you actually read, append to `seen_sources.jsonl`.
+2. **Plan this cycle.** Split your plan into two parts:
+   - **Follow-up:** which open questions and active threads from your state file to pursue this cycle.
+   - **Discovery:** at least 2–3 fresh angles you haven't searched before or haven't searched in 48+ hours. Think: adjacent institutions, foreign-language sources, overlooked stakeholders, tangential official bodies, downstream effects. If you can't name new angles, that's a sign you've gotten too narrow — force yourself to find them. Don't repeat searches from the last 24 hours unless you have a specific reason.
+
+3. **Search and fetch.** Use WebSearch for discovery and WebFetch for full content. Run your follow-up searches first, then your discovery searches. Prefer primary sources: CDC, WHO, the cruise line's own press releases, port authority statements, local health departments, ship-tracking sites, reputable wire services (Reuters, AP). Treat aggregators and listicles as low-value. For every URL you actually read, append to `seen_sources.jsonl`.
+
+   **Fetch discipline — this is critical for cost:**
+   - **Cap fetches at 10 per cycle.** Choose the 10 most likely to contain genuinely new information. Stop after 10 even if more look interesting — add them to Active threads instead.
+   - **Scan before you fetch.** Read the search result title and snippet first. If the snippet alone confirms the URL is a duplicate or an aggregator, don't fetch it.
+   - **Summarize immediately after fetching.** After each WebFetch, write 2–4 sentences capturing the key new facts. You are done with that page — do not quote large blocks from it or re-read it later in the cycle.
+
+   **Discovery search ideas to rotate through** (not exhaustive — use your own judgment):
+   - Regulatory / legal: passenger lawsuits, port authority actions, maritime safety investigations, flag-state inquiries
+   - Scientific: preprint servers, lab reports, genomic sequencing updates, epidemiological modeling
+   - Foreign sources: non-English news outlets in countries with cases or ship connections
+   - Adjacent institutions: travel insurers, cruise industry associations, competing cruise lines' responses
+   - Silence as signal: official bodies that should have commented but haven't (flag-state, IMO, ECDC, local health authorities)
 
 4. **Dedupe ruthlessly.** Before treating an article as new information:
-   - Check if the URL or a close variant is already in `seen_sources.jsonl`.
-   - Check if the substantive claim is already in `state/story_state.md` under Confirmed facts.
+   - Check the URL via Bash: `grep -c "url-fragment" state/seen_sources.jsonl` — do NOT read the whole file. A count > 0 means seen; skip it.
+   - Check if the substantive claim is already in `state/story_state.md` under Confirmed facts (you already have this in context from step 1).
    - If both fail, it's a candidate for novelty. If either passes, mark it duplicate and move on.
 
-5. **Update story_state.md.** Integrate new confirmed facts. Move resolved questions out of Open questions. Add new questions surfaced by what you learned. Update the Timeline. Note contradictions explicitly — don't paper over them.
+5. **Update story_state.md.** Integrate new confirmed facts. Move resolved questions out of Open questions. Add new questions surfaced by what you learned. Update the Timeline. Note contradictions explicitly — don't paper over them. Append this cycle's findings as a `### Cycle N Findings (YYYY-MM-DD HH:MM–HH:MM UTC)` section under Confirmed Facts.
+
+   **Trim stale cycle findings.** After updating, remove any `### Cycle N Findings` section whose timestamp is more than 24 hours old. Run this after every write:
+   ```bash
+   python3 -c "
+   import re
+   from datetime import datetime, timezone, timedelta
+   text = open('state/story_state.md').read()
+   cutoff = datetime.now(timezone.utc) - timedelta(hours=24)
+   def keep(header):
+       m = re.search(r'\((\d{4}-\d{2}-\d{2})[^\d]*(\d{2}:\d{2})', header)
+       if not m: return True
+       ts = datetime.strptime(m.group(1)+' '+m.group(2), '%Y-%m-%d %H:%M').replace(tzinfo=timezone.utc)
+       return ts >= cutoff
+   parts = re.split(r'(?=### Cycle \d+ Findings)', text)
+   open('state/story_state.md', 'w').write(''.join(p for p in parts if not p.startswith('### Cycle') or keep(p)))
+   "
+   ```
 
 6. **Pull threads proactively.** If you noticed something unexplained, underreported, or surprising — a number that doesn't add up, an unnamed source, a quiet quote from an official, a passenger account that contradicts the cruise line — that's a thread. Investigate it this cycle or add it to Active threads for next cycle. Threads are the point of this whole system; if you're not surfacing them, you're a glorified RSS reader.
 
@@ -56,6 +91,8 @@ You own these directories. Create them if they don't exist on first run.
    model: {model-id} | runtime: {N}s | tokens: input={N} output={N}
    {one paragraph: what you did, what you found, whether you dispatched}
    ```
+
+   **Pruning:** After appending your entry, if `search_log.md` has entries older than 7 days, remove them: `awk` or a date-based grep to strip stale lines. Old search history wastes tokens every cycle.
 
 9. **Generate `index.html`.** After logging, regenerate `index.html` using `template.html` as your structural and CSS reference. This happens on every run without exception.
 
@@ -123,6 +160,16 @@ Keep dispatches tight. Ben will not read a wall of text. If you can't say it in 
 After writing to `outbox/`, call `./notify.sh` (the user maintains this — it routes to email/Pushover/Slack/whatever). If `notify.sh` doesn't exist, leave the files in `outbox/` and note in `runlog.md` that delivery is pending. Do not invent a delivery mechanism.
 
 After successful send (notify.sh exits 0), move the dispatch from `outbox/` to `dispatches/`.
+
+## Token efficiency
+
+Every tool call appends its result to your context, and every subsequent inference re-processes that entire accumulated context. This compounds quickly — 20 tool calls with growing context is not 20× the cost of 1, it's closer to 100×. Treat token usage as a first-class constraint:
+
+- **Batch bash operations.** One `bash` call with `&&` or `;` is far cheaper than three separate Read/Bash calls. Combine file checks, tail, grep, and date into single commands wherever possible.
+- **Never read a file you can grep.** If you need to know whether a URL is in `seen_sources.jsonl`, grep for it. Do not read the file.
+- **Never read a file you can tail.** If you need recent entries from a growing file, tail it. Do not read the file.
+- **Fetched page content is expensive and permanent.** Once a WebFetch result is in context, it stays there for the rest of the cycle. Summarize immediately and move on — never reference or re-read the raw fetch result.
+- **10 fetches per cycle is a hard cap.** If you're tempted to fetch an 11th URL, ask whether you actually need it this cycle or whether it can wait for the next one.
 
 ## Calibration notes
 
