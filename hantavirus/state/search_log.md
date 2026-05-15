@@ -1474,3 +1474,35 @@ One new development: **symptomatic second American expected to be transferred to
 - `hantavirus Argentina Aysén ISP Chile genomic sequencing cruise ship origin 2026` — MEDIUM; origin dispute
 - `WHO DON602 hantavirus 2026` — MEDIUM; 34th cycle missing
 - `hantavirus Australia Bullsbrook quarantine New Zealand update May 16 2026` — LOW
+
+## Cycle 35 — 2026-05-15 (23:20–23:23 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès mai 15 16 2026`
+2. `hantavirus new case death update May 15 16 2026`
+3. `Oceanwide Expeditions May 29 Iceland sailing cancelled postponed announcement 2026`
+4. `MV Hondius Rotterdam arrival decontamination RIVM May 18 2026`
+5. `WHO DON602 hantavirus Andes cruise ship 2026`
+6. `Tristan da Cunha hantavirus lab result confirmed 2026`
+7. `hantavirus Spain UATAN patient update May 15 16 2026 hantavirus cruise ship`
+
+### Pages fetched
+- nvdaily.com/AP sailing-unclear article ✓ — May 13 article; language shift "no foresee changes" → "awaiting further information" → "clarity by end of week"
+- Xinhua May 16 Rotterdam quarantine ✓ — 17 Filipino crew staying in NL 6-week quarantine; crew composition: 17 Filipino, 4 Dutch, 4 Ukrainian, 1 Russian, 1 Polish; 23 temp cabins at Rotterdam port
+- WHO Europe May 15 narrative piece ✓ — frames outbreak as "contained and successfully managed"; IHR 2005 vindication; resolution signal
+- hantavirus.one ✓ — still 11/3 as of May 15 15:39 UTC; no new cases/deaths
+- WHO DON602 ✓ — still 404 (35th consecutive cycle)
+- NL Times Rotterdam cabins — 403 FAILED
+
+### What these queries found
+**Quiet late-evening cycle.** No new cases, no new deaths. French patient still alive (~194+ hours on ECMO). KEY NEW: WHO Europe published resolution narrative (May 15) framing outbreak as "contained." Rotterdam quarantine: 17 Filipino crew staying in NL for full 6-week quarantine (RIVM recommendation). Oceanwide sailing: still no announcement, now 23:20 CET Friday. WHO DON602 still 404 (35th cycle). Tristan da Cunha still probable, no lab confirmation. Spanish patient no updates since May 13.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient ECMO mort décès mai 16 2026` — HIGH; overnight death check
+- `hantavirus new case death May 16 2026` — HIGH; routine check
+- `ECDC hantavirus update May 16 2026` — HIGH; daily update expected ~14:00 UTC
+- `MV Hondius Rotterdam arrival May 18 2026` — HIGH; ship arrival Monday
+- `Oceanwide Expeditions May 29 Iceland sailing decision weekend 2026` — HIGH; overdue announcement
+- `WHO DON602 hantavirus 2026` — MEDIUM; 35 cycles missing
+- `hantavirus Argentina Aysén ISP Chile genomic sequencing cruise ship origin 2026` — MEDIUM; origin dispute
+- `hantavirus Australia Bullsbrook quarantine update May 16 2026` — LOW
