@@ -1375,3 +1375,39 @@ One new development: **symptomatic second American expected to be transferred to
 - `WHO DON602 hantavirus 2026` — MEDIUM; may publish today
 - `hantavirus Scotland confirmed case Public Health Scotland May 15 2026` — MEDIUM; new thread
 - `hantavirus Spain Gomez Ulla final PCR confirmed 2026` — MEDIUM
+
+---
+
+## Cycle 32 — 2026-05-15 (14:17–14:20 UTC)
+
+### Queries run
+1. `ECDC hantavirus Andes outbreak update May 15 2026`
+2. `Oceanwide Expeditions May 29 Iceland sailing cancelled announcement 2026`
+3. `hantavirus France Bichat patient ECMO death recovery May 15 2026`
+4. `hantavirus new case death May 15 2026 update`
+5. `hantavirus Australia cruise ship passengers quarantine Perth RAAF Base Pearce 2026`
+6. `WHO DON602 hantavirus disease outbreak news 2026`
+7. `Kornfeld serology antibody result cleared Nebraska May 15 2026`
+8. `hantavirus Argentina rodent surveillance genomic sequencing Ushuaia 2026`
+9. `Kornfeld serology antibody negative cleared hantavirus May 15 2026`
+10. `hantavirus CDC situation page update May 15 2026`
+
+### Pages fetched
+- ECDC Andes outbreak page ✓ — May 15 14:00 UTC update: 11/3, no new cases/deaths
+- hantavirus.one ✓ — updated 15 May 14:17 UTC; still 11/3; Australia arrivals noted
+- Oceanwide press page ✓ — most recent update May 13; no May 29 announcement
+- ABC News (AP wire) Australia story ✓ — 5 Australians + 1 NZ at RAAF Base Pearce; Bullsbrook quarantine; 3 weeks; all negative; Butler statement
+- Scientific American origin doubts article ✓ — named experts challenge Ushuaia/landfill theory; TdF no prior cases; Chile alternative proposed
+
+### What these queries found
+**Quiet afternoon cycle — two new threads found.** ECDC May 15 14:00 UTC confirmed no new cases/deaths. NEW: Australia/NZ passengers (5 AU + 1 NZ) in quarantine at Bullsbrook near Perth — new jurisdiction. NEW THREAD: Scientific American article with credible experts casting doubt on birdwatching/landfill origin theory; Tierra del Fuego epi director says no prior ANDV cases in province. Kornfeld serology still not confirmed negative from primary May 15 source (AI search summaries may mischaracterize). Oceanwide no May 29 announcement yet. WHO DON602 still 404 (32nd cycle). No dispatch warranted.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `Oceanwide Expeditions May 29 Iceland sailing decision Friday announcement` — HIGH; decision expected today/tonight
+- `hantavirus France Bichat patient ECMO mort décès mai 15 16 2026` — HIGH; overnight death check
+- `Kornfeld serology antibody result May 15 2026 cleared Nebraska` — MEDIUM; verify resolution
+- `hantavirus Australia New Zealand Bullsbrook quarantine update 2026` — MEDIUM; new thread
+- `hantavirus Argentina origin Chile birdwatching alternative theory 2026` — MEDIUM; follow origin dispute
+- `MV Hondius Rotterdam arrival decontamination crew RIVM May 18 2026` — MEDIUM
+- `WHO DON602 hantavirus 2026` — LOW; 32 cycles missing
+- `hantavirus Spain Gomez Ulla final PCR result May 15 2026` — LOW
