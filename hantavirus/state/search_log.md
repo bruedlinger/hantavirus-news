@@ -1539,3 +1539,34 @@ One new development: **symptomatic second American expected to be transferred to
 - `WHO DON602 hantavirus 2026` — MEDIUM; 36th cycle missing
 - `hantavirus Australia Bullsbrook quarantine New Zealand update May 16 2026` — LOW
 - `hantavirus Argentina rodent Ushuaia genomic sequencing result 2026` — LOW; pending ~4 weeks from mid-May
+
+## Cycle 37 — 2026-05-16 (16:41–17:05 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès mai 16 2026`
+2. `ECDC hantavirus Andes update May 16 2026`
+3. `hantavirus new case death May 16 2026`
+4. `MV Hondius Rotterdam arrival decontamination May 18 2026`
+5. `Oceanwide Expeditions May 29 Iceland sailing decision cancelled postponed 2026`
+6. `hantavirus Spain UATAN patient stable recovery May 16 2026`
+7. `Tristan da Cunha hantavirus confirmed laboratory result 2026`
+8. `hantavirus Australia Bullsbrook quarantine New Zealand update May 16 2026`
+9. `WHO DON602 hantavirus Andes cruise ship 2026`
+10. `hantavirus Argentina rodent Ushuaia genomic sequencing result ISP Chile Aysén comparison 2026`
+
+### Pages fetched
+- ECDC May 16 ✓ — 11/3 (8+2+1), "no new cases or deaths since previous update"; new rapid scientific advice (IPC measures for ANDV in healthcare settings); last updated 14:00 UTC
+- hantavirus.one ✓ — French patient still on ECMO, critically ill, not deceased (May 16 10:59 UTC); WHO's Van Kerkhove confirms Kornfeld reclassification — WHO effective count 10
+
+### What these queries found
+**Quiet afternoon cycle.** ECDC May 16 14:00 UTC published and confirmed (11/3, no new cases/deaths). French patient still alive on ECMO (~211+ hours). hantavirus.one confirms French patient status. WHO epidemiologist Van Kerkhove publicly confirmed Kornfeld reclassification to negative. Rotterdam: 23 cabins assembled, Rotterdam-Rijnmond health service will test all crew on arrival May 18. Oceanwide May 29 sailing: no decision, definitively slipped to post-Rotterdam. Australia/NZ Bullsbrook: all 6 passengers in 3-week quarantine, all negative. Tristan da Cunha still probable, no lab confirmation. WHO DON602 still 404 (37th consecutive cycle). Argentine/Chilean genomic sequencing no new results.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient ECMO mort décès mai 17 2026` — HIGH; death check
+- `hantavirus new case death May 17 2026` — HIGH; routine
+- `MV Hondius Rotterdam arrival May 18 RIVM decontamination 2026` — HIGH; ship arrives Monday
+- `Oceanwide Expeditions May 29 Iceland sailing cancelled confirmed 2026` — HIGH; overdue decision
+- `ECDC hantavirus update May 17 2026` — MEDIUM; daily update ~14:00 UTC
+- `WHO DON602 hantavirus 2026` — MEDIUM; 37 cycles missing
+- `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
+- `hantavirus Australia Bullsbrook quarantine May 17 2026` — LOW
