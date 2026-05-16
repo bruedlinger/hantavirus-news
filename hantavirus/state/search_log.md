@@ -1570,3 +1570,33 @@ One new development: **symptomatic second American expected to be transferred to
 - `WHO DON602 hantavirus 2026` — MEDIUM; 37 cycles missing
 - `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
 - `hantavirus Australia Bullsbrook quarantine May 17 2026` — LOW
+
+## Cycle 38 — 2026-05-16 (21:49–22:10 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès mai 16 2026 soir`
+2. `hantavirus new case death update May 16 2026`
+3. `MV Hondius Rotterdam arrival May 18 preparation 2026`
+4. `Oceanwide Expeditions May 29 Iceland sailing cancelled postponed 2026`
+5. `hantavirus New York high school suspected case 2026`
+6. `WHO DON602 hantavirus Andes 2026`
+7. `hantavirus St Helena Ascension UK contacts arriving HCID May 17 2026`
+
+### Pages fetched
+- hantavirus.one ✓ — updated 21:50 UTC May 16 (data refresh 16:38 UTC); French patient still alive on ECMO, critically ill; Dr. Lescure: "final stage of supportive care"; case count 10/3
+- sainthelena.gov.sh/daily-update-hantavirus-response-14-may-2026/ ✓ — St Helena 0 confirmed/suspected; Tristan da Cunha "stable and improving" (May 14); Ascension contact with symptoms being relocated to UK; St Helena group arriving UK Sat May 16 / Sun May 17
+- newsweek.com NY high school ✓ — Geneva HS student NOT linked to cruise ship; domestic hantavirus, not ANDV; mild, recovering; pure media noise
+
+### What these queries found
+**Quiet evening cycle.** No new cases, no new deaths. French patient still alive on ECMO (~216+ hours). KEY THREAD RESOLVED: **NY high school Geneva HS (Ontario County) hantavirus** — Ontario County Public Health confirmed explicitly NOT linked to cruise ship; domestic strain (not ANDV); student recovering from mild illness. Pure media noise. **NEW POSITIVE SIGNAL: Tristan da Cunha patient "stable and improving"** (St Helena Gov May 14 — first improvement indication). St Helena/Ascension contacts: small group from St Helena scheduled UK transfer Sat/Sun May 16-17; Ascension contact with mild symptoms being relocated for precautionary medical care. WHO DON602 still 404 (38th consecutive cycle). Rotterdam arrival unchanged: May 18 ~05:00 CET. Oceanwide May 29 decision still outstanding. No dispatch warranted.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient ECMO mort décès mai 17 2026` — HIGH; death check
+- `hantavirus new case death May 17 2026` — HIGH; routine
+- `MV Hondius Rotterdam arrival May 18 crew test results 2026` — HIGH; ship arrives ~05:00 CET Monday
+- `Oceanwide Expeditions May 29 Iceland sailing decision 2026` — HIGH; overdue
+- `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
+- `UKHSA hantavirus update St Helena Ascension contacts UK arrival May 17 2026` — MEDIUM
+- `ECDC hantavirus update May 17 2026` — MEDIUM; daily ~14:00 UTC
+- `WHO DON602 hantavirus 2026` — MEDIUM
+- `hantavirus Geneva high school Ontario County New York update 2026` — LOW; check if case resolves
