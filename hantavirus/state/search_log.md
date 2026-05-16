@@ -1506,3 +1506,36 @@ One new development: **symptomatic second American expected to be transferred to
 - `WHO DON602 hantavirus 2026` — MEDIUM; 35 cycles missing
 - `hantavirus Argentina Aysén ISP Chile genomic sequencing cruise ship origin 2026` — MEDIUM; origin dispute
 - `hantavirus Australia Bullsbrook quarantine update May 16 2026` — LOW
+
+## Cycle 36 — 2026-05-16 (11:39–12:00 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès mai 16 2026`
+2. `hantavirus new case death update May 16 2026`
+3. `Oceanwide Expeditions May 29 Iceland sailing decision announcement 2026`
+4. `MV Hondius Rotterdam arrival decontamination May 18 2026`
+5. `WHO DON602 hantavirus cruise ship Andes 2026`
+6. `Tristan da Cunha hantavirus lab confirmation positive 2026`
+7. `hantavirus Oceanwide lawsuit filed passengers Netherlands 2026`
+8. `hantavirus Spain UATAN patient update May 16 2026 stable`
+9. `hantavirus cruise ship Argentina Chile genomic origin update ISP Aysén May 2026`
+
+### Pages fetched
+- hantacase.com/country/france ✓ — last updated May 15; 0 French deaths; patient status not specified but no death recorded
+- oceanwide-expeditions.com/press ✓ — still May 13 as most recent; no May 29 announcement
+- ECDC ✓ — May 15 14:00 UTC data (11/3); "no new cases or deaths since previous update"; May 16 update not yet published (~14:00 UTC)
+- hantavirus.one ✓ — updated today **May 16 at 10:59 UTC**: 10/3, no new changes; French patient not listed as deceased
+- tristandc.com/government/news-2026-05-11-airdrop.php ✓ — last update May 11; patient "stable"; still probable, no lab confirmation
+
+### What these queries found
+**Morning cycle, first of May 16 UTC.** No new cases, no new deaths. hantavirus.one updated today (May 16 10:59 UTC) — 10/3, unchanged. French patient still alive, ~206+ hours on ECMO. ECDC: May 15 14:00 UTC remains most recent (May 16 update expected ~14:00 UTC). Oceanwide press: still May 13; no May 29 sailing decision. Tristan da Cunha: still probable, no lab confirmation (last update May 11). No actual lawsuits filed against Oceanwide. No new genomic origin data. WHO DON602 still 404. **DIGEST dispatched** for May 15 events.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient ECMO mort décès mai 16 2026` — HIGH; death check
+- `ECDC hantavirus update May 16 2026` — HIGH; daily update published ~14:00 UTC
+- `hantavirus new case death May 16 2026` — HIGH; routine
+- `MV Hondius Rotterdam arrival May 18 2026` — HIGH; ship arrives Monday
+- `Oceanwide Expeditions May 29 Iceland sailing decision cancelled postponed 2026` — HIGH; overdue
+- `WHO DON602 hantavirus 2026` — MEDIUM; 36th cycle missing
+- `hantavirus Australia Bullsbrook quarantine New Zealand update May 16 2026` — LOW
+- `hantavirus Argentina rodent Ushuaia genomic sequencing result 2026` — LOW; pending ~4 weeks from mid-May
