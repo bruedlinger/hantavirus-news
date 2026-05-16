@@ -1600,3 +1600,35 @@ One new development: **symptomatic second American expected to be transferred to
 - `ECDC hantavirus update May 17 2026` — MEDIUM; daily ~14:00 UTC
 - `WHO DON602 hantavirus 2026` — MEDIUM
 - `hantavirus Geneva high school Ontario County New York update 2026` — LOW; check if case resolves
+
+## Cycle 39 — 2026-05-16 (23:19–23:22 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO mort décès mai 17 2026` — death check French patient
+2. `hantavirus new case death update May 17 2026` — general update
+3. `UKHSA hantavirus St Helena Ascension contacts UK HCID arrival May 17 2026` — UK transfers
+4. `Santé Publique France hantavirus point épidémiologique mai 2026` — French public health report
+5. `IMO International Maritime Organization hantavirus MV Hondius cruise ship maritime safety investigation 2026` — discovery: IMO response
+6. `WHO DON602 hantavirus Andes cruise ship 2026` — routine DON check
+7. `MV Hondius Rotterdam arrival May 17 18 AIS position tracking 2026` — ship position
+8. `Oceanwide Expeditions May 29 Iceland sailing decision cancelled postponed 2026` — sailing status
+9. `hantavirus Ascension Island medic Guy's St Thomas hospital HCID London 2026` — follow-up on UKHSA finding
+10. `hantavirus Andes virus genomic sequencing preprint virological.org May 2026 cruise ship origin` — discovery: new preprints
+
+### Pages fetched
+- hantavirus.one ✓ — French patient still alive on ECMO, updated 23:20 UTC May 16; 10/3 unchanged
+- gov.uk UKHSA update ✓ — 9 asymptomatic contacts to Arrowe Park May 17; symptomatic Ascension medic at Guy's and St Thomas' HCID London; not a confirmed case
+
+### What these queries found
+**Quiet late-evening cycle.** No new cases, no new deaths. French patient still alive on ECMO (~219+ hours). KEY NEW DETAIL: **UKHSA confirmed symptomatic Ascension medic has safely arrived at Guy's and St Thomas' NHS Foundation Trust HCID unit** (London) for specialist assessment — initial samples negative, not a confirmed case, precautionary transfer. 9 asymptomatic St Helena/Ascension contacts arriving UK Sunday May 17 → Arrowe Park. MV Hondius: ~47°N 8°W, speed 12 knots, ETA Rotterdam May 18 05:00 CET on track. WHO DON602 still 404 (39th cycle). IMO: no formal actions found. Virological.org preprint: no new updates. Oceanwide May 29: no decision. No dispatch warranted.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus Ascension medic Guy's St Thomas HCID positive negative result May 17 2026` — HIGH; test result for Ascension medic
+- `hantavirus France Bichat patient ECMO death recovery May 17 2026` — HIGH; death check
+- `MV Hondius Rotterdam arrival crew tests RIVM results May 18 2026` — HIGH; ship arriving tomorrow
+- `Oceanwide Expeditions May 29 Iceland sailing cancelled confirmed 2026` — HIGH; overdue decision expected post-Rotterdam
+- `UKHSA hantavirus update St Helena Ascension Arrowe Park contacts May 17 2026` — MEDIUM
+- `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
+- `ECDC hantavirus update May 17 2026` — MEDIUM; daily ~14:00 UTC
+- `WHO DON602 hantavirus 2026` — MEDIUM
+- `hantavirus Geneva high school Ontario County resolved negative 2026` — LOW
