@@ -1632,3 +1632,35 @@ One new development: **symptomatic second American expected to be transferred to
 - `ECDC hantavirus update May 17 2026` — MEDIUM; daily ~14:00 UTC
 - `WHO DON602 hantavirus 2026` — MEDIUM
 - `hantavirus Geneva high school Ontario County resolved negative 2026` — LOW
+
+## Cycle 40 — 2026-05-17 (11:50–11:51 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO death recovery May 17 2026` — death check
+2. `hantavirus Ascension medic Guy's St Thomas HCID result positive negative May 17 2026` — Ascension medic test
+3. `MV Hondius Rotterdam arrival May 17 18 2026 crew quarantine` — ship status
+4. `Oceanwide Expeditions May 29 Iceland sailing cancelled decision 2026` — sailing decision
+5. `UKHSA hantavirus update May 17 2026 Arrowe Park contacts` — UK contacts
+6. `ECDC hantavirus update May 17 2026` — daily ECDC check
+7. `WHO DON602 hantavirus Andes 2026` — DON check
+8. `hantavirus cruise ship booking demand Oceanwide May 2026 tourism impact` — discovery: industry impact
+9. `hantavirus Tristan da Cunha lab confirmed positive update May 17 2026` — Tristan lab result
+
+### Pages fetched
+- hantavirus.one ✓ — May 17 10:17 UTC: 10/3 unchanged; French patient still alive on ECMO (~227+ hours); no new cases or deaths
+- gov.uk UKHSA ✓ — Still May 16 update; all Arrowe Park contacts asymptomatic/negative; a further individual departed for home isolation; Ascension medic arrived Guy's and St Thomas' HCID; no new test result
+- gmanetwork.com/GMA News ✓ — Filipino crew clarified: 21 already in NL (4 May 10 + 17 May 12 from Tenerife) + 17 on ship arriving May 18 = 38 total
+
+### What these queries found
+**First run of May 17 UTC — digest cycle.** Archived index.html as hantavirus-2026-05-16.html. Dispatched May 16 digest (2026-05-17-1150-digest.md). No new cases, no new deaths. French patient still alive on ECMO (~227+ hours). UKHSA page still May 16 — all Arrowe Park contacts negative/asymptomatic; a further individual departed for home 45-day isolation; 9 St Helena/Ascension contacts expected Arrowe Park May 17 (not yet confirmed arrived in update). Ascension medic at Guy's and St Thomas' HCID: no new test result. Filipino crew: 21 already in NL + 17 arriving May 18 = 38 total (clarified). Oceanwide May 29 sailing: AP wire (May 17) still citing "doesn't foresee changes" — no formal decision found; 12 days to departure. ECDC May 17 update not yet published (runs at ~14:00 UTC). WHO DON602: still 404 (40th consecutive cycle). Tristan da Cunha: no new lab confirmation. No dispatch warranted this cycle (digest already sent).
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient ECMO death recovery May 17 2026` — HIGH; death check
+- `MV Hondius Rotterdam arrival May 18 2026 crew tests RIVM decontamination` — HIGH; arrives overnight
+- `UKHSA hantavirus update May 17 2026 Ascension medic Guy's Thomas result` — HIGH; test result pending
+- `Oceanwide Expeditions May 29 Iceland sailing cancelled confirmed 2026` — HIGH; formal decision pending post-Rotterdam
+- `ECDC hantavirus update May 17 2026` — MEDIUM; daily ~14:00 UTC today
+- `WHO DON602 hantavirus 2026` — MEDIUM
+- `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
+- `hantavirus Ascension Island medic test result HCID May 17 18 2026` — HIGH
+- `hantavirus Geneva high school Ontario County NY resolved negative 2026` — LOW
