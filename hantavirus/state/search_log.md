@@ -1698,3 +1698,38 @@ One new development: **symptomatic second American expected to be transferred to
 - `ECDC hantavirus update May 18 2026` — MEDIUM; daily ~12:00 UTC
 - `WHO DON602 hantavirus 2026` — MEDIUM; routine
 - `hantavirus Tristan da Cunha lab confirmation 2026` — MEDIUM
+
+## Cycle 42 — 2026-05-17 (21:14–21:19 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO death recovery May 17 18 2026` — French patient death/recovery check
+2. `UKHSA hantavirus update May 17 2026 Arrowe Park Ascension medic` — UK contacts
+3. `Canada NML Winnipeg hantavirus confirmatory result British Columbia May 18 2026` — NML result check
+4. `MV Hondius Rotterdam arrival May 18 2026 crew decontamination GGD` — ship arrival status
+5. `hantavirus Ascension Island medic HCID test result positive negative Guy's Thomas May 17 18 2026` — Ascension medic result
+6. `Oceanwide Expeditions hantavirus Iceland sailing cancelled decision May 18 2026` — sailing decision
+7. `UKHSA hantavirus update May 17 2026 "six individuals" Arrowe Park returning home` — Arrowe Park departures
+8. `Canada hantavirus Yukon confirmed NML Winnipeg case cruise ship May 2026` — Canada details
+9. `hantavirus Canada Yukon patient Victoria hospital confirmed NML May 16 17 2026` — Yukon/Victoria confirmation
+10. `MV Hondius Rotterdam arrived May 18 2026 crew tests hantavirus` — arrival news
+11. `WHO DON602 hantavirus Andes virus 2026 published` — routine DON check
+
+### Pages fetched
+- hantavirus.one ✓ — May 17 21:15 UTC: 8 confirmed + 2 probable + 3 deaths; French patient still alive on ECMO ~248+ hours
+- gov.uk UKHSA ✓ — May 17 update: 9 St Helena/Ascension contacts arrived Arrowe Park evening May 17; Ascension medic at Guy's/Thomas HCID, further testing, no result; not confirmed case
+- sciencemediacentre.org ✓ — turned out to be May 13 article (six original Arrowe Park patients released); Ascension medic result was pending at time
+- CBC Canada confirmed ✗ (403) — summary from search: Yukon resident 70s, Victoria hospital, NML confirmed May 17, travelling partner negative
+- ascension.gov.ac ✓ — outdated May 4 page; no info on current medic
+
+### What these queries found
+**CANADA DETAILS REFINED**: NML Winnipeg confirmed positive May 17 (not pending May 18 as believed). Patient is **Yukon resident in their 70s** being treated in Victoria hospital (BC). Mild symptoms (fever/headache) onset ~May 15; presumptive positive late May 16; NML confirmed May 17. **Travelling partner (also Yukon, 70s) confirmed NEGATIVE**. **UKHSA May 17 confirmed**: 9 St Helena/Ascension contacts **ARRIVED** Arrowe Park evening May 17 (was previously "expected"). French patient still alive on ECMO ~248+ hours (21:15 UTC). MV Hondius not yet arrived Rotterdam as of ~21:15 UTC; ETA ~05:00 CET May 18. WHO DON602 still 404 (42nd cycle). No new deaths, no new cases, no Oceanwide decision.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `MV Hondius Rotterdam arrived crew GGD test results hantavirus May 18 2026` — HIGH; ship arriving overnight ~03:00 UTC
+- `hantavirus France Bichat ECMO patient death recovery May 18 2026` — HIGH; daily death watch
+- `UKHSA hantavirus update May 18 2026 Ascension medic result Arrowe Park` — HIGH; Ascension medic result still pending
+- `Oceanwide Expeditions Iceland sailing decision cancelled May 18 19 2026` — HIGH; decision expected after Rotterdam arrival
+- `ECDC hantavirus update May 18 2026` — MEDIUM; daily ~12:00 UTC
+- `WHO DON602 hantavirus 2026` — MEDIUM; routine
+- `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
+- `hantavirus Canada Yukon patient Victoria update May 18 2026` — MEDIUM; any progression

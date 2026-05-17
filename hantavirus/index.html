@@ -21,7 +21,9 @@
     --check-border: #252840;
     --link: #6ab4ff;
   }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
+
   body {
     background: var(--bg);
     color: var(--text);
@@ -32,86 +34,273 @@
     max-width: 860px;
     margin: 0 auto;
   }
-  header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 32px; }
-  header h1 { font-size: 18px; font-weight: 600; color: var(--text); letter-spacing: 0.02em; }
-  header .meta { color: var(--muted); font-size: 11px; margin-top: 4px; }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
   section { margin-bottom: 40px; }
+
   section > h2 {
-    font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--muted); margin-bottom: 14px; border-bottom: 1px solid var(--border); padding-bottom: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
   }
-  details { margin-bottom: 10px; border-radius: 6px; overflow: hidden; }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
   summary {
-    cursor: pointer; padding: 12px 16px; list-style: none;
-    display: flex; align-items: flex-start; gap: 10px; user-select: none;
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
   }
+
   summary::-webkit-details-marker { display: none; }
-  summary .chevron { flex-shrink: 0; color: var(--muted); font-size: 10px; margin-top: 3px; transition: transform 0.15s; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
   details[open] summary .chevron { transform: rotate(90deg); }
-  summary .summary-inner { display: flex; flex-direction: column; gap: 3px; flex: 1; }
-  summary .headline { font-size: 13px; font-weight: 500; color: var(--text); line-height: 1.4; }
-  summary .timestamp { font-size: 11px; color: var(--muted); }
-  .dispatch-alert { border: 1px solid var(--alert-border); background: var(--alert-bg); }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  summary .subline {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
   .dispatch-alert summary { background: rgba(139, 26, 26, 0.1); }
   .dispatch-alert summary:hover { background: rgba(139, 26, 26, 0.18); }
-  .dispatch-digest { border: 1px solid var(--digest-border); background: var(--digest-bg); }
+
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
   .dispatch-digest summary { background: rgba(26, 74, 90, 0.1); }
   .dispatch-digest summary:hover { background: rgba(26, 74, 90, 0.2); }
-  .check-entry { border: 1px solid var(--check-border); background: var(--check-bg); }
+
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
   .check-entry summary { background: rgba(37, 40, 64, 0.15); }
   .check-entry summary:hover { background: rgba(37, 40, 64, 0.35); }
+
   .badge {
-    display: inline-block; font-size: 9px; font-weight: 700; letter-spacing: 0.08em;
-    text-transform: uppercase; padding: 2px 7px; border-radius: 3px;
-    flex-shrink: 0; align-self: flex-start; margin-top: 2px;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
   }
+
   .badge-alert  { background: var(--alert-badge);  color: #fff; }
   .badge-digest { background: var(--digest-badge); color: #fff; }
-  .dispatch-body { padding: 0 16px 16px 16px; border-top: 1px solid rgba(255,255,255,0.06); }
-  .dispatch-body h3 {
-    font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
-    color: var(--muted); margin-top: 16px; margin-bottom: 8px;
+
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
   }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
   .dispatch-body ul { padding-left: 16px; }
-  .dispatch-body li { margin-bottom: 7px; line-height: 1.55; color: #c8cad8; }
-  .dispatch-body p { color: #c8cad8; line-height: 1.55; }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
   .dispatch-body a { color: var(--link); text-decoration: none; }
   .dispatch-body a:hover { text-decoration: underline; }
-  .check-body { padding: 14px 16px 16px 16px; border-top: 1px solid rgba(255,255,255,0.05); }
+
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
   .check-dispatch-note {
-    display: flex; align-items: center; gap: 8px; padding: 8px 10px;
-    border-radius: 4px; margin-bottom: 14px; font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
   }
-  .check-dispatch-note.alerted { background: rgba(139,26,26,0.15); border: 1px solid rgba(139,26,26,0.3); color: #e08080; }
-  .check-dispatch-note.digested { background: rgba(26,74,90,0.15); border: 1px solid rgba(26,74,90,0.35); color: #70aac0; }
-  .check-dispatch-note.quiet { background: rgba(37,40,64,0.3); border: 1px solid rgba(37,40,64,0.6); color: var(--muted); }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
   .check-dispatch-note .note-icon { font-size: 11px; flex-shrink: 0; }
+
   .check-section-label {
-    font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
-    color: var(--muted); margin-bottom: 6px; margin-top: 12px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
   }
+
   .check-findings { list-style: none; padding: 0; margin: 0; }
+
   .check-findings li {
-    display: flex; gap: 8px; padding: 5px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 12px; line-height: 1.5; color: #b0b2c4;
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
   }
+
   .check-findings li:last-child { border-bottom: none; }
-  .check-findings .fi-label { flex-shrink: 0; min-width: 110px; color: var(--muted); font-size: 11px; padding-top: 1px; }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
   .check-findings .fi-value { color: #c4c6d6; flex: 1; }
   .check-findings .fi-value strong { color: var(--text); font-weight: 600; }
   .check-findings .fi-value.flag-alert { color: #e08080; }
   .check-findings .fi-value.flag-new   { color: #90c8a0; }
   .check-findings .fi-value.flag-quiet { color: #7b7f96; }
-  .prev-day-link { margin-top: 12px; font-size: 12px; }
+
+  .prev-day-link {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
   .prev-day-link a { color: var(--link); text-decoration: none; }
   .prev-day-link a:hover { text-decoration: underline; }
-  footer { border-top: 1px solid var(--border); padding-top: 16px; margin-top: 20px; font-size: 11px; color: var(--muted); }
-  strong { color: var(--text); font-weight: 600; }
-  .story-status {
-    background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
-    padding: 14px 16px; margin-bottom: 32px; display: flex; flex-wrap: wrap; gap: 4px 0;
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--muted);
   }
-  .story-status .stat { display: inline-block; padding-right: 24px; color: var(--text); font-size: 12px; line-height: 1.8; }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
   .story-status .stat span { color: var(--muted); font-size: 11px; }
 </style>
 </head>
@@ -123,10 +312,10 @@
 </header>
 
 <div class="story-status">
-  <div class="stat">12 cases <span>(9 confirmed + 2 probable + 1 inconclusive &mdash; ECDC May 17)</span></div>
-  <div class="stat">3 deaths <span>(last May 2; 15+ days ago)</span></div>
-  <div class="stat">4 countries <span>with post-disembarkation confirmed cases</span></div>
-  <div class="stat">Last checked <span>2:36 PM UTC</span></div>
+  <div class="stat">12 cases <span>(9 confirmed + 2 probable + 1 inconclusive)</span></div>
+  <div class="stat">3 deaths <span>(2 confirmed ANDV + 1 probable)</span></div>
+  <div class="stat">8 countries <span>with post-disembarkation cases</span></div>
+  <div class="stat">Last checked <span>9:19 PM UTC</span></div>
 </div>
 
 <section id="dispatches">
@@ -144,25 +333,25 @@
     <div class="dispatch-body">
       <h3>What changed</h3>
       <ul>
-        <li><strong>Canada: first confirmed case</strong> &mdash; PHAC announced Saturday May 16 that a Canadian MV Hondius passenger tested &ldquo;presumptively positive&rdquo; for Andes hantavirus. Patient quarantined in British Columbia with mild symptoms. 4 Canadians from the ship in BC quarantine; 36 Canadians total connected to the outbreak.</li>
-        <li><strong>ECDC May 17 12:00 UTC update</strong> upgraded Canada to confirmed &mdash; total is now <strong>12 cases</strong> (9 confirmed + 2 probable + 1 inconclusive), 3 deaths. Up from 11/8 confirmed on May 16.</li>
-        <li><strong>NML Winnipeg confirmatory testing</strong> still pending &mdash; results expected ~May 18. ECDC classified it confirmed; Canada&rsquo;s national lab result not yet final.</li>
-        <li><strong>Not in yesterday&rsquo;s digest</strong> &mdash; PHAC announcement came Saturday; Cycle 40 did not search for Canada case; Cycle 41 surfaced it via ECDC count anomaly.</li>
+        <li><strong>Canada: first confirmed case</strong> &mdash; PHAC announced Saturday May 16 that a Canadian MV Hondius passenger tested &ldquo;presumptively positive&rdquo; for Andes hantavirus. Patient is quarantined in British Columbia with mild symptoms. 4 Canadians total from the ship are in quarantine; 36 Canadians connected to the outbreak.</li>
+        <li><strong>ECDC May 17 12:00 UTC update</strong> upgraded Canada to confirmed &mdash; total is now <strong>12 cases</strong> (9 confirmed + 2 probable + 1 inconclusive), 3 deaths. Up from 11 on May 16.</li>
+        <li><strong>NML Winnipeg confirmatory testing</strong> still pending at time of alert &mdash; results expected ~May 18. ECDC classified as confirmed; Canada&rsquo;s national lab final result forthcoming.</li>
+        <li><strong>Not in yesterday&rsquo;s digest</strong> &mdash; PHAC announcement came Saturday; Cycle 40 did not search for a Canadian case; Cycle 41 surfaced it via ECDC count change.</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>North America had appeared clear after the US Kornfeld false positive was resolved. Canada&rsquo;s case is the first confirmed North American case and shows ANDV&rsquo;s 42-day incubation window is still producing cases 46 days in, as WHO DG warned it would.</p>
-      <h3>What I'm watching next</h3>
+      <p>North America had appeared clear after the US Kornfeld false positive was resolved. Canada&rsquo;s case is the first confirmed North American case and demonstrates that ANDV&rsquo;s 42-day incubation window is still producing new cases 46 days after the outbreak began.</p>
+      <h3>What I&rsquo;m watching next</h3>
       <ul>
-        <li><strong>NML Winnipeg result</strong> (~May 18) &mdash; confirming or reclassifying the Canadian case</li>
-        <li><strong>MV Hondius Rotterdam arrival</strong> (May 18 ~05:00 CET) and GGD crew test results</li>
-        <li><strong>Ascension Island medic</strong> at Guy&rsquo;s and St Thomas&rsquo; HCID &mdash; initial test negative, further testing underway; if positive: first Ascension-linked confirmed case</li>
+        <li>NML Winnipeg result (~May 18) &mdash; confirming or reclassifying the Canadian case</li>
+        <li>MV Hondius Rotterdam arrival (May 18 ~05:00 CET) and GGD crew test results</li>
+        <li>Ascension Island medic at Guy&rsquo;s and St Thomas&rsquo; HCID &mdash; initial test negative, further testing underway</li>
       </ul>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://www.washingtonpost.com/world/2026/05/16/canada-hantavirus-positive-test/96a1a676-516b-11f1-97e7-22c6c29ff0d8_story.html">Washington Post &mdash; Canadian cruise passenger presumptive positive (May 16)</a></li>
-        <li><a href="https://www.nbcnews.com/health/health-news/canadian-hondius-cruise-passenger-positive-hantavirus-rcna345478">NBC News &mdash; Canadian Hondius passenger tests positive</a></li>
-        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC &mdash; Andes hantavirus outbreak update (May 17 12:00 UTC)</a></li>
-        <li><a href="https://www.canada.ca/en/public-health/services/emergency-preparedness-response/rapid-risk-assessments/rapid-risk-assessment-hantavirus-andes-virus-outbreak-international-cruise-ship.html">PHAC &mdash; Rapid Risk Assessment: Hantavirus (Andes virus) outbreak</a></li>
+        <li><a href="https://www.washingtonpost.com/world/2026/05/16/canada-hantavirus-positive-test/96a1a676-516b-11f1-97e7-22c6c29ff0d8_story.html">Washington Post &mdash; Canadian cruise passenger presumptive positive</a></li>
+        <li><a href="https://www.nbcnews.com/health/health-news/canadian-hondius-cruise-passenger-positive-hantavirus-rcna345478">NBC News &mdash; Canadian MV Hondius passenger positive</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC &mdash; Andes hantavirus surveillance (May 17 12:00 UTC)</a></li>
+        <li><a href="https://www.canada.ca/en/public-health/news/2026/05/media-update-on-andes-hantavirus-situation1.html">PHAC &mdash; Media update on Andes hantavirus situation</a></li>
       </ul>
     </div>
   </details>
@@ -172,113 +361,170 @@
 <section id="checks">
   <h2>News Checks &mdash; May 17, 2026</h2>
 
+  <!-- Cycle 42 — 9:19 PM UTC — quiet -->
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">ECDC May 17 shows 12 cases &mdash; Canada confirmed as first North American case; alert dispatched</span>
+        <span class="headline">Evening check: Canada NML confirmed May 17, 9 St Helena/Ascension contacts arrived Arrowe Park; no new cases</span>
+        <span class="timestamp">9:19 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; quiet check; Canada NML details refine Cycle 41 alert; no new clinical events
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Canada / NML</span>
+          <span class="fi-value flag-new"><strong>NML confirmed May 17</strong> (sooner than expected ~May 18). Patient: <strong>Yukon resident in 70s</strong>, Victoria hospital (BC). Mild symptoms onset ~May 15. <strong>Travelling partner (also Yukon, 70s) confirmed NEGATIVE.</strong></span>
+        </li>
+        <li>
+          <span class="fi-label">UK / Arrowe Park</span>
+          <span class="fi-value flag-new"><strong>9 St Helena/Ascension contacts arrived</strong> Arrowe Park evening May 17 (confirmed arrived). All asymptomatic. All existing contacts remain negative.</span>
+        </li>
+        <li>
+          <span class="fi-label">France / Bichat</span>
+          <span class="fi-value flag-quiet">French patient still on ECMO, critically ill. hantavirus.one 21:15 UTC confirms alive. <strong>~248+ hours on ECMO.</strong> No death or recovery.</span>
+        </li>
+        <li>
+          <span class="fi-label">MV Hondius</span>
+          <span class="fi-value flag-quiet">Not yet arrived Rotterdam as of 21:15 UTC. ETA ~05:00 CET May 18. 27 aboard (25 crew + 2 RIVM). 23 quarantine cabins ready dockside.</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">MV Hondius</span>
+          <span class="fi-value">Rotterdam arrival overnight &mdash; GGD crew tests and any positive results will be critical</span>
+        </li>
+        <li>
+          <span class="fi-label">Ascension medic</span>
+          <span class="fi-value">At Guy&rsquo;s and St Thomas&rsquo; HCID. Further testing underway. Not a confirmed case. Result pending.</span>
+        </li>
+        <li>
+          <span class="fi-label">Oceanwide sailing</span>
+          <span class="fi-value flag-quiet">May 29 Iceland sailing: no decision. Expected post-Rotterdam arrival. Decontamination needed first.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON602</span>
+          <span class="fi-value flag-quiet">Still 404 &mdash; 42nd consecutive cycle without publication.</span>
+        </li>
+        <li>
+          <span class="fi-label">Tristan da Cunha</span>
+          <span class="fi-value flag-quiet">Probable case; &ldquo;stable and improving&rdquo; (May 14). No lab confirmation yet.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- Cycle 41 — 2:36 PM UTC — alert dispatched -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">ECDC May 17 reveals Canada in case count; first confirmed North American case; alert sent</span>
         <span class="timestamp">2:36 PM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note alerted">
         <span class="note-icon">&#9888;</span>
-        Alert dispatched &mdash; First confirmed North American case: Canada (see alerts above)
+        Alert dispatched &mdash; First confirmed North American case: Canada (see alert above)
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">Canada / PHAC</span>
-          <span class="fi-value flag-alert"><strong>New confirmed case.</strong> Canadian MV Hondius passenger &ldquo;presumptively positive&rdquo; (PHAC May 16); ECDC May 17 upgraded to confirmed. Patient in BC, mild symptoms, quarantined. NML Winnipeg result pending ~May 18.</span>
+          <span class="fi-label">Canada</span>
+          <span class="fi-value flag-alert"><strong>ECDC May 17 shows 12 cases (9 confirmed)</strong> &mdash; Canada added as 9th confirmed. PHAC presumptive positive May 16. First North American confirmed case.</span>
         </li>
         <li>
           <span class="fi-label">ECDC May 17</span>
-          <span class="fi-value flag-new"><strong>Published.</strong> 12 total cases (9 confirmed + 2 probable + 1 inconclusive), 3 deaths. Up from 11/8 confirmed. Canada is 9th confirmed.</span>
+          <span class="fi-value flag-new">Published 12:00 UTC: 9 confirmed + 2 probable + 1 inconclusive, 3 deaths. &ldquo;No new deaths.&rdquo; Canada upgrade is the only case change.</span>
         </li>
         <li>
           <span class="fi-label">France / Bichat</span>
-          <span class="fi-value flag-quiet">Still alive on ECMO ~230+ hrs (hantavirus.one May 17 10:17 UTC). Critically ill, no change.</span>
+          <span class="fi-value flag-quiet">hantavirus.one 10:17 UTC: still alive, ~230+ hours on ECMO. No change.</span>
         </li>
         <li>
-          <span class="fi-label">MV Hondius</span>
-          <span class="fi-value flag-quiet">On track for Rotterdam May 18 ~05:00 CET. 23 quarantine cabins assembled dockside.</span>
+          <span class="fi-label">UKHSA</span>
+          <span class="fi-value flag-quiet">Still May 16 page at time of check. 9 contacts expected Arrowe Park. Ascension medic at Guy&rsquo;s/Thomas HCID &mdash; no result yet.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
           <span class="fi-label">Canada / NML</span>
-          <span class="fi-value">NML Winnipeg confirmatory result ~May 18 &mdash; will confirm or reclassify ECDC &ldquo;confirmed&rdquo; status.</span>
+          <span class="fi-value">NML Winnipeg confirmatory result expected ~May 18 (resolved in Cycle 42: confirmed May 17)</span>
+        </li>
+        <li>
+          <span class="fi-label">MV Hondius</span>
+          <span class="fi-value">Rotterdam arrival May 18 ~05:00 CET; GGD crew tests on arrival</span>
         </li>
         <li>
           <span class="fi-label">Ascension medic</span>
-          <span class="fi-value">At Guy&rsquo;s and St Thomas&rsquo; HCID; initial test negative; further testing underway. No result yet.</span>
-        </li>
-        <li>
-          <span class="fi-label">UK / Arrowe Park</span>
-          <span class="fi-value flag-quiet">9 St Helena/Ascension contacts expected May 17; UKHSA still May 16 update; all existing contacts asymptomatic/negative.</span>
+          <span class="fi-value">HCID unit, further testing pending &mdash; if positive, would be 11th effective case</span>
         </li>
         <li>
           <span class="fi-label">Oceanwide sailing</span>
-          <span class="fi-value flag-quiet">May 29 Iceland: no decision; past &ldquo;end of week&rdquo; deadline. Expected post-Rotterdam (May 18).</span>
-        </li>
-        <li>
-          <span class="fi-label">WHO DON602</span>
-          <span class="fi-value flag-quiet">Still 404 &mdash; 41st consecutive cycle without publication.</span>
-        </li>
-        <li>
-          <span class="fi-label">Tristan da Cunha</span>
-          <span class="fi-value flag-quiet">Still probable; no lab confirmation found.</span>
+          <span class="fi-value flag-quiet">May 29 Iceland sailing: no formal decision; past &ldquo;end of week&rdquo; deadline</span>
         </li>
       </ul>
     </div>
   </details>
 
+  <!-- Cycle 40 — 11:57 AM UTC — digest dispatched -->
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">Morning check: quiet cycle; May 16 digest dispatched; Ascension medic arrived London HCID</span>
+        <span class="headline">First run of May 17: May 16 digest published and index archived; quiet morning</span>
         <span class="timestamp">11:57 AM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note digested">
         <span class="note-icon">&#9656;</span>
-        Digest dispatched covering May 16 events (see previous day below)
+        Digest dispatched covering May 16 events (see previous day section below)
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
           <span class="fi-label">Filipino crew</span>
-          <span class="fi-value flag-new"><strong>Clarified:</strong> 21 in Netherlands (4 May 10 + 17 May 12); 17 still aboard arriving May 18 for 6-week RIVM quarantine = 38 total.</span>
+          <span class="fi-value flag-new">Clarified crew split: 21 already in NL (4 arrived May 10 + 17 May 12); 17 still aboard MV Hondius arriving May 18 for 6-week RIVM quarantine. Total 38.</span>
         </li>
         <li>
           <span class="fi-label">France / Bichat</span>
-          <span class="fi-value flag-quiet">Still alive on ECMO ~227+ hours (10:17 UTC). No change.</span>
+          <span class="fi-value flag-quiet">hantavirus.one 10:17 UTC: alive, ~227+ hours on ECMO. No change.</span>
         </li>
         <li>
           <span class="fi-label">UKHSA</span>
-          <span class="fi-value flag-quiet">Still May 16 update. Ascension medic at Guy&rsquo;s/Thomas HCID, no new test result. 9 contacts expected Arrowe Park.</span>
+          <span class="fi-value flag-quiet">Still May 16 page. All Arrowe Park contacts asymptomatic/negative. One further individual departed for home 45-day isolation. 9 contacts expected May 17.</span>
         </li>
         <li>
-          <span class="fi-label">ECDC May 17</span>
-          <span class="fi-value flag-quiet">Not yet published at time of cycle (~14:00 UTC daily publication).</span>
+          <span class="fi-label">Oceanwide sailing</span>
+          <span class="fi-value flag-quiet">AP wire cites &ldquo;doesn&rsquo;t foresee changes&rdquo; (earlier-week quote). No formal decision found.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">MV Hondius</span>
-          <span class="fi-value">Arriving Rotterdam May 18 ~05:00 CET. GGD to test all crew and medical personnel on arrival.</span>
+          <span class="fi-label">ECDC May 17</span>
+          <span class="fi-value">Expected ~14:00 UTC &mdash; checked in Cycle 41; revealed Canada case</span>
         </li>
         <li>
-          <span class="fi-label">Oceanwide sailing</span>
-          <span class="fi-value flag-quiet">May 29 Iceland: AP cites &ldquo;doesn&rsquo;t foresee changes&rdquo; (earlier quote); no formal decision; 12 days to departure.</span>
+          <span class="fi-label">Ascension medic</span>
+          <span class="fi-value">At Guy&rsquo;s/Thomas HCID; further testing pending; precautionary (initial test negative)</span>
+        </li>
+        <li>
+          <span class="fi-label">MV Hondius</span>
+          <span class="fi-value">Rotterdam arrival May 18 ~05:00 CET on track</span>
         </li>
         <li>
           <span class="fi-label">WHO DON602</span>
-          <span class="fi-value flag-quiet">Still 404 &mdash; 40th consecutive cycle.</span>
+          <span class="fi-value flag-quiet">Still 404 &mdash; 40th consecutive cycle</span>
         </li>
       </ul>
     </div>
@@ -294,35 +540,37 @@
       <span class="chevron">&#9658;</span>
       <span class="badge badge-digest">Digest</span>
       <span class="summary-inner">
-        <span class="headline">May 16 Daily Summary &mdash; status quo; Rotterdam preps complete; Ascension medic to London HCID</span>
+        <span class="headline">May 16 Daily Summary</span>
         <span class="timestamp">May 16, 2026 at 11:50 AM UTC</span>
       </span>
     </summary>
     <div class="dispatch-body">
-      <h3>What changed</h3>
+      <h3>What happened on May 16</h3>
       <ul>
-        <li><strong>French patient (ECMO, Bichat Paris)</strong>: Still alive and critically ill on ECMO throughout May 16; ~219+ hours on ECMO. Dr. Lescure: &ldquo;the final stage of supportive care.&rdquo; No death reported.</li>
-        <li><strong>WHO confirms Kornfeld negative</strong>: Maria Van Kerkhove publicly confirmed &mdash; &ldquo;We&rsquo;ve had further confirmation from the United States that person was negative.&rdquo; WHO effective count officially 10. CDC: &ldquo;no US hantavirus cases.&rdquo;</li>
-        <li><strong>ECDC May 16 14:00 UTC</strong>: 11 cases (8 confirmed + 2 probable + 1 inconclusive), 3 deaths, &ldquo;no new cases or deaths since previous update.&rdquo; New IPC rapid scientific advice published.</li>
-        <li><strong>Rotterdam arrival preps</strong>: 23 prefabricated quarantine cabins assembled at Rotterdam dockside. GGD to test all crew/personnel on May 18 arrival. Specialized decontamination contractor confirmed under RIVM/WHO guidelines.</li>
-        <li><strong>UKHSA May 16</strong>: 9 asymptomatic St Helena/Ascension contacts scheduled for Arrowe Park (UK) Sunday May 17. Symptomatic Ascension medic (initial test negative) arrived at Guy&rsquo;s and St Thomas&rsquo; NHS HCID unit (London) &mdash; precautionary, not confirmed.</li>
-        <li><strong>Tristan da Cunha</strong>: &ldquo;Stable and improving&rdquo; (St Helena Gov, May 14). Still probable, no lab confirmation.</li>
+        <li><strong>French patient (ECMO, Bichat Paris)</strong>: Still alive and critically ill throughout May 16. ~219+ hours on ECMO by end of day. Dr. Xavier Lescure: &ldquo;the final stage of supportive care.&rdquo; No death reported.</li>
+        <li><strong>WHO confirms Kornfeld negative</strong>: WHO epidemiologist Maria Van Kerkhove: &ldquo;We&rsquo;ve had further confirmation from the United States that person was negative.&rdquo; WHO effective case count officially 10. CDC: &ldquo;no US hantavirus cases.&rdquo;</li>
+        <li><strong>ECDC May 16 14:00 UTC</strong>: 11 cases (8 confirmed + 2 probable + 1 inconclusive), 3 deaths, &ldquo;no new cases or deaths.&rdquo; New rapid scientific advice on ANDV IPC measures in healthcare settings published.</li>
+        <li><strong>Rotterdam arrival preps</strong>: 23 prefabricated quarantine cabins assembled at Rotterdam dockside. GGD to test all crew/medical personnel on May 18 arrival. 17 Filipino crew staying for full 6-week RIVM quarantine.</li>
+        <li><strong>UKHSA May 16 &mdash; St Helena/Ascension contacts</strong>: 9 asymptomatic contacts scheduled to arrive Arrowe Park Sunday May 17. Symptomatic Ascension Island medic (initial test negative) arrived Guy&rsquo;s and St Thomas&rsquo; HCID &mdash; not a confirmed case; precautionary transfer.</li>
+        <li><strong>NY high school case (media noise)</strong>: Geneva High School student (Ontario County NY) confirmed explicitly <em>not</em> linked to cruise ship outbreak; domestic strain (not ANDV); student recovering.</li>
+        <li><strong>Tristan da Cunha</strong>: &ldquo;Stable and improving&rdquo; per St Helena Government (May 14) &mdash; first positive signal. Still probable case, no lab confirmation.</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>May 16 was the quietest operational day of the outbreak: every official update reported &ldquo;no new cases or deaths.&rdquo; WHO&rsquo;s public Kornfeld confirmation closes the US chapter. The only live clinical thread is the Ascension medic at Guy&rsquo;s and St Thomas&rsquo; HCID.</p>
-      <h3>What I'm watching next</h3>
+      <p>May 16 was the quietest operational day of the outbreak: every official update reported &ldquo;no new cases or deaths.&rdquo; WHO&rsquo;s Kornfeld confirmation closes the US chapter definitively. The only live clinical thread is the Ascension Island medic at Guy&rsquo;s and St Thomas&rsquo; HCID.</p>
+      <h3>What I&rsquo;m watching next</h3>
       <ul>
-        <li>Ascension medic&rsquo;s test result from Guy&rsquo;s and St Thomas&rsquo; HCID</li>
+        <li>Ascension medic&rsquo;s hantavirus test result from Guy&rsquo;s and St Thomas&rsquo; HCID</li>
         <li>MV Hondius Rotterdam arrival (May 18 ~05:00 CET) and crew test results</li>
-        <li>Oceanwide May 29 Iceland sailing decision</li>
+        <li>Oceanwide May 29 Iceland sailing decision (overdue since &ldquo;end of week&rdquo; May 15 promise)</li>
       </ul>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://hantavirus.one/">hantavirus.one &mdash; May 16 10:59 UTC and 23:20 UTC updates</a></li>
-        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC &mdash; Andes hantavirus outbreak (May 16 14:00 UTC)</a></li>
-        <li><a href="https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak">UKHSA &mdash; hantavirus cruise ship outbreak (May 16)</a></li>
+        <li><a href="https://hantavirus.one/">hantavirus.one &mdash; live tracker (May 16 23:20 UTC)</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC &mdash; Andes hantavirus surveillance (May 16 14:00 UTC)</a></li>
+        <li><a href="https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak">UKHSA update (May 16)</a></li>
         <li><a href="https://www.sainthelena.gov.sh/daily-update-hantavirus-response-14-may-2026/">St Helena Government &mdash; Tristan da Cunha update (May 14)</a></li>
         <li><a href="https://english.news.cn/20260516/4e5d3ada84224a488e70464a7fe66893/c.html">Xinhua &mdash; Rotterdam quarantine detail (May 16)</a></li>
+        <li><a href="https://www.newsweek.com/high-school-student-infected-hantavirus-new-york-11957727">Newsweek &mdash; NY high school case (not linked)</a></li>
       </ul>
     </div>
   </details>
