@@ -1664,3 +1664,37 @@ One new development: **symptomatic second American expected to be transferred to
 - `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
 - `hantavirus Ascension Island medic test result HCID May 17 18 2026` — HIGH
 - `hantavirus Geneva high school Ontario County NY resolved negative 2026` — LOW
+
+## Cycle 41 — 2026-05-17 (14:30–14:35 UTC)
+
+### Queries run
+1. `ECDC hantavirus update May 17 2026` — ECDC May 17 check
+2. `UKHSA hantavirus update May 17 2026 Arrowe Park contacts` — UK update
+3. `hantavirus France Bichat patient ECMO death recovery May 17 2026` — death check
+4. `MV Hondius Rotterdam arrival May 18 2026 crew quarantine decontamination` — ship status
+5. `Oceanwide Expeditions May 29 Iceland sailing cancelled confirmed 2026` — sailing decision
+6. `hantavirus Ascension Island medic HCID test result positive negative Guy's Thomas May 17 2026` — Ascension medic
+7. `Oceanwide Expeditions hantavirus decision sailing schedule May 17 2026 week end announcement` — sailing follow-up
+8. `Canada hantavirus cruise ship case confirmed May 2026` — TRIGGERED by ECDC count anomaly (12 vs 11)
+9. `WHO DON602 hantavirus Andes virus cruise ship 2026` — routine DON check
+10. `hantavirus Tristan da Cunha lab confirmation positive 2026` — Tristan lab result
+
+### Pages fetched
+- hantavirus.one ✓ — May 17 10:17 UTC: 10 effective cases / 3 deaths; French patient still on ECMO, ~230+ hours
+- ECDC ✓ — **May 17 12:00 UTC update: 12 total (9 confirmed + 2 probable + 1 inconclusive), 3 deaths; Canada added as 9th confirmed**
+- gov.uk UKHSA ✓ — still May 16 update; Ascension medic at Guy's/Thomas for further testing; 9 contacts expected Arrowe Park
+- Wikipedia/MV Hondius ✓ — Canadian case confirmed, mild symptoms, BC quarantine
+
+### What these queries found
+**KEY FINDING: ECDC May 17 shows 12 cases (up from 11) — Canada confirmed.** PHAC announced May 16 (Saturday) a Canadian MV Hondius passenger is "presumptively positive"; ECDC May 17 upgrade to confirmed makes this the 9th confirmed case and first North American case. NML Winnipeg confirmatory testing pending. Missed in May 16 digest. Alert dispatched (exit 0). WHO DON602 still 404 (41st cycle). Tristan da Cunha still probable, no lab confirmation. Ascension medic: further testing underway, no result. Oceanwide sailing decision: no announcement, past the "by end of week" deadline.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus Canada NML Winnipeg confirmatory result positive negative May 18 2026` — HIGH; NML result expected ~May 18
+- `MV Hondius Rotterdam arrival crew GGD test results May 18 2026` — HIGH; ship arriving overnight
+- `hantavirus France Bichat patient ECMO death recovery May 17 18 2026` — HIGH; French patient death watch
+- `UKHSA hantavirus update May 17 18 2026 Arrowe Park St Helena Ascension` — MEDIUM; daily update
+- `hantavirus Ascension Island medic Guy's Thomas HCID test result May 17 18 2026` — HIGH; result pending
+- `Oceanwide Expeditions hantavirus Iceland sailing decision May 18 2026` — HIGH; expected post-Rotterdam
+- `ECDC hantavirus update May 18 2026` — MEDIUM; daily ~12:00 UTC
+- `WHO DON602 hantavirus 2026` — MEDIUM; routine
+- `hantavirus Tristan da Cunha lab confirmation 2026` — MEDIUM
