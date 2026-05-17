@@ -1733,3 +1733,35 @@ One new development: **symptomatic second American expected to be transferred to
 - `WHO DON602 hantavirus 2026` — MEDIUM; routine
 - `hantavirus Tristan da Cunha lab confirmed positive 2026` — MEDIUM
 - `hantavirus Canada Yukon patient Victoria update May 18 2026` — MEDIUM; any progression
+
+## Cycle 43 — 2026-05-17 (23:40–23:44 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO death recovery May 17 18 2026` — French patient daily death/recovery check
+2. `hantavirus Ascension Island medic HCID Guy's Thomas test result May 17 18 2026` — Ascension medic result watch
+3. `MV Hondius Rotterdam arrived crew hantavirus GGD tests May 18 2026` — ship arrival status
+4. `Oceanwide Expeditions Iceland sailing cancelled decision hantavirus May 18 2026` — sailing decision
+5. `WHO DON602 hantavirus Andes virus 2026 published` — routine DON check
+6. `hantavirus Argentina Chile rodent sequencing genomic origin Andes virus investigation 2026` — origin investigation (discovery)
+7. `hantavirus Tristan da Cunha lab confirmed positive result 2026` — Tristan lab result watch
+8. `ECDC rapid risk assessment ANDV healthcare IPC guidance hantavirus infection prevention control May 2026` — ECDC guidance (discovery)
+9. `Oceanwide Expeditions hantavirus MV Hondius Iceland cruise cancelled May 2026 official` — sailing decision (more specific)
+10. `hantavirus cruise ship lawsuit Oceanwide passenger legal action Netherlands May 2026` — legal/lawsuit angle (discovery)
+
+### Pages fetched
+- hantavirus.one ✓ — May 17 23:41 UTC: 9 confirmed + 2 probable + 1 inconclusive, 3 deaths; French patient still on ECMO, ~250+ hours; no new cases or deaths
+- Wikipedia/MV_Hondius ✓ — last updated May 17; ship not yet arrived Rotterdam (ETA ~05:00 CET May 18); 9 confirmed, 3 deaths; no new developments
+
+### What these queries found
+No new cases, no new deaths. French patient still on ECMO at Bichat (~250+ hours). MV Hondius not yet arrived Rotterdam as of 23:41 UTC. Ascension medic still at Guy's/Thomas HCID; no test result yet. WHO DON602 still 404 (43rd consecutive cycle). Oceanwide Iceland decision still unclear — "not clear when vessel will sail again" (multiple outlets May 17); no formal cancellation. No lawsuits filed (legal explainers confirm limited recourse; all speculation). New source found (not fetched): NHS England IPC guidance document for Andes virus healthcare settings (england.nhs.uk); spectrumlocalnews/ABC May 17 piece "demand for cruises undimmed." Argentine rodent sequencing: ongoing, pending ~4 weeks (consistent with prior state). ISP Chile Aysén sequences noted; no published genomic comparison with cruise ship strain yet.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `MV Hondius Rotterdam arrived GGD test results crew hantavirus May 18 2026` — HIGH; ship arriving ~03:00 UTC
+- `hantavirus France Bichat ECMO death recovery May 18 2026` — HIGH; daily death watch
+- `UKHSA hantavirus update May 18 2026 Ascension medic result Arrowe Park` — HIGH; result still pending
+- `Oceanwide Expeditions Iceland sailing decision cancelled hantavirus May 18 19 2026` — HIGH; expected post-arrival
+- `ECDC hantavirus update May 18 2026` — MEDIUM; daily ~12:00 UTC
+- `hantavirus Canada Yukon patient Victoria update May 18 2026` — MEDIUM; any progression
+- `NHS England hantavirus Andes virus IPC guidance healthcare settings 2026` — MEDIUM; new source to read
+- `WHO DON602 hantavirus 2026` — MEDIUM; routine
+- `hantavirus Tristan da Cunha lab result confirmed 2026` — MEDIUM

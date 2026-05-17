@@ -1,5 +1,5 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-17 (Cycle 42)*
+*Last updated: 2026-05-17 (Cycle 43)*
 
 ---
 
@@ -135,28 +135,6 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **Tristan da Cunha**: No new lab confirmation found. Still "probable."
 - **DIGEST DISPATCHED**: 2026-05-17-1150-digest.md (May 16 daily summary) via notify.sh (exit 0).
 
-### Cycle 39 Findings (2026-05-16 23:19–23:22 UTC)
-
-- **French patient (Bichat ECMO) — STILL ALIVE**: hantavirus.one updated 23:20 UTC May 16 (latest timestamp); patient still critically ill on ECMO, no death, no recovery. Now **~219+ hours on ECMO** since Cycle 16 alert.
-- **UKHSA May 16 update — KEY DETAIL**: 9 asymptomatic St Helena + Ascension contacts confirmed arriving UK Sunday May 17 → **Arrowe Park Hospital** for precautionary monitoring. Symptomatic Ascension Island medic (initial samples negative) has **safely arrived at Guy's and St Thomas' NHS Foundation Trust HCID unit** (London) for specialist assessment. UKHSA: "not a confirmed case" but evacuated due to rapid deterioration potential. First time specific HCID hospital named.
-- **MV Hondius**: AIS position ~47°N, 8°W, speed 12 knots; ETA Rotterdam May 18 ~05:00 CET confirmed unchanged.
-- **WHO DON602**: Still 404 (39th consecutive cycle without publication).
-- **Oceanwide May 29 Iceland sailing**: No decision found. Oceanwide press page still last updated May 13.
-- **IMO**: No formal IMO investigation or maritime safety actions found; only speculative press about potential future measures.
-- **Virological.org preprint**: No new updates to Palacios et al. May 10 preprint. Findings unchanged (single spillover, 98.76% Argentine ANDV identity).
-- **No new cases, no new deaths** from any source. Count remains 10 effective, 3 deaths.
-- **No dispatch warranted**: Ascension medic HCID transfer is precautionary (initial test negative); not a new confirmed case. If medic tests positive, that is alert-tier. Story remains in resolution phase.
-
-### Cycle 38 Findings (2026-05-16 21:49–22:10 UTC)
-
-- **French patient (Bichat ECMO) — STILL ALIVE**: hantavirus.one updated 21:50 UTC May 16 (data refresh 16:38 UTC): patient critically ill, still on ECMO; Dr. Xavier Lescure describes condition as "final stage of supportive care" on ECMO — reflects ongoing support status. No death in any source. Now **~216+ hours on ECMO** since Cycle 16 alert.
-- **New York high school case (MEDIA NOISE — not cruise ship linked)**: Geneva High School student (Ontario County, NY) has suspected hantavirus. Ontario County Public Health Director Kate Ott: "There is no connection to the current cruise ship outbreak." North American endemic strain (not ANDV; not person-to-person). Student has mild symptoms for weeks, recovering. No public health risk to students/staff. ([Newsweek](https://www.newsweek.com/high-school-student-infected-hantavirus-new-york-11957727))
-- **Tristan da Cunha — "stable and improving"**: St Helena Government May 14 update states patient "remains stable and is improving." First improvement signal beyond simply "stable." Still probable, no lab confirmation.
-- **St Helena/Ascension contacts arriving UK**: St Helena Gov May 14: small group of higher-risk contacts scheduled to arrive UK Saturday May 16 (flight arriving), departing Sunday May 17, pending weather. UKHSA previously confirmed 9 contacts, all asymptomatic. Ascension Island: one high-risk contact developed symptoms with initial negative test; being relocated to UK for precautionary medical care access. St Helena: zero confirmed/suspected cases. ([St Helena Gov](https://www.sainthelena.gov.sh/daily-update-hantavirus-response-14-may-2026/))
-- **WHO DON602**: Still 404 (38th consecutive cycle without publication).
-- **No new cases, no new deaths** from any source. Case count remains 10 effective, 3 deaths.
-- **No dispatch warranted**: Quiet evening cycle. No clinical events. Tristan da Cunha "improving" is positive but below alert threshold. NY school case explicitly not linked to outbreak.
-
 ### Cycle 41 Findings (2026-05-17 14:30–14:35 UTC)
 
 - **NEW CONFIRMED CASE — CANADA (ALERT-TIER)**: PHAC announced May 16 (Saturday) that a Canadian MV Hondius passenger tested "presumptively positive" for Andes hantavirus. Patient is in British Columbia, quarantined, with mild symptoms. NML Winnipeg confirmatory testing pending (~May 18). **ECDC May 17 12:00 UTC update officially classifies Canada as confirmed** — ECDC total: **12 cases** (9 confirmed, 2 probable, 1 inconclusive), 3 deaths. First confirmed North American case. All US monitoring (41 people, 16+ states) remains negative. 4 Canadians from ship quarantined in BC; 36 Canadians connected to outbreak. This case was NOT captured in the May 16 digest.
@@ -168,6 +146,19 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - **WHO DON602**: Still 404 (41st consecutive cycle without publication).
 - **Tristan da Cunha**: Still probable, no lab confirmation. No new updates.
 - **ALERT DISPATCHED**: 2026-05-17-1434-alert.md (Canadian confirmed case) via notify.sh.
+
+### Cycle 43 Findings (2026-05-17 23:40–23:44 UTC)
+
+- **No new cases, no new deaths**: hantavirus.one (May 17 23:41 UTC) confirms 9 confirmed + 2 probable + 1 inconclusive, 3 deaths — unchanged. French patient still on ECMO, ~250+ hours since Cycle 16 alert. No death or recovery signal.
+- **MV Hondius Rotterdam**: Still at sea as of 23:41 UTC May 17; ETA ~05:00 CET May 18 (~03:00 UTC). GGD/RIVM ready to test all 27 aboard on arrival. No early arrival news found.
+- **Ascension medic (Guy's & Thomas HCID)**: No test result published. Still under specialist assessment. Not a confirmed case. No change from Cycle 42.
+- **Oceanwide Iceland sailing**: Multiple May 17 outlets reporting company says it's "unclear when vessel will sail again" — "not clear" framing replacing earlier "by end of week" promise. No cancellation or approval announced. Decision expected after Rotterdam arrival/decontamination.
+- **Lawsuits**: No actual lawsuit filed against Oceanwide. Legal explainers (May 13) confirm limited recourse: Dutch court jurisdiction (District Court of Middelburg), liability waivers, high bar for gross negligence. Consistent with prior state.
+- **WHO DON602**: Still 404 (43rd consecutive cycle without publication).
+- **Tristan da Cunha**: Still probable, no lab confirmation. No new updates.
+- **Discovery — NHS England IPC guidance**: NHS England published specific IPC measures document for Andes virus in healthcare settings (england.nhs.uk/long-read/ipc-measures...) — new source, not previously logged; informational/scientific; not fetched this cycle.
+- **Discovery — Demand undimmed**: ABC News/Spectrum Local May 17 feature: cruise demand holding despite hantavirus; no operational facts; logged as irrelevant.
+- **No dispatch warranted**: Quiet late-evening cycle. All threads stable. No alert-tier events.
 
 ### Cycle 42 Findings (2026-05-17 21:14–21:35 UTC)
 
