@@ -1,12 +1,12 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-18T09:43:00Z — Cycle 2*
+*Last updated: 2026-05-18T13:55:00Z — Cycle 3*
 
 ---
 
 ## Summary
 
-A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with initial spread to Uganda's capital Kampala and a confirmed case in Goma (North Kivu, under M23 control). WHO declared a PHEIC on May 17, 2026 — notably without convening an Emergency Committee, which is unprecedented. There are no approved vaccines or treatments for the Bundibugyo strain (existing licensed vaccines target Zaire, which is ~40% genetically different). This is the **LARGEST documented Bundibugyo outbreak ever** (previous record: 131 cases, Uganda 2007). As of May 17, 336 suspected cases and 89 deaths, with 12 lab-confirmed cases. This is DRC's 17th Ebola outbreak since 1976.
+A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with initial spread to Uganda's capital Kampala and a confirmed case in Goma (North Kivu, under M23 control). WHO declared a PHEIC on May 17, 2026 — notably without convening an Emergency Committee, which is unprecedented (EC will be convened retrospectively per IHR). There are no approved vaccines or treatments for the Bundibugyo strain (existing licensed vaccines target Zaire, which is ~40% genetically different). This is the **LARGEST documented Bundibugyo outbreak ever** (previous record: 131 cases, Uganda 2007). As of May 17, 336 suspected cases and 89 deaths, with 12 lab-confirmed cases — no new count as of 13:55 UTC May 18. Rwanda closed ALL DRC border crossings (Rubavu-Goma and Rusizi) as of May 17, directly contradicting WHO guidance against border closures. This is DRC's 17th Ebola outbreak since 1976.
 
 ---
 
@@ -49,7 +49,8 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 
 **Not yet affected (monitored):**
 - South Sudan: no confirmed cases; US Embassy Juba alert issued May 17; included in Africa CDC coordination meeting
-- Rwanda/Burundi: no confirmed cases; DRC/Rwanda border region described as "on high alert" due to transit hub role (source: aggregator snippet — unverified from primary source)
+- Rwanda: no confirmed cases. **Border closure CONFIRMED** — Rwanda closed ALL crossings with DRC (Rubavu-Goma AND Rusizi entry points) effective May 17, "for an indefinite period" per Rubavu District Mayor Prosper Mulindwa. Exceptions only for nationals returning home under mandatory testing + quarantine. Daily cross-border water-fetching by DRC residents now prohibited. WHO explicitly advised against border closures — Rwanda is defying this guidance. (KT Press, Xinhua, May 2026)
+- Burundi: no confirmed cases; no reporting
 - CAR: no reporting
 
 ### Patient Zero / Timeline
@@ -102,6 +103,11 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 - CDC Travel Advisories: DRC = Level 2 (Ituri Province preexisting Level 4); Uganda = Level 1
 - Exit screening at airports and border crossings for febrile illness
 - **USAID structural gap:** USAID dismantling has weakened contact tracing capacity, border screening infrastructure, and laboratory capacity in the region — structural deficit vs. prior DRC Ebola responses (Gounder, May 2026)
+- **PPE stockpile warning (Africa CDC):** If transmission escalates, PPE stockpiles would require 6–8 weeks to replenish — potential supply chain bottleneck in a surge scenario (Health Policy Watch, May 2026)
+- **Rwanda border closure (CONFIRMED):** Rwanda's Rubavu District Mayor Prosper Mulindwa confirmed closure of Rubavu-Goma and Rusizi crossings effective May 17, "indefinite." Exceptions for nationals returning under quarantine; daily cross-border water-fetching now prohibited. WHO guidelines explicitly oppose border closures — Rwanda defying this guidance. (KT Press + Xinhua, May 17–18 2026)
+- **EC retrospective convening:** WHO will convene Emergency Committee "as soon as possible" after the PHEIC declaration — the EC will advise on temporary recommendations retrospectively, not in advance as normally required under IHR. (Health Policy Watch, May 2026)
+- **Mongbwalu as likely origin:** Mongbwalu mining zone identified as probable site of outbreak origin — consistent with mining-linked population movement amplifying spread. (Health Policy Watch, May 2026)
+- **American evacuees update:** 3 of 6 at high-risk contact; 1 showing symptoms; no confirmed positive tests as of May 18 13:55 UTC; CDC coordinating withdrawal (CBS News, May 2026)
 
 ### Treatment & Vaccine Pipeline
 
@@ -131,7 +137,10 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 9. **EC override governance:** Any published analysis (STAT, Science, Nature) on IHR implications of PHEIC-without-EC? Is this a precedent change or one-time exception?
 10. **American evacuees testing:** Any confirmed positive result among the 6 evacuated Americans would constitute a new confirmed case in new territory — watch closely.
 11. **USAID impact:** What specifically has the USAID dismantling cut relative to this response vs. the 2018–2020 North Kivu outbreak infrastructure?
-12. **Rwanda border closure:** Aggregator sources claim DRC/Rwanda border closed. Needs verification from primary source (Rwanda MOH, WHO, or wire service).
+12. ~~**Rwanda border closure:** RESOLVED — confirmed via primary source (Rubavu District Mayor). Rubavu-Goma AND Rusizi crossings closed May 17, indefinitely.~~
+13. **Rwanda humanitarian fallout:** Water-fetching prohibition may push DRC residents to unmonitored crossings — does this create transmission corridors or strain DRC border communities? Who is monitoring this?
+14. **PPE supply chain:** Africa CDC warned 6–8 week replenishment window if transmission escalates. What is the current PPE stock level relative to projected case growth? Who is managing the supply chain?
+15. **EC retrospective convening:** When will WHO Emergency Committee convene? What temporary recommendations will they issue?
 
 ---
 
@@ -143,7 +152,10 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 - **South Sudan case status:** Monitor WHO AFRO and South Sudan MOH for first confirmed case
 - **USAID impact thread:** Reporting on which contact tracing/lab programs were defunded and how this compares to 2018–2020 response infrastructure
 - **EC governance question:** STAT News or Science/Nature coverage of PHEIC-without-EC precedent
-- **Rwanda border:** Verify claimed border closure from primary source
+- ~~**Rwanda border:** RESOLVED — Rubavu-Goma and Rusizi closed May 17 per Rwanda Mayor Mulindwa.~~
+- **Rwanda humanitarian impact:** Is the water-fetching ban creating unmonitored border crossings? Watch for local media (KT Press, New Times Rwanda) follow-up
+- **WHO Emergency Committee convening:** Watch for WHO announcement on when EC will meet and what temporary recommendations result
+- **PPE supply chain:** Monitor Africa CDC and partners for stockpile status update
 - **Updated case count:** WHO situation report expected for May 18; check WHO AFRO and DON page
 - **Phylogenetic analysis:** Any preprint (bioRxiv, Virological.org) on genomic sequencing of this BDBV strain that could date the spillover
 - **Kinshasa Wikipedia lag:** Watch for Wikipedia correction on Kinshasa case ruling-out
@@ -154,7 +166,7 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 
 - **Kinshasa case:** Wikipedia (as of May 18) still lists Kinshasa as affected; WHO explicitly stated tests were negative. Wikipedia is stale. Treat as ruled out.
 - **Case count discrepancies:** Wikipedia (May 17): 336 suspected/89 deaths/12 confirmed. WHO DON (May 15/16): 246 suspected/80 deaths/8–13 confirmed. Both are legitimate snapshots at different times. Most current = 336/89/12 (unchanged as of May 18 morning).
-- **Rwanda border closure:** Aggregator content claims DRC/Rwanda border is closed. No confirmation from WHO, Rwanda MOH, or wire service. Flag as unverified.
+- **Rwanda border closure:** RESOLVED. Confirmed closed via primary source (Rubavu District Mayor Prosper Mulindwa, May 17). Both Rubavu-Goma and Rusizi crossings closed. Directly contradicts WHO guidance against border closures.
 - **True index case date:** Imperial College suggests circulation "weeks or months" before April 24 — the official index case may not be the true spillover. Unresolved.
 
 ---
@@ -169,8 +181,21 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 | 2026-05-14 | Uganda Case 1 dies; INRB confirms first positive PCR tests for Bundibugyo |
 | 2026-05-15 | DRC officially declares outbreak; 246 suspected/80 deaths; Africa CDC emergency coordination meeting with 30+ partners |
 | 2026-05-16 | Uganda Case 2 confirmed; 3 health zones confirmed (Bunia, Rwampara, Mongbwalu); WHO DG signals PHEIC |
-| 2026-05-17 | WHO declares PHEIC (without Emergency Committee — unprecedented); 336 suspected/89 deaths/12 confirmed; Goma case confirmed; Kinshasa case ruled out; US Embassy Juba issues alert; US begins coordinating evacuation of 6 exposed Americans |
-| 2026-05-18 | New US Embassy Kampala health alert; no updated case count as of 09:43 UTC |
+| 2026-05-17 | WHO declares PHEIC (without Emergency Committee — unprecedented); 336 suspected/89 deaths/12 confirmed; Goma case confirmed; Kinshasa case ruled out; US Embassy Juba issues alert; US begins coordinating evacuation of 6 exposed Americans; Rwanda closes Rubavu-Goma and Rusizi border crossings (defying WHO guidance) |
+| 2026-05-18 | New US Embassy Kampala health alert; no updated case count as of 13:55 UTC; Rwanda border closure confirmed via primary source (Rubavu District Mayor Mulindwa) |
+
+---
+
+### Cycle 3 Findings (2026-05-18 13:38–13:55 UTC)
+
+**Resolution and supply chain cycle.** Key new confirmed facts:
+- **Rwanda border closure CONFIRMED** — primary source: Rubavu District Mayor Prosper Mulindwa. Both Rubavu-Goma AND Rusizi crossings closed effective May 17, "indefinitely." Exceptions for nationals only under quarantine. Daily cross-border water-fetching now prohibited for DRC residents. Rwanda is the first country to defy WHO's explicit "no border closures" guidance. (KT Press, Xinhua)
+- **PPE stockpile warning**: Africa CDC warned PPE would require 6–8 weeks to replenish if transmission escalates — a supply chain bottleneck that hasn't been previously reported (Health Policy Watch)
+- **Mongbwalu as likely origin**: Mongbwalu mining zone identified as probable outbreak origin — reinforces mining-population-movement transmission vector thread (Health Policy Watch)
+- **EC retrospective convening**: WHO Emergency Committee will meet *after* the PHEIC declaration, not before — it will issue temporary recommendations retrospectively. This is the IHR procedural nuance for the unprecedented PHEIC-without-EC (Health Policy Watch)
+- **American evacuees**: 3 of 6 at high-risk contact, 1 symptomatic; no confirmed positive tests as of cycle end (CBS News)
+- **No updated case count** — still 336/89/12 as of 13:55 UTC May 18; case count unchanged across all three cycles today
+- No phylogenetic preprint found on this BDBV strain (not yet indexed)
 
 ---
 
@@ -213,3 +238,8 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 - STAT News (Americans exposure): https://www.statnews.com/2026/05/17/ebola-outbreak-congo-americans-exposure-suspected-cases/
 - Imperial College London Q&A: https://www.imperial.ac.uk/news/articles/2026/ebola-outbreak-2026-qa-with-experts/
 - Celine Gounder analysis: https://www.celinegounder.com/p/ebola-bundibugyo-congo-ituri-outbreak-2026
+- KT Press (Rwanda border closure): https://www.ktpress.rw/2026/05/rwanda-closes-rubavu-goma-border-over-ebola-fears/
+- Xinhua (May 18 — Goma + Rwanda border): https://english.news.cn/20260518/c40dc5f105084bb49baf41fae3890968/c.html
+- Health Policy Watch (larger outbreak + PPE + EC): https://healthpolicy-watch.news/drc-ebola-outbreak-may-be-much-larger-than-currently-reported/
+- CBS News (American evacuees): https://www.cbsnews.com/news/americans-ebola-congo-outbreak-cdc/
+- CDC Situation Summary: https://www.cdc.gov/ebola/situation-summary/index.html

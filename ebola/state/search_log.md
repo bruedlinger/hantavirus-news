@@ -89,3 +89,41 @@
 - MSF treatment centre attack (confirmed 2019 only)
 - "Bundibugyo vaccine" — covered; only Oxford/Moderna CEPI early-stage exists
 - General "Ebola outbreak latest" — saturated with same cycle-1 articles
+
+## 2026-05-18 (Cycle 3 — Resolution + Supply Chain)
+
+**Queries run:**
+1. `WHO Ebola DRC situation report May 18 2026 case count update` — no new WHO report; still 336/89/12; same articles as prior cycles
+2. `Ebola 2026 Americans evacuated testing results positive negative` — CBS News: 3 of 6 high-risk, 1 symptomatic, no confirmed positive; NBC News article surfaced (not fetched)
+3. `Ebola Bundibugyo genomic sequencing phylogenetic analysis 2026 preprint` — no 2026 preprint found; only 2021 bioRxiv on prior outbreaks
+4. `Rwanda DRC border closed Ebola 2026 primary source official` — **CONFIRMED**: Rubavu District Mayor Mulindwa confirmed Rubavu-Goma AND Rusizi closings; KT Press, Xinhua, multiple outlets
+5. `Ebola 2026 WHO PHEIC Emergency Committee governance IHR precedent analysis` — EC will convene retrospectively per IHR; Science AAAS article surfaced; Health Policy Watch article surfaced
+
+**URLs fetched this cycle (5 successful):**
+- https://www.ktpress.rw/2026/05/rwanda-closes-rubavu-goma-border-over-ebola-fears/ (novel: Rwanda border closure confirmed primary source, Rusizi also closed)
+- https://english.news.cn/20260518/c40dc5f105084bb49baf41fae3890968/c.html (novel: Goma woman traveled from Bunia; Rwanda border closure Xinhua reporting)
+- https://healthpolicy-watch.news/drc-ebola-outbreak-may-be-much-larger-than-currently-reported/ (novel: PPE 6–8 week replenishment warning; Mongbwalu as origin; EC retrospective convening)
+- https://www.cbsnews.com/news/americans-ebola-congo-outbreak-cdc/ (novel: 3 of 6 high-risk, 1 symptomatic, no confirmed positives)
+- https://www.cdc.gov/ebola/situation-summary/index.html (no new numbers: 336/88/12 per CDC; consistent with prior data)
+
+**URLs not fetched (low priority / aggregator):**
+- CNN May 18 article — still truncated (add to next cycle priority with lower priority, 2 prior attempts failed)
+- NBC News Americans article — similar coverage to CBS, skipped
+- Science AAAS article — PHEIC governance; add to next cycle for EC analysis
+
+**Dispatch decision:** QUIET — Rwanda border closure is significant but does not meet strict alert criteria (no new case in new country, no death toll spike, no containment failure). Noted as confirmed resolved thread.
+
+**Priority for Cycle 4:**
+- WHO Emergency Committee convening announcement
+- Science AAAS article on PHEIC governance analysis
+- NBC News Americans evacuation — any new details
+- Any confirmed positive test result among evacuated Americans (would be new country alert)
+- Africa CDC updated situation report or PPE stockpile detail
+- Rwanda: any follow-up on humanitarian impact of border ban (KT Press, New Times Rwanda)
+- Phylogenetic preprint — check virological.org directly
+- Treatment RCT: any ClinicalTrials.gov announcement
+
+**What NOT to search next cycle (already covered):**
+- "Rwanda border" — resolved
+- "Bundibugyo vaccine" — no new developments expected
+- General "Ebola outbreak latest" — saturated
