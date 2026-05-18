@@ -1,12 +1,12 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-18T13:55:00Z — Cycle 3*
+*Last updated: 2026-05-18T20:21:13Z — Cycle 4*
 
 ---
 
 ## Summary
 
-A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with initial spread to Uganda's capital Kampala and a confirmed case in Goma (North Kivu, under M23 control). WHO declared a PHEIC on May 17, 2026 — notably without convening an Emergency Committee, which is unprecedented (EC will be convened retrospectively per IHR). There are no approved vaccines or treatments for the Bundibugyo strain (existing licensed vaccines target Zaire, which is ~40% genetically different). This is the **LARGEST documented Bundibugyo outbreak ever** (previous record: 131 cases, Uganda 2007). As of May 17, 336 suspected cases and 89 deaths, with 12 lab-confirmed cases — no new count as of 13:55 UTC May 18. Rwanda closed ALL DRC border crossings (Rubavu-Goma and Rusizi) as of May 17, directly contradicting WHO guidance against border closures. This is DRC's 17th Ebola outbreak since 1976.
+A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with initial spread to Uganda's capital Kampala and a confirmed case in Goma (North Kivu, under M23 control). WHO declared a PHEIC on May 17, 2026 — notably without convening an Emergency Committee, which is unprecedented (EC will be convened retrospectively per IHR). There are no approved vaccines or treatments for the Bundibugyo strain (existing licensed vaccines target Zaire, which is ~40% genetically different). This is the **LARGEST documented Bundibugyo outbreak ever** (previous record: 131 cases, Uganda 2007). As of May 17, 336 suspected cases and 89 deaths, with 12 lab-confirmed cases — no new WHO count as of 20:21 UTC May 18. **NEW (Cycle 4):** Dr. Peter Stafford, an American physician in Bunia, confirmed Ebola-positive — being transported to Germany for treatment; US imposes first-ever Ebola travel ban (DRC/Uganda/South Sudan); Africa CDC weighing PHECS declaration. Rwanda AND the US are both defying WHO's "no travel restrictions" guidance. This is DRC's 17th Ebola outbreak since 1976.
 
 ---
 
@@ -22,7 +22,7 @@ A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late Ap
 - **Scale record:** LARGEST documented Bundibugyo outbreak ever. Previous BDBV outbreaks: 2007 Uganda (131 cases), 2012 DRC (38 cases). At 336 suspected cases this massively exceeds prior scale. (Imperial College Q&A, May 2026)
 - **Detection gap — deeper than official figure:** Imperial College epidemiologists note the volume of community deaths before official declaration suggests the outbreak "likely went undetected and spread for several weeks or even months" before April 24 symptom onset in first identified case — the actual origin may predate the official April 24 index case
 
-### Case Counts (as of May 17, 2026 — unchanged as of May 18 morning 09:43 UTC)
+### Case Counts (as of May 17, 2026 — unchanged as of May 18 20:21 UTC)
 
 | Category | Count |
 |---|---|
@@ -105,9 +105,16 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 - **USAID structural gap:** USAID dismantling has weakened contact tracing capacity, border screening infrastructure, and laboratory capacity in the region — structural deficit vs. prior DRC Ebola responses (Gounder, May 2026)
 - **PPE stockpile warning (Africa CDC):** If transmission escalates, PPE stockpiles would require 6–8 weeks to replenish — potential supply chain bottleneck in a surge scenario (Health Policy Watch, May 2026)
 - **Rwanda border closure (CONFIRMED):** Rwanda's Rubavu District Mayor Prosper Mulindwa confirmed closure of Rubavu-Goma and Rusizi crossings effective May 17, "indefinite." Exceptions for nationals returning under quarantine; daily cross-border water-fetching now prohibited. WHO guidelines explicitly oppose border closures — Rwanda defying this guidance. (KT Press + Xinhua, May 17–18 2026)
+- **US travel ban — first-ever for Ebola:** Foreign nationals from DRC, Uganda, and South Sudan banned from US entry if present in those countries within past 21 days. Signed by Jay Bhattacharya (NIH director/acting CDC official). Exempts US citizens, military, and DHS-approved travelers. Duration: 30 days. South Sudan included despite no confirmed cases. Defies WHO "no travel restrictions" guidance — US joins Rwanda in openly contradicting WHO. (STAT News, May 18, 2026)
+- **US airport screening:** Enhanced screening measures at US ports of entry implemented alongside travel ban (May 18, 2026)
+- **Africa CDC weighing PHECS:** Africa CDC is considering declaring a Public Health Emergency of Continental Security (escalation above WHO PHEIC under AU governance framework). Africa CDC DG cancelled WHO World Health Assembly meetings in Geneva to return to Africa and visit affected countries. (Africa CDC Statement, May 2026)
+- **AU leadership engagement:** Africa CDC DG consulted AU Commission Chair Mahmoud Ali Youssouf and engaged AU Chair / Burundi President Evariste Ndayishimiye "for further political guidance and continental solidarity." Africa CDC's Emergency Consultative Group being urgently convened. (Africa CDC Statement, May 2026)
+- **Africa CDC coordination scale:** 130+ participants in May 16 high-level meeting (vs. 30+ reported earlier — updated figure)
 - **EC retrospective convening:** WHO will convene Emergency Committee "as soon as possible" after the PHEIC declaration — the EC will advise on temporary recommendations retrospectively, not in advance as normally required under IHR. (Health Policy Watch, May 2026)
 - **Mongbwalu as likely origin:** Mongbwalu mining zone identified as probable site of outbreak origin — consistent with mining-linked population movement amplifying spread. (Health Policy Watch, May 2026)
-- **American evacuees update:** 3 of 6 at high-risk contact; 1 showing symptoms; no confirmed positive tests as of May 18 13:55 UTC; CDC coordinating withdrawal (CBS News, May 2026)
+- **Ituri humanitarian context:** 273,403 displaced people in Ituri Province; 1.9 million total in need; 32,600 newly displaced in Q1 2026; 11 incidents against humanitarian actors Q1 2026. The displacement amplifies outbreak spread and complicates contact tracing. (OCHA/UNICEF HAC 2026)
+- **Dr. Peter Stafford CONFIRMED POSITIVE:** American physician who worked at Bunia hospital since 2023 — confirmed Bundibugyo ebolavirus. Being transported to Germany for treatment (potentially first confirmed Ebola case on European soil this outbreak). His four children also being relocated; two unnamed colleagues being monitored/tested. (STAT News, May 18, 2026)
+- **Two physician colleagues under observation** — Stafford's wife and at least one other doctor at the Bunia charity hospital had exposure; no symptoms reported as of dispatch time
 
 ### Treatment & Vaccine Pipeline
 
@@ -135,7 +142,11 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 7. **MSF treatment capacity:** Two transit centres confirmed; large-scale mobilization in progress. Are dedicated ETUs operational? What is current bed capacity?
 8. **Neighboring country screening:** What is actual operational screening capacity at Rwanda/CAR/South Sudan border crossings?
 9. **EC override governance:** Any published analysis (STAT, Science, Nature) on IHR implications of PHEIC-without-EC? Is this a precedent change or one-time exception?
-10. **American evacuees testing:** Any confirmed positive result among the 6 evacuated Americans would constitute a new confirmed case in new territory — watch closely.
+10. ~~**American evacuees testing:** RESOLVED — Dr. Peter Stafford confirmed positive (May 18). See confirmed facts.~~
+10a. **Germany case status:** Will Germany register Dr. Stafford's case as a confirmed Ebola case on European soil? Which hospital? Under what biosafety protocol?
+10b. **Stafford colleagues' testing:** Two colleagues (including Stafford's wife) being monitored — results pending.
+10c. **US travel ban South Sudan inclusion rationale:** South Sudan has no confirmed cases — why is it included in the ban? Intelligence-based? Preventive? Confirms US assessment of South Sudan border risk.
+10d. **Africa CDC PHECS timeline:** When will Africa CDC Emergency Consultative Group convene? What would a PHECS declaration entail operationally?
 11. **USAID impact:** What specifically has the USAID dismantling cut relative to this response vs. the 2018–2020 North Kivu outbreak infrastructure?
 12. ~~**Rwanda border closure:** RESOLVED — confirmed via primary source (Rubavu District Mayor). Rubavu-Goma AND Rusizi crossings closed May 17, indefinitely.~~
 13. **Rwanda humanitarian fallout:** Water-fetching prohibition may push DRC residents to unmonitored crossings — does this create transmission corridors or strain DRC border communities? Who is monitoring this?
@@ -146,7 +157,11 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 
 ## Active Threads to Pull
 
-- **American evacuees:** Testing results for the 6 Americans — a confirmed positive would trigger alert
+- ~~**American evacuees:** RESOLVED — Dr. Peter Stafford confirmed positive.~~
+- **Dr. Stafford / Germany case:** Stafford being transported to Germany — watch for German Health Ministry confirmation of Ebola patient admission. Would be first confirmed European case of this outbreak.
+- **Stafford colleagues' test results:** Two colleagues at Bunia hospital being monitored (Stafford's wife + one other); any positive result = additional healthcare worker case
+- **Africa CDC PHECS:** Watch africacdc.org for Emergency Consultative Group convening and potential PHECS declaration — this would be a significant escalation and potential alert
+- **WHO EC convening date:** Still no specific date announced; "as soon as possible"
 - **Goma/M23:** Any primary source reporting on operational response in Goma; whether WHO/MSF have any access at all
 - **Treatment trial initiation:** Watch CIDRAP, STAT, Wellcome Trust, ClinicalTrials.gov for announcement of trial start in DRC/Uganda
 - **South Sudan case status:** Monitor WHO AFRO and South Sudan MOH for first confirmed case
@@ -182,9 +197,22 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 | 2026-05-15 | DRC officially declares outbreak; 246 suspected/80 deaths; Africa CDC emergency coordination meeting with 30+ partners |
 | 2026-05-16 | Uganda Case 2 confirmed; 3 health zones confirmed (Bunia, Rwampara, Mongbwalu); WHO DG signals PHEIC |
 | 2026-05-17 | WHO declares PHEIC (without Emergency Committee — unprecedented); 336 suspected/89 deaths/12 confirmed; Goma case confirmed; Kinshasa case ruled out; US Embassy Juba issues alert; US begins coordinating evacuation of 6 exposed Americans; Rwanda closes Rubavu-Goma and Rusizi border crossings (defying WHO guidance) |
-| 2026-05-18 | New US Embassy Kampala health alert; no updated case count as of 13:55 UTC; Rwanda border closure confirmed via primary source (Rubavu District Mayor Mulindwa) |
+| 2026-05-18 (morning) | New US Embassy Kampala health alert; no updated case count as of 13:55 UTC; Rwanda border closure confirmed via primary source (Rubavu District Mayor Mulindwa) |
+| 2026-05-18 (evening) | Dr. Peter Stafford (American physician, Bunia) confirmed Ebola-positive; being transported to Germany for treatment; two Bunia hospital colleagues being monitored; US imposes first-ever Ebola travel ban (DRC/Uganda/South Sudan); Africa CDC weighing PHECS; Africa CDC DG cancels Geneva WHO Assembly meetings; AU Chair (Burundi President Ndayishimiye) engaged |
 
 ---
+
+### Cycle 4 Findings (2026-05-18 20:17–20:21 UTC)
+
+**Alert cycle — three simultaneous alert-tier developments.** Key new confirmed facts:
+- **Dr. Peter Stafford (American physician, Bunia) confirmed Ebola-positive** — healthcare worker criterion met; being transported to Germany; four children + two colleagues also relocating (colleagues under observation). (STAT News May 18)
+- **US imposes first-ever Ebola travel ban** — foreign nationals from DRC, Uganda, South Sudan with presence in past 21 days barred from US entry for 30 days. Signed by Jay Bhattacharya. US joins Rwanda in defying WHO "no travel restrictions" guidance. South Sudan included despite zero confirmed cases — raises question of US intelligence assessment. (STAT News May 18)
+- **Africa CDC weighing PHECS declaration** — Public Health Emergency of Continental Security (escalation above WHO PHEIC). DG cancelled WHO World Health Assembly Geneva meetings. 130+ participants in May 16 coordination meeting (previously reported as 30+). AU Commission Chair + Burundi President (AU Chair) engaged. (Africa CDC Statement)
+- **Ituri humanitarian backdrop**: 273K displaced, 1.9M in need, 11 humanitarian incidents Q1 2026 (OCHA/UNICEF HAC 2026)
+- **No updated WHO case count** — still 336/89/12 for 4th consecutive cycle
+- **Nature article on 2026 drug trials** — paywalled; add to next cycle; WHO-sponsored trial pending DRC/Uganda government approval per other sources
+- **WHO EC convening date** — not yet announced; still "as soon as possible"
+- **ALERT dispatched** to outbox (2026-05-18-2021-alert.md)
 
 ### Cycle 3 Findings (2026-05-18 13:38–13:55 UTC)
 
@@ -243,3 +271,8 @@ Earlier reported figures (May 15–16, per WHO DON, Africa CDC): 246 suspected /
 - Health Policy Watch (larger outbreak + PPE + EC): https://healthpolicy-watch.news/drc-ebola-outbreak-may-be-much-larger-than-currently-reported/
 - CBS News (American evacuees): https://www.cbsnews.com/news/americans-ebola-congo-outbreak-cdc/
 - CDC Situation Summary: https://www.cdc.gov/ebola/situation-summary/index.html
+- STAT News (US travel ban + Stafford, May 18): https://www.statnews.com/2026/05/18/cdc-ebola-travel-ban-announced-uganda-congo-south-sudan/
+- Washington Post (US screening + Stafford, May 18): https://www.washingtonpost.com/health/2026/05/18/ebola-outbreak-prompts-us-screen-travelers-airports-other-ports-entry/
+- Africa CDC Director General Statement (May 2026): https://africacdc.org/news-item/ebola-response-statement-from-the-director-general-africa-cdc/
+- OCHA DRC: https://www.unocha.org/democratic-republic-congo
+- Nature (2026 drug trial race — paywalled): https://www.nature.com/articles/d41586-026-01607-4

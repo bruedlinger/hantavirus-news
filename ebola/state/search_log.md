@@ -127,3 +127,42 @@
 - "Rwanda border" — resolved
 - "Bundibugyo vaccine" — no new developments expected
 - General "Ebola outbreak latest" — saturated
+
+## 2026-05-18 (Cycle 4 — Alert: Stafford + US Travel Ban + Africa CDC PHECS)
+
+**Queries run:**
+1. `Ebola 2026 Americans evacuated tested positive negative update May 18` — **ALERT**: Dr. Peter Stafford (physician, Bunia) confirmed positive; US travel ban announced covering DRC/Uganda/South Sudan; WaPo article surfaced (May 18)
+2. `WHO Emergency Committee Ebola PHEIC 2026 convene date announcement` — No specific date; WHO still says "as soon as possible"
+3. `WHO Ebola DRC situation report May 18 2026 case count update` — No new WHO sitrep; count still 336/89/12; NPR, UN News, CDC articles (all prior cycles or same data)
+4. `Ebola 2026 Burundi border screening DRC outbreak response` — Africa CDC DG engaged Burundi President (AU Chair); no Burundi-specific border screening detail; Africa CDC statement surfaced
+5. `OCHA DRC Ituri Ebola 2026 humanitarian situation report` — OCHA page surfaced: 273K displaced in Ituri, 1.9M in need; 32.6K newly displaced Q1 2026; no dedicated Ebola sitrep yet
+6. `Ebola 2026 ClinicalTrials.gov remdesivir Bundibugyo treatment trial registration` — Nature article surfaced ("Race begins to trial Ebola drugs") — paywalled; NIH article surfaced but confirmed to be 2018 article (North Kivu outbreak); WHO-sponsored trial pending DRC/Uganda approval
+
+**URLs fetched this cycle (5 attempts, 3 successful):**
+- https://www.statnews.com/2026/05/18/cdc-ebola-travel-ban-announced-uganda-congo-south-sudan/ (**novel**: Stafford confirmed positive; US travel ban details)
+- https://www.washingtonpost.com/health/2026/05/18/ebola-outbreak-prompts-us-screen-travelers-airports-other-ports-entry/ (403 Forbidden — confirmed via search snippet only)
+- https://www.nih.gov/news-events/news-releases/clinical-trial-investigational-ebola-treatments-begins-democratic-republic-congo (fetched — confirmed this is the 2018 North Kivu article, NOT 2026; marked irrelevant)
+- https://africacdc.org/news-item/ebola-response-statement-from-the-director-general-africa-cdc/ (**novel**: PHECS consideration; 130+ participants; DG cancelled Geneva; AU Chair engaged)
+- https://www.nature.com/articles/d41586-026-01607-4 (paywalled — redirect to auth; not fetched)
+
+**URLs not fetched:**
+- CNN May 18 (still truncated from prior cycles — low priority now given STAT News covers same ground)
+- NBCNews Americans — overlapping with STAT coverage
+- Al Jazeera OCHA feature — aggregator-adjacent; key facts in OCHA search snippet
+
+**Dispatch decision:** **ALERT** — dispatched to outbox/2026-05-18-2021-alert.md. Three simultaneous alert criteria met: (1) named healthcare worker confirmed positive (Dr. Stafford, physician), (2) confirmed patient being transferred to Germany (potential new country), (3) first-ever US Ebola travel ban.
+
+**Priority for Cycle 5:**
+- Germany: hospital receiving Stafford, any case registration confirmation (German Health Ministry, RKI)
+- Stafford colleagues' test results (wife + other Bunia doctor)
+- Africa CDC PHECS declaration — watch africacdc.org directly
+- WHO Emergency Committee convening date announcement
+- Nature drug trial article — try alternate route (Google cache, science news coverage)
+- Updated WHO case count / new DON publication
+- South Sudan MOH response to US travel ban inclusion
+- Al Jazeera features piece on DRC humanitarian crisis (may have new operational detail)
+
+**What NOT to search next cycle (covered):**
+- "US travel ban" — resolved and dispatched
+- "Rwanda border" — fully resolved cycle 3
+- "NIH clinical trial" — confirmed as 2018 article; skip this URL
