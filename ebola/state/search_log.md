@@ -48,3 +48,44 @@
 - MSF field report from Ituri
 - Contact tracing updated numbers
 - US evacuation of American citizens scope
+
+## 2026-05-18 (Cycle 2 — Discovery)
+
+**Queries run:**
+1. `WHO Ebola situation report May 18 2026 DRC case count update` — no new WHO report yet; still 336/89/12; Wikipedia updated May 18 but no new numbers
+2. `Ebola 2026 Goma M23 response access North Kivu` — confirmed ADF also in Ituri (separate from M23 in Goma); both hamper response; CNN/Al Jazeera detail
+3. `Ebola Bundibugyo vaccine treatment clinical trial 2026` — 4 RCT candidates confirmed; Oxford/Moderna CEPI vaccine ($26.7M); Sabin/IAVI Sudan-only
+4. `Ebola 2026 South Sudan Rwanda case contact border screening May` — no SS/Rwanda cases; Rwanda border "high alert" (aggregator, unverified); Africa CDC included SS in coordination; STAT News Americans article surfaced
+5. `MSF Médecins Sans Frontières Ituri Ebola 2026 treatment unit response` — MSF 2 transit centres (Bwanasura + Bunia); 3 isolated at Salama, Bunia; also surfaced CNN May 18 article
+6. `Ebola DRC 2026 new case May 18 update latest development` — US Embassy Kampala May 18 alert found; CDC mobilization article
+7. `MSF Ebola treatment centre attack 2026 Ituri suspended activities` — CONFIRMED: treatment centre attack articles are from 2019 North Kivu, NOT 2026. No attack in current outbreak.
+
+**URLs fetched this cycle (4 successful):**
+- https://www.statnews.com/2026/05/17/ebola-outbreak-congo-americans-exposure-suspected-cases/ (novel: six Americans, evacuation details)
+- https://www.imperial.ac.uk/news/articles/2026/ebola-outbreak-2026-qa-with-experts/ (novel: largest BDBV ever, detection gap deeper than stated)
+- https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic (no new counts; Wikipedia lag on Kinshasa)
+- https://www.celinegounder.com/p/ebola-bundibugyo-congo-ituri-outbreak-2026 (novel: 4 RCT candidates, USAID structural gap)
+
+**URLs attempted but failed:**
+- https://edition.cnn.com/2026/05/18/africa/ebola-outbreak-global-efforts-americans-intl-hnk (truncated — retry next cycle)
+- https://ug.usembassy.gov/health-alert-u-s-embassy-kampala-may-18-2026/ (technical error — retry next cycle)
+- https://www.msf.org/medical-activities-suspended-after-ebola-treatment-centre-attack (403 — confirmed as 2019 article anyway)
+- https://www.doctorswithoutborders.org/latest/msf-scales-response-ebola-epidemic-drc-amid-growing-tensions (returned 2019 content — wrong article)
+
+**Dispatch decision:** QUIET — no new case counts, no new countries, no containment failure. Alert criteria not met.
+
+**Priority for Cycle 3:**
+- CNN May 18 article (retry — content truncated)
+- US Embassy Kampala May 18 alert (retry)
+- WHO updated situation report / DON for May 18
+- CDC situation summary page (current numbers)
+- Any phylogenetic preprint on this BDBV strain (bioRxiv, Virological.org)
+- Rwanda border closure verification (primary source only)
+- American evacuee testing results (any outlet)
+- Africa CDC updated coordination URL
+- NPR article (timed out cycle 1, not retried yet)
+
+**What NOT to search next cycle (already covered this cycle):**
+- MSF treatment centre attack (confirmed 2019 only)
+- "Bundibugyo vaccine" — covered; only Oxford/Moderna CEPI early-stage exists
+- General "Ebola outbreak latest" — saturated with same cycle-1 articles

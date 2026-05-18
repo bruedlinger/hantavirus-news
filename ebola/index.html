@@ -114,12 +114,6 @@
     color: var(--muted);
   }
 
-  summary .subline {
-    font-size: 11px;
-    color: var(--muted);
-    font-style: italic;
-  }
-
   .dispatch-alert {
     border: 1px solid var(--alert-border);
     background: var(--alert-bg);
@@ -313,9 +307,9 @@
 
 <div class="story-status">
   <div class="stat">336 cases <span>(12 confirmed + 324 suspected)</span></div>
-  <div class="stat">89 deaths <span>(as of May 17; CFR ~26% overall, 30–50% historical for Bundibugyo)</span></div>
-  <div class="stat">2 countries <span>affected (DRC + Uganda)</span></div>
-  <div class="stat">Last checked <span>12:04 AM UTC</span></div>
+  <div class="stat">89 deaths <span>(suspected; CFR ~26% of suspected)</span></div>
+  <div class="stat">2 countries <span>affected (DRC, Uganda)</span></div>
+  <div class="stat">Last checked <span>9:45 AM UTC</span></div>
 </div>
 
 <section id="dispatches">
@@ -330,79 +324,149 @@
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">Baseline established: PHEIC declared, Bundibugyo strain, 336 suspected cases across DRC and Uganda</span>
+        <span class="headline">Six Americans being evacuated; USAID structural gaps identified; largest Bundibugyo outbreak ever confirmed</span>
+        <span class="timestamp">9:45 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; no new case counts, no new countries, no containment failure; alert criteria not met
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Scale record</span>
+          <span class="fi-value flag-new"><strong>Largest Bundibugyo outbreak ever.</strong> Previous record: 131 cases (Uganda, 2007). At 336 suspected, this is historically unprecedented for this strain. (Imperial College)</span>
+        </li>
+        <li>
+          <span class="fi-label">Detection gap</span>
+          <span class="fi-value flag-new">Imperial College: pre-detection death volume suggests outbreak <strong>circulated weeks or months before April 24</strong> — true spillover likely earlier than the official index case.</span>
+        </li>
+        <li>
+          <span class="fi-label">US / Americans</span>
+          <span class="fi-value flag-new"><strong>Six Americans being evacuated</strong> to US or US military base in Germany. At least one may have symptoms; testing pending. (STAT News, May 17)</span>
+        </li>
+        <li>
+          <span class="fi-label">Security / ADF</span>
+          <span class="fi-value flag-alert"><strong>ADF (Allied Democratic Forces)</strong> confirmed active in Ituri — separate armed threat from M23 in Goma. Two distinct armed groups hampering access and contact tracing.</span>
+        </li>
+        <li>
+          <span class="fi-label">USAID gap</span>
+          <span class="fi-value flag-alert">USAID dismantling has <strong>structurally weakened</strong> contact tracing, border screening, and lab capacity — deficit vs. prior DRC Ebola responses. (Gounder, May 2026)</span>
+        </li>
+        <li>
+          <span class="fi-label">MSF capacity</span>
+          <span class="fi-value flag-new">MSF has <strong>2 transit centres in Ituri</strong> (Bwanasura + Bunia); 3 suspected cases isolated at Salama clinic, Bunia. Large-scale response mobilizing.</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment RCTs</span>
+          <span class="fi-value flag-new"><strong>4 experimental candidates</strong> for RCT protocols: monoclonal antibodies, Gilead remdesivir IV, oral remdesivir analog, +1. Oxford/Moderna broad-spectrum vaccine early-stage (CEPI/EU, $26.7M).</span>
+        </li>
+        <li>
+          <span class="fi-label">Case counts</span>
+          <span class="fi-value flag-quiet">No update as of 9:45 AM UTC — still 336 suspected / 12 confirmed / 89 deaths (May 17 figures).</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">American evacuees</span>
+          <span class="fi-value">Testing results for 6 Americans — a confirmed positive outside DRC/Uganda would trigger alert.</span>
+        </li>
+        <li>
+          <span class="fi-label">Goma / M23</span>
+          <span class="fi-value">WHO/MSF operational access in M23-controlled Goma still unconfirmed. No primary source reporting on response capacity there.</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment trials</span>
+          <span class="fi-value">Watching CIDRAP, STAT, Wellcome Trust, ClinicalTrials.gov for trial initiation announcement.</span>
+        </li>
+        <li>
+          <span class="fi-label">South Sudan</span>
+          <span class="fi-value flag-quiet">No confirmed cases. US Embassy Juba alert issued May 17. Monitoring WHO AFRO.</span>
+        </li>
+        <li>
+          <span class="fi-label">Rwanda border</span>
+          <span class="fi-value flag-quiet">Aggregator claim of DRC/Rwanda border closure — unverified. No primary source confirmation.</span>
+        </li>
+        <li>
+          <span class="fi-label">USAID impact</span>
+          <span class="fi-value">Need specific reporting on which programs cut vs. 2018–2020 response infrastructure.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO update</span>
+          <span class="fi-value">WHO May 18 situation report expected — watching for updated case counts.</span>
+        </li>
+        <li>
+          <span class="fi-label">Phylogenetics</span>
+          <span class="fi-value">Watching bioRxiv/Virological.org for BDBV genomic preprint that could date the true spillover.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Baseline established: unprecedented PHEIC for Bundibugyo Ebola with no approved vaccine, 336 suspected cases across DRC and Uganda</span>
         <span class="timestamp">12:04 AM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note quiet">
         <span class="note-icon">&mdash;</span>
-        No dispatch &mdash; first-run baseline cycle; Ben already knows the story exists
+        No dispatch &mdash; first-ever baseline run; Ben already knows the story exists
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">WHO / PHEIC</span>
-          <span class="fi-value flag-alert"><strong>PHEIC declared May 17</strong> without convening Emergency Committee — unprecedented in WHO history. Bundibugyo ebolavirus, no approved vaccine or treatment.</span>
+          <span class="fi-label">Virus / strain</span>
+          <span class="fi-value flag-alert"><strong>Bundibugyo ebolavirus</strong> confirmed. No approved vaccine or treatment — existing tools target Zaire only.</span>
+        </li>
+        <li>
+          <span class="fi-label">PHEIC</span>
+          <span class="fi-value flag-alert">WHO declared PHEIC May 17 <strong>without Emergency Committee</strong> — first time ever in WHO history.</span>
         </li>
         <li>
           <span class="fi-label">DRC / Ituri</span>
-          <span class="fi-value flag-alert"><strong>336 suspected / 89 deaths / 12 confirmed</strong> as of May 17. Three health zones: Bunia, Rwampara, Mongbwalu. Patient zero: nurse, Bunia, symptoms onset April 24.</span>
+          <span class="fi-value flag-alert">336 suspected / 12 confirmed / 89 deaths. Epicentre: Bunia, Rwampara, Mongbwalu health zones.</span>
         </li>
         <li>
-          <span class="fi-label">Uganda / Kampala</span>
-          <span class="fi-value flag-alert"><strong>2 confirmed cases</strong>, both imported from DRC. Case 1 (59-yr Congolese male) died May 14. Case 2 confirmed May 16. No local transmission confirmed.</span>
+          <span class="fi-label">Uganda</span>
+          <span class="fi-value flag-alert">2 confirmed imported cases in Kampala; Case 1 died May 14.</span>
         </li>
         <li>
-          <span class="fi-label">DRC / Goma</span>
-          <span class="fi-value flag-alert"><strong>1 confirmed case in Goma</strong> (wife of Bunia victim, traveled while infected). Goma is partially under M23 Movement control — response access unclear.</span>
+          <span class="fi-label">Goma / DRC</span>
+          <span class="fi-value flag-alert">1 confirmed case in Goma (North Kivu) — area under M23 control.</span>
         </li>
         <li>
-          <span class="fi-label">DRC / Kinshasa</span>
-          <span class="fi-value flag-new"><strong>Ruled out.</strong> Initial report of Kinshasa case disproven — confirmatory tests were negative (WHO confirmed).</span>
+          <span class="fi-label">Kinshasa</span>
+          <span class="fi-value flag-quiet">Initial case <strong>ruled out</strong> — WHO confirmed negative tests. Wikipedia lag persists.</span>
         </li>
         <li>
-          <span class="fi-label">Healthcare workers</span>
-          <span class="fi-value flag-alert"><strong>4 HCW deaths</strong> within 4 days at Mongbwalu General Referral Hospital. First suspected case was a nurse. Significant IPC breach.</span>
-        </li>
-        <li>
-          <span class="fi-label">Detection gap</span>
-          <span class="fi-value flag-alert"><strong>3-week gap</strong> between first suspected death (April 24) and official outbreak confirmation (May 15). WHO: "low clinical index of suspicion among HCPs."</span>
-        </li>
-        <li>
-          <span class="fi-label">Pharma / response</span>
-          <span class="fi-value flag-new">Gilead, Merck, J&J, Regeneron, Roche, Abbott at Africa CDC coordination meeting May 15. Clinical trials for Bundibugyo candidates recommended by WHO.</span>
+          <span class="fi-label">HCW deaths</span>
+          <span class="fi-value flag-alert">4 healthcare workers dead at Mongbwalu General Referral Hospital within 4 days.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">Goma / M23</span>
-          <span class="fi-value">Ebola response in M23-controlled territory — access, coordination, contact tracing feasibility not yet reported.</span>
-        </li>
-        <li>
-          <span class="fi-label">Vaccine pipeline</span>
-          <span class="fi-value">Which Bundibugyo-specific candidates entering trials? Pharma engagement confirmed but no trial announcements yet.</span>
+          <span class="fi-label">Goma access</span>
+          <span class="fi-value">How is response coordinated in M23-controlled Goma? Access status unknown.</span>
         </li>
         <li>
           <span class="fi-label">South Sudan</span>
-          <span class="fi-value">US Embassy Juba issued alert May 17. No confirmed cases. Screening measures and border capacity unknown.</span>
+          <span class="fi-value flag-quiet">No cases yet; US Embassy Juba alert issued May 17.</span>
         </li>
         <li>
-          <span class="fi-label">PHEIC-without-EC</span>
-          <span class="fi-value">Governance/political implications of Tedros bypassing Emergency Committee — no expert commentary yet.</span>
+          <span class="fi-label">EC governance</span>
+          <span class="fi-value">IHR implications of PHEIC-without-EC — watching for expert analysis.</span>
         </li>
         <li>
           <span class="fi-label">Contact tracing</span>
-          <span class="fi-value flag-quiet">65 contacts listed (15 high-risk) as of May 15; follow-up hampered by insecurity; several died before isolation. Updated numbers not yet available.</span>
-        </li>
-        <li>
-          <span class="fi-label">US evacuation</span>
-          <span class="fi-value flag-quiet">US gov arranging quarantined transport for exposed Americans — scope and numbers not yet public.</span>
-        </li>
-        <li>
-          <span class="fi-label">MSF capacity</span>
-          <span class="fi-value flag-quiet">MSF mobilizing but no field report yet on ETU capacity in Ituri.</span>
+          <span class="fi-value flag-quiet">65 contacts listed, 15 high-risk; several lost before isolation. Updated numbers pending.</span>
         </li>
       </ul>
     </div>
@@ -412,7 +476,7 @@
 
 <section id="previous-day">
   <h2>Previous Day &mdash; May 17, 2026</h2>
-  <span style="color: var(--muted); font-size: 12px;">No previous briefing available — this is the first monitoring cycle.</span>
+  <span style="color: var(--muted); font-size: 12px;">No previous briefing available &mdash; this is the first day of monitoring.</span>
 </section>
 
 <footer>
