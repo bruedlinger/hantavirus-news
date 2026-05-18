@@ -1,0 +1,5 @@
+# Run Log
+
+## 2026-05-18T00:04:48Z — cycle 1
+model: claude-sonnet-4-6 | runtime: 341s | tokens: input=N/A output=N/A
+**BASELINE CYCLE.** First ever run; no prior state existed. Created directory structure (`state/`, `dispatches/`, `outbox/`). Ran 5 search queries covering case counts, WHO response, Goma spread, Kinshasa case, and US travel advisories. Fetched 6 sources (WHO PHEIC declaration, WHO DON602, Africa CDC, Wikipedia, CIDRAP, STAT News; 1 NPR fetch timed out). Established full baseline: Bundibugyo ebolavirus, Ituri Province DRC primary epicenter, 336 suspected/12 confirmed/89 deaths as of May 17, PHEIC declared May 17 without Emergency Committee (unprecedented first), cross-border cases in Kampala (2 confirmed), Goma (1 confirmed, under M23 control), Kinshasa ruled out. Key threads identified: Goma access under M23, Bundibugyo-specific vaccine/treatment pipeline, South Sudan risk, 3-week detection gap. No dispatch sent (first-run baseline; Ben already knows the story exists). Wrote `state/story_state.md`, `state/seen_sources.jsonl`, `state/search_log.md`, `runlog.md`, `index.html`.
