@@ -1765,3 +1765,40 @@ No new cases, no new deaths. French patient still on ECMO at Bichat (~250+ hours
 - `NHS England hantavirus Andes virus IPC guidance healthcare settings 2026` — MEDIUM; new source to read
 - `WHO DON602 hantavirus 2026` — MEDIUM; routine
 - `hantavirus Tristan da Cunha lab result confirmed 2026` — MEDIUM
+
+## Cycle 44 — 2026-05-18 (17:25–17:45 UTC)
+
+### Queries run
+1. `MV Hondius Rotterdam arrived GGD crew hantavirus tests May 18 2026` — ship arrival status (HIGH)
+2. `hantavirus France Bichat ECMO patient death recovery May 18 2026` — French patient daily watch
+3. `UKHSA hantavirus update May 18 2026 Ascension medic Arrowe Park` — Ascension medic result + UK update
+4. `ECDC hantavirus Andes virus update May 18 2026` — ECDC daily update
+5. `Oceanwide Expeditions Iceland sailing cancelled hantavirus decision May 18 2026` — sailing decision
+6. `WHO DON602 hantavirus 2026 published outbreak notice` — routine DON check
+7. `hantavirus Canada Yukon patient Victoria hospital update May 18 2026` — Canada patient progression
+8. `MV Hondius crew test results negative Rotterdam GGD RIVM May 18 2026` — crew test specifics
+9. `hantavirus Tristan da Cunha lab confirmed result May 2026` — Tristan lab result watch
+10. `hantavirus Argentina rodent sequencing genomic origin Andes virus investigation result 2026` — origin science
+11. `NHS England hantavirus Andes virus IPC guidance healthcare settings infection prevention 2026` — NHS guidance (discovery)
+12. `Oceanwide Expeditions hantavirus MV Hondius Iceland sailing May 29 announcement cancelled 2026` — sailing decision (more specific)
+
+### Pages fetched
+- hantavirus.one ✓ — May 18: 9 confirmed + 2 probable + 1 inconclusive, 3 deaths; French patient still alive, no death reported
+- gov.uk UKHSA ✓ — **May 18 update**: Ascension medic samples "taken to UK on 8 May and tested negative"; no subsequent positive; further assessment ongoing at HCID; all Arrowe Park contacts asymptomatic/negative
+- rivm.nl/en/hantavirus ✓ — May 18: ship arrived Rotterdam; 27 disembarking in phases; all previously repatriated passengers negative
+- ecdc.europa.eu ANDES surveillance ✓ — **May 18 update published**: still 9+2+1=12 total, 3 deaths; "additional cases anticipated given incubation period"; risk EU/EEA very low
+- government.nl blog ✓ — only updated to May 12; no current info
+- NL Times May 18 article ✗ (403) — arrival coverage available from other sources
+
+### What these queries found
+**ROTTERDAM ARRIVAL CONFIRMED**: MV Hondius arrived Calandsteiger 7, Europoort, Rotterdam, morning May 18 (on schedule). GGD tested all 27 aboard on arrival; Port of Rotterdam: "no symptoms of hantavirus." Test results awaited in quarantine. Philippine DMW: all 38 Filipino crew negative. **ASCENSION MEDIC NEGATIVE (UKHSA May 18)**: UKHSA published May 18 update — samples tested negative; no subsequent positive at HCID; not a confirmed case. **ECDC May 18 published**: No change in counts; "additional cases anticipated." French patient still alive. Canada no new updates. Oceanwide: still no formal decision. WHO DON602 still 404 (44th cycle). Tristan da Cunha still probable. **New science paper** (PMC12201636): virological characterization of outbreak ANDV strain; near-identical genomes in secondary cases; single AA change; non-adapted wild-type. **DIGEST DISPATCHED**: 2026-05-18-1729-digest.md (May 17 daily summary) via notify.sh (exit 0).
+
+### What to search next cycle (do NOT repeat for 24h)
+- `MV Hondius crew GGD test results negative positive Rotterdam May 18 19 2026` — HIGH; crew test results expected today/tomorrow
+- `Oceanwide Expeditions Iceland sailing cancelled confirmed May 19 2026` — HIGH; decision expected after decontamination begins
+- `hantavirus France Bichat ECMO patient death recovery May 18 19 2026` — HIGH; daily death watch
+- `UKHSA hantavirus update May 19 2026 Arrowe Park Ascension` — MEDIUM; daily check
+- `ECDC hantavirus update May 19 2026` — MEDIUM; daily ~12:00 UTC
+- `hantavirus Canada Yukon patient Victoria update May 19 2026` — MEDIUM; any progression
+- `WHO DON602 hantavirus 2026` — MEDIUM; routine
+- `hantavirus Tristan da Cunha lab result May 2026` — MEDIUM
