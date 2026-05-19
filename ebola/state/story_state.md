@@ -1,12 +1,12 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-19T11:20:00Z — Cycle 5*
+*Last updated: 2026-05-19T21:45:00Z — Cycle 6*
 
 ---
 
 ## Summary
 
-A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. Africa CDC formally declared a PHECS (Public Health Emergency of Continental Security) on May 18, 2026 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 19, 2026: **513 suspected cases and 131 deaths** (DRC Health Ministry, up from 336/89 on May 17 — 52% jump in cases, 47% jump in deaths). New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases. Seven Americans (Dr. Peter Stafford + 6 contacts) transported to Germany for isolation/treatment; specific hospital undisclosed. Three-week detection delay caused by incorrect lab testing cartridges.
+A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. Africa CDC formally declared a PHECS (Public Health Emergency of Continental Security) on May 18, 2026 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 19, 2026 (evening): **536 suspected / 105 probable / 34 confirmed cases and 134 deaths** (CNN/Wikipedia, up from 513/131 morning). New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases (not yet lab-confirmed). Dr. Peter Stafford + 6 contacts transported to **Charité university hospital, Berlin**. Stafford is a missionary with Serge Christian mission organization. Three-week detection delay caused by incorrect lab testing cartridges. **Genomic sequencing confirmed: new spillover event** (INRB/CPHL, virological.org, May 2026). DRC humanitarian response only 34% funded.
 
 ---
 
@@ -23,18 +23,20 @@ A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late Ap
 - **Detection gap:** Imperial College epidemiologists note the volume of community deaths before official declaration suggests the outbreak "likely went undetected and spread for several weeks or even months" before April 24 symptom onset in first identified case
 - **Detection delay mechanism confirmed:** Three-week delay between first case and official identification caused by **incorrect lab testing cartridges** being used initially — initial samples tested negative for the more common Zaire strain (wrong cartridge type), delaying diagnosis (CIDRAP, May 2026)
 
-### Case Counts (as of May 19, 2026 — DRC Health Ministry)
+### Case Counts (as of May 19, 2026 — evening)
 
 | Category | Count | Source / Date |
 |---|---|---|
-| Suspected cases | 513 | DRC Health Ministry (Samuel Roger Kamba), May 19, 2026 |
-| Deaths (suspected) | 131 | DRC Health Ministry, May 19, 2026 (Kamba cautioned: "suspected deaths, investigations underway") |
-| Lab-confirmed cases | 12 | WHO, May 17, 2026 (no newer WHO count published) |
+| Suspected cases | 536 | CNN/Wikipedia, May 19, 2026 (evening) |
+| Probable cases | 105 | CNN/Wikipedia, May 19, 2026 (evening) — new category in reporting |
+| Lab-confirmed cases | 34 | CNN/Wikipedia, May 19, 2026 (evening) — up from 12 (WHO, May 17) |
+| Deaths (all categories) | 134 | CNN/Wikipedia, May 19, 2026 (evening) |
+| New cases in last 24–48h | 26 confirmed + 143 suspected | CNN, May 19, 2026 (evening) |
 | Healthcare workers dead | 4 | Mongbwalu General Referral Hospital (within 4 days of symptom onset) |
 | Africa CDC count at PHECS declaration | ~395 suspected / 106 deaths | Africa CDC, May 18, 2026 |
 | Uganda | 2 confirmed cases / 1 death | WHO, as of May 17 |
 
-Prior figures for reference: 336 suspected/89 deaths (WHO, May 17); 246/80 (WHO DON, May 15–16).
+Prior figures for reference: 513/131 (DRC Health Ministry, May 19 morning); 336/89/12 (WHO, May 17); 246/80 (WHO DON, May 15–16).
 
 ### Geography
 
@@ -118,9 +120,11 @@ Prior figures for reference: 336 suspected/89 deaths (WHO, May 17); 246/80 (WHO 
 
 - WHO rapid response teams deployed to Ituri since May 5
 - **DRC opening 3 new Ebola treatment centers** — Health Minister Samuel Roger Kamba announced; locations not specified (PBS, May 2026)
+- **WFP airlift:** World Food Programme airlifted 5+ metric tonnes of medical supplies to Ituri on May 18 (Xinhua, May 19)
+- **DRC humanitarian response plan:** Only **34% funded** as of May 19, 2026 — UN warns "without immediate action, life-saving assistance will not reach those most in need"
 - Africa CDC PHECS declared May 18: $2M mobilized; IMST with WHO activated; 130+ partners in coordination meetings
 - **MSF:** Two Ebola transit centres in Ituri (Bwanasura and Bunia); 3 suspected cases isolated at Salama clinic
-- **Dr. Peter Stafford (American physician, Bunia/Nyankunde Hospital):** confirmed Bundibugyo-positive; transported to Germany for treatment. **Seven Americans total** (Stafford + 6 contacts) transported to Germany for isolation/monitoring. German Health Ministry stated: "Preparations currently underway to admit and treat the patient." Specific hospital NOT disclosed — CDC did not respond to follow-up questions. (The Local DE, May 19, 2026; PBS, May 2026)
+- **Dr. Peter Stafford (American physician/missionary, Bunia/Nyankunde Hospital):** confirmed Bundibugyo-positive; transported to Germany for treatment. Stafford is a medical missionary with **Serge Christian mission organization**. **Seven Americans total** (Stafford + 6 contacts) transported to **Charité university hospital, Berlin** — admitted to special isolation ward. German Health Ministry: "Arrangements are currently being made to admit and treat the patient in Germany." (Honolulu Star-Advertiser, May 19, 2026; The Local DE, May 19, 2026)
 - **US travel ban (Title 42):** Foreign nationals from DRC, Uganda, South Sudan barred from US entry if present in those countries within past 21 days. Signed by Jay Bhattacharya (NIH director/acting CDC official). Duration: 30 days. South Sudan included preventively (no confirmed cases). Both Rwanda and US now openly defying WHO "no travel restrictions" guidance.
 - US airport screening enhanced at ports of entry
 - **Rwanda border closure (CONFIRMED):** Rubavu-Goma AND Rusizi crossings closed May 17, "indefinitely." Exceptions for nationals only under quarantine. Daily cross-border water-fetching prohibited for DRC residents.
@@ -128,6 +132,15 @@ Prior figures for reference: 336 suspected/89 deaths (WHO, May 17); 246/80 (WHO 
 - Exit screening at airports and border crossings
 - **PPE stockpile warning (Africa CDC):** If transmission escalates, PPE stockpiles would require 6–8 weeks to replenish
 - **USAID structural gap:** USAID dismantling has weakened contact tracing, border screening, and lab capacity relative to 2018–2020 North Kivu response infrastructure
+
+### Genomic Sequencing (virological.org, May 2026)
+
+- **Institutions:** Institut National de Recherche Biomédicale (INRB, Kinshasa, DRC) and Central Public Health Laboratory (CPHL, Kampala, Uganda)
+- **Genomes:** 3 near-complete BDBV genomes sequenced — 2 from DRC samples, 1 from Uganda (imported case)
+- **Phylogenetic analysis:** Maximum likelihood tree constructed (IQTree2) comparing 3 new sequences against 34 previously documented BDBV genomes from 2007 and 2012 outbreaks
+- **Key finding:** Confirmed **new spillover event** — current outbreak is phylogenetically distinct from the 2007 Bundibugyo, Uganda and 2012 Isiro, DRC outbreaks. Third documented BVD outbreak overall.
+- **Limitation:** Only 3 genomes available; analysis does not yet date the spillover event with molecular clock precision
+- **Source:** https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032
 
 ### Treatment & Vaccine Pipeline
 
@@ -145,39 +158,39 @@ Prior figures for reference: 336 suspected/89 deaths (WHO, May 17); 246/80 (WHO 
 
 ## Open Questions
 
-1. **Butembo confirmation:** Multiple sources cite Butembo (North Kivu) as a confirmed case location — but no WHO DON or DRC MOH primary source directly lists it yet. Is this confirmed via lab test or only suspected?
-2. **Fort Portal confirmation:** Are the Fort Portal (western Uganda) cases lab-confirmed or only suspected? How many people attended the DRC burial? Full contact list?
+1. **Butembo confirmation:** Multiple sources cite Butembo (North Kivu) as a confirmed case location — but no WHO DON or DRC MOH primary source directly names it yet. Is this confirmed via lab test or only suspected?
+2. **Fort Portal confirmation:** Burial-linked suspected cases in Fort Portal (western Uganda) still not lab-confirmed. How many people attended the DRC burial? Full contact list?
 3. **Goma access:** How is the response being coordinated in M23-controlled territory? WHO/MSF operational access in Goma?
-4. **Treatment trial timeline:** 4 RCT candidates — when do trials initiate? Any compassionate use/expanded access framework?
+4. **Treatment trial timeline:** 4 RCT candidates — when do trials initiate? Any compassionate use/expanded access framework? BARDA investigating monoclonal antibodies for Bundibugyo.
 5. **South Sudan:** Actual screening capacity at DRC–South Sudan border? Any update from South Sudan MOH?
-6. **Contact tracing gap:** Updated numbers on lost contacts?
-7. **True origin of outbreak:** Any phylogenetic/genomic analysis on this BDBV strain that would date the spillover?
-8. **German hospital:** Which specific facility? Any RKI formal case registration? Is Germany registering Stafford as a confirmed European Ebola case?
-9. **Stafford colleagues' test results:** Wife and one other doctor at Nyankunde Hospital — being monitored in Germany; results pending
-10. **WHO EC convening:** When will Emergency Committee meet? What temporary recommendations will result?
-11. **PHECS operational impact:** What specifically does Africa CDC PHECS trigger? Which neighboring countries' MOH responses does it accelerate?
-12. **DRC Level 4 advisory:** CIDRAP says whole DRC now Level 4 — verify against CDC travel advisory page
-13. **Rwanda humanitarian fallout:** Water-fetching ban — creating unmonitored crossing routes? Who is monitoring?
-14. **PPE supply chain:** Current stock level relative to projected case growth?
-15. **USAID impact:** Which specific programs were defunded vs. 2018–2020 response?
-16. **Kinshasa:** Wikipedia still lists Kinshasa — any secondary reactivation, or still ruled out?
+6. **Contact tracing gap:** Updated numbers on lost contacts? (Last figure: 65 contacts, 15 high-risk, as of May 15)
+7. **Spillover dating:** Genomic analysis confirms new spillover event but does not date it with molecular clock precision. How long was this circulating before April 24?
+8. **Stafford: RKI registration + colleagues' results:** Wife and at least one other Nyankunde colleague monitored at Charité — test results pending. Is Germany registering as confirmed European case?
+9. **WHO EC convening:** When will Emergency Committee meet? What temporary recommendations will result?
+10. **PHECS operational impact:** Which specific countries have Africa CDC teams deployed to?
+11. **DRC Level 4 advisory:** CIDRAP says whole DRC now Level 4 — verify against CDC travel advisory page
+12. **Rwanda humanitarian fallout:** Water-fetching ban — creating unmonitored crossing routes? Who is monitoring?
+13. **PPE supply chain:** Current stock level relative to projected case growth?
+14. **USAID impact:** Which specific programs were defunded vs. 2018–2020 response?
+15. **WHO chief statement:** CNN headline says Tedros "raised alarm" on May 19 — content truncated; what specifically did he say?
+16. **Funding gap:** DRC humanitarian response 34% funded — what is the actual dollar figure of the gap? Which donors are being approached?
 
 ---
 
 ## Active Threads to Pull
 
-- **Fort Portal confirmation:** Search Uganda MOH / WHO AFRO for lab confirmation of Fort Portal cases
-- **Butembo primary source:** Search for WHO DON or DRC MOH statement explicitly naming Butembo
-- **German hospital registration:** Watch The Local DE, German Health Ministry (BMG), RKI for hospital name and official case registration
-- **Stafford colleagues' results:** Any positive would be additional healthcare worker case
-- **WHO EC convening date:** Watch WHO.int for announcement and temporary recommendations
-- **Treatment RCT initiation:** Watch ClinicalTrials.gov, CIDRAP, STAT, Wellcome Trust
-- **DRC travel advisory level:** Verify CDC page for whole-country Level 4 claim
-- **Africa CDC PHECS operational follow-up:** Watch africacdc.org for dispatch of experts, country-level coordination
-- **Updated case count:** Next WHO DON publication expected
-- **Phylogenetic preprint:** Check virological.org for BDBV sequencing analysis
-- **South Sudan case status:** Monitor WHO AFRO and South Sudan MOH
-- **Nature drug trial article:** Try Google cache or science news coverage for paywalled article content
+- **Fort Portal confirmation:** Uganda MOH / WHO AFRO — lab results still pending; check each cycle
+- **Butembo primary source:** Seek WHO DON or DRC MOH directly naming Butembo with lab confirmation
+- **Stafford colleagues' test results:** Any positive = additional confirmed case at European facility (Charité Berlin)
+- **WHO EC convening date:** Watch WHO.int — still "as soon as possible" — no date announced
+- **Treatment RCT initiation:** ClinicalTrials.gov, CIDRAP, STAT, Wellcome Trust — BARDA investigating Bundibugyo-specific monoclonal antibodies
+- **DRC travel advisory Level 4 (whole country):** Verify CDC.gov travel advisory page
+- **Africa CDC PHECS operational:** Which countries received Africa CDC expert deployments?
+- **Next WHO DON:** DON602 still latest (May 17); watch for DON603
+- **Funding gap appeal:** Dollar figure of DRC humanitarian response shortfall (34% funded); donor engagement
+- **WHO chief specific statement (May 19):** CNN article content truncated — retrieve via alternate search
+- **South Sudan MOH response:** Any active screening capacity at DRC border?
+- **Nature drug trial article:** Try Google cache or science news coverage for paywalled content
 
 ---
 
@@ -204,9 +217,23 @@ Prior figures for reference: 336 suspected/89 deaths (WHO, May 17); 246/80 (WHO 
 | 2026-05-17 | WHO declares PHEIC (without EC — unprecedented); 336 suspected/89 deaths/12 confirmed; Goma case confirmed; Kinshasa ruled out; Rwanda closes border crossings |
 | 2026-05-18 (morning) | Dr. Stafford confirmed positive; US travel ban issued (Title 42, DRC/Uganda/South Sudan); Africa CDC DG cancels Geneva meetings; Rwanda border confirmed via primary source |
 | 2026-05-18 (evening) | Africa CDC formally declares PHECS (first-ever for Ebola); ~395/106 at declaration; $2M mobilized; IMST with WHO activated; Prof. Salim Abdool Karim chairs ECG; AU Chair Ndayishimiye engaged |
-| 2026-05-19 | DRC Health Ministry: 513 suspected/131 deaths; Butembo (North Kivu) confirmed new case location; Fort Portal (western Uganda) burial-linked suspected cases; DRC opening 3 new treatment centers; 7 Americans in Germany (hospital undisclosed); 9 health zones in Ituri |
+| 2026-05-19 (morning) | DRC Health Ministry: 513 suspected/131 deaths; Butembo (North Kivu) confirmed new case location; Fort Portal (western Uganda) burial-linked suspected cases; DRC opening 3 new treatment centers; 7 Americans in Germany; WFP airlifts 5+ tonnes supplies to Ituri |
+| 2026-05-19 (evening) | Case count updated to 536 suspected / 105 probable / 34 confirmed / 134 deaths; Charité Berlin named as Stafford's hospital; Stafford identified as missionary with Serge Christian mission org; virological.org preprint confirms new spillover event (INRB/CPHL, 3 genomes); WHO chief raises alarm (specific statement unavailable) |
 
 ---
+
+### Cycle 6 Findings (2026-05-19 21:32–21:50 UTC)
+
+**Quiet cycle — no alert.** Key new confirmed facts:
+- **Case count update (evening):** 536 suspected / 105 probable / 34 confirmed / 134 deaths (CNN/Wikipedia, May 19 evening) — up from 513/131 morning; 26 new confirmed + 143 new suspected in last 24–48 hours. First time "probable" category appears in case breakdown.
+- **Charité Berlin confirmed** as Stafford's hospital — German health ministry confirmed admission to "special isolation ward." Was "undisclosed" previous cycle.
+- **Serge Christian mission organization** identified as Stafford's employer — was simply described as "physician at Nyankunde Hospital."
+- **Genomic preprint (virological.org):** INRB (Kinshasa) + CPHL (Kampala) sequenced 3 near-complete BDBV genomes (2 DRC, 1 Uganda). Phylogenetic analysis against 34 prior BDBV genomes confirms **new spillover event** — distinct from 2007 and 2012 outbreaks. Third documented BVD outbreak. Spillover date not yet quantified by molecular clock.
+- **WFP airlift:** 5+ tonnes medical supplies to Ituri, May 18. Humanitarian response plan only 34% funded.
+- **No new WHO DON** — DON602 (May 17) still latest. Next DON expected.
+- **Fort Portal:** Still not lab-confirmed; no new primary source.
+- **WHO chief statement:** CNN headline says alarm raised; article content truncated — specific content unavailable.
+- **No dispatch** — case count rise is ~4.5% (not meeting ≥50% ALERT threshold); Charité confirmation is factual update not alert-tier; genomic preprint confirms new spillover (already known); no new country, no new healthcare worker case.
 
 ### Cycle 5 Findings (2026-05-19 11:12–11:30 UTC)
 
@@ -221,38 +248,3 @@ Prior figures for reference: 336 suspected/89 deaths (WHO, May 17); 246/80 (WHO 
 - **No updated WHO case count or new DON** — still awaiting WHO's first post-PHEIC DON publication
 - **ALERT dispatched** — outbox/2026-05-19-1130-alert.md
 
-### Cycle 4 Findings (2026-05-18 20:17–20:21 UTC)
-
-**Alert cycle — three simultaneous alert-tier developments.** Key new confirmed facts:
-- **Dr. Peter Stafford (American physician, Bunia) confirmed Ebola-positive** — being transported to Germany; four children + two colleagues also relocating. (STAT News May 18)
-- **US imposes first-ever Ebola travel ban** — DRC/Uganda/South Sudan; signed by Jay Bhattacharya; 30 days; South Sudan included despite zero confirmed cases. (STAT News May 18)
-- **Africa CDC weighing PHECS declaration** — DG cancelled WHO World Health Assembly Geneva meetings; AU Commission Chair + Burundi President engaged. (Africa CDC Statement)
-- **ALERT dispatched** to outbox/2026-05-18-2021-alert.md (notify.sh not found — pending)
-
----
-
-## Sources Consulted
-
-- WHO PHEIC Declaration (May 17, 2026): https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern
-- WHO DON602: https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON602
-- Africa CDC (coordination): https://africacdc.org/news-item/africa-cdc-calls-for-urgent-regional-coordination-following-ebola-virus-disease-outbreak-in-ituri-province-drc/
-- **Africa CDC PHECS Declaration (May 18, 2026):** https://africacdc.org/news-item/africa-cdc-declares-the-ongoing-bundibugyo-ebola-outbreak-a-public-health-emergency-of-continental-security/
-- Wikipedia 2026 Ituri Province Ebola epidemic: https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic
-- CIDRAP (baseline): https://www.cidrap.umn.edu/ebola/new-ebola-outbreak-hits-democratic-republic-congo
-- **CIDRAP (travel ban + Stafford, May 18):** https://www.cidrap.umn.edu/ebola/who-declares-ebola-outbreak-emergency-cdc-restricts-travel-confirms-us-doctor-infected
-- STAT News (PHEIC): https://www.statnews.com/2026/05/17/who-ebola-drc-uganda-bundibugyo-pheic-public-health-emergency/
-- STAT News (Stafford + travel ban, May 18): https://www.statnews.com/2026/05/18/cdc-ebola-travel-ban-announced-uganda-congo-south-sudan/
-- Imperial College London Q&A: https://www.imperial.ac.uk/news/articles/2026/ebola-outbreak-2026-qa-with-experts/
-- Celine Gounder analysis: https://www.celinegounder.com/p/ebola-bundibugyo-congo-ituri-outbreak-2026
-- KT Press (Rwanda border): https://www.ktpress.rw/2026/05/rwanda-closes-rubavu-goma-border-over-ebola-fears/
-- Xinhua (May 18): https://english.news.cn/20260518/c40dc5f105084bb49baf41fae3890968/c.html
-- Health Policy Watch (PPE + EC + Mongbwalu): https://healthpolicy-watch.news/drc-ebola-outbreak-may-be-much-larger-than-currently-reported/
-- CBS News (evacuees): https://www.cbsnews.com/news/americans-ebola-congo-outbreak-cdc/
-- CDC Situation Summary: https://www.cdc.gov/ebola/situation-summary/index.html
-- CDC Newsroom (May 2026): https://www.cdc.gov/media/releases/2026/cdc-mobilizes-international-ebola-response.html
-- **ABC News (DRC Health Ministry 513/131, May 19):** https://abcnews.com/Health/wireStory/congo-health-ministry-reports-131-deaths-513-suspected-133098976
-- **PBS (DRC treatment centers + Butembo, May 2026):** https://www.pbs.org/newshour/health/congo-will-open-3-ebola-treatment-centers-as-a-rare-strain-spreads
-- **The Local DE (Stafford Germany, May 19):** https://www.thelocal.de/20260519/us-doctor-infected-with-ebola-virus-to-be-treated-in-germany
-- Africa CDC DG Statement: https://africacdc.org/news-item/ebola-response-statement-from-the-director-general-africa-cdc/
-- OCHA DRC: https://www.unocha.org/democratic-republic-congo
-- Nature (drug trial race — paywalled): https://www.nature.com/articles/d41586-026-01607-4

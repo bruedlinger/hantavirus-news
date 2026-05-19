@@ -205,3 +205,39 @@
 - "Rwanda border" — fully resolved
 - "Africa CDC PHECS" — declared; watch for implementation details only
 - "Stafford Germany" — known; watch for hospital name only
+
+## 2026-05-19 (Cycle 6 — Quiet: genomics preprint + Charité + case count update)
+
+**Queries run:**
+1. `Ebola Uganda Fort Portal 2026 lab confirmed cases WHO AFRO` — no lab confirmation found; still suspected only
+2. `WHO disease outbreak news Ebola DRC situation report May 2026` — DON602 still latest; no new DON published
+3. `Ebola Bundibugyo RKI Germany Stafford 2026 hospital treatment` — **NEW: Charité Berlin identified as hospital; Serge Christian mission org named**
+4. `virological.org Bundibugyo BDBV sequencing phylogenetic 2026 Ituri` — **NEW: preprint found; 3 genomes; INRB+CPHL; new spillover event confirmed**
+5. `Ebola 2026 DRC case count update May 19 evening WHO situation` — **NEW: 536/105/34/134; CNN WHO chief alarm headline**
+6. `Africa CDC Ebola 2026 response teams deployed neighboring countries preparedness` — IMST activated; no specific country deployment list
+7. `OCHA DRC Ebola humanitarian crisis May 2026 sitrep displacement` — humanitarian plan 34% funded; WFP airlift 5+ tonnes
+
+**URLs fetched this cycle (4 attempts, 4 complete):**
+- https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032 (**novel**: 3 genomes INRB+CPHL; new spillover event; phylogenetics vs 2007/2012 strains)
+- https://www.cnn.com/2026/05/19/africa/ebola-outbreak-drc-uganda-who-chief-intl (truncated — content not available; headline confirms WHO chief alarm + snippet confirms 536/134 case counts)
+- https://english.news.cn/africa/20260519/9eda072e7c8a488bb74e96ffcc68a15b/c.html (**partially novel**: security/humanitarian context; WFP airlift; 34% funding; largely confirms existing facts)
+- https://www.staradvertiser.com/2026/05/19/breaking-news/germany-to-treat-u-s-missionary-who-contracted-ebola-in-congo/ (**novel**: Charité Berlin special isolation ward; Serge Christian mission org confirmed)
+- WHO DON page (fetch returned error; DON602 confirmed as still latest)
+
+**Dispatch decision:** QUIET — no alert criteria met. Case count rise ~4.5% (not ≥50%); Charité confirmation = factual update; genomic preprint confirms new spillover (already known conceptually); no new country; no new healthcare worker case.
+
+**Priority for Cycle 7:**
+- Fort Portal lab confirmation — keep watching Uganda MOH / WHO AFRO
+- WHO Emergency Committee convening date — watch WHO.int
+- WHO DON603 — expected; check WHO DON page directly
+- WHO chief specific statement (May 19 CNN article still truncated)
+- Stafford colleagues' test results (Charité)
+- DRC Level 4 travel advisory — CDC.gov verify
+- Treatment RCT timeline — BARDA monoclonal antibodies
+- Africa CDC deployment specifics — which countries?
+- Funding gap — donor response
+
+**What NOT to search next cycle (covered):**
+- "Stafford Germany hospital" — RESOLVED: Charité Berlin
+- "virological.org BDBV" — fetched; no need to revisit unless new preprint published
+- "OCHA humanitarian" — low new signal; revisit in 48h unless funding breakthrough
