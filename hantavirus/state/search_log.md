@@ -1802,3 +1802,46 @@ No new cases, no new deaths. French patient still on ECMO at Bichat (~250+ hours
 - `hantavirus Canada Yukon patient Victoria update May 19 2026` — MEDIUM; any progression
 - `WHO DON602 hantavirus 2026` — MEDIUM; routine
 - `hantavirus Tristan da Cunha lab result May 2026` — MEDIUM
+
+## Cycle 45 — 2026-05-19 (11:43–11:49 UTC)
+
+### Queries run
+1. `MV Hondius crew GGD test results Rotterdam hantavirus May 19 2026` — crew test results (HIGH)
+2. `hantavirus France Bichat ECMO patient death recovery May 19 2026` — French patient daily watch
+3. `Oceanwide Expeditions Iceland sailing cancelled hantavirus decision May 19 2026` — sailing decision
+4. `ECDC hantavirus Andes virus update May 19 2026` — ECDC daily update
+5. `UKHSA hantavirus update May 19 2026 Arrowe Park` — UK update
+6. `hantavirus Canada Yukon patient Victoria hospital update May 19 2026` — Canada progression
+7. `WHO DON602 hantavirus 2026 disease outbreak notice published` — routine DON check
+8. `MV Hondius decontamination Rotterdam contractor Oceanwide Iceland sailing May 2026` — decontamination detail
+9. `hantavirus ECMO survival long-term outcomes hantavirus cardiopulmonary syndrome PMC12474361 2026` — science
+10. `hantavirus Tristan da Cunha lab result confirmed negative May 2026` — Tristan watch
+11. `favipiravir hantavirus Andes virus UK Japan antiviral treatment 2026` — NEW: favipiravir acquisition
+12. `Oceanwide Expeditions press update May 18 19 2026 Iceland sailing hantavirus MV Hondius decision` — Oceanwide latest
+13. `Tristan da Cunha hantavirus community screening GeneXpert results May 2026` — Tristan screening check
+14. `hantavirus MV Hondius crew Rotterdam test results negative GGD May 19 2026` — crew results follow-up
+
+### Pages fetched
+- hantavirus.one ✓ — May 19 10:41 UTC: 9+2+1=12, 3 deaths; French patient alive on ECMO; no change
+- sciencemediacentre.org (May 13 Arrowe Park article) ✓ — OLD: 6 leaving Arrowe Park; May 13 article
+- rivm.nl/en/hantavirus/current-information ✓ — May 18 update: 2nd/3rd flight passengers all negative; crew awaiting results
+- oceanwide-expeditions.com/blog (May 13 press update) ✓ — Last press update May 13; no newer; decontamination "discussed with GGD/RIVM"
+- tristandc.com/government/news-2026-05-11-airdrop.php ✓ — May 11 airdrop; patient stable; 3.3 tonnes cargo (oxygen, medical supplies); no GeneXpert mentioned
+- gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak ✓ — May 18 update; all contacts negative; 7+ cleared for home isolation; Tristan still suspected; favipiravir from Japan
+- canada.ca PHAC media update ✗ (403 Forbidden)
+- sciencemediacentre.org (May 18 favipiravir article) ✓ — Published May 18; UK received favipiravir from Japan; experts: investigational only, no proven human efficacy
+- ecdc.europa.eu ECDC surveillance ✓ — May 18 still latest (no May 19 published at 11:43 UTC); 9+2+1=12, 3 deaths; "additional cases anticipated"
+
+### What these queries found
+**KEY NEW (Cycle 45)**: (1) UK received favipiravir from Japan (UKHSA May 18 announcement) — preparedness stockpile; investigational only; no proven ANDV human efficacy; (2) 3-day MV Hondius decontamination underway (May 18–21); Oceanwide Iceland clarity expected "end of week" May 22–23; May 29 departure technically feasible; (3) At least 7 Arrowe Park contacts cleared for home isolation by May 16 (all negative); (4) PMC12474361: 61.9% HCPS survivors incomplete recovery at 3–6 months; ECMO survivors: higher motor dysfunction/palpitations. French patient still alive (10:41 UTC), no change. ECDC no May 19 update yet. WHO DON602 still 404 (45th cycle). Tristan da Cunha still probable (GeneXpert claim unverified). Canada no new May 19 update. DIGEST DISPATCHED: 2026-05-19-1149-digest.md (May 18 daily summary).
+
+### What to search next cycle (do NOT repeat for 24h)
+- `MV Hondius crew GGD test results negative Rotterdam May 19 20 2026` — HIGH; results expected imminently
+- `Oceanwide Expeditions Iceland sailing May 29 cancelled confirmed 2026` — HIGH; clarity expected May 22-23
+- `hantavirus France Bichat ECMO death recovery May 19 20 2026` — HIGH; daily death watch
+- `ECDC hantavirus update May 19 2026 published` — MEDIUM; ~14:00 UTC
+- `UKHSA hantavirus update May 20 2026` — MEDIUM
+- `hantavirus Canada Yukon Victoria patient update May 20 2026` — MEDIUM
+- `WHO DON602 hantavirus 2026` — MEDIUM; routine
+- `hantavirus Tristan da Cunha lab result update May 2026` — MEDIUM
+- `favipiravir hantavirus treatment UK patients Andes virus experimental May 2026` — MEDIUM; follow dose/usage
