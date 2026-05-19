@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebola Monitor — May 18, 2026</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ed;
+    --muted: #7b7f96;
+    --alert-bg: #1f1018;
+    --alert-border: #8b1a1a;
+    --alert-badge: #c0392b;
+    --digest-bg: #0f1a1f;
+    --digest-border: #1a4a5a;
+    --digest-badge: #1a6a8a;
+    --check-bg: #131620;
+    --check-border: #252840;
+    --link: #6ab4ff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 32px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  section > h2 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
+  details[open] summary .chevron { transform: rotate(90deg); }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
+  .dispatch-alert summary { background: rgba(139, 26, 26, 0.1); }
+  .dispatch-alert summary:hover { background: rgba(139, 26, 26, 0.18); }
+
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
+  .dispatch-digest summary { background: rgba(26, 74, 90, 0.1); }
+  .dispatch-digest summary:hover { background: rgba(26, 74, 90, 0.2); }
+
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
+  .check-entry summary { background: rgba(37, 40, 64, 0.15); }
+  .check-entry summary:hover { background: rgba(37, 40, 64, 0.35); }
+
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .badge-alert  { background: var(--alert-badge);  color: #fff; }
+  .badge-digest { background: var(--digest-badge); color: #fff; }
+
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dispatch-body ul { padding-left: 16px; }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
+  .dispatch-body a { color: var(--link); text-decoration: none; }
+  .dispatch-body a:hover { text-decoration: underline; }
+
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .check-dispatch-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
+  .check-dispatch-note .note-icon { font-size: 11px; flex-shrink: 0; }
+
+  .check-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .check-findings { list-style: none; padding: 0; margin: 0; }
+
+  .check-findings li {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
+  }
+
+  .check-findings li:last-child { border-bottom: none; }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
+  .check-findings .fi-value { color: #c4c6d6; flex: 1; }
+  .check-findings .fi-value strong { color: var(--text); font-weight: 600; }
+  .check-findings .fi-value.flag-alert { color: #e08080; }
+  .check-findings .fi-value.flag-new   { color: #90c8a0; }
+  .check-findings .fi-value.flag-quiet { color: #7b7f96; }
+
+  .prev-day-link {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .prev-day-link a { color: var(--link); text-decoration: none; }
+  .prev-day-link a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .story-status .stat span { color: var(--muted); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ebola Monitor</h1>
+  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Monday, May 18, 2026</div>
+</header>
+
+<div class="story-status">
+  <div class="stat">336 suspected cases <span>(12 confirmed + 324 suspected)</span></div>
+  <div class="stat">89 deaths <span>(as of May 17 &mdash; unchanged)</span></div>
+  <div class="stat">3 countries <span>DRC, Uganda + Germany (case en route)</span></div>
+  <div class="stat">Last checked <span>8:25 PM UTC</span></div>
+</div>
+
+<section id="dispatches">
+  <h2>Today's Alerts &mdash; May 18, 2026</h2>
+
+  <details class="dispatch-alert">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">American physician confirmed Ebola-positive; U.S. imposes first-ever Ebola travel ban</span>
+        <span class="timestamp">May 18, 2026 at 8:21 PM UTC &nbsp;&middot;&nbsp; <em>delivery pending (notify.sh not configured)</em></span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>Dr. Peter Stafford confirmed Ebola-positive.</strong> An American physician working at a hospital in Bunia, DRC since 2023 tested positive for Bundibugyo ebolavirus. He is being transported to Germany for treatment &mdash; the first confirmed Ebola case headed for European soil in this outbreak. His four children and two colleagues (including his wife, who had patient exposure) are also being relocated; colleagues under observation/testing. (<a href="https://www.statnews.com/2026/05/18/cdc-ebola-travel-ban-announced-uganda-congo-south-sudan/">STAT News, May 18</a>)</li>
+        <li><strong>U.S. imposes first-ever Ebola travel ban.</strong> The Trump administration has banned foreign nationals from DRC, Uganda, and South Sudan who have been in those countries within the past 21 days from entering the US. Signed by Jay Bhattacharya (NIH director/acting CDC). Exempts US citizens, military, and DHS-approved travelers. Duration: 30 days. South Sudan included despite no confirmed cases. Defies WHO guidance against travel restrictions. (<a href="https://www.statnews.com/2026/05/18/cdc-ebola-travel-ban-announced-uganda-congo-south-sudan/">STAT News, May 18</a>)</li>
+        <li><strong>Africa CDC weighing continental security emergency (PHECS).</strong> Africa CDC is considering declaring a Public Health Emergency of Continental Security &mdash; an escalation beyond the WHO PHEIC under the AU governance framework. Africa CDC DG cancelled WHO World Health Assembly meetings in Geneva to return to Africa. AU Chair (Burundi President Ndayishimiye) engaged for political guidance. (<a href="https://africacdc.org/news-item/ebola-response-statement-from-the-director-general-africa-cdc/">Africa CDC Statement</a>)</li>
+        <li><strong>WHO coordination framework visibly fracturing.</strong> US travel ban + Rwanda's earlier border closure = two actors defying WHO's explicit &ldquo;no travel/trade restrictions&rdquo; guidance within 24 hours of each other.</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>Dr. Stafford's confirmed infection meets two independent alert criteria simultaneously: a named healthcare worker positive, and an Ebola patient being transferred to Germany &mdash; potentially the first case on European soil. The US travel ban is unprecedented for any Ebola outbreak and signals a break from WHO-coordinated response. If Africa CDC declares a PHECS, that adds a second emergency tier to what is already a first-ever PHEIC-without-Emergency-Committee.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>Stafford's arrival in Germany and any official case registration (German Health Ministry / RKI)</li>
+        <li>Test results for Stafford's two colleagues &mdash; a second healthcare worker positive reinforces HCW transmission thread</li>
+        <li>Africa CDC PHECS declaration (watch africacdc.org)</li>
+        <li>WHO Emergency Committee convening date and temporary recommendations (no date announced yet)</li>
+        <li>Treatment trial initiation &mdash; WHO-sponsored trial pending DRC/Uganda government approval</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.statnews.com/2026/05/18/cdc-ebola-travel-ban-announced-uganda-congo-south-sudan/">STAT News &mdash; U.S. bans entry from Ebola-affected countries as American patient identified (May 18, 2026)</a></li>
+        <li><a href="https://www.washingtonpost.com/health/2026/05/18/ebola-outbreak-prompts-us-screen-travelers-airports-other-ports-entry/">Washington Post &mdash; American tests positive for Ebola; U.S. to screen travelers at airports (May 18, 2026)</a></li>
+        <li><a href="https://africacdc.org/news-item/ebola-response-statement-from-the-director-general-africa-cdc/">Africa CDC &mdash; Ebola Response: Statement from the Director General</a></li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="checks">
+  <h2>News Checks &mdash; May 18, 2026</h2>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">American physician confirmed Ebola-positive; first US Ebola travel ban announced; Africa CDC weighing continental emergency</span>
+        <span class="timestamp">8:21 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; Stafford confirmed positive + US travel ban + PHECS consideration (delivery pending &mdash; notify.sh not configured)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Healthcare worker</span>
+          <span class="fi-value flag-alert"><strong>Dr. Peter Stafford confirmed positive.</strong> American physician at Bunia hospital since 2023; Bundibugyo ebolavirus; being transported to Germany for treatment.</span>
+        </li>
+        <li>
+          <span class="fi-label">US / travel ban</span>
+          <span class="fi-value flag-alert"><strong>First-ever US Ebola travel ban.</strong> 21-day window, 30-day duration; covers DRC, Uganda, South Sudan. Signed by Jay Bhattacharya. Defies WHO guidance.</span>
+        </li>
+        <li>
+          <span class="fi-label">Germany</span>
+          <span class="fi-value flag-alert">Stafford en route to Germany &mdash; first confirmed Ebola case to reach Europe in this outbreak if officially admitted.</span>
+        </li>
+        <li>
+          <span class="fi-label">Africa CDC / PHECS</span>
+          <span class="fi-value flag-new">Africa CDC weighing Public Health Emergency of Continental Security &mdash; escalation above WHO PHEIC. DG cancelled Geneva WHO Assembly meetings. AU Chair (Burundi President) engaged.</span>
+        </li>
+        <li>
+          <span class="fi-label">Coordination scale</span>
+          <span class="fi-value flag-new">130+ participants in May 16 Africa CDC meeting (prior report said 30+). Updated figure from primary source.</span>
+        </li>
+        <li>
+          <span class="fi-label">Ituri context</span>
+          <span class="fi-value flag-new">273K displaced in Ituri Province; 1.9M total in need; 32.6K newly displaced Q1 2026 (OCHA/UNICEF HAC 2026).</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO case count</span>
+          <span class="fi-value flag-quiet">No update &mdash; 336 suspected / 89 deaths / 12 confirmed (unchanged 4th cycle).</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Germany / case reg.</span>
+          <span class="fi-value">German Health Ministry / RKI confirmation of Stafford's case &mdash; would be first official European case of this outbreak.</span>
+        </li>
+        <li>
+          <span class="fi-label">Stafford colleagues</span>
+          <span class="fi-value">Wife + one other Bunia physician being monitored; test results pending.</span>
+        </li>
+        <li>
+          <span class="fi-label">Africa CDC PHECS</span>
+          <span class="fi-value">Emergency Consultative Group convening date and potential PHECS declaration.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO EC date</span>
+          <span class="fi-value flag-quiet">Still no specific date; &ldquo;as soon as possible&rdquo; per WHO.</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment trials</span>
+          <span class="fi-value flag-quiet">WHO-sponsored trial pending DRC/Uganda government approval. No start date confirmed. Nature article paywalled.</span>
+        </li>
+        <li>
+          <span class="fi-label">South Sudan</span>
+          <span class="fi-value flag-quiet">Included in US travel ban despite zero confirmed cases &mdash; rationale unclear; no MOH response yet.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Rwanda border closure confirmed from primary source; PPE stockpile warning; Mongbwalu as likely outbreak origin</span>
+        <span class="timestamp">1:45 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; Rwanda border closure significant but didn't meet strict alert criteria; no new country, no death toll spike
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Rwanda border</span>
+          <span class="fi-value flag-new"><strong>CONFIRMED (primary source).</strong> Rubavu District Mayor Mulindwa confirmed Rubavu-Goma AND Rusizi crossings closed May 17, indefinitely. Daily cross-border water-fetching now prohibited. Rwanda defying WHO guidance.</span>
+        </li>
+        <li>
+          <span class="fi-label">PPE supply chain</span>
+          <span class="fi-value flag-new">Africa CDC: PPE stockpiles require 6&ndash;8 weeks to replenish if transmission escalates. Potential bottleneck.</span>
+        </li>
+        <li>
+          <span class="fi-label">DRC / origin</span>
+          <span class="fi-value flag-new">Mongbwalu mining zone identified as probable outbreak origin. Consistent with mining-population movement transmission vector.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO EC</span>
+          <span class="fi-value flag-new">Emergency Committee will convene retrospectively (after PHEIC, not before) &mdash; IHR procedural nuance confirmed.</span>
+        </li>
+        <li>
+          <span class="fi-label">Americans (prior)</span>
+          <span class="fi-value flag-quiet">3 of 6 high-risk; 1 symptomatic; no confirmed positive at time (subsequently resolved: Stafford confirmed cycle 4).</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO case count</span>
+          <span class="fi-value flag-quiet">336/89/12 &mdash; unchanged third cycle.</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Rwanda / humanitarian</span>
+          <span class="fi-value">Water-fetching ban may push DRC residents to unmonitored crossings &mdash; potential untracked transmission corridor.</span>
+        </li>
+        <li>
+          <span class="fi-label">Phylogenetic preprint</span>
+          <span class="fi-value flag-quiet">No 2026 BDBV preprint found on bioRxiv/medRxiv. Not yet indexed.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Largest Bundibugyo outbreak ever confirmed; ADF and M23 both hamper response; six Americans evacuating; USAID structural gap</span>
+        <span class="timestamp">9:45 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; substantive discovery cycle; alert criteria not met
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Scale record</span>
+          <span class="fi-value flag-new"><strong>Largest documented Bundibugyo outbreak ever.</strong> Previous record: 131 cases (Uganda 2007). At 336 suspected cases, historically unprecedented for this strain.</span>
+        </li>
+        <li>
+          <span class="fi-label">Detection gap</span>
+          <span class="fi-value flag-new">Imperial College: pre-detection community deaths suggest virus circulated &ldquo;weeks or months&rdquo; before official April 24 index case.</span>
+        </li>
+        <li>
+          <span class="fi-label">DRC / security</span>
+          <span class="fi-value flag-new">ADF militants confirmed active in Ituri Province &mdash; separate from M23 in Goma. Both armed groups hampering contact tracing and response access.</span>
+        </li>
+        <li>
+          <span class="fi-label">Americans</span>
+          <span class="fi-value flag-new">Six Americans being evacuated under US government coordination to US or Germany; at least one symptomatic.</span>
+        </li>
+        <li>
+          <span class="fi-label">USAID gap</span>
+          <span class="fi-value flag-new">USAID dismantling has structurally weakened contact tracing, border screening, and lab capacity vs. 2018&ndash;2020 response.</span>
+        </li>
+        <li>
+          <span class="fi-label">MSF capacity</span>
+          <span class="fi-value flag-new">2 transit centres in Ituri (Bwanasura + Bunia); 3 suspects isolated; large-scale mobilization ongoing.</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment pipeline</span>
+          <span class="fi-value flag-new">4 RCT candidates: MAbs, IV remdesivir, oral remdesivir, +1 unspecified. Oxford/Moderna broad-spectrum vaccine early-stage (CEPI/EU, $26.7M).</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Goma / M23</span>
+          <span class="fi-value">Operational response access in M23-controlled territory where Goma case is located.</span>
+        </li>
+        <li>
+          <span class="fi-label">South Sudan</span>
+          <span class="fi-value flag-quiet">No confirmed cases; US Embassy Juba alert issued May 17; actual border screening capacity unknown.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Baseline established: Bundibugyo ebolavirus, PHEIC without Emergency Committee, 336 suspected cases across DRC/Uganda/Goma</span>
+        <span class="timestamp">12:04 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; first-run baseline; Ben already knows the story exists
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Virus / strain</span>
+          <span class="fi-value flag-new">Bundibugyo ebolavirus confirmed. No approved vaccines or treatments &mdash; existing licensed vaccines target Zaire (~40% genetically different).</span>
+        </li>
+        <li>
+          <span class="fi-label">Case count</span>
+          <span class="fi-value">336 suspected / 12 confirmed / 89 deaths as of May 17.</span>
+        </li>
+        <li>
+          <span class="fi-label">PHEIC</span>
+          <span class="fi-value flag-alert">Declared May 17 by WHO DG without Emergency Committee &mdash; first time in WHO history.</span>
+        </li>
+        <li>
+          <span class="fi-label">Geography</span>
+          <span class="fi-value">Ituri Province DRC (primary); Kampala Uganda (2 confirmed); Goma DRC (1 confirmed, M23-controlled).</span>
+        </li>
+        <li>
+          <span class="fi-label">Kinshasa</span>
+          <span class="fi-value flag-new">Initial Kinshasa case DISPROVEN &mdash; negative confirmatory tests (WHO). Wikipedia still showing stale data.</span>
+        </li>
+        <li>
+          <span class="fi-label">HCW deaths</span>
+          <span class="fi-value flag-alert">4 healthcare worker deaths at Mongbwalu General Referral Hospital within 4 days.</span>
+        </li>
+        <li>
+          <span class="fi-label">Industry response</span>
+          <span class="fi-value flag-new">Gilead, Merck, J&amp;J, Regeneron, Roche, Abbott engaged in Africa CDC coordination meeting.</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Goma / M23</span>
+          <span class="fi-value">Response access in M23-controlled territory where confirmed case is located.</span>
+        </li>
+        <li>
+          <span class="fi-label">Vaccine pipeline</span>
+          <span class="fi-value flag-quiet">No Bundibugyo-specific vaccine near readiness. Oxford/Moderna broad-spectrum in early development only.</span>
+        </li>
+        <li>
+          <span class="fi-label">True index case</span>
+          <span class="fi-value flag-quiet">3-week gap between first suspected death and official confirmation. True spillover origin may predate April 24.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="previous-day">
+  <h2>Previous Day &mdash; May 17, 2026</h2>
+  <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No previous day digest available &mdash; monitoring began May 17/18 overnight. First digest will be produced on the first run of May 19 UTC.</p>
+  <div class="prev-day-link">
+    <span style="color: var(--muted); font-size: 12px;">No archived briefing available.</span>
+  </div>
+</section>
+
+<footer>
+  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Monday, May 18, 2026</span>
+</footer>
+
+</body>
+</html>

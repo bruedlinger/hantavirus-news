@@ -166,3 +166,42 @@
 - "US travel ban" — resolved and dispatched
 - "Rwanda border" — fully resolved cycle 3
 - "NIH clinical trial" — confirmed as 2018 article; skip this URL
+
+## 2026-05-19 (Cycle 5 — Alert: PHECS + 513 cases + Butembo + Fort Portal)
+
+**Queries run:**
+1. `Ebola 2026 Stafford Germany hospital treatment Bundibugyo` — IBTimes confirms Germany transfer; The Local DE (May 19) has specific article; German Health Ministry says "preparations underway"; hospital undisclosed
+2. `Africa CDC PHECS declaration Ebola 2026 Emergency Consultative Group` — **ALERT**: Africa CDC formally declared PHECS on May 18; ECG chaired by Prof. Salim Abdool Karim; primary source URL confirmed
+3. `Ebola DRC case count May 19 2026 WHO situation report update` — Wikipedia shows 513/131; ABC News has DRC Health Ministry wire; 9 health zones in Ituri mentioned
+4. `WHO Emergency Committee Ebola 2026 convene date temporary recommendations` — Still "as soon as possible"; no specific date
+5. `Ebola 2026 Germany hospital isolation Stafford Leipzig Hamburg Frankfurt RKI` — The Local DE May 19 article surfaced; CIDRAP new article surfaced
+6. `Ebola 2026 Butembo North Kivu DRC confirmed spread` — Butembo confirmed as case location; multiple sources; Wikipedia + search snippets
+7. `Ebola 2026 Uganda Fort Portal western Uganda burial transmission chain` — Confirmed: Ugandans attended DRC burial, returned to western Uganda, some taken to Fort Portal; NICD South Africa updates surfaced
+
+**URLs fetched this cycle (8 attempts, 6 successful):**
+- https://africacdc.org/news-item/africa-cdc-declares-the-ongoing-bundibugyo-ebola-outbreak-a-public-health-emergency-of-continental-security/ (**novel**: PHECS details, ECG, $2M, IMST)
+- https://www.thelocal.de/20260519/us-doctor-infected-with-ebola-virus-to-be-treated-in-germany (**novel**: 6 contacts to Germany, hospital undisclosed, German Health Ministry statement)
+- https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic (**updated**: 513/131, Fort Portal, Butembo; Kinshasa lag continues)
+- https://www.cnn.com/2026/05/18/africa/ebola-outbreak-global-efforts-americans-intl-hnk (failed — truncated again)
+- https://abcnews.com/Health/wireStory/congo-health-ministry-reports-131-deaths-513-suspected-133098976 (**novel**: official DRC Health Ministry 513/131, Minister Kamba caution on suspected deaths)
+- https://www.usnews.com/news/world/articles/2026-05-18/health-workers-race-to-respond-to-congos-fast-spreading-ebola-outbreak (failed — timeout)
+- https://www.cidrap.umn.edu/ebola/who-declares-ebola-outbreak-emergency-cdc-restricts-travel-confirms-us-doctor-infected (**novel**: Title 42 mechanism; incorrect lab cartridges = detection delay; DRC Level 4 claim)
+- https://www.pbs.org/newshour/health/congo-will-open-3-ebola-treatment-centers-as-a-rare-strain-spreads (**novel**: 3 new treatment centers; Butembo confirmed; 7 Americans in Germany)
+- https://www.cdc.gov/media/releases/2026/cdc-mobilizes-international-ebola-response.html (novel but stale: May 17 data, Ituri-focused, no new info)
+
+**Dispatch decisions:** DIGEST for May 18 written (outbox/2026-05-18-digest.md); ALERT written (outbox/2026-05-19-1130-alert.md). notify.sh absent — all 3 outbox files pending delivery.
+
+**Priority for Cycle 6:**
+- Fort Portal lab confirmation: search Uganda MOH, WHO AFRO for confirmed Fort Portal Ebola case
+- Butembo primary source: search for WHO DON or DRC MOH directly naming Butembo with lab confirmation
+- German hospital name: watch BMG (German Health Ministry), RKI, The Local DE for hospital identification
+- WHO Emergency Committee: first concrete date announcement
+- DRC travel advisory Level 4: verify CDC.gov travel advisories page
+- NICD South Africa Bundibugyo updates: https://www.nicd.ac.za/bundibugyo-virus-disease-updates/
+- Next WHO DON: check https://www.who.int/emergencies/disease-outbreak-news
+
+**What NOT to search next cycle (covered):**
+- "US travel ban" — fully resolved
+- "Rwanda border" — fully resolved
+- "Africa CDC PHECS" — declared; watch for implementation details only
+- "Stafford Germany" — known; watch for hospital name only
