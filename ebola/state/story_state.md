@@ -1,6 +1,6 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-19T21:45:00Z — Cycle 6*
+*Last updated: 2026-05-20T10:34:00Z — Cycle 7*
 
 ---
 
@@ -36,7 +36,7 @@ A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late Ap
 | Africa CDC count at PHECS declaration | ~395 suspected / 106 deaths | Africa CDC, May 18, 2026 |
 | Uganda | 2 confirmed cases / 1 death | WHO, as of May 17 |
 
-Prior figures for reference: 513/131 (DRC Health Ministry, May 19 morning); 336/89/12 (WHO, May 17); 246/80 (WHO DON, May 15–16).
+Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC — note 131 deaths differs from CNN's 134; likely different categorization); 513/131 (DRC Health Ministry, May 19 morning); 336/89/12 (WHO, May 17); 246/80 (WHO DON, May 15–16).
 
 ### Geography
 
@@ -145,6 +145,9 @@ Prior figures for reference: 513/131 (DRC Health Ministry, May 19 morning); 336/
 ### Treatment & Vaccine Pipeline
 
 - **No approved countermeasures** for Bundibugyo ebolavirus
+- **WHO R&D Blueprint advisory group (met May 19, 2026):** Deliberated whether Ervebo (rVSV-ZEBOV, Merck — approved for Zaire ebolavirus) should be deployed off-label for cross-protection against Bundibugyo. No final decision announced; group will provide recommendations to DRC and Uganda governments, who must give final approval. (CNBC Africa, STAT News, May 2026)
+- **Ervebo cross-protection evidence:** 2011 primate study (JID): 3/4 macaques survived Bundibugyo exposure after rVSV-ZEBOV vaccination; 2013 follow-up: inconsistent results depending on dosing/timing. Expert estimate ~50% efficacy (Tom Geisbert). MSF's Armand Sprecher: "You go into the outbreak with the vaccine you have." Theoretical risks: antibody-dependent enhancement, immune distraction — neither observed in animal studies. Deployment supply lead time: ~2 months. (STAT News, May 18, 2026)
+- **Gavi supply:** 2,000 doses of Ervebo available in DRC if approved for trial use. (CNBC Africa, May 2026)
 - **RCT candidates (4 under assessment):** Monoclonal antibodies, Gilead remdesivir (IV), oral remdesivir analog, plus one unspecified fourth candidate — being assessed for RCT protocols; WHO-sponsored trial pending DRC/Uganda government approval
 - **Oxford/Moderna broad-spectrum vaccine:** Early development; CEPI + EU funded (~$26.7M); not near clinical readiness
 - **Sabin/IAVI:** Sudan ebolavirus vaccines in clinical trials — not applicable to Bundibugyo
@@ -161,7 +164,8 @@ Prior figures for reference: 513/131 (DRC Health Ministry, May 19 morning); 336/
 1. **Butembo confirmation:** Multiple sources cite Butembo (North Kivu) as a confirmed case location — but no WHO DON or DRC MOH primary source directly names it yet. Is this confirmed via lab test or only suspected?
 2. **Fort Portal confirmation:** Burial-linked suspected cases in Fort Portal (western Uganda) still not lab-confirmed. How many people attended the DRC burial? Full contact list?
 3. **Goma access:** How is the response being coordinated in M23-controlled territory? WHO/MSF operational access in Goma?
-4. **Treatment trial timeline:** 4 RCT candidates — when do trials initiate? Any compassionate use/expanded access framework? BARDA investigating monoclonal antibodies for Bundibugyo.
+4. **Ervebo advisory outcome:** WHO R&D Blueprint advisory group met May 19 — what specific recommendation will they make to DRC and Uganda? Ring vaccination trial? Full deployment? Hold pending more data? When will governments decide?
+4a. **Treatment RCT timeline:** 4 RCT candidates — when do trials initiate? Any compassionate use/expanded access framework? BARDA investigating monoclonal antibodies for Bundibugyo.
 5. **South Sudan:** Actual screening capacity at DRC–South Sudan border? Any update from South Sudan MOH?
 6. **Contact tracing gap:** Updated numbers on lost contacts? (Last figure: 65 contacts, 15 high-risk, as of May 15)
 7. **Spillover dating:** Genomic analysis confirms new spillover event but does not date it with molecular clock precision. How long was this circulating before April 24?
@@ -174,23 +178,22 @@ Prior figures for reference: 513/131 (DRC Health Ministry, May 19 morning); 336/
 14. **USAID impact:** Which specific programs were defunded vs. 2018–2020 response?
 15. **WHO chief statement:** CNN headline says Tedros "raised alarm" on May 19 — content truncated; what specifically did he say?
 16. **Funding gap:** DRC humanitarian response 34% funded — what is the actual dollar figure of the gap? Which donors are being approached?
+17. **CDC travel advisory Level:** CDC HAN 530 (May 16) states Level 3 for DRC, Level 1 for Uganda. CIDRAP states Level 4 for whole DRC. Which is current? Has CDC upgraded DRC since HAN was issued?
 
 ---
 
 ## Active Threads to Pull
 
+- **WHO R&D Blueprint advisory outcome:** No final decision from May 19 meeting — when will DRC/Uganda governments decide on Ervebo deployment? Watch WHO, DRC/Uganda health ministries.
 - **Fort Portal confirmation:** Uganda MOH / WHO AFRO — lab results still pending; check each cycle
-- **Butembo primary source:** Seek WHO DON or DRC MOH directly naming Butembo with lab confirmation
-- **Stafford colleagues' test results:** Any positive = additional confirmed case at European facility (Charité Berlin)
-- **WHO EC convening date:** Watch WHO.int — still "as soon as possible" — no date announced
+- **Stafford colleagues' test results:** Any positive = additional confirmed case at Charité Berlin
+- **WHO EC convening date:** Watch WHO.int — still "as soon as possible" — no date announced (separate from R&D Blueprint advisory)
 - **Treatment RCT initiation:** ClinicalTrials.gov, CIDRAP, STAT, Wellcome Trust — BARDA investigating Bundibugyo-specific monoclonal antibodies
-- **DRC travel advisory Level 4 (whole country):** Verify CDC.gov travel advisory page
+- **CDC Level 3 vs Level 4:** Verify live CDC.gov travel advisory page — HAN 530 (May 16) = Level 3; CIDRAP claims Level 4
 - **Africa CDC PHECS operational:** Which countries received Africa CDC expert deployments?
 - **Next WHO DON:** DON602 still latest (May 17); watch for DON603
 - **Funding gap appeal:** Dollar figure of DRC humanitarian response shortfall (34% funded); donor engagement
-- **WHO chief specific statement (May 19):** CNN article content truncated — retrieve via alternate search
 - **South Sudan MOH response:** Any active screening capacity at DRC border?
-- **Nature drug trial article:** Try Google cache or science news coverage for paywalled content
 
 ---
 
@@ -200,7 +203,8 @@ Prior figures for reference: 513/131 (DRC Health Ministry, May 19 morning); 336/
 - **Case count discrepancies:** DRC Health Ministry (May 19): 513/131; Africa CDC PHECS declaration (May 18): ~395/106; WHO DON (May 17): 336/89/12. All are legitimate snapshots at different times. 513/131 is most current.
 - **Rwanda border closure:** Confirmed closed (primary source: Mayor Mulindwa). Contradicts WHO guidance against border closures.
 - **True index case date:** Imperial College suggests circulation "weeks or months" before April 24. Unresolved.
-- **DRC travel advisory level:** CIDRAP says Level 4 for whole DRC; prior CDC advisory had Ituri at Level 4, rest of DRC at Level 2. Unresolved pending CDC page check.
+- **DRC travel advisory level:** CDC HAN 530 (May 16) = Level 3 for DRC, Level 1 for Uganda. CIDRAP says whole DRC now Level 4. HAN may be stale (issued before CIDRAP report). Unresolved.
+- **Death count discrepancy:** CNN/cycle 6 count = 134 deaths; Wikipedia (May 20) = 131 deaths. Likely reflects different categorization of suspected vs. confirmed deaths. All figures are plausible given data collection challenges in conflict zone.
 
 ---
 
@@ -218,9 +222,24 @@ Prior figures for reference: 513/131 (DRC Health Ministry, May 19 morning); 336/
 | 2026-05-18 (morning) | Dr. Stafford confirmed positive; US travel ban issued (Title 42, DRC/Uganda/South Sudan); Africa CDC DG cancels Geneva meetings; Rwanda border confirmed via primary source |
 | 2026-05-18 (evening) | Africa CDC formally declares PHECS (first-ever for Ebola); ~395/106 at declaration; $2M mobilized; IMST with WHO activated; Prof. Salim Abdool Karim chairs ECG; AU Chair Ndayishimiye engaged |
 | 2026-05-19 (morning) | DRC Health Ministry: 513 suspected/131 deaths; Butembo (North Kivu) confirmed new case location; Fort Portal (western Uganda) burial-linked suspected cases; DRC opening 3 new treatment centers; 7 Americans in Germany; WFP airlifts 5+ tonnes supplies to Ituri |
-| 2026-05-19 (evening) | Case count updated to 536 suspected / 105 probable / 34 confirmed / 134 deaths; Charité Berlin named as Stafford's hospital; Stafford identified as missionary with Serge Christian mission org; virological.org preprint confirms new spillover event (INRB/CPHL, 3 genomes); WHO chief raises alarm (specific statement unavailable) |
+| 2026-05-19 (afternoon) | WHO R&D Blueprint advisory group convened; deliberated Ervebo (rVSV-ZEBOV) cross-protection use against Bundibugyo; no decision announced; Gavi confirmed 2,000 doses in DRC ready if approved |
+| 2026-05-19 (evening) | Case count updated to 536 suspected / 105 probable / 34 confirmed / 134 deaths; Charité Berlin named as Stafford's hospital; Stafford identified as missionary with Serge Christian mission org; virological.org preprint confirms new spillover event (INRB/CPHL, 3 genomes); WHO chief raises alarm ("serious concern about scale and speed") |
 
 ---
+
+### Cycle 7 Findings (2026-05-20 10:34–11:30 UTC)
+
+**Quiet cycle — first run of May 20; digest written for May 19.** Key new confirmed facts:
+- **WHO R&D Blueprint advisory group met May 19** — deliberated whether to recommend Ervebo (rVSV-ZEBOV) off-label use against Bundibugyo for cross-protection. No final decision announced. DRC and Uganda governments must give final approval. (CNBC Africa, STAT News)
+- **Gavi: 2,000 Ervebo doses in DRC** ready if approved for trial use. Supply lead time ~2 months for full deployment. (CNBC Africa)
+- **Vaccine evidence details:** 2011 primate study: 3/4 macaques survived; 2013 follow-up: inconsistent results. Tom Geisbert estimate: ~50% efficacy. MSF Sprecher advocates pragmatic use. Theoretical ADE risk not seen in animal studies. (STAT News, May 18)
+- **Case count (Wikipedia, May 20):** 543 suspected / 35 confirmed / 131 deaths — minor revision vs 536/34/134. Death count discrepancy (131 vs 134) likely reflects different categorization.
+- **ECDC activated:** EURL-PH-ERZV providing diagnostic support and biosafety recommendations to EU/EEA countries. (ECDC, May 19)
+- **CDC HAN 530 (May 16):** Official US guidance — DRC = Level 3 travel advisory, Uganda = Level 1. Contradicts CIDRAP Level 4 claim. HAN predates CIDRAP report; discrepancy unresolved.
+- **WHO chief Tedros:** "Serious concern about scale and speed" of epidemic (confirmed text via Al Jazeera).
+- **Fort Portal:** Still not lab-confirmed.
+- **WHO DON603:** Not yet published.
+- **No dispatch** — no alert criteria met.
 
 ### Cycle 6 Findings (2026-05-19 21:32–21:50 UTC)
 

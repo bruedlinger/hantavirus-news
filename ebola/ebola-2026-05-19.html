@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebola Monitor — May 19, 2026</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ed;
+    --muted: #7b7f96;
+    --alert-bg: #1f1018;
+    --alert-border: #8b1a1a;
+    --alert-badge: #c0392b;
+    --digest-bg: #0f1a1f;
+    --digest-border: #1a4a5a;
+    --digest-badge: #1a6a8a;
+    --check-bg: #131620;
+    --check-border: #252840;
+    --link: #6ab4ff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 32px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  section > h2 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
+  details[open] summary .chevron { transform: rotate(90deg); }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  summary .subline {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
+  .dispatch-alert summary { background: rgba(139, 26, 26, 0.1); }
+  .dispatch-alert summary:hover { background: rgba(139, 26, 26, 0.18); }
+
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
+  .dispatch-digest summary { background: rgba(26, 74, 90, 0.1); }
+  .dispatch-digest summary:hover { background: rgba(26, 74, 90, 0.2); }
+
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
+  .check-entry summary { background: rgba(37, 40, 64, 0.15); }
+  .check-entry summary:hover { background: rgba(37, 40, 64, 0.35); }
+
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .badge-alert  { background: var(--alert-badge);  color: #fff; }
+  .badge-digest { background: var(--digest-badge); color: #fff; }
+
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dispatch-body ul { padding-left: 16px; }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
+  .dispatch-body a { color: var(--link); text-decoration: none; }
+  .dispatch-body a:hover { text-decoration: underline; }
+
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .check-dispatch-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
+  .check-dispatch-note .note-icon { font-size: 11px; flex-shrink: 0; }
+
+  .check-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .check-findings { list-style: none; padding: 0; margin: 0; }
+
+  .check-findings li {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
+  }
+
+  .check-findings li:last-child { border-bottom: none; }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
+  .check-findings .fi-value { color: #c4c6d6; flex: 1; }
+  .check-findings .fi-value strong { color: var(--text); font-weight: 600; }
+  .check-findings .fi-value.flag-alert { color: #e08080; }
+  .check-findings .fi-value.flag-new   { color: #90c8a0; }
+  .check-findings .fi-value.flag-quiet { color: #7b7f96; }
+
+  .prev-day-link {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .prev-day-link a { color: var(--link); text-decoration: none; }
+  .prev-day-link a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .story-status .stat span { color: var(--muted); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ebola Monitor</h1>
+  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Tuesday, May 19, 2026</div>
+</header>
+
+<div class="story-status">
+  <div class="stat">675 cases <span>(34 confirmed + 105 probable + 536 suspected)</span></div>
+  <div class="stat">134 deaths <span>(suspected + confirmed)</span></div>
+  <div class="stat">2 countries <span>affected (DRC, Uganda)</span></div>
+  <div class="stat">Last checked <span>9:38 PM UTC</span></div>
+</div>
+
+<section id="dispatches">
+  <h2>Today's Alerts &mdash; May 19, 2026</h2>
+
+  <details class="dispatch-alert">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">PHECS declared, cases jump 52% to 513, Butembo confirmed, burial cluster reaches western Uganda</span>
+        <span class="timestamp">May 19, 2026 at 11:30 AM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>Africa CDC formally declared PHECS (May 18)</strong> &mdash; First-ever Public Health Emergency of Continental Security for an Ebola outbreak. Emergency Consultative Group chaired by Prof. Salim Abdool Karim. $2M mobilized; joint IMST with WHO activated. (<a href="https://africacdc.org/news-item/africa-cdc-declares-the-ongoing-bundibugyo-ebola-outbreak-a-public-health-emergency-of-continental-security/">Africa CDC</a>)</li>
+        <li><strong>Case count officially 513 suspected / 131 deaths</strong> &mdash; DRC Health Minister Samuel Roger Kamba statement, May 19. Up from 336/89 on May 17: ~52% more suspected cases, ~47% more deaths in two days. Kamba cautioned deaths are "suspected, investigations underway." (<a href="https://abcnews.com/Health/wireStory/congo-health-ministry-reports-131-deaths-513-suspected-133098976">ABC News</a>)</li>
+        <li><strong>Butembo (North Kivu) now confirmed as case location</strong> &mdash; Geographic spread to a second major DRC province beyond Ituri; Butembo was epicenter of 2018&ndash;2020 Zaire outbreak. Multiple sources confirm (ABC News, PBS, CIDRAP May 2026). WHO primary source confirmation still pending.</li>
+        <li><strong>Fort Portal, Uganda: burial-linked suspected cases</strong> &mdash; Ugandans who attended a burial in eastern DRC returned to western Uganda (~250 km from Kampala); some developed Ebola symptoms and were taken to Fort Portal for treatment. Cross-border travel while symptomatic = potential uncontrolled transmission chain. Lab confirmation pending.</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>The outbreak is simultaneously deepening (deaths up ~47% in two days) and widening geographically (Butembo in North Kivu, Fort Portal in western Uganda). The detection mechanism failure &mdash; wrong lab cartridges used for three weeks &mdash; suggests case counts have been systematically understated. The PHECS adds continental institutional weight to the response but also signals Africa CDC believes this is not under control.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>Fort Portal and Butembo lab confirmation &mdash; especially Fort Portal (new Uganda geography, burial-chain transmission)</li>
+        <li>WHO Emergency Committee convening and temporary recommendations</li>
+        <li>Stafford colleagues' test results from Germany; hospital case registration</li>
+        <li>Next WHO DON publication for updated confirmed case count</li>
+        <li>DRC treatment center locations and capacity</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://africacdc.org/news-item/africa-cdc-declares-the-ongoing-bundibugyo-ebola-outbreak-a-public-health-emergency-of-continental-security/">Africa CDC &mdash; PHECS Declaration</a></li>
+        <li><a href="https://abcnews.com/Health/wireStory/congo-health-ministry-reports-131-deaths-513-suspected-133098976">ABC News &mdash; DRC Health Ministry 513/131</a></li>
+        <li><a href="https://www.pbs.org/newshour/health/congo-will-open-3-ebola-treatment-centers-as-a-rare-strain-spreads">PBS &mdash; 3 new treatment centers</a></li>
+        <li><a href="https://www.cidrap.umn.edu/ebola/who-declares-ebola-outbreak-emergency-cdc-restricts-travel-confirms-us-doctor-infected">CIDRAP &mdash; PHEIC, travel ban, Stafford</a></li>
+        <li><a href="https://www.thelocal.de/20260519/us-doctor-infected-with-ebola-virus-to-be-treated-in-germany">The Local DE &mdash; Germany transfer</a></li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="checks">
+  <h2>News Checks &mdash; May 19, 2026</h2>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Evening check: Charit&eacute; Berlin named, genomic preprint confirms new spillover, case total reaches 675</span>
+        <span class="timestamp">9:38 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; no alert criteria met; case count rise ~4.5%, no new country, no new confirmed healthcare worker case
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Case count</span>
+          <span class="fi-value flag-new"><strong>675 total</strong> (536 suspected + 105 probable + 34 confirmed) / 134 deaths &mdash; evening update; 26 new confirmed + 143 new suspected in last 24&ndash;48h</span>
+        </li>
+        <li>
+          <span class="fi-label">Germany</span>
+          <span class="fi-value flag-new"><strong>Charit&eacute; university hospital, Berlin</strong> confirmed (special isolation ward); Stafford identified as missionary with <strong>Serge Christian mission organization</strong></span>
+        </li>
+        <li>
+          <span class="fi-label">Genomics</span>
+          <span class="fi-value flag-new"><strong>New spillover confirmed</strong> &mdash; INRB + CPHL sequenced 3 BDBV genomes; phylogenetic analysis shows distinct clade from 2007/2012; third documented BVD outbreak (<a href="https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032">virological.org</a>)</span>
+        </li>
+        <li>
+          <span class="fi-label">Humanitarian</span>
+          <span class="fi-value">WFP airlifted 5+ tonnes supplies to Ituri (May 18); DRC response only <strong>34% funded</strong> &mdash; UN warns critical gap</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON</span>
+          <span class="fi-value flag-quiet">No new DON since DON602 (May 17) &mdash; DON603 awaited</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Fort Portal</span>
+          <span class="fi-value flag-quiet">Burial-linked cluster still suspected only &mdash; no lab confirmation from Uganda MOH or WHO AFRO</span>
+        </li>
+        <li>
+          <span class="fi-label">Butembo</span>
+          <span class="fi-value flag-quiet">Cases confirmed by multiple secondary sources; WHO DON or DRC MOH primary source not yet located</span>
+        </li>
+        <li>
+          <span class="fi-label">Stafford contacts</span>
+          <span class="fi-value">Wife + colleague at Charit&eacute; &mdash; test results pending; any positive = European confirmed case</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO EC</span>
+          <span class="fi-value flag-quiet">Emergency Committee still "as soon as possible" &mdash; no convening date announced</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment RCT</span>
+          <span class="fi-value">BARDA investigating Bundibugyo-specific monoclonal antibodies; trial initiation timeline unknown</span>
+        </li>
+        <li>
+          <span class="fi-label">Africa CDC ops</span>
+          <span class="fi-value flag-quiet">PHECS operational details lacking &mdash; which countries received expert deployments?</span>
+        </li>
+        <li>
+          <span class="fi-label">Funding gap</span>
+          <span class="fi-value">34% funded &mdash; dollar shortfall amount and donor engagement not yet confirmed</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Morning check: PHECS declared overnight, cases jump 52%, Butembo and Fort Portal emerge &mdash; alert sent</span>
+        <span class="timestamp">11:24 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; PHECS declared, 52% case jump, Butembo + Fort Portal (see alert above)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Africa CDC</span>
+          <span class="fi-value flag-alert"><strong>First-ever PHECS declared</strong> &mdash; ECG chaired by Prof. Salim Abdool Karim; $2M mobilized; IMST activated with WHO</span>
+        </li>
+        <li>
+          <span class="fi-label">DRC cases</span>
+          <span class="fi-value flag-alert"><strong>513 suspected / 131 deaths</strong> (DRC MOH, May 19 morning) &mdash; 52% jump from 336/89 on May 17</span>
+        </li>
+        <li>
+          <span class="fi-label">Butembo (NK)</span>
+          <span class="fi-value flag-alert"><strong>New case location confirmed</strong> &mdash; spread to second major DRC province; Butembo was 2018&ndash;2020 Zaire Ebola epicenter</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal, UG</span>
+          <span class="fi-value flag-alert">Burial-linked cluster: Ugandans attended DRC burial, returned to western Uganda, some symptomatic &mdash; <strong>potential uncontrolled chain</strong>; lab confirmation pending</span>
+        </li>
+        <li>
+          <span class="fi-label">Germany</span>
+          <span class="fi-value flag-new"><strong>7 Americans</strong> (Stafford + 6 contacts) transported to Germany; hospital undisclosed at time of check</span>
+        </li>
+        <li>
+          <span class="fi-label">Detection delay</span>
+          <span class="fi-value flag-new">Confirmed: <strong>wrong lab cartridges</strong> used for 3 weeks &mdash; samples tested for Zaire, not Bundibugyo; gap was partly procedural</span>
+        </li>
+        <li>
+          <span class="fi-label">DRC response</span>
+          <span class="fi-value">3 new Ebola treatment centers to open (DRC Health Minister Kamba); locations unspecified</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Fort Portal</span>
+          <span class="fi-value">Lab confirmation of burial-linked western Uganda cases &mdash; Uganda MOH / WHO AFRO</span>
+        </li>
+        <li>
+          <span class="fi-label">Butembo</span>
+          <span class="fi-value flag-quiet">WHO DON or DRC MOH primary source &mdash; not yet located</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO EC</span>
+          <span class="fi-value flag-quiet">EC convening date &mdash; still "as soon as possible"</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON</span>
+          <span class="fi-value flag-quiet">DON603 expected &mdash; DON602 (May 17) still latest</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="previous-day">
+  <h2>Previous Day &mdash; May 18, 2026</h2>
+
+  <details class="dispatch-digest">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-digest">Digest</span>
+      <span class="summary-inner">
+        <span class="headline">PHEIC declared, American physician/missionary infected, first-ever US Ebola travel ban, Africa CDC PHECS</span>
+        <span class="timestamp">May 18, 2026 (compiled May 19 at 11:20 AM UTC)</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>WHO declared PHEIC</strong> &mdash; May 17, without Emergency Committee (first time in WHO history); does not meet "pandemic emergency" criteria but is a formal international emergency designation.</li>
+        <li><strong>Dr. Peter Stafford confirmed Ebola-positive</strong> &mdash; American missionary/physician at Nyankunde Hospital, Bunia; first US national confirmed with Bundibugyo. Transported to Charit&eacute; Berlin; 6 additional US contacts also transferred for monitoring.</li>
+        <li><strong>US imposes first-ever Ebola travel ban (Title 42)</strong> &mdash; Foreign nationals from DRC, Uganda, South Sudan barred from US entry for 30 days if present in those countries within past 21 days. South Sudan included preventively. Both US and Rwanda defying WHO "no travel restrictions" guidance.</li>
+        <li><strong>Africa CDC formally declared PHECS</strong> &mdash; May 18; first-ever PHECS for an Ebola outbreak. Emergency Consultative Group chaired by Prof. Salim Abdool Karim. $2M mobilized; joint IMST with WHO under "4 Ones" model.</li>
+        <li><strong>Case count escalated significantly</strong> &mdash; 246/80 (May 15) &rarr; 336/89 (May 17) &rarr; ~395/106 at PHECS declaration. Three-week detection delay explained by wrong lab cartridges (Zaire cartridges, not Bundibugyo).</li>
+        <li><strong>Rwanda confirmed all DRC border crossings closed</strong> &mdash; Primary source: Rubavu District Mayor Mulindwa; effective May 17, indefinitely; daily water-fetching prohibited.</li>
+        <li><strong>PPE stockpile warning</strong> &mdash; Africa CDC: 6&ndash;8 week replenishment window if transmission escalates. Mongbwalu mining zone identified as probable outbreak origin.</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>May 18 was the most consequential day of the outbreak so far &mdash; a named American missionary/healthcare worker infected, two independent emergency declarations (PHEIC + PHECS), and the first US travel ban for Ebola. The detection delay caused by wrong lab cartridges suggests the surveillance gap was partly systemic/procedural.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>Butembo (North Kivu) and Fort Portal (western Uganda) spread confirmed or ruled out</li>
+        <li>WHO Emergency Committee convening date and temporary recommendations</li>
+        <li>Stafford colleagues' test results; Charit&eacute; Berlin case registration</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://africacdc.org/news-item/africa-cdc-declares-the-ongoing-bundibugyo-ebola-outbreak-a-public-health-emergency-of-continental-security/">Africa CDC &mdash; PHECS Declaration</a></li>
+        <li><a href="https://www.statnews.com/2026/05/18/cdc-ebola-travel-ban-announced-uganda-congo-south-sudan/">STAT News &mdash; Travel ban + Stafford</a></li>
+        <li><a href="https://www.ktpress.rw/2026/05/rwanda-closes-rubavu-goma-border-over-ebola-fears/">KT Press &mdash; Rwanda border closure</a></li>
+        <li><a href="https://healthpolicy-watch.news/drc-ebola-outbreak-may-be-much-larger-than-currently-reported/">Health Policy Watch &mdash; PPE + Mongbwalu</a></li>
+        <li><a href="https://www.cidrap.umn.edu/ebola/who-declares-ebola-outbreak-emergency-cdc-restricts-travel-confirms-us-doctor-infected">CIDRAP &mdash; PHEIC, travel ban, lab cartridges</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <div class="prev-day-link">
+    <a href="ebola-2026-05-18.html">&larr; Full briefing for May 18, 2026</a>
+  </div>
+
+</section>
+
+<footer>
+  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Tuesday, May 19, 2026</span>
+</footer>
+
+</body>
+</html>

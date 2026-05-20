@@ -241,3 +241,45 @@
 - "Stafford Germany hospital" — RESOLVED: Charité Berlin
 - "virological.org BDBV" — fetched; no need to revisit unless new preprint published
 - "OCHA humanitarian" — low new signal; revisit in 48h unless funding breakthrough
+
+## 2026-05-20 (Cycle 7 — First run of May 20; quiet; digest written for May 19)
+
+**Queries run (via subagents):**
+1. `WHO disease outbreak news Ebola DRC situation report May 20 2026` — DON602 still latest; WHO PHEIC news page current
+2. `Ebola Fort Portal Uganda lab confirmed cases May 2026` — still suspected only; no lab confirmation
+3. `WHO Emergency Committee Ebola PHEIC meeting convening date May 2026` — Al Jazeera: EC meeting scheduled May 19; vaccine advisory group convened
+4. `Ebola case count update DRC deaths May 20 2026` — Wikipedia 543/35/131 as of May 20; ECDC 500+/130/30 (May 19)
+5. `MSF Médecins Sans Frontières Ebola response field update Ituri DRC May 2026` — MSF preparing large-scale response; 55 deaths in Mongwalu by early May (pre-declaration)
+6. `South Sudan Ebola screening response border DRC 2026` — State Dept May 19: borders monitored; US providing PPE/screening assistance
+7. `Ebola 2026 BARDA treatment compassionate use RCT monoclonal antibodies remdesivir` — no BARDA-specific update; WHO recommended mAb114, REGN-EB3 for Zaire (not Bundibugyo)
+8. `Ebola DRC case fatality rate Bundibugyo 2026 epidemic curve reproduction number` — no R-number published; historical CFR 30-50%
+9. `Africa CDC Ebola 2026 deployment teams preparedness countries` — PHECS operational pillars confirmed; no specific country deployment list
+10. `WHO Emergency Committee Ebola Bundibugyo May 19 2026 meeting vaccine Ervebo recommendations outcome` — meeting confirmed but outcome not yet published
+11. `Ebola 2026 WHO vaccine advisory group decision Ervebo deploy Bundibugyo cross-protection` — CNBC Africa found; 2000 Gavi doses; no decision
+12. `Ebola Bundibugyo outbreak update May 20 2026 vaccine WHO advisory group recommendation` — no new May 20 publications found
+
+**URLs fetched this cycle (6 successful, 3 failed/partial):**
+- https://www.aljazeera.com/news/2026/5/19/who-to-hold-emergency-committee-meeting-as-ebola-death-toll-rises-to-131 (**novel**: EC meeting date May 19; vaccine committee; spread 200km; WHO chief "serious concern")
+- https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic (**update**: 543 susp/35 conf/131 deaths May 20)
+- https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-19-may-2026 (**novel**: EURL-PH-ERZV EU/EEA diagnostic support activated)
+- https://www.statnews.com/2026/05/18/ebola-outbreak-update-experts-weigh-use-merck-vaccine-ervebo/ (**novel**: Ervebo cross-protection evidence; 2011/2013 primate studies; ~50% efficacy; Gavi 2000 doses; 2-month supply timeline)
+- https://www.cdc.gov/han/php/notices/han00530.html (**novel**: HAN 530, May 16; Level 3 DRC, Level 1 Uganda; clinical screening criteria)
+- https://www.cnbcafrica.com/2026/international-health-experts-meet-in-search-for-ebola-bundibugyo-vaccine-options (**novel**: WHO R&D Blueprint advisory met May 19; no decision; Gavi 2000 doses confirmed)
+- WHO DON page (failed — empty filter response)
+- Washington Post (403 forbidden)
+- NPR (timeout)
+
+**Dispatch decision:** QUIET (first-of-day digest written for May 19). No alert criteria met: case count +7 suspected (<2%); no new country; no new containment failure; advisory meeting outcome pending.
+
+**Priority for Cycle 8:**
+- WHO R&D Blueprint advisory final recommendation — watch WHO.int, DRC/Uganda health ministry
+- Fort Portal lab confirmation — Uganda MOH / WHO AFRO
+- WHO EC convening date — watch WHO.int
+- WHO DON603 — check WHO DON page directly
+- Stafford colleagues test results (Charité)
+- CDC.gov live travel advisory page for DRC (Level 3 vs Level 4)
+
+**What NOT to search next cycle (covered):**
+- "ECDC May 19" — fetched; revisit in 24h
+- "CNBC Africa vaccine" — fetched; no decision yet
+- "Gavi Ervebo doses" — resolved: 2,000 in DRC
