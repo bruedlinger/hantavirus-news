@@ -1,12 +1,12 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-21T10:48:00Z — Cycle 9*
+*Last updated: 2026-05-21T17:50:00Z — Cycle 10*
 
 ---
 
 ## Summary
 
-A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. WHO Emergency Committee subsequently convened May 19 and formally validated the PHEIC. Africa CDC declared a PHECS (Public Health Emergency of Continental Security) on May 18 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 20, 2026 (WHO DG briefing): **~600 suspected / 51 DRC confirmed / 1 Germany confirmed (Stafford) / 139 suspected deaths**. New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases (not yet lab-confirmed). Dr. Peter Stafford (stable, receiving monoclonal antibodies) at Charité university hospital, Berlin. Three-week detection delay caused by incorrect lab testing cartridges. **Genomic sequencing confirmed: new spillover event** (INRB/CPHL, virological.org, May 2026). DRC humanitarian response only 34% funded. **100,000+ newly displaced** due to outbreak. Uganda postponed Martyrs' Day (2M people).
+A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. WHO Emergency Committee subsequently convened May 19 and formally validated the PHEIC. Africa CDC declared a PHECS (Public Health Emergency of Continental Security) on May 18 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 20, 2026 (WHO DG briefing): **~600 suspected / 51 DRC confirmed / 1 Germany confirmed (Stafford) / 139 suspected deaths**. New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases (not yet lab-confirmed). Dr. Peter Stafford (stable, receiving monoclonal antibodies) at Charité university hospital, Berlin. **1 American contact transported to Bulovka Hospital, Prague (Czechia)** — NOT confirmed positive; under strict isolation. Three-week detection delay caused by incorrect lab testing cartridges. **Genomic sequencing confirmed: new spillover event** (INRB/CPHL, virological.org, May 2026). DRC humanitarian response only 34% funded. **100,000+ newly displaced** due to outbreak. Uganda postponed Martyrs' Day (2M people). **11 health zones** now affected across two provinces (Ituri + Nord-Kivu). **800+ contacts being tracked** in DRC (up from 65 on May 15). **INRB's Muyembe (May 21): DRC awaiting experimental Oxford-developed vaccine shipments from US and UK** — first indication any experimental Bundibugyo vaccine may be en route.
 
 ---
 
@@ -34,22 +34,26 @@ A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late Ap
 | Suspected deaths | 139 | WHO DG + Al Jazeera, May 20, 2026 |
 | Healthcare workers dead | 4 | Mongbwalu General Referral Hospital (within 4 days of symptom onset) |
 | Africa CDC count at PHECS declaration | ~395 suspected / 106 deaths | Africa CDC, May 18, 2026 |
+| DRC/CNN count | ~575 suspected / 148 deaths | CNN "by the numbers," DRC statement, May 20, 2026 |
 
-Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 536/34/134 (CNN/Wikipedia, May 19 evening, cycle 6); 513/131 (DRC MOH, May 19 morning); 336/89/12 (WHO DON602, May 17); 246/80 (WHO DON, May 15–16). Note: "Germany" officially appears in WHO count as 1 confirmed (Stafford); was known positive since cycle 4 but now formally counted.
+Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 536/34/134 (CNN/Wikipedia, May 19 evening, cycle 6); 513/131 (DRC MOH, May 19 morning); 336/89/12 (WHO DON602, May 17); 246/80 (WHO DON, May 15–16). Note: "Germany" officially appears in WHO count as 1 confirmed (Stafford); was known positive since cycle 4 but now formally counted. Note on death count discrepancy: WHO DG (May 20) = 139 suspected deaths; DRC/CNN (May 20) = 148 — likely different methodology (DRC may count more broadly).
 
 ### Geography
 
 **DRC — Primary (Ituri Province):**
 - Bunia, Rwampara, Mongbwalu health zones (original cluster)
-- **9 health zones now affected in Ituri** (up from 3 confirmed in early reports)
-- Nyankunde (where Dr. Stafford worked at Nyankunde Hospital)
+- **11 health zones now affected** across two provinces (Ituri + Nord-Kivu) — confirmed by ECDC and CDC (up from 9 in Ituri; up from 3 in early reports)
+- Nyankunde (where Dr. Stafford worked at Nyankunde Hospital; all Nyankunde cases were frontline health professionals per UNFPA)
 
 **DRC — Spread beyond Ituri:**
 - Goma, North Kivu: 1 confirmed case (wife of Bunia victim traveled while infected; area under M23 control — response access uncertain)
 - **Butembo, North Kivu: CONFIRMED as new case location** — multiple sources (ABC News, PBS, CIDRAP May 2026). Butembo was the epicenter of the devastating 2018–2020 Zaire Ebola outbreak; its involvement in this outbreak represents geographic spread to a second major DRC province.
 
-**Germany:**
+**Germany/Czechia — evacuation:**
 - 1 confirmed case — Dr. Peter Stafford, American missionary physician, confirmed Bundibugyo-positive; treated at Charité university hospital, Berlin. Officially counted by WHO as 1 confirmed case. Stable condition as of May 20.
+- 5 high-risk contacts at Charité Berlin (same isolation ward as Stafford).
+- **1 additional American contact transported to Bulovka Hospital, Prague (Czechia)** — NO positive test; under strict isolation for up to 21 days; Czech Health Minister Adam Vojtěch confirmed "no risk to public"; Bulovka is a designated Czech facility for highly dangerous infectious diseases with negative-pressure isolation. (Radio Prague International, expats.cz, May 20/21)
+- Total: 7 Americans evacuated from DRC (Stafford + 6 contacts): 1 confirmed at Charité, 5 contacts at Charité, 1 contact at Bulovka.
 
 **DRC — Ruled out:**
 - Kinshasa: DISPROVEN — WHO confirmatory tests were negative. Wikipedia still lags on this; treat WHO ruling as authoritative.
@@ -106,11 +110,13 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - Enhanced by unsafe burial practices — open-casket funeral processions confirmed as transmission amplifiers (CIDRAP, May 2026)
 - Burial-linked cluster: Ugandans who attended a burial in eastern DRC, returned to western Uganda — Fort Portal cluster
 
-### Contact Tracing (as of May 15)
+### Contact Tracing (updated May 20)
 
-- 65 contacts listed; 15 identified as high-risk
+- **800+ contacts being tracked** in DRC — massive scale-up from 65 contacts as of May 15 (CNN / DRC statement, May 20)
+- 15 contacts originally identified as high-risk (May 15 figure; updated count unknown)
 - Follow-up hampered by insecurity and movement restrictions
 - Several listed contacts died before isolation (tracing gap)
+- The 12-fold jump from 65→800+ contacts either reflects significantly expanded transmission mapping or a methodological widening of the contact definition; significance is that response workload has grown enormously
 
 ### Security Context
 
@@ -140,7 +146,11 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **IRC detection delay quote (IRC press release, May 2026):** "The sharp rise in reported cases over the last few days reflects the reality that surveillance systems are now catching up with transmission that has likely been occurring for some time." Specific IRC programs cut (March 2025): treatment for communicable/non-communicable diseases, disease surveillance systems, WASH infrastructure (waste management, triage zones, handwashing stations), PPE kit distribution. No IRC dollar figures in press release.
 - **100,000+ newly displaced** due to the Ebola outbreak itself (WHO EC opening remarks, May 19, 2026)
 - **Uganda postponed Martyrs' Day celebration** — annual event draws ~2 million people; postponed as mass-gathering prevention measure (WHO DG briefing, May 20, 2026)
-- **Dr. Stafford treatment:** Receiving monoclonal antibodies at Charité Berlin; condition stable and improving ("feels good," eating). Wife Dr. Rebekah Stafford (38) and Dr. Peter LaRochelle (46) under monitoring — no positive tests as of May 20.
+- **Dr. Stafford treatment:** Receiving monoclonal antibodies at Charité Berlin; condition stable and improving ("feels good," eating). Wife Dr. Rebekah Stafford (38) and Dr. Peter LaRochelle (46) under monitoring at Charité — no positive tests as of May 20.
+- **Czechia (Bulovka Hospital, Prague):** 1 American contact (NOT confirmed positive) transported at US request to specialized infectious diseases unit at Bulovka Hospital, Prague; strict isolation for up to 21 days; Czech Health Minister confirmed. (Radio Prague International, May 20/21)
+- **WHO supply airlift:** Al Jazeera (May 21) cites WHO sent 12 tonnes of supplies + 6 more tonnes arriving = 18 tonnes total to Ituri (medical protective equipment + samples for frontline health workers).
+- **UNFPA:** Operating in 10 health zones serving 443,278 people in Ituri. Strategy includes integrating IPC with emergency obstetric care; risk comms to reduce stigma; GBV/sexual exploitation protection. Particular concern for nosocomial risk to pregnant women, newborns, and maternal healthcare providers. (UNFPA Flash Update, May 14–19)
+- **EU Health Task Force:** ECDC confirmed deployment of EU Health Task Force experts to support Ebola outbreak response (ECDC, May 18, 2026).
 
 ### Genomic Sequencing (virological.org, May 2026)
 
@@ -158,7 +168,7 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **Ervebo cross-protection evidence:** 2011 primate study (JID): 3/4 macaques survived Bundibugyo exposure after rVSV-ZEBOV vaccination; 2013 follow-up: inconsistent results depending on dosing/timing. Expert estimate ~50% efficacy (Tom Geisbert). MSF's Armand Sprecher: "You go into the outbreak with the vaccine you have." Theoretical risks: antibody-dependent enhancement, immune distraction — neither observed in animal studies. Deployment supply lead time: ~2 months. (STAT News, May 18, 2026)
 - **Gavi supply:** 2,000 doses of Ervebo available in DRC if approved for trial use. (CNBC Africa, May 2026)
 - **RCT candidates (4 under assessment):** Monoclonal antibodies, Gilead remdesivir (IV), oral remdesivir analog, plus one unspecified fourth candidate — being assessed for RCT protocols; WHO-sponsored trial pending DRC/Uganda government approval
-- **Oxford/Moderna broad-spectrum vaccine:** Early development; CEPI + EU funded (~$26.7M); not near clinical readiness
+- **Oxford/CEPI broad-spectrum vaccine — UPDATE:** INRB Director Jean-Jacques Muyembe stated May 21 that DRC is awaiting experimental vaccine shipments from the United States and United Kingdom; the vaccine was developed by researchers at Oxford. (Al Jazeera, May 21, 2026) **This significantly updates the prior assessment that this vaccine was "not near clinical readiness."** Nature of shipment (compassionate use doses? pre-clinical batches? full CEPI stockpile?) not yet clarified. CEPI + EU funded (~$26.7M). — OPEN THREAD: verify product identity and shipment timeline.
 - **Sabin/IAVI:** Sudan ebolavirus vaccines in clinical trials — not applicable to Bundibugyo
 
 ### Background: DRC Ebola History
@@ -190,6 +200,10 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 17. **CDC travel advisory Level:** CDC HAN 530 (May 16) states Level 3 for DRC, Level 1 for Uganda. CIDRAP states Level 4 for whole DRC. Which is current?
 18. **WHO EC formal temporary recommendations:** Search snippets confirm EC issued recommendations (supportive care, IPC, contact tracing, safe burials, community engagement) but specific IHR temporary recommendations document not yet directly fetched. Watch who.int/news or who.int/publications for the IHR statement.
 19. **EAC country-level response:** Which specific EAC member states have activated national emergency plans following EAC activation (May 18)? Any new screening positive or case at EAC member state borders?
+20. **Oxford vaccine shipment details:** What is the specific product INRB's Muyembe referred to? Is this a pre-clinical batch, compassionate use allocation, or existing CEPI stockpile? When is shipment expected to arrive? To whom will doses be given?
+21. **Czechia contact status:** Is the American at Bulovka Prague confirmed Ebola-negative? What is the end date of the 21-day isolation period? Any other European receiving countries beyond Germany and Czechia?
+22. **800+ contacts figure:** Is this total DRC contacts or does it include Uganda? What is the methodology — all contacts of confirmed cases, or a broader community surveillance net?
+23. **Death count discrepancy:** WHO DG May 20 = 139 deaths; DRC/CNN May 20 = 148 deaths. What methodology accounts for the difference? Is DRC counting probable deaths as well as suspected?
 
 ---
 
@@ -208,6 +222,10 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **WHO EC IHR temporary recommendations full text:** Search snippets say published; need direct URL fetch on who.int
 - **EAC country-level activations:** Which specific EAC members activated national plans after May 18 EAC call?
 - **US $13M disbursement tracking:** How/when is State Dept $13M being disbursed? Through which implementing partners?
+- **Oxford vaccine shipment:** Verify product identity, shipment timeline, recipient, dosage — Muyembe quote from Al Jazeera May 21; check CEPI, Oxford, BARDA announcements
+- **Czechia Bulovka contact:** Track testing outcome; 21-day isolation ends ~May 38 UTC — check in when approaching end of isolation window
+- **800+ contacts: methodology and breakdown:** Check DRC MOH, WHO AFRO or WHO DON for updated contact list methodology
+- **Death count methodology:** Clarify DRC 148 vs WHO 139 — check next WHO DON or DRC MOH statement
 
 ---
 
@@ -239,9 +257,25 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 | 2026-05-19 (afternoon) | WHO R&D Blueprint advisory group convened; deliberated Ervebo (rVSV-ZEBOV) cross-protection use against Bundibugyo; no decision announced; Gavi confirmed 2,000 doses in DRC ready if approved |
 | 2026-05-19 (evening) | Case count updated to 536 suspected / 105 probable / 34 confirmed / 134 deaths; Charité Berlin named as Stafford's hospital; Stafford identified as missionary with Serge Christian mission org; virological.org preprint confirms new spillover event (INRB/CPHL, 3 genomes); WHO chief raises alarm ("serious concern about scale and speed") |
 | 2026-05-19 | WHO Emergency Committee convenes — EC validates PHEIC declaration retroactively; DG gives opening remarks. Formal EC temporary recommendations pending. |
-| 2026-05-20 | WHO DG media briefing: ~600 suspected / 51 DRC confirmed / 1 Germany / 139 deaths. WHO additional $3.4M → $3.9M total. Uganda postpones Martyrs' Day (2M people). ECDC activates EU/EEA support. Stafford stable, receiving monoclonal antibodies; wife Dr. Rebekah Stafford + Dr. LaRochelle under monitoring (no positives). 100,000+ newly displaced due to outbreak. |
+| 2026-05-20 | WHO DG media briefing: ~600 suspected / 51 DRC confirmed / 1 Germany / 139 deaths. WHO additional $3.4M → $3.9M total. Uganda postpones Martyrs' Day (2M people). ECDC activates EU/EEA support. Stafford stable, receiving monoclonal antibodies; wife Dr. Rebekah Stafford + Dr. LaRochelle under monitoring (no positives). 100,000+ newly displaced due to outbreak. DRC/CNN independently report 575 suspected / 148 deaths. Contact tracing at 800+. |
+| 2026-05-21 | INRB Director Muyembe states DRC awaiting experimental Oxford-developed vaccine shipments from US and UK (Al Jazeera). 1 American contact (NOT confirmed positive) transported to Bulovka Hospital, Prague (Czechia) at US request. 11 health zones confirmed across Ituri + Nord-Kivu. WHO total supply airlift: 18 tonnes to Ituri. |
 
 ---
+
+### Cycle 10 Findings (2026-05-21 17:43–17:50 UTC)
+
+**Incremental cycle — no alert criteria met.** Key new confirmed facts:
+- **Contact tracing at 800+** (CNN/DRC, May 20) — dramatic jump from 65 contacts as of May 15; signals either genuine transmission expansion or broadened methodology. Massive operational burden.
+- **Oxford experimental vaccine expected:** INRB Director Jean-Jacques Muyembe told Al Jazeera (May 21) DRC is awaiting experimental vaccine shipments from US and UK; vaccine developed at Oxford. Updates prior assessment that Oxford/CEPI broad-spectrum vaccine was "not near clinical readiness." Product identity and shipment timeline unconfirmed.
+- **Czechia evacuation confirmed:** 1 American contact (NOT confirmed positive) transported to Bulovka Hospital, Prague at US request; Czech Health Minister confirmed; strict isolation up to 21 days. Breakdown: Stafford + 5 contacts at Charité Berlin; 1 contact at Bulovka Prague.
+- **11 health zones** across two provinces (Ituri + Nord-Kivu) confirmed by ECDC and CDC — up from 9 health zones previously stated.
+- **Deaths: 148** reported in DRC/CNN (May 20) vs. 139 in WHO DG briefing (same date) — methodology discrepancy noted; 148 may include probable deaths.
+- **WHO airlift: 18 tonnes** total supplies to Ituri (12 + 6 additional tonnes per Al Jazeera May 21).
+- **UNFPA detail:** Operating in 10 health zones serving 443,278 people in Ituri; all Nyankunde cases were frontline health professionals; nosocomial risks to pregnant women/maternal care flagged.
+- **EU Health Task Force deployed** to support response (ECDC, May 18).
+- **No dispatch** — no alert criteria met; not first-of-day (no digest).
+
+**Still pending:** Fort Portal lab confirmation, WHO DON603, Ervebo deployment decision, WHO EC IHR recommendations document, Oxford vaccine shipment details.
 
 ### Cycle 9 Findings (2026-05-21 10:44–10:48 UTC)
 

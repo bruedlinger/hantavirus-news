@@ -359,3 +359,46 @@
 - "IRC funding cuts" — fetched; core narrative documented; revisit in 48h
 - "WFP funding" — fetched; figures now documented
 - "EAC lab network" — fetched; revisit in 48h for country-level specifics
+
+## 2026-05-21 (Cycle 10 — 17:43–17:52 UTC)
+
+**Follow-up queries:**
+1. `WHO Ebola emergency committee temporary recommendations IHR 2026 published` — snippets suggest published (supportive care, IPC, contact tracing, safe burials) but no direct URL; EC meeting confirmed May 19 and validated PHEIC; formal IHR recommendations text still not directly accessible
+2. `Ebola DRC Congo outbreak case count update May 21 2026` — ECDC cites WHO May 20: ~600 suspected / 139 deaths / 51 DRC confirmed. CDC: still showing May 19 data (536/34/134). No May 21 count update found. 11 health zones confirmed across Ituri + Nord-Kivu. Contact tracing 800+.
+3. `Fort Portal Uganda Ebola confirmed lab results May 2026` — still not lab-confirmed; search results only show burial-linked suspected cases being taken for treatment; Uganda MOH: 2 confirmed (Kampala only)
+4. `Ervebo rVSV-ZEBOV vaccine DRC Uganda approval deployment Bundibugyo 2026` — no approval; Al Jazeera May 21 article reports INRB Muyembe says DRC awaiting Oxford experimental vaccine from US/UK; Africa CDC evaluating Ervebo trial separately
+5. `WHO disease outbreak news DON Ebola DRC 2026 new report` — DON603 still not published; DON602 May 17 remains latest
+
+**Discovery queries:**
+6. `Ebola Burundi Tanzania CAR preparedness response May 2026` — generic: Burundi/Tanzania stepped up surveillance per AI summary; CGTN May 20 reports 136 deaths; no primary source on specific Burundi/Tanzania actions found
+7. `Ebola Europe Belgium France UK evacuees confirmed cases May 2026` — no new European confirmed cases; only Germany (Stafford) + Czechia (1 contact, not confirmed); ReliefWeb Sitrep #1 May 20 found (403 on fetch); PAHO Americas reinforcing preparedness
+8. `Ebola DRC contact tracing contacts May 21 2026 update` — **800+ contacts being tracked in DRC** (CNN May 20); 575 suspected cases; 148 deaths (DRC May 20 statement — vs. 139 WHO DG)
+9. `Ebola Czechia Czech Republic contacts evacuees 2026` — CONFIRMED: 1 American contact sent to Bulovka Hospital, Prague; US ambassador requested; Czech HM Vojtěch confirmed; not positive; Radio Prague International, expats.cz (Czech news brief May 21)
+10. `Ebola outbreak 2026 Wikipedia latest case count deaths May 21` — Wikipedia: 543/35/131 (May 19 data, stale). 11 health zones confirmed.
+11. `Ebola experimental vaccine shipment US UK DRC May 2026` — CONFIRMED: INRB Muyembe (Al Jazeera May 21) states DRC awaiting experimental Oxford vaccine from US and UK; WHO sent 12+6 tonnes supplies
+
+**URLs fetched this cycle (5 successful, 4 failed/403):**
+- https://www.aljazeera.com/amp/news/2026/5/21/ebola-outbreak-when-will-a-vaccine-be-developed-for-the-new-strain (novel: Muyembe quotes Oxford vaccine; WHO 18 tonnes supplies; May 21 data uses stale 513/131)
+- https://www.unfpa.org/resources/unfpa-flash-update-ebola-outbreak-drc-14-19-may-2026 (novel: 10 health zones / 443,278 people; Nyankunde = frontline HCWs; nosocomial maternal risk)
+- https://www.cdc.gov/ebola/situation-summary/index.html (seen; May 19 data; confirms 11 health zones Ituri+Nord-Kivu; Czechia mentioned alongside Germany for contacts)
+- https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda-19-may-2026 (seen; cites WHO May 20: ~600/139/51; EU Health Task Force deployed May 18)
+- https://english.radio.cz/us-doctor-exposed-ebola-be-treated-prague-under-strict-isolation-8887076 (403 — not fetched)
+- https://www.washingtonpost.com/health/2026/05/19/this-us-doctor-went-congo-heal-others-then-ebola-hit-his-hospital/ (403)
+- https://reliefweb.int/report/democratic-republic-congo/ebola-outbreak-drc-and-uganda-situation-report-1-may-20-2026 (403)
+- https://www.unicef.org/press-releases/unicef-scaling-efforts-protect-and-support-children-and-families-following-ebola (403)
+- https://www.cnn.com/2026/05/20/health/ebola-by-the-numbers (truncated — no data extracted)
+
+**Dispatch decision:** QUIET — no alert criteria met; not first-of-day (no digest).
+
+**Priority for Cycle 11:**
+- Oxford vaccine shipment: verify product identity, timeline, CEPI/BARDA sources
+- Czechia Bulovka: test result update; 21-day isolation end date
+- 800+ contacts: primary source from DRC MOH or WHO AFRO
+- WHO DON603 — check WHO DON page directly
+- Fort Portal lab confirmation
+- ReliefWeb Sitrep #1 (403 in this cycle) — try again
+
+**What NOT to search next cycle (covered):**
+- "Ervebo approval DRC" — no decision; revisit in 24h
+- "EU/European cases" — no new cases; revisit in 24h
+- "Contact tracing general" — 800+ confirmed; revisit only if update
