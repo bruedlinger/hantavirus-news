@@ -1,6 +1,6 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-21T01:29:00Z — Cycle 8*
+*Last updated: 2026-05-21T10:48:00Z — Cycle 9*
 
 ---
 
@@ -123,8 +123,10 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 
 - WHO rapid response teams deployed to Ituri since May 5
 - **DRC opening 3 new Ebola treatment centers** — Health Minister Samuel Roger Kamba announced; locations not specified (PBS, May 2026)
-- **WFP airlift:** World Food Programme airlifted 5+ metric tonnes of medical supplies to Ituri on May 18 (Xinhua, May 19)
-- **DRC humanitarian response plan:** Only **34% funded** as of May 19, 2026 — UN warns "without immediate action, life-saving assistance will not reach those most in need"
+- **WFP airlift:** World Food Programme airlifted 5+ metric tonnes of medical supplies to Ituri on May 18 (Xinhua, May 19); WFP requires $214M for eastern DRC total and **$10M specifically for Ebola response** (WFP, May 2026); 26.5M Congolese facing acute food insecurity nationally, 10M in eastern provinces
+- **US State Department $13M:** US State Dept announced $13M Ebola-specific emergency funding (May 18, 2026) — distinct from USAID/HHS program cuts; covers surveillance, lab capacity, risk communication, safe burials, border controls, clinical management (Radio Okapi / US State Dept, May 2026)
+- **EAC regional laboratory network activated** (May 18, 2026): East African Community activated regional lab network and urged member states to activate national emergency preparedness plans, intensify mandatory screening at entry points, equip mobile health teams (Radio Okapi, May 19, 2026)
+- **DRC humanitarian response plan:** Only **34% funded** as of May 19, 2026 — UN warns "without immediate action, life-saving assistance will not reach those most in need"; broader DRC 2026 appeal: $1.4B total, implying ~$476M received / ~$924M gap (OCHA ReliefWeb); humanitarian funding collapsed from ~$900M/yr (Biden) to ~$179M/yr (Trump) — an 80% decrease
 - Africa CDC PHECS declared May 18: $2M mobilized; IMST with WHO activated; 130+ partners in coordination meetings
 - **MSF:** Two Ebola transit centres in Ituri (Bwanasura and Bunia); 3 suspected cases isolated at Salama clinic
 - **Dr. Peter Stafford (American physician/missionary, Bunia/Nyankunde Hospital):** confirmed Bundibugyo-positive; transported to Germany for treatment. Stafford is a medical missionary with **Serge Christian mission organization**. **Seven Americans total** (Stafford + 6 contacts) transported to **Charité university hospital, Berlin** — admitted to special isolation ward. German Health Ministry: "Arrangements are currently being made to admit and treat the patient in Germany." (Honolulu Star-Advertiser, May 19, 2026; The Local DE, May 19, 2026)
@@ -135,6 +137,7 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - Exit screening at airports and border crossings
 - **PPE stockpile warning (Africa CDC):** If transmission escalates, PPE stockpiles would require 6–8 weeks to replenish
 - **USAID structural gap — specific figures (STAT News, May 19):** HHS funding DRC: $33M (FY2024) → $10M (FY2025); USAID DRC: $1.2B (FY2024) → $715M (FY2025) → $67M (Q4 FY2025 — ~94% cut). IRC reduced Ituri operations from 5 to 2 areas. Researchers estimate 300,000 additional DRC deaths from total aid cuts (broader than outbreak). Former health officials say drawdown gutted detection/surveillance that could have caught outbreak earlier.
+- **IRC detection delay quote (IRC press release, May 2026):** "The sharp rise in reported cases over the last few days reflects the reality that surveillance systems are now catching up with transmission that has likely been occurring for some time." Specific IRC programs cut (March 2025): treatment for communicable/non-communicable diseases, disease surveillance systems, WASH infrastructure (waste management, triage zones, handwashing stations), PPE kit distribution. No IRC dollar figures in press release.
 - **100,000+ newly displaced** due to the Ebola outbreak itself (WHO EC opening remarks, May 19, 2026)
 - **Uganda postponed Martyrs' Day celebration** — annual event draws ~2 million people; postponed as mass-gathering prevention measure (WHO DG briefing, May 20, 2026)
 - **Dr. Stafford treatment:** Receiving monoclonal antibodies at Charité Berlin; condition stable and improving ("feels good," eating). Wife Dr. Rebekah Stafford (38) and Dr. Peter LaRochelle (46) under monitoring — no positive tests as of May 20.
@@ -183,8 +186,10 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 13. **PPE supply chain:** Current stock level relative to projected case growth?
 14. **USAID impact:** Which specific programs were defunded vs. 2018–2020 response?
 15. **WHO chief statement:** CNN headline says Tedros "raised alarm" on May 19 — content truncated; what specifically did he say?
-16. **Funding gap:** DRC humanitarian response 34% funded — what is the actual dollar figure of the gap? Which donors are being approached?
-17. **CDC travel advisory Level:** CDC HAN 530 (May 16) states Level 3 for DRC, Level 1 for Uganda. CIDRAP states Level 4 for whole DRC. Which is current? Has CDC upgraded DRC since HAN was issued?
+16. **Funding gap:** 34% funded = ~$924M gap from $1.4B appeal (OCHA estimate). US State Dept pledged $13M Ebola-specific (May 18). Which donors are responding?
+17. **CDC travel advisory Level:** CDC HAN 530 (May 16) states Level 3 for DRC, Level 1 for Uganda. CIDRAP states Level 4 for whole DRC. Which is current?
+18. **WHO EC formal temporary recommendations:** Search snippets confirm EC issued recommendations (supportive care, IPC, contact tracing, safe burials, community engagement) but specific IHR temporary recommendations document not yet directly fetched. Watch who.int/news or who.int/publications for the IHR statement.
+19. **EAC country-level response:** Which specific EAC member states have activated national emergency plans following EAC activation (May 18)? Any new screening positive or case at EAC member state borders?
 
 ---
 
@@ -200,6 +205,9 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **Next WHO DON:** DON602 still latest (May 17); watch for DON603
 - **Funding gap appeal:** Dollar figure of DRC humanitarian response shortfall (34% funded); donor engagement
 - **South Sudan MOH response:** Any active screening capacity at DRC border?
+- **WHO EC IHR temporary recommendations full text:** Search snippets say published; need direct URL fetch on who.int
+- **EAC country-level activations:** Which specific EAC members activated national plans after May 18 EAC call?
+- **US $13M disbursement tracking:** How/when is State Dept $13M being disbursed? Through which implementing partners?
 
 ---
 
@@ -235,6 +243,20 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 
 ---
 
+### Cycle 9 Findings (2026-05-21 10:44–10:48 UTC)
+
+**Incremental cycle — no alert criteria met.** Key new confirmed facts:
+- **US State Dept $13M** Ebola-specific emergency funding announced May 18, 2026 — distinct from USAID/HHS cut narrative. Covers surveillance, lab capacity, risk comms, safe burials, border controls, clinical management. Modest relative to scale.
+- **EAC regional lab network activated** (May 18) — EAC urged member states to activate national emergency preparedness plans, intensify mandatory screening at all entry points, equip mobile health teams.
+- **WFP funding needs confirmed:** $10M Ebola-specific + $214M eastern DRC total. 26.5M Congolese facing acute food insecurity (10M in eastern provinces).
+- **Humanitarian funding collapse scale confirmed:** $900M/yr (Biden) → $179M/yr (Trump) — 80% decrease. Overall 2026 DRC appeal = $1.4B; 34% funded = ~$924M gap.
+- **IRC detection delay quote confirmed:** "surveillance systems are now catching up with transmission that has likely been occurring for some time" — confirms long-feared detection gap narrative.
+- **No new WHO DON603** — still not published (DON602, May 17, remains latest).
+- **No Ervebo decision** — no DRC/Uganda government approval found.
+- **Fort Portal** — still not lab-confirmed.
+- **WHO EC formal temporary recommendations** — search snippets suggest recommendations published (supportive care, IPC, contact tracing, safe burials, community engagement), but could not directly fetch the document. Watch WHO.int.
+- **No dispatch** — no alert criteria met; no first-of-day digest.
+
 ### Cycle 8 Findings (2026-05-21 01:29–02:30 UTC)
 
 **First run of May 21 — digest written for May 20. Quiet cycle.** Key new confirmed facts:
@@ -249,18 +271,4 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **Fort Portal:** Still not lab-confirmed per all current primary sources.
 - **WHO DON603:** Not yet published.
 - **No dispatch** — case count rise ~10% suspected, ~46% confirmed (below 50% threshold); Germany was already known Stafford location; no new country; no death toll ≥50% jump; EC meeting was expected outcome.
-
-### Cycle 7 Findings (2026-05-20 10:34–11:30 UTC)
-
-**Quiet cycle — first run of May 20; digest written for May 19.** Key new confirmed facts:
-- **WHO R&D Blueprint advisory group met May 19** — deliberated whether to recommend Ervebo (rVSV-ZEBOV) off-label use against Bundibugyo for cross-protection. No final decision announced. DRC and Uganda governments must give final approval. (CNBC Africa, STAT News)
-- **Gavi: 2,000 Ervebo doses in DRC** ready if approved for trial use. Supply lead time ~2 months for full deployment. (CNBC Africa)
-- **Vaccine evidence details:** 2011 primate study: 3/4 macaques survived; 2013 follow-up: inconsistent results. Tom Geisbert estimate: ~50% efficacy. MSF Sprecher advocates pragmatic use. Theoretical ADE risk not seen in animal studies. (STAT News, May 18)
-- **Case count (Wikipedia, May 20):** 543 suspected / 35 confirmed / 131 deaths — minor revision vs 536/34/134. Death count discrepancy (131 vs 134) likely reflects different categorization.
-- **ECDC activated:** EURL-PH-ERZV providing diagnostic support and biosafety recommendations to EU/EEA countries. (ECDC, May 19)
-- **CDC HAN 530 (May 16):** Official US guidance — DRC = Level 3 travel advisory, Uganda = Level 1. Contradicts CIDRAP Level 4 claim. HAN predates CIDRAP report; discrepancy unresolved.
-- **WHO chief Tedros:** "Serious concern about scale and speed" of epidemic (confirmed text via Al Jazeera).
-- **Fort Portal:** Still not lab-confirmed.
-- **WHO DON603:** Not yet published.
-- **No dispatch** — no alert criteria met.
 

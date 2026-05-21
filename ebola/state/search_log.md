@@ -321,3 +321,41 @@
 - "USAID cuts" — fetched; core figures now documented; revisit in 48h if new IRC/STAT update
 - "WHO DG May 20 briefing" — fetched
 - "Stafford condition" — fetched; stable; revisit only if new development
+
+## 2026-05-21 (Cycle 9 — 10:44–10:48 UTC; not first-of-day)
+
+**Queries run (via 4 parallel subagents):**
+1. `WHO Emergency Committee Ebola DRC temporary recommendations IHR 2026` — snippets suggest recommendations published (supportive care, IPC, contact tracing, safe burials, community engagement) but could not fetch authoritative text; WHO.int pages returned same known URLs
+2. `Ebola DRC Congo outbreak case count May 21 2026` — no count newer than May 20 WHO DG briefing (~600 suspected / 51 DRC confirmed / 139 deaths); Wikipedia still at 543/35/131
+3. `Ervebo vaccine Bundibugyo DRC approval ring vaccination 2026` — no decision found; DRC has 2,000 doses "available" but no approved deployment; STAT/NBC/Scientific American confirm no decision
+4. `WHO disease outbreak news Ebola 2026 DON` — DON603 still not published; DON602 (May 17) remains latest
+5. `Fort Portal Uganda Ebola confirmed lab results 2026` — still not lab-confirmed; Uganda MOH: 2 confirmed (Kampala only); "12 Uganda cases" claim from one snippet not supported by primary sources
+6. `ebola Congo Ouganda Radio Okapi mai 2026` — Radio Okapi confirms EAC activation, MONUSCO support, US funding; note: Radio Okapi "$250M" headline is misleading (likely CDF not USD)
+7. `Ebola Bundibugyo clinical trial treatment RCT BARDA monoclonal antibodies 2026` — no new ClinicalTrials.gov registrations found; BARDA "actively investigating" but no registration
+8. `Tanzania Burundi Ebola preparedness DRC Congo 2026 screening` — generic results only; no country-specific measures confirmed
+9. `DRC Congo Ebola humanitarian funding gap 2026 million dollars donors` — $1.4B 2026 DRC appeal; 34% funded = ~$924M gap; humanitarian funding dropped $900M→$179M/yr (Biden→Trump)
+
+**URLs fetched this cycle (5 successful, 4 failed/stale):**
+- https://www.radiookapi.net/...us-financing: US State Dept $13M Ebola-specific (novel)
+- https://www.afro.who.int/...outbreak-drc-26: stale; no new data (aggregator)
+- https://www.rescue.org/...funding-cuts: IRC detection delay quote confirmed (novel)
+- https://www.radiookapi.net/...eac-lab-network: EAC regional lab activated May 18 (novel)
+- https://www.wfp.org/...eastern-drc-hunger: WFP $10M Ebola-specific + $214M eastern DRC (novel)
+- ReliefWeb OCHA funding gap: 403
+- MSF Bundibugyo challenge: 403
+- State.gov May 19 update: garbled/redirect
+- WHO Rapid Risk Assessment PDF: binary content
+
+**Dispatch decision:** QUIET — no alert criteria met; not first of day (no digest needed).
+
+**Priority for Cycle 10:**
+- WHO EC IHR formal temporary recommendations — try direct URL construction on who.int (format: who.int/news/item/YYYY-MM-DD-statement-...-emergency-committee...)
+- Fort Portal lab confirmation
+- Ervebo deployment decision (DRC/Uganda health ministries)
+- WHO DON603
+- EAC country-level activations — which specific states?
+
+**What NOT to search next cycle (covered):**
+- "IRC funding cuts" — fetched; core narrative documented; revisit in 48h
+- "WFP funding" — fetched; figures now documented
+- "EAC lab network" — fetched; revisit in 48h for country-level specifics
