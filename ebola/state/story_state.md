@@ -1,12 +1,12 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-20T10:34:00Z — Cycle 7*
+*Last updated: 2026-05-21T01:29:00Z — Cycle 8*
 
 ---
 
 ## Summary
 
-A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. Africa CDC formally declared a PHECS (Public Health Emergency of Continental Security) on May 18, 2026 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 19, 2026 (evening): **536 suspected / 105 probable / 34 confirmed cases and 134 deaths** (CNN/Wikipedia, up from 513/131 morning). New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases (not yet lab-confirmed). Dr. Peter Stafford + 6 contacts transported to **Charité university hospital, Berlin**. Stafford is a missionary with Serge Christian mission organization. Three-week detection delay caused by incorrect lab testing cartridges. **Genomic sequencing confirmed: new spillover event** (INRB/CPHL, virological.org, May 2026). DRC humanitarian response only 34% funded.
+A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. WHO Emergency Committee subsequently convened May 19 and formally validated the PHEIC. Africa CDC declared a PHECS (Public Health Emergency of Continental Security) on May 18 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 20, 2026 (WHO DG briefing): **~600 suspected / 51 DRC confirmed / 1 Germany confirmed (Stafford) / 139 suspected deaths**. New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases (not yet lab-confirmed). Dr. Peter Stafford (stable, receiving monoclonal antibodies) at Charité university hospital, Berlin. Three-week detection delay caused by incorrect lab testing cartridges. **Genomic sequencing confirmed: new spillover event** (INRB/CPHL, virological.org, May 2026). DRC humanitarian response only 34% funded. **100,000+ newly displaced** due to outbreak. Uganda postponed Martyrs' Day (2M people).
 
 ---
 
@@ -23,20 +23,19 @@ A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late Ap
 - **Detection gap:** Imperial College epidemiologists note the volume of community deaths before official declaration suggests the outbreak "likely went undetected and spread for several weeks or even months" before April 24 symptom onset in first identified case
 - **Detection delay mechanism confirmed:** Three-week delay between first case and official identification caused by **incorrect lab testing cartridges** being used initially — initial samples tested negative for the more common Zaire strain (wrong cartridge type), delaying diagnosis (CIDRAP, May 2026)
 
-### Case Counts (as of May 19, 2026 — evening)
+### Case Counts (as of May 20, 2026 — WHO DG media briefing)
 
 | Category | Count | Source / Date |
 |---|---|---|
-| Suspected cases | 536 | CNN/Wikipedia, May 19, 2026 (evening) |
-| Probable cases | 105 | CNN/Wikipedia, May 19, 2026 (evening) — new category in reporting |
-| Lab-confirmed cases | 34 | CNN/Wikipedia, May 19, 2026 (evening) — up from 12 (WHO, May 17) |
-| Deaths (all categories) | 134 | CNN/Wikipedia, May 19, 2026 (evening) |
-| New cases in last 24–48h | 26 confirmed + 143 suspected | CNN, May 19, 2026 (evening) |
+| Suspected cases | ~600 | WHO DG + Al Jazeera, May 20, 2026 |
+| Lab-confirmed cases (DRC) | 51 | WHO DG briefing, May 20, 2026 |
+| Lab-confirmed cases (Uganda) | 2 | WHO DG briefing, May 20, 2026 |
+| Lab-confirmed cases (Germany) | 1 (Stafford) | WHO DG briefing, May 20, 2026 |
+| Suspected deaths | 139 | WHO DG + Al Jazeera, May 20, 2026 |
 | Healthcare workers dead | 4 | Mongbwalu General Referral Hospital (within 4 days of symptom onset) |
 | Africa CDC count at PHECS declaration | ~395 suspected / 106 deaths | Africa CDC, May 18, 2026 |
-| Uganda | 2 confirmed cases / 1 death | WHO, as of May 17 |
 
-Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC — note 131 deaths differs from CNN's 134; likely different categorization); 513/131 (DRC Health Ministry, May 19 morning); 336/89/12 (WHO, May 17); 246/80 (WHO DON, May 15–16).
+Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 536/34/134 (CNN/Wikipedia, May 19 evening, cycle 6); 513/131 (DRC MOH, May 19 morning); 336/89/12 (WHO DON602, May 17); 246/80 (WHO DON, May 15–16). Note: "Germany" officially appears in WHO count as 1 confirmed (Stafford); was known positive since cycle 4 but now formally counted.
 
 ### Geography
 
@@ -48,6 +47,9 @@ Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC 
 **DRC — Spread beyond Ituri:**
 - Goma, North Kivu: 1 confirmed case (wife of Bunia victim traveled while infected; area under M23 control — response access uncertain)
 - **Butembo, North Kivu: CONFIRMED as new case location** — multiple sources (ABC News, PBS, CIDRAP May 2026). Butembo was the epicenter of the devastating 2018–2020 Zaire Ebola outbreak; its involvement in this outbreak represents geographic spread to a second major DRC province.
+
+**Germany:**
+- 1 confirmed case — Dr. Peter Stafford, American missionary physician, confirmed Bundibugyo-positive; treated at Charité university hospital, Berlin. Officially counted by WHO as 1 confirmed case. Stable condition as of May 20.
 
 **DRC — Ruled out:**
 - Kinshasa: DISPROVEN — WHO confirmatory tests were negative. Wikipedia still lags on this; treat WHO ruling as authoritative.
@@ -81,9 +83,10 @@ Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC 
 
 - Declared May 17, 2026 by WHO DG Tedros Adhanom Ghebreyesus
 - **Unprecedented:** First PHEIC declared without Emergency Committee recommendation
+- **WHO Emergency Committee DID convene May 19, 2026** — EC formally validated the PHEIC declaration; EC agreed situation constitutes PHEIC. DG gave opening remarks. Formal temporary recommendations from EC pending publication.
 - WHO explicitly recommends: **No country should close its borders or restrict travel/trade**
 - Does NOT meet criteria for "pandemic emergency"
-- WHO EC will convene "as soon as possible" to issue temporary recommendations retrospectively — no specific date announced
+- **WHO additional funding (May 20):** $3.4M additional emergency funds allocated, bringing total WHO response budget to **$3.9M**
 
 ### Africa CDC PHECS Declaration (May 18, 2026)
 
@@ -131,7 +134,10 @@ Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC 
 - CDC Travel Advisories: Ituri Province DRC = Level 4 (preexisting); whole DRC may be elevated (CIDRAP says "DRC placed under Level Four" — verify)
 - Exit screening at airports and border crossings
 - **PPE stockpile warning (Africa CDC):** If transmission escalates, PPE stockpiles would require 6–8 weeks to replenish
-- **USAID structural gap:** USAID dismantling has weakened contact tracing, border screening, and lab capacity relative to 2018–2020 North Kivu response infrastructure
+- **USAID structural gap — specific figures (STAT News, May 19):** HHS funding DRC: $33M (FY2024) → $10M (FY2025); USAID DRC: $1.2B (FY2024) → $715M (FY2025) → $67M (Q4 FY2025 — ~94% cut). IRC reduced Ituri operations from 5 to 2 areas. Researchers estimate 300,000 additional DRC deaths from total aid cuts (broader than outbreak). Former health officials say drawdown gutted detection/surveillance that could have caught outbreak earlier.
+- **100,000+ newly displaced** due to the Ebola outbreak itself (WHO EC opening remarks, May 19, 2026)
+- **Uganda postponed Martyrs' Day celebration** — annual event draws ~2 million people; postponed as mass-gathering prevention measure (WHO DG briefing, May 20, 2026)
+- **Dr. Stafford treatment:** Receiving monoclonal antibodies at Charité Berlin; condition stable and improving ("feels good," eating). Wife Dr. Rebekah Stafford (38) and Dr. Peter LaRochelle (46) under monitoring — no positive tests as of May 20.
 
 ### Genomic Sequencing (virological.org, May 2026)
 
@@ -170,7 +176,7 @@ Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC 
 6. **Contact tracing gap:** Updated numbers on lost contacts? (Last figure: 65 contacts, 15 high-risk, as of May 15)
 7. **Spillover dating:** Genomic analysis confirms new spillover event but does not date it with molecular clock precision. How long was this circulating before April 24?
 8. **Stafford: RKI registration + colleagues' results:** Wife and at least one other Nyankunde colleague monitored at Charité — test results pending. Is Germany registering as confirmed European case?
-9. **WHO EC convening:** When will Emergency Committee meet? What temporary recommendations will result?
+9. **WHO EC recommendations:** EC convened May 19 and validated PHEIC — but what specific temporary recommendations did they issue? Publication of formal EC statement pending. Check WHO.int for IHR temporary recommendations document.
 10. **PHECS operational impact:** Which specific countries have Africa CDC teams deployed to?
 11. **DRC Level 4 advisory:** CIDRAP says whole DRC now Level 4 — verify against CDC travel advisory page
 12. **Rwanda humanitarian fallout:** Water-fetching ban — creating unmonitored crossing routes? Who is monitoring?
@@ -187,7 +193,7 @@ Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC 
 - **WHO R&D Blueprint advisory outcome:** No final decision from May 19 meeting — when will DRC/Uganda governments decide on Ervebo deployment? Watch WHO, DRC/Uganda health ministries.
 - **Fort Portal confirmation:** Uganda MOH / WHO AFRO — lab results still pending; check each cycle
 - **Stafford colleagues' test results:** Any positive = additional confirmed case at Charité Berlin
-- **WHO EC convening date:** Watch WHO.int — still "as soon as possible" — no date announced (separate from R&D Blueprint advisory)
+- **WHO EC temporary recommendations:** EC convened May 19, validated PHEIC — formal temporary recommendations publication pending. Watch WHO.int for IHR statement.
 - **Treatment RCT initiation:** ClinicalTrials.gov, CIDRAP, STAT, Wellcome Trust — BARDA investigating Bundibugyo-specific monoclonal antibodies
 - **CDC Level 3 vs Level 4:** Verify live CDC.gov travel advisory page — HAN 530 (May 16) = Level 3; CIDRAP claims Level 4
 - **Africa CDC PHECS operational:** Which countries received Africa CDC expert deployments?
@@ -224,8 +230,25 @@ Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC 
 | 2026-05-19 (morning) | DRC Health Ministry: 513 suspected/131 deaths; Butembo (North Kivu) confirmed new case location; Fort Portal (western Uganda) burial-linked suspected cases; DRC opening 3 new treatment centers; 7 Americans in Germany; WFP airlifts 5+ tonnes supplies to Ituri |
 | 2026-05-19 (afternoon) | WHO R&D Blueprint advisory group convened; deliberated Ervebo (rVSV-ZEBOV) cross-protection use against Bundibugyo; no decision announced; Gavi confirmed 2,000 doses in DRC ready if approved |
 | 2026-05-19 (evening) | Case count updated to 536 suspected / 105 probable / 34 confirmed / 134 deaths; Charité Berlin named as Stafford's hospital; Stafford identified as missionary with Serge Christian mission org; virological.org preprint confirms new spillover event (INRB/CPHL, 3 genomes); WHO chief raises alarm ("serious concern about scale and speed") |
+| 2026-05-19 | WHO Emergency Committee convenes — EC validates PHEIC declaration retroactively; DG gives opening remarks. Formal EC temporary recommendations pending. |
+| 2026-05-20 | WHO DG media briefing: ~600 suspected / 51 DRC confirmed / 1 Germany / 139 deaths. WHO additional $3.4M → $3.9M total. Uganda postpones Martyrs' Day (2M people). ECDC activates EU/EEA support. Stafford stable, receiving monoclonal antibodies; wife Dr. Rebekah Stafford + Dr. LaRochelle under monitoring (no positives). 100,000+ newly displaced due to outbreak. |
 
 ---
+
+### Cycle 8 Findings (2026-05-21 01:29–02:30 UTC)
+
+**First run of May 21 — digest written for May 20. Quiet cycle.** Key new confirmed facts:
+- **Case count (WHO DG briefing, May 20):** ~600 suspected / 51 DRC confirmed / 2 Uganda confirmed / 1 Germany confirmed (Stafford) / 139 suspected deaths. Germany now officially counted in WHO totals.
+- **WHO Emergency Committee convened May 19** — EC validated PHEIC retroactively; DG gave opening remarks ("serious concern about scale and speed of epidemic"). Formal EC temporary recommendations pending publication on WHO.int. This resolves open question.
+- **WHO additional $3.4M emergency funds** allocated May 20 → total $3.9M in WHO response budget.
+- **Uganda postponed Martyrs' Day** — annual celebration drawing ~2 million people postponed as mass-gathering prevention. Significant public health measure.
+- **100,000+ newly displaced** due to outbreak (WHO EC opening remarks, May 19).
+- **Stafford stable:** "Feels good," eating, receiving monoclonal antibodies at Charité Berlin. Wife Dr. Rebekah Stafford (38) and Dr. Peter LaRochelle (46) under monitoring — NO positive tests as of May 20.
+- **USAID specific figures confirmed (STAT News, May 19):** HHS DRC funding $33M (FY2024) → $10M (FY2025); USAID DRC: $1.2B → $67M (Q4). IRC Ituri operations: 5 → 2 areas. Former officials say surveillance gutted.
+- **"12 Uganda cases" claim DISMISSED** — search snippet from one agent said 12 Uganda confirmed; ALL primary sources (WHO DG briefing, Al Jazeera, ABC News) confirm still 2 confirmed Uganda cases. Snippet was hallucinated/erroneous.
+- **Fort Portal:** Still not lab-confirmed per all current primary sources.
+- **WHO DON603:** Not yet published.
+- **No dispatch** — case count rise ~10% suspected, ~46% confirmed (below 50% threshold); Germany was already known Stafford location; no new country; no death toll ≥50% jump; EC meeting was expected outcome.
 
 ### Cycle 7 Findings (2026-05-20 10:34–11:30 UTC)
 
@@ -240,30 +263,4 @@ Prior figures for reference: 543 susp/35 conf/131 deaths (Wikipedia, May 20 UTC 
 - **Fort Portal:** Still not lab-confirmed.
 - **WHO DON603:** Not yet published.
 - **No dispatch** — no alert criteria met.
-
-### Cycle 6 Findings (2026-05-19 21:32–21:50 UTC)
-
-**Quiet cycle — no alert.** Key new confirmed facts:
-- **Case count update (evening):** 536 suspected / 105 probable / 34 confirmed / 134 deaths (CNN/Wikipedia, May 19 evening) — up from 513/131 morning; 26 new confirmed + 143 new suspected in last 24–48 hours. First time "probable" category appears in case breakdown.
-- **Charité Berlin confirmed** as Stafford's hospital — German health ministry confirmed admission to "special isolation ward." Was "undisclosed" previous cycle.
-- **Serge Christian mission organization** identified as Stafford's employer — was simply described as "physician at Nyankunde Hospital."
-- **Genomic preprint (virological.org):** INRB (Kinshasa) + CPHL (Kampala) sequenced 3 near-complete BDBV genomes (2 DRC, 1 Uganda). Phylogenetic analysis against 34 prior BDBV genomes confirms **new spillover event** — distinct from 2007 and 2012 outbreaks. Third documented BVD outbreak. Spillover date not yet quantified by molecular clock.
-- **WFP airlift:** 5+ tonnes medical supplies to Ituri, May 18. Humanitarian response plan only 34% funded.
-- **No new WHO DON** — DON602 (May 17) still latest. Next DON expected.
-- **Fort Portal:** Still not lab-confirmed; no new primary source.
-- **WHO chief statement:** CNN headline says alarm raised; article content truncated — specific content unavailable.
-- **No dispatch** — case count rise is ~4.5% (not meeting ≥50% ALERT threshold); Charité confirmation is factual update not alert-tier; genomic preprint confirms new spillover (already known); no new country, no new healthcare worker case.
-
-### Cycle 5 Findings (2026-05-19 11:12–11:30 UTC)
-
-**Alert cycle — four major simultaneous developments.** Key new confirmed facts:
-- **Africa CDC PHECS formally declared (May 18, after cycle 4)** — First-ever PHECS for an Ebola outbreak. ECG chaired by Prof. Salim Abdool Karim recommended declaration. $2M mobilized; IMST activated with WHO. (Africa CDC primary source)
-- **Case count jumped to 513 suspected / 131 deaths** (DRC Health Ministry, May 19) — from 336/89 (May 17): ~52% jump in cases, ~47% jump in deaths. Health Minister Kamba cautioned "investigations underway" on suspected deaths. (ABC News, DRC MOH statement)
-- **Butembo (North Kivu) confirmed new case location** — second major DRC province beyond Ituri now affected; Butembo was epicenter of 2018–2020 Zaire Ebola outbreak. Multiple sources (ABC News, PBS, CIDRAP). No WHO DON primary source seen yet for Butembo — mark for verification.
-- **Fort Portal, Uganda (suspected, not confirmed)** — Ugandans attending DRC burial returned to western Uganda; some with symptoms taken to Fort Portal for treatment. Burial-linked cluster + cross-border travel while symptomatic = potential containment breach. Not yet lab-confirmed.
-- **7 Americans total in Germany** (Stafford + 6 contacts) — German Health Ministry: "preparations underway"; hospital name withheld; Stafford's wife and at least one other colleague among contacts being monitored. (The Local DE, PBS, May 2026)
-- **Three-week detection delay explained** — incorrect lab testing cartridges used initially (samples tested for Zaire, not Bundibugyo). This confirms the detection gap was partly technical/procedural. (CIDRAP, May 2026)
-- **DRC opening 3 new Ebola treatment centers** (locations unspecified; DRC Health Minister Kamba announcement)
-- **No updated WHO case count or new DON** — still awaiting WHO's first post-PHEIC DON publication
-- **ALERT dispatched** — outbox/2026-05-19-1130-alert.md
 

@@ -283,3 +283,41 @@
 - "ECDC May 19" — fetched; revisit in 24h
 - "CNBC Africa vaccine" — fetched; no decision yet
 - "Gavi Ervebo doses" — resolved: 2,000 in DRC
+
+## 2026-05-21 (Cycle 8 — First run of May 21; quiet; digest written for May 20)
+
+**Queries run (via subagents — 5 parallel search agents):**
+1. `WHO disease outbreak news Ebola DRC DON603 May 2026` — DON603 still not published; WHO DG held May 20 media briefing with updated figures
+2. `Ebola DRC case count update May 21 2026 deaths` — ~600 suspected / 51 DRC confirmed / 139 deaths (WHO DG May 20 briefing)
+3. `Fort Portal Uganda Ebola confirmed lab results May 2026` — still not lab-confirmed; Uganda maintains 2 confirmed (Kampala)
+4. `Uganda Ebola cases update May 20 21 2026` — Uganda postponed Martyrs' Day (2M people); 2 Uganda confirmed per WHO
+5. `Ebola Bundibugyo vaccine Ervebo approved deployment DRC Uganda May 2026` — no decision yet; 45,000 doses potentially available
+6. `WHO Emergency Committee Ebola PHEIC meeting date May 2026` — EC DID convene May 19; validated PHEIC; formal recommendations pending
+7. `Stafford Charite Berlin Ebola 2026 colleagues results` — Stafford stable, receiving monoclonal antibodies; wife Rebekah + LaRochelle: no positive tests
+8. `Germany Ebola patient 2026 update` — Germany = 1 officially confirmed (Stafford per WHO DG briefing)
+9. `Tanzania Burundi CAR Ebola preparedness 2026 DRC` — Burundi/Tanzania in enhanced surveillance; no confirmed cases
+10. `Ebola DRC 2026 contact tracing update contacts listed high risk` — CDC providing assistance in 11 health zones; no updated total contact count
+11. `USAID Ebola DRC 2026 funding cuts response capacity` — HHS: $33M→$10M; USAID: $1.2B→$67M (Q4); IRC: 5→2 areas in Ituri
+
+**URLs fetched this cycle (6 successful, 1 failed):**
+- https://www.aljazeera.com/news/2026/5/20/who-says-600-cases-139-suspected-deaths-in-growing-ebola-outbreak (novel: 600/51/139; Germany 1 confirmed)
+- https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-ebola-outbreak-in-drc-and-uganda-20-may-2026 (novel: $3.4M added → $3.9M; Uganda Martyrs Day postponed; 100K+ displaced)
+- https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-emergency-committee-on-ebola-epidemic-in-the-democratic-republic-of-the-congo-and-uganda---19-may-2026 (novel: EC convened May 19; validated PHEIC; formal recommendations pending)
+- https://abcnews.go.com/International/ebola-outbreak-suspected-death-toll-rises-139-warns/story?id=133142454 (novel: Stafford stable, eating, receiving monoclonal antibodies; wife Rebekah + LaRochelle no positives)
+- https://www.statnews.com/2026/05/19/us-aid-cuts-hamper-drc-ebola-response/ (novel: USAID HHS $33M→$10M; USAID $1.2B→$67M Q4; IRC 5→2 areas; 300K additional deaths estimate)
+- https://health.go.ug/download/press-statement-ebola-bundibugyo-virus-disease-outbreak-2026/ (failed — SSL error)
+
+**Dispatch decision:** QUIET (digest written for May 20). No alert criteria met: confirmed cases ~46% jump below 50% threshold; deaths +3-6% (not ≥50%); Germany was already known Stafford location; EC meeting was expected; no new country; no containment breach.
+
+**Priority for Cycle 9:**
+- WHO EC formal temporary recommendations — watch WHO.int for IHR statement
+- Fort Portal lab confirmation — Uganda MOH / WHO AFRO
+- Ervebo deployment decision — DRC/Uganda health ministries
+- WHO DON603 — check WHO DON page directly
+- Stafford colleagues test results (Charité)
+- Contact tracing updated figures (11 health zones now)
+
+**What NOT to search next cycle (covered):**
+- "USAID cuts" — fetched; core figures now documented; revisit in 48h if new IRC/STAT update
+- "WHO DG May 20 briefing" — fetched
+- "Stafford condition" — fetched; stable; revisit only if new development
