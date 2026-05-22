@@ -444,3 +444,42 @@
 - Oxford/CEPI vaccine status — resolved: preclinical; revisit only if new announcement
 - South Kivu general — covered; revisit when DRC confirms/denies
 - General case count — 575/148; revisit for any official update
+
+## 2026-05-22 (Cycle 12 — 19:10–19:30 UTC)
+
+**Follow-up queries:**
+1. `Ebola South Kivu Bukavu DRC confirmed case WHO May 2026` — multiple outlets now treating as confirmed (Congo River Alliance/M23 source); Wikipedia lists South Kivu as affected; WHO/DRC MOH not directly confirmed
+2. `Ebola DRC case count deaths update May 22 2026` — **82 confirmed / ~750 suspected / 177 suspected deaths (WHO DG May 22)**; Wikipedia: 836/186; MoH DRC: 650+/160+; WHO warns "much larger" than confirmed
+3. `WHO disease outbreak news Ebola DRC DON603 May 2026` — DON603 still not published; all results still pointing to DON602
+4. `WHO Ebola DRC risk level "very high" upgrade May 22 2026` — CONFIRMED: WHO DG upgraded national risk to "very high" on May 22, 2026; regional high, global low
+5. `Ebola Rwampara Ituri treatment center protest fire DRC May 2026` — CONFIRMED: Two ALIMA tents at Rwampara Hospital burned by protesters (May 21); 6 patients evacuated; police restored order
+6. `India Africa summit postponed Ebola DRC May 2026` — CONFIRMED: India-Africa Forum Summit (May 28-31) postponed indefinitely by India MEA + AU
+7. `Ebola DRC 2026 Fort Portal Uganda confirmed lab test results` — Fort Portal still not lab-confirmed; Wikipedia now lists it as affected Uganda location
+
+**Discovery queries:**
+8. `Burundi Ebola preparedness response border DRC May 2026` — Burundi stepping up border preparedness; cross-border surveillance, joint exercises; AU engagement through Ndayishimiye; no confirmed cases
+9. `Kenya Tanzania Ebola preparedness border screening May 2026` — Kenya: 34,500+ travelers screened; 7 tested and cleared; national incident management activated; isolation points at Lokiriama/Nadapal
+
+**URLs fetched this cycle (6 attempted: 2 failed — CNN 451, Kenya Nation 403; 4 successful):**
+- https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic (novel: 82 confirmed / 836/186; South Kivu listed; Fort Portal listed; WHO risk upgrade; Ituri orders)
+- https://www.pbs.org/newshour/health/who-chief-says-ebola-outbreak-in-congo-is-spreading-rapidly-and-upgrades-risk-assessment (novel: WHO risk upgrade details; 82/750/177; risk upgrade factors)
+- https://www.africanews.com/2026/05/21/drc-ebola-hospital-set-on-fire-as-protesters-demand-access-to-bodies-of-dead-relatives/ (novel: Rwampara ETC attack details; 6 patients evacuated; ALIMA tents)
+- https://www.aljazeera.com/news/2026/5/22/who-raises-ebola-public-health-risk-to-very-high-in-dr-congo (novel: WHO DG risk upgrade; Ituri orders; 82/750/177)
+- https://www.cnn.com/2026/05/21/africa/protesters-set-drc-ebola-hospital-on-fire-intl (451 — inaccessible)
+- https://nation.africa/kenya/health/kenya-on-high-ebola-alert-as-seven-tested-and-cleared-5470096 (403 — inaccessible)
+
+**Dispatch decision:** ALERT — 61% confirmed case jump (51→82) + treatment center burned (6 patients evacuated) + WHO risk upgrade to "very high"
+
+**Priority for Cycle 13:**
+- South Kivu: WHO DON603 / DRC MOH official confirmation or denial — URGENT
+- Rwampara ETC: ALIMA operational status; copycat threat at other ETCs
+- WHO DON603 — overdue; should address risk upgrade + geography
+- Fort Portal Uganda lab confirmation
+- Ervebo deployment decision (DRC/Uganda govt approval)
+- What specific lab data drove the 61% confirmed case jump?
+
+**What NOT to search next cycle (covered this cycle):**
+- "WHO risk upgrade" — covered; revisit only if second upgrade
+- "India-Africa summit" — covered; revisit only for new dates announcement
+- "Kenya screening" — covered; revisit only for confirmed cases
+- "Burundi response" — covered; revisit if Burundi announces new measures
