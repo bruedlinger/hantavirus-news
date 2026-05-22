@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebola Monitor — May 21, 2026</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ed;
+    --muted: #7b7f96;
+    --alert-bg: #1f1018;
+    --alert-border: #8b1a1a;
+    --alert-badge: #c0392b;
+    --digest-bg: #0f1a1f;
+    --digest-border: #1a4a5a;
+    --digest-badge: #1a6a8a;
+    --check-bg: #131620;
+    --check-border: #252840;
+    --link: #6ab4ff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 32px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  section > h2 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
+  details[open] summary .chevron { transform: rotate(90deg); }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  summary .subline {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
+  .dispatch-alert summary { background: rgba(139, 26, 26, 0.1); }
+  .dispatch-alert summary:hover { background: rgba(139, 26, 26, 0.18); }
+
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
+  .dispatch-digest summary { background: rgba(26, 74, 90, 0.1); }
+  .dispatch-digest summary:hover { background: rgba(26, 74, 90, 0.2); }
+
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
+  .check-entry summary { background: rgba(37, 40, 64, 0.15); }
+  .check-entry summary:hover { background: rgba(37, 40, 64, 0.35); }
+
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .badge-alert  { background: var(--alert-badge);  color: #fff; }
+  .badge-digest { background: var(--digest-badge); color: #fff; }
+
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dispatch-body ul { padding-left: 16px; }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
+  .dispatch-body a { color: var(--link); text-decoration: none; }
+  .dispatch-body a:hover { text-decoration: underline; }
+
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .check-dispatch-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
+  .check-dispatch-note .note-icon { font-size: 11px; flex-shrink: 0; }
+
+  .check-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .check-findings { list-style: none; padding: 0; margin: 0; }
+
+  .check-findings li {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
+  }
+
+  .check-findings li:last-child { border-bottom: none; }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
+  .check-findings .fi-value { color: #c4c6d6; flex: 1; }
+  .check-findings .fi-value strong { color: var(--text); font-weight: 600; }
+  .check-findings .fi-value.flag-alert { color: #e08080; }
+  .check-findings .fi-value.flag-new   { color: #90c8a0; }
+  .check-findings .fi-value.flag-quiet { color: #7b7f96; }
+
+  .prev-day-link {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .prev-day-link a { color: var(--link); text-decoration: none; }
+  .prev-day-link a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .story-status .stat span { color: var(--muted); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ebola Monitor</h1>
+  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Thursday, May 21, 2026</div>
+</header>
+
+<div class="story-status">
+  <div class="stat">~600 cases <span>(54 confirmed: 51 DRC + 2 Uganda + 1 Germany)</span></div>
+  <div class="stat">~148 deaths <span>(DRC May 20; WHO DG cited 139 same date)</span></div>
+  <div class="stat">3 countries <span>affected (DRC, Uganda, Germany) + Czechia monitoring</span></div>
+  <div class="stat">Last checked <span>5:52 PM UTC</span></div>
+</div>
+
+<section id="dispatches">
+  <h2>Today's Alerts &mdash; May 21, 2026</h2>
+  <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No alerts today.</p>
+</section>
+
+<section id="checks">
+  <h2>News Checks &mdash; May 21, 2026</h2>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Afternoon check: Oxford vaccine shipments expected from US/UK; contact tracing jumps to 800+; American contact isolated in Prague</span>
+        <span class="timestamp">5:52 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; significant new developments but none meet alert threshold (no new case country, no ≥50% death toll jump, no confirmed containment breach)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Oxford vaccine</span>
+          <span class="fi-value flag-new"><strong>INRB's Muyembe (Al Jazeera May 21):</strong> DRC awaiting experimental Oxford-developed vaccine shipments from US and UK &mdash; first indication any experimental Bundibugyo vaccine may be en route; product identity and timeline unconfirmed</span>
+        </li>
+        <li>
+          <span class="fi-label">Czechia</span>
+          <span class="fi-value flag-new"><strong>1 American contact</strong> transported to Bulovka Hospital, Prague at US request &mdash; NOT confirmed positive; strict isolation up to 21 days; Czech Health Minister Adam Vojt&#283;ch confirmed; no public risk. Breakdown: Stafford + 5 contacts at Charit&eacute; Berlin; 1 contact at Bulovka Prague.</span>
+        </li>
+        <li>
+          <span class="fi-label">Contact tracing</span>
+          <span class="fi-value flag-new"><strong>800+ contacts tracked</strong> in DRC (CNN / DRC statement, May 20) &mdash; up from 65 on May 15; 12&times; increase signals either genuine transmission expansion or broadened methodology</span>
+        </li>
+        <li>
+          <span class="fi-label">Health zones</span>
+          <span class="fi-value flag-new"><strong>11 health zones</strong> confirmed across Ituri + Nord-Kivu provinces (ECDC + CDC) &mdash; up from 9 previously stated</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO supplies</span>
+          <span class="fi-value flag-new"><strong>18 tonnes total</strong> airlifted to Ituri (12 + 6 additional tonnes; Al Jazeera May 21)</span>
+        </li>
+        <li>
+          <span class="fi-label">Deaths / DRC</span>
+          <span class="fi-value">DRC reports <strong>148 deaths</strong> (May 20) vs. 139 in WHO DG briefing (same date) &mdash; methodology discrepancy; DRC may count probable deaths more broadly</span>
+        </li>
+        <li>
+          <span class="fi-label">UNFPA</span>
+          <span class="fi-value">Operating in 10 health zones / 443,278 people in Ituri; <strong>all Nyankunde cases were frontline HCWs</strong>; nosocomial risk to pregnant women and maternal care flagged</span>
+        </li>
+        <li>
+          <span class="fi-label">EU Health Force</span>
+          <span class="fi-value flag-new"><strong>EU Health Task Force deployed</strong> to support response (ECDC, May 18)</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Oxford vaccine</span>
+          <span class="fi-value">What specific product? Compassionate use doses, pre-clinical batch, or CEPI stockpile? When shipping? Check CEPI, Oxford, BARDA announcements</span>
+        </li>
+        <li>
+          <span class="fi-label">Czechia / Bulovka</span>
+          <span class="fi-value">Testing outcome for American contact; 21-day isolation ends ~June 10 &mdash; watch for negative or positive result announcement</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO EC recs</span>
+          <span class="fi-value">IHR temporary recommendations from May 19 EC meeting &mdash; search snippets suggest published but text not yet directly accessed from WHO.int</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal</span>
+          <span class="fi-value flag-quiet">Burial-linked suspected cases still not lab-confirmed; Uganda MOH: 2 confirmed (Kampala only)</span>
+        </li>
+        <li>
+          <span class="fi-label">Ervebo</span>
+          <span class="fi-value flag-quiet">No DRC/Uganda government decision on off-label Bundibugyo use; 2,000 doses in DRC ready if approved; Africa CDC also evaluating</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON603</span>
+          <span class="fi-value flag-quiet">Still not published; DON602 (May 17) remains latest</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Midday check: US State Dept $13M Ebola funding confirmed; EAC activates regional lab network; no new case count or Ervebo decision</span>
+        <span class="timestamp">10:48 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; incremental funding and coordination updates; no alert criteria met
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">US / Funding</span>
+          <span class="fi-value flag-new"><strong>$13M Ebola-specific</strong> emergency funding announced by US State Dept (May 18) &mdash; separate from USAID cuts; covers surveillance, lab capacity, risk comms, safe burials, border controls, clinical management</span>
+        </li>
+        <li>
+          <span class="fi-label">EAC</span>
+          <span class="fi-value flag-new"><strong>EAC activated regional lab network</strong> (May 18) &mdash; urged member states to activate national emergency plans, intensify mandatory screening at all entry points, equip mobile health teams</span>
+        </li>
+        <li>
+          <span class="fi-label">WFP / Hunger</span>
+          <span class="fi-value flag-new">WFP needs <strong>$10M Ebola-specific</strong> + $214M eastern DRC total; 26.5M Congolese face acute food insecurity; 10M in eastern provinces</span>
+        </li>
+        <li>
+          <span class="fi-label">IRC / Detection</span>
+          <span class="fi-value flag-new">IRC: <em>&ldquo;surveillance systems are now catching up with transmission that has likely been occurring for some time&rdquo;</em> &mdash; confirms detection gap; programs cut March 2025: disease surveillance, WASH infrastructure, PPE distribution</span>
+        </li>
+        <li>
+          <span class="fi-label">Funding gap</span>
+          <span class="fi-value">2026 DRC appeal: $1.4B total; ~34% funded = <strong>~$924M gap</strong>; humanitarian funding collapsed $900M/yr (Biden) &rarr; $179M/yr (Trump) = 80% decrease</span>
+        </li>
+        <li>
+          <span class="fi-label">Case count</span>
+          <span class="fi-value flag-quiet">No update since May 20 WHO DG briefing (~600 suspected / 54 confirmed / 139 deaths)</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON603</span>
+          <span class="fi-value flag-quiet">Still not published; DON602 (May 17) remains latest</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">WHO EC recs</span>
+          <span class="fi-value">Formal IHR temporary recommendations from May 19 EC meeting &mdash; snippets suggest published (supportive care, IPC, contact tracing, safe burials) but text not yet directly fetched from WHO.int</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal</span>
+          <span class="fi-value flag-quiet">Burial-linked suspected cases still not lab-confirmed; Uganda MOH: 2 confirmed (Kampala only)</span>
+        </li>
+        <li>
+          <span class="fi-label">Ervebo</span>
+          <span class="fi-value flag-quiet">No DRC/Uganda decision on off-label Bundibugyo use; 2,000 doses in DRC ready if approved</span>
+        </li>
+        <li>
+          <span class="fi-label">EAC countries</span>
+          <span class="fi-value">Which specific EAC member states activated national emergency plans after May 18 regional call?</span>
+        </li>
+        <li>
+          <span class="fi-label">Stafford / Berlin</span>
+          <span class="fi-value flag-quiet">Wife Rebekah + Dr. LaRochelle under monitoring at Charit&eacute; &mdash; no positive tests as of May 20</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Overnight check: WHO DG confirms ~600 cases / 139 deaths; EC validates PHEIC retroactively; digest sent for May 20</span>
+        <span class="timestamp">1:29 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note digested">
+        <span class="note-icon">&#9656;</span>
+        Digest dispatched covering May 20 (see digest below)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Case count</span>
+          <span class="fi-value flag-alert"><strong>~600 suspected / 54 confirmed / 139 deaths</strong> &mdash; WHO DG briefing May 20; confirmed cases up ~46% (35&rarr;51 DRC)</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO EC</span>
+          <span class="fi-value flag-new"><strong>EC convened May 19, validated PHEIC</strong> &mdash; DG: &ldquo;serious concern about scale and speed.&rdquo; Formal temp recommendations pending WHO.int publication.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO funding</span>
+          <span class="fi-value flag-new"><strong>$3.4M additional</strong> &rarr; $3.9M total WHO response budget (May 20)</span>
+        </li>
+        <li>
+          <span class="fi-label">Uganda</span>
+          <span class="fi-value flag-new"><strong>Martyrs' Day postponed</strong> &mdash; ~2M-person annual pilgrimage cancelled as mass-gathering prevention</span>
+        </li>
+        <li>
+          <span class="fi-label">Displacement</span>
+          <span class="fi-value"><strong>100,000+</strong> newly displaced due to outbreak itself (WHO EC opening remarks, May 19)</span>
+        </li>
+        <li>
+          <span class="fi-label">Stafford / Berlin</span>
+          <span class="fi-value flag-new">Stable, &ldquo;feels good,&rdquo; eating; receiving monoclonal antibodies; wife + LaRochelle: <strong>no positive tests</strong></span>
+        </li>
+        <li>
+          <span class="fi-label">USAID cuts</span>
+          <span class="fi-value">HHS DRC: $33M&rarr;$10M; USAID DRC: $1.2B&rarr;$67M (Q4 FY25); IRC 5&rarr;2 areas in Ituri; surveillance gutted before outbreak</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">WHO EC recs</span>
+          <span class="fi-value">IHR temporary recommendations &mdash; publication on WHO.int pending</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal</span>
+          <span class="fi-value flag-quiet">Burial-linked suspected cases still not lab-confirmed</span>
+        </li>
+        <li>
+          <span class="fi-label">Ervebo</span>
+          <span class="fi-value flag-quiet">No DRC/Uganda decision; 2,000 doses in DRC ready if approved</span>
+        </li>
+        <li>
+          <span class="fi-label">DON603</span>
+          <span class="fi-value flag-quiet">Not published; DON602 (May 17) still latest</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment RCTs</span>
+          <span class="fi-value">4 candidates (monoclonal antibodies, remdesivir IV, oral remdesivir + 1 more); no trial registrations found yet</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="previous-day">
+  <h2>Previous Day &mdash; May 20, 2026</h2>
+
+  <details class="dispatch-digest">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-digest">Digest</span>
+      <span class="summary-inner">
+        <span class="headline">May 20: ~600 cases / 139 deaths; WHO EC validates PHEIC; Stafford stable; USAID funding collapse documented</span>
+        <span class="timestamp">May 20, 2026 at 1:29 AM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What happened May 20</h3>
+      <ul>
+        <li><strong>Case count (WHO DG briefing):</strong> ~600 suspected / 51 DRC confirmed / 2 Uganda / 1 Germany (Stafford) / 139 suspected deaths. Confirmed cases up from ~35 to 51. (<a href="https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-ebola-outbreak-in-drc-and-uganda-20-may-2026">WHO DG briefing</a>)</li>
+        <li><strong>WHO Emergency Committee convened May 19</strong> &mdash; EC retroactively validated PHEIC; DG: &ldquo;serious concern about scale and speed.&rdquo; Formal temporary recommendations pending. (<a href="https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-emergency-committee-on-ebola-epidemic-in-the-democratic-republic-of-the-congo-and-uganda---19-may-2026">WHO EC remarks</a>)</li>
+        <li><strong>WHO added $3.4M emergency funds</strong> &rarr; total WHO response budget $3.9M.</li>
+        <li><strong>Uganda postponed Martyrs' Day</strong> &mdash; annual pilgrimage drawing ~2 million people cancelled as mass-gathering prevention.</li>
+        <li><strong>100,000+ newly displaced</strong> due to outbreak itself, compounding access challenges.</li>
+        <li><strong>Stafford stable at Charit&eacute; Berlin</strong> &mdash; &ldquo;feels good,&rdquo; eating, receiving monoclonal antibodies; wife Dr. Rebekah Stafford + Dr. LaRochelle: no positive tests. (<a href="https://abcnews.go.com/International/ebola-outbreak-suspected-death-toll-rises-139-warns/story?id=133142454">ABC News</a>)</li>
+        <li><strong>USAID funding collapse:</strong> HHS DRC $33M&rarr;$10M; USAID DRC $1.2B&rarr;$67M (Q4 FY25); IRC reduced Ituri 5&rarr;2 areas; surveillance gutted before outbreak. (<a href="https://www.statnews.com/2026/05/19/us-aid-cuts-hamper-drc-ebola-response/">STAT News</a>)</li>
+        <li><strong>Ervebo advisory: no decision</strong> &mdash; WHO R&D Blueprint met May 19; no DRC/Uganda government approval; 2,000 doses in DRC ready if approved.</li>
+        <li><strong>Fort Portal &amp; Butembo:</strong> Fort Portal burial-linked suspected cases not yet lab-confirmed; Butembo confirmed by multiple sources pending WHO primary DON.</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>Confirmed cases nearly tripled since the May 17 WHO DON (12&rarr;51 DRC), signaling either genuine transmission acceleration or improved testing. The WHO EC's retroactive PHEIC validation closes a procedural anomaly; watch for formal temporary recommendations that may include travel guidance or ring-vaccination protocols.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>WHO EC formal temporary recommendations &mdash; publication on WHO.int</li>
+        <li>Fort Portal lab confirmation (Uganda MOH / WHO AFRO)</li>
+        <li>Ervebo deployment decision from DRC/Uganda governments</li>
+        <li>WHO DON603</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-ebola-outbreak-in-drc-and-uganda-20-may-2026">WHO DG media briefing &mdash; May 20, 2026</a></li>
+        <li><a href="https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-emergency-committee-on-ebola-epidemic-in-the-democratic-republic-of-the-congo-and-uganda---19-may-2026">WHO EC opening remarks &mdash; May 19, 2026</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/5/20/who-says-600-cases-139-suspected-deaths-in-growing-ebola-outbreak">Al Jazeera &mdash; 600 cases, 139 deaths (May 20)</a></li>
+        <li><a href="https://abcnews.go.com/International/ebola-outbreak-suspected-death-toll-rises-139-warns/story?id=133142454">ABC News &mdash; Stafford stable (May 20)</a></li>
+        <li><a href="https://www.statnews.com/2026/05/19/us-aid-cuts-hamper-drc-ebola-response/">STAT News &mdash; US aid cuts (May 19)</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <div class="prev-day-link">
+    <a href="ebola-2026-05-20.html">&larr; Full briefing for May 20, 2026</a>
+  </div>
+</section>
+
+<footer>
+  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Thursday, May 21, 2026</span>
+</footer>
+
+</body>
+</html>

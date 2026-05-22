@@ -402,3 +402,45 @@
 - "Ervebo approval DRC" — no decision; revisit in 24h
 - "EU/European cases" — no new cases; revisit in 24h
 - "Contact tracing general" — 800+ confirmed; revisit only if update
+
+## 2026-05-22 (Cycle 11 — 02:59–03:20 UTC) — First run of May 22
+
+**Follow-up queries:**
+1. `Ebola outbreak DRC Uganda case count deaths May 22 2026` — no May 22 update; latest still 575/148 (DRC/Uganda MOH, May 21)
+2. `Oxford CEPI Bundibugyo ebolavirus vaccine shipment DRC 2026` — CEPI + EU $26.7M (Jan 2026) to Oxford/Moderna/Leipzig; PRECLINICAL ONLY; contradicts Muyembe's "awaiting shipments" claim
+3. `Fort Portal Uganda Ebola confirmed lab results May 2026` — still not lab-confirmed
+4. `WHO emergency committee Ebola IHR temporary recommendations published 2026` — EC issued recommendations May 19; EC chair confirmed criteria met; formal IHR text still not directly accessed
+5. `WHO disease outbreak news Ebola DRC DON 2026 May` — DON603 still not published
+
+**Discovery queries:**
+6. `Ebola DRC 2026 case count update Wikipedia May 21 22` — 575/148 (May 21 DRC/Uganda MOH)
+7. `WHO Ebola emergency committee temporary recommendations IHR text statement May 19 2026` — confirmed EC issued recommendations; full text still not directly fetched
+8. `Moderna Bundibugyo mRNA vaccine CEPI Oxford 2026 development timeline` — confirmed PRECLINICAL; Oxford Vaccine Group official page confirms preclinical stage with AI-assisted design
+9. `Ebola DRC Congo new cases May 21 22 2026 update WHO` — no new WHO update; 600 still cited
+10. `Ebola Goma North Kivu M23 response access WHO May 2026` — **Goma airport shut since Jan 2025 (M23 seizure)** — confirmed; **South Kivu: M23 claimed Ebola death in Bukavu** (May 21)
+11. `Ebola South Kivu Bukavu DRC confirmed case May 2026` — multiple outlets reporting; M23 militia claim; DRC govt NOT confirmed
+12. `Ebola 2026 latest case count May 22 Wikipedia update deaths` — 575/148 still latest
+13. `Ebola WHO situation report update May 21 22 2026 new cases` — ECDC May 19 report still latest
+14. `Ebola WHO situation report update May 21 22 2026 new cases` — no DON603; ECDC/WHO pages still showing May 19-20 data
+
+**URLs fetched this cycle (6 attempted, 3 successful, 2 403s, 1 substack):**
+- https://www.channelstv.com/2026/05/21/ebola-deadly-outbreak-in-dr-congo-spreads-to-m23-held-south-kivu/ (novel: M23 claim South Kivu; DRC not confirmed)
+- https://www.ovg.ox.ac.uk/news/ambitious-research-aims-to-develop-multivalent-vaccines-to-protect-against-multiple-deadly-filoviruses (novel: PRECLINICAL only; no shipments possible; corrects Muyembe claim)
+- https://outbreaknewstoday.substack.com/p/ebola-update-case-count-south-africa (novel: South Africa $2.5M to Africa CDC; May 18 stale count)
+- https://www.jamaicaobserver.com/2026/05/21/first-ebola-case-confirmed-democratic-republic-congos-south-kivu-province/ (novel: confirms M23-only source; no DRC/WHO official confirmation)
+- https://www.msf.org/bundibugyo-virus-challenge-why-ebola-disease-outbreak-different (403)
+- https://reliefweb.int/report/democratic-republic-congo/dr-congo-ebola-outbreak-ituri-province-situation-report-2-may-19-2026 (403)
+
+**Dispatch decision:** MAY 21 DIGEST written; no alert (South Kivu unverified M23 claim; no other alert criteria met).
+
+**Priority for Cycle 12:**
+- South Kivu: watch for DRC MOH / WHO confirmation or denial — URGENT
+- What DRC is actually expecting to receive (Muyembe's "shipments") — check BARDA, DRC MOH press briefing
+- Fort Portal lab results
+- WHO DON603
+- Ervebo deployment decision
+
+**What NOT to search (covered this cycle):**
+- Oxford/CEPI vaccine status — resolved: preclinical; revisit only if new announcement
+- South Kivu general — covered; revisit when DRC confirms/denies
+- General case count — 575/148; revisit for any official update

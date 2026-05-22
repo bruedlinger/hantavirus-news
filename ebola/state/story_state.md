@@ -1,12 +1,12 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-21T17:50:00Z — Cycle 10*
+*Last updated: 2026-05-22T03:15:00Z — Cycle 11*
 
 ---
 
 ## Summary
 
-A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. WHO Emergency Committee subsequently convened May 19 and formally validated the PHEIC. Africa CDC declared a PHECS (Public Health Emergency of Continental Security) on May 18 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 20, 2026 (WHO DG briefing): **~600 suspected / 51 DRC confirmed / 1 Germany confirmed (Stafford) / 139 suspected deaths**. New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases (not yet lab-confirmed). Dr. Peter Stafford (stable, receiving monoclonal antibodies) at Charité university hospital, Berlin. **1 American contact transported to Bulovka Hospital, Prague (Czechia)** — NOT confirmed positive; under strict isolation. Three-week detection delay caused by incorrect lab testing cartridges. **Genomic sequencing confirmed: new spillover event** (INRB/CPHL, virological.org, May 2026). DRC humanitarian response only 34% funded. **100,000+ newly displaced** due to outbreak. Uganda postponed Martyrs' Day (2M people). **11 health zones** now affected across two provinces (Ituri + Nord-Kivu). **800+ contacts being tracked** in DRC (up from 65 on May 15). **INRB's Muyembe (May 21): DRC awaiting experimental Oxford-developed vaccine shipments from US and UK** — first indication any experimental Bundibugyo vaccine may be en route.
+A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late April 2026, with spread to Uganda (Kampala, Fort Portal) and Goma (North Kivu, M23-controlled). WHO declared a PHEIC on May 17, 2026 — without Emergency Committee, unprecedented. WHO Emergency Committee subsequently convened May 19 and formally validated the PHEIC. Africa CDC declared a PHECS (Public Health Emergency of Continental Security) on May 18 — the first-ever PHECS for an Ebola outbreak. No approved vaccines or treatments for Bundibugyo strain exist. This is the **LARGEST documented Bundibugyo outbreak ever**. As of May 20, 2026 (WHO DG briefing): **~600 suspected / 51 DRC confirmed / 1 Germany confirmed (Stafford) / 139 suspected deaths**. New confirmed location: **Butembo (North Kivu province)** — geographic spread beyond Ituri. **Fort Portal (western Uganda)** has suspected burial-linked cases (not yet lab-confirmed). Dr. Peter Stafford (stable, receiving monoclonal antibodies) at Charité university hospital, Berlin. **1 American contact transported to Bulovka Hospital, Prague (Czechia)** — NOT confirmed positive; under strict isolation. Three-week detection delay caused by incorrect lab testing cartridges. **Genomic sequencing confirmed: new spillover event** (INRB/CPHL, virological.org, May 2026). DRC humanitarian response only 34% funded. **100,000+ newly displaced** due to outbreak. Uganda postponed Martyrs' Day (2M people). **11 health zones** now affected across two provinces (Ituri + Nord-Kivu). **800+ contacts being tracked** in DRC (up from 65 on May 15). **INRB's Muyembe (May 21): DRC awaiting experimental Oxford-developed vaccine shipments from US and UK** — Al Jazeera May 21. **HOWEVER: Oxford/CEPI/Moderna vaccine is PRECLINICAL ONLY** (ChAdOx + mRNA multivalent program, CEPI $26.7M grant Jan 2026; no Phase I trials yet). Muyembe's quote likely confused/inaccurate — no shipment-ready Bundibugyo vaccine exists. Product identity unresolved. **South Kivu (M23-controlled area): M23 militia spokesman claimed a 28-year-old from Kisangani died of Ebola in Bukavu — DRC government has NOT confirmed; WHO silent on this case.** Epidemiologically unusual (Kisangani/Tshopo province has no documented outbreak cases). **South Africa pledged $2.5M to Africa CDC Africa Epidemics Fund** to support surveillance, lab, IPC, and cross-border preparedness.
 
 ---
 
@@ -54,6 +54,9 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - 5 high-risk contacts at Charité Berlin (same isolation ward as Stafford).
 - **1 additional American contact transported to Bulovka Hospital, Prague (Czechia)** — NO positive test; under strict isolation for up to 21 days; Czech Health Minister Adam Vojtěch confirmed "no risk to public"; Bulovka is a designated Czech facility for highly dangerous infectious diseases with negative-pressure isolation. (Radio Prague International, expats.cz, May 20/21)
 - Total: 7 Americans evacuated from DRC (Stafford + 6 contacts): 1 confirmed at Charité, 5 contacts at Charité, 1 contact at Bulovka.
+
+**DRC — Unconfirmed new claim (South Kivu):**
+- **Bukavu, South Kivu: M23 militia spokesman claimed a 28-year-old died of Ebola in Bukavu (~500km south of Ituri epicenter).** The individual reportedly traveled from Kisangani (Tshopo province — no documented outbreak cases). DRC government has NOT confirmed; WHO has not commented. Published May 21, 2026. Epidemiologically anomalous: travel from Kisangani implies either undocumented transmission in Tshopo province OR M23 misidentification OR unknown travel chain. If confirmed, would represent spread to a FOURTH DRC province (Ituri, Nord-Kivu, possibly South Kivu). STATUS: UNVERIFIED — M23 claim only.
 
 **DRC — Ruled out:**
 - Kinshasa: DISPROVEN — WHO confirmatory tests were negative. Wikipedia still lags on this; treat WHO ruling as authoritative.
@@ -121,7 +124,7 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 ### Security Context
 
 - **Ituri Province:** ADF (Allied Democratic Forces) active — attacks limiting health worker access
-- **Goma / North Kivu:** M23 Movement controls Goma area — response access uncertain
+- **Goma / North Kivu:** M23 Movement controls Goma area — **Goma airport shut since M23 seized city in January 2025** — major obstacle to air-based humanitarian response into North Kivu (confirmed via Channels TV, May 21 2026)
 - Mining-related population movement in Rwampara and Bunia amplifies spread
 - Refugee displacement from regional conflicts; 273,403 displaced in Ituri, 1.9M total in need
 
@@ -134,7 +137,8 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **EAC regional laboratory network activated** (May 18, 2026): East African Community activated regional lab network and urged member states to activate national emergency preparedness plans, intensify mandatory screening at entry points, equip mobile health teams (Radio Okapi, May 19, 2026)
 - **DRC humanitarian response plan:** Only **34% funded** as of May 19, 2026 — UN warns "without immediate action, life-saving assistance will not reach those most in need"; broader DRC 2026 appeal: $1.4B total, implying ~$476M received / ~$924M gap (OCHA ReliefWeb); humanitarian funding collapsed from ~$900M/yr (Biden) to ~$179M/yr (Trump) — an 80% decrease
 - Africa CDC PHECS declared May 18: $2M mobilized; IMST with WHO activated; 130+ partners in coordination meetings
-- **MSF:** Two Ebola transit centres in Ituri (Bwanasura and Bunia); 3 suspected cases isolated at Salama clinic
+- **MSF:** Two Ebola transit centres in Ituri (Bwanasura and Bunia); 3 suspected cases isolated at Salama clinic; MSF 403 on fetch attempts — operational details limited
+- **South Africa:** Pledged **$2.5M to Africa CDC Africa Epidemics Fund** to support surveillance, lab systems, IPC, and cross-border preparedness. (Outbreak News Today, May 2026)
 - **Dr. Peter Stafford (American physician/missionary, Bunia/Nyankunde Hospital):** confirmed Bundibugyo-positive; transported to Germany for treatment. Stafford is a medical missionary with **Serge Christian mission organization**. **Seven Americans total** (Stafford + 6 contacts) transported to **Charité university hospital, Berlin** — admitted to special isolation ward. German Health Ministry: "Arrangements are currently being made to admit and treat the patient in Germany." (Honolulu Star-Advertiser, May 19, 2026; The Local DE, May 19, 2026)
 - **US travel ban (Title 42):** Foreign nationals from DRC, Uganda, South Sudan barred from US entry if present in those countries within past 21 days. Signed by Jay Bhattacharya (NIH director/acting CDC official). Duration: 30 days. South Sudan included preventively (no confirmed cases). Both Rwanda and US now openly defying WHO "no travel restrictions" guidance.
 - US airport screening enhanced at ports of entry
@@ -168,7 +172,7 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **Ervebo cross-protection evidence:** 2011 primate study (JID): 3/4 macaques survived Bundibugyo exposure after rVSV-ZEBOV vaccination; 2013 follow-up: inconsistent results depending on dosing/timing. Expert estimate ~50% efficacy (Tom Geisbert). MSF's Armand Sprecher: "You go into the outbreak with the vaccine you have." Theoretical risks: antibody-dependent enhancement, immune distraction — neither observed in animal studies. Deployment supply lead time: ~2 months. (STAT News, May 18, 2026)
 - **Gavi supply:** 2,000 doses of Ervebo available in DRC if approved for trial use. (CNBC Africa, May 2026)
 - **RCT candidates (4 under assessment):** Monoclonal antibodies, Gilead remdesivir (IV), oral remdesivir analog, plus one unspecified fourth candidate — being assessed for RCT protocols; WHO-sponsored trial pending DRC/Uganda government approval
-- **Oxford/CEPI broad-spectrum vaccine — UPDATE:** INRB Director Jean-Jacques Muyembe stated May 21 that DRC is awaiting experimental vaccine shipments from the United States and United Kingdom; the vaccine was developed by researchers at Oxford. (Al Jazeera, May 21, 2026) **This significantly updates the prior assessment that this vaccine was "not near clinical readiness."** Nature of shipment (compassionate use doses? pre-clinical batches? full CEPI stockpile?) not yet clarified. CEPI + EU funded (~$26.7M). — OPEN THREAD: verify product identity and shipment timeline.
+- **Oxford/CEPI/Moderna broad-spectrum vaccine — CORRECTED ASSESSMENT:** INRB Director Jean-Jacques Muyembe stated May 21 that DRC is awaiting experimental vaccine shipments from the US and UK (Al Jazeera, May 21). **However, this claim is inconsistent with the actual Oxford/CEPI program status:** CEPI + EU provided $26.7M (Jan 8, 2026) to Oxford Vaccine Group, Moderna, and Leipzig University to develop a **multivalent ChAdOx/mRNA filovirus vaccine** covering Ebola, Sudan, Bundibugyo, and Marburg strains. As of May 2026 this program is **preclinical only** — AI-assisted computational immunogen design, no human trials. Source: Oxford Vaccine Group official announcement. No shipments are scientifically possible from this program. Muyembe's quote likely refers to a different product (possibly Ervebo off-label, or BARDA-sponsored compassionate use mAbs) or is inaccurate. **OPEN THREAD: Identify what DRC is actually expecting — Ervebo? mAbs? Pre-clinical Oxford batch?**
 - **Sabin/IAVI:** Sudan ebolavirus vaccines in clinical trials — not applicable to Bundibugyo
 
 ### Background: DRC Ebola History
@@ -200,10 +204,11 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 17. **CDC travel advisory Level:** CDC HAN 530 (May 16) states Level 3 for DRC, Level 1 for Uganda. CIDRAP states Level 4 for whole DRC. Which is current?
 18. **WHO EC formal temporary recommendations:** Search snippets confirm EC issued recommendations (supportive care, IPC, contact tracing, safe burials, community engagement) but specific IHR temporary recommendations document not yet directly fetched. Watch who.int/news or who.int/publications for the IHR statement.
 19. **EAC country-level response:** Which specific EAC member states have activated national emergency plans following EAC activation (May 18)? Any new screening positive or case at EAC member state borders?
-20. **Oxford vaccine shipment details:** What is the specific product INRB's Muyembe referred to? Is this a pre-clinical batch, compassionate use allocation, or existing CEPI stockpile? When is shipment expected to arrive? To whom will doses be given?
+20. **Oxford vaccine identification (REVISED):** Oxford/CEPI/Moderna program is PRECLINICAL — no shipments possible. What is Muyembe actually expecting? Ervebo off-label? BARDA-sponsored mAbs compassionate use? An entirely different product?
 21. **Czechia contact status:** Is the American at Bulovka Prague confirmed Ebola-negative? What is the end date of the 21-day isolation period? Any other European receiving countries beyond Germany and Czechia?
 22. **800+ contacts figure:** Is this total DRC contacts or does it include Uganda? What is the methodology — all contacts of confirmed cases, or a broader community surveillance net?
 23. **Death count discrepancy:** WHO DG May 20 = 139 deaths; DRC/CNN May 20 = 148 deaths. What methodology accounts for the difference? Is DRC counting probable deaths as well as suspected?
+24. **South Kivu case:** M23 militia claimed one Bundibugyo death in Bukavu (~500km from Ituri). DRC government has NOT confirmed. Who tested the sample? What lab confirmed it? Was the Kisangani travel history verified? Is M23 instrumentalizing the outbreak for political purposes?
 
 ---
 
@@ -222,7 +227,8 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **WHO EC IHR temporary recommendations full text:** Search snippets say published; need direct URL fetch on who.int
 - **EAC country-level activations:** Which specific EAC members activated national plans after May 18 EAC call?
 - **US $13M disbursement tracking:** How/when is State Dept $13M being disbursed? Through which implementing partners?
-- **Oxford vaccine shipment:** Verify product identity, shipment timeline, recipient, dosage — Muyembe quote from Al Jazeera May 21; check CEPI, Oxford, BARDA announcements
+- **Oxford vaccine clarification:** Oxford/CEPI/Moderna program is PRECLINICAL — can't ship. Muyembe's "shipments" claim must refer to something else. Verify: is it Ervebo, BARDA mAbs, or another product? Check next DRC MOH press briefing, WHO, BARDA.
+- **South Kivu case confirmation:** M23 militia claimed Bundibugyo death in Bukavu (May 21). DRC govt silent. Watch: WHO DON, DRC MOH, ECDC for confirmation or denial. This is URGENT — if confirmed, represents spread to a 4th DRC province with different geographic dynamics (Bukavu on Lake Kivu, RDC/Rwanda/Burundi triangle).
 - **Czechia Bulovka contact:** Track testing outcome; 21-day isolation ends ~May 38 UTC — check in when approaching end of isolation window
 - **800+ contacts: methodology and breakdown:** Check DRC MOH, WHO AFRO or WHO DON for updated contact list methodology
 - **Death count methodology:** Clarify DRC 148 vs WHO 139 — check next WHO DON or DRC MOH statement
@@ -258,9 +264,24 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 | 2026-05-19 (evening) | Case count updated to 536 suspected / 105 probable / 34 confirmed / 134 deaths; Charité Berlin named as Stafford's hospital; Stafford identified as missionary with Serge Christian mission org; virological.org preprint confirms new spillover event (INRB/CPHL, 3 genomes); WHO chief raises alarm ("serious concern about scale and speed") |
 | 2026-05-19 | WHO Emergency Committee convenes — EC validates PHEIC declaration retroactively; DG gives opening remarks. Formal EC temporary recommendations pending. |
 | 2026-05-20 | WHO DG media briefing: ~600 suspected / 51 DRC confirmed / 1 Germany / 139 deaths. WHO additional $3.4M → $3.9M total. Uganda postpones Martyrs' Day (2M people). ECDC activates EU/EEA support. Stafford stable, receiving monoclonal antibodies; wife Dr. Rebekah Stafford + Dr. LaRochelle under monitoring (no positives). 100,000+ newly displaced due to outbreak. DRC/CNN independently report 575 suspected / 148 deaths. Contact tracing at 800+. |
-| 2026-05-21 | INRB Director Muyembe states DRC awaiting experimental Oxford-developed vaccine shipments from US and UK (Al Jazeera). 1 American contact (NOT confirmed positive) transported to Bulovka Hospital, Prague (Czechia) at US request. 11 health zones confirmed across Ituri + Nord-Kivu. WHO total supply airlift: 18 tonnes to Ituri. |
+| 2026-05-21 | INRB Director Muyembe states DRC awaiting experimental Oxford-developed vaccine shipments from US and UK (Al Jazeera). 1 American contact (NOT confirmed positive) transported to Bulovka Hospital, Prague (Czechia) at US request. 11 health zones confirmed across Ituri + Nord-Kivu. WHO total supply airlift: 18 tonnes to Ituri. South Africa pledges $2.5M to Africa CDC Africa Epidemics Fund. |
+| 2026-05-21 (late) | **M23 militia spokesman claims** first Ebola death in Bukavu, South Kivu (~500km from Ituri epicenter). Patient reportedly from Kisangani (Tshopo province — no known cases). DRC government has NOT confirmed. Goma airport (shut since M23 seized Jan 2025) confirmed as major logistics barrier to North Kivu response. |
 
 ---
+
+### Cycle 11 Findings (2026-05-22 02:59–03:20 UTC)
+
+**First run of May 22 — digest written for May 21. Cycle focused on South Kivu claim, vaccine pipeline clarification, and current case count.**
+
+- **South Kivu (M23) claim — UNVERIFIED but HIGH PRIORITY:** M23 militia spokesman announced a 28-year-old from Kisangani died of Ebola in Bukavu, South Kivu (May 21, 2026). Published by Channels TV, The Citizen (SA), Jamaica Observer, IBC World News. DRC government has NOT confirmed. WHO silent. The travel history (Kisangani/Tshopo — no documented cases) is epidemiologically anomalous. Bukavu is ~500km south of Ituri, on Lake Kivu at the DRC/Rwanda/Burundi border. If confirmed via official lab test, would represent spread to a 4th DRC province with serious cross-border implications for Rwanda and Burundi. NOT yet alert-level (unverified).
+- **Oxford/CEPI vaccine — CORRECTED:** Oxford Vaccine Group + Moderna + Leipzig University received $26.7M CEPI/EU grant in January 2026 to develop a **multivalent preclinical filovirus vaccine** (ChAdOx + mRNA; covers Ebola/Sudan/Bundibugyo/Marburg). Preclinical only — AI-assisted immunogen design, no Phase I trials started. NO shipments are scientifically possible from this program. Muyembe's "awaiting shipments from US/UK" quote (Al Jazeera May 21) is therefore inconsistent with this program's status. What DRC is actually expecting remains an open question.
+- **Goma airport confirmed shut** since M23 seized city in January 2025 — confirmed major obstacle to air-based humanitarian response into North Kivu.
+- **South Africa pledged $2.5M** to Africa CDC Africa Epidemics Fund for surveillance, lab, IPC, cross-border preparedness.
+- **Case count unchanged:** Still at ~575 suspected / 51 DRC confirmed / 148 deaths (DRC/Uganda MOH, May 21) — no May 22 update yet.
+- **WHO EC formal temporary recommendations:** Search snippets confirm the EC issued recommendations (supportive care, IPC, contact tracing, safe burials, community engagement) at its May 19 meeting. Full text still not directly fetched from WHO.int.
+- **Fort Portal:** Still not lab-confirmed.
+- **WHO DON603:** Still not published.
+- **Dispatch:** MAY 21 DIGEST written. No alert issued (South Kivu unverified; no other alert criteria met).
 
 ### Cycle 10 Findings (2026-05-21 17:43–17:50 UTC)
 
@@ -290,19 +311,4 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **Fort Portal** — still not lab-confirmed.
 - **WHO EC formal temporary recommendations** — search snippets suggest recommendations published (supportive care, IPC, contact tracing, safe burials, community engagement), but could not directly fetch the document. Watch WHO.int.
 - **No dispatch** — no alert criteria met; no first-of-day digest.
-
-### Cycle 8 Findings (2026-05-21 01:29–02:30 UTC)
-
-**First run of May 21 — digest written for May 20. Quiet cycle.** Key new confirmed facts:
-- **Case count (WHO DG briefing, May 20):** ~600 suspected / 51 DRC confirmed / 2 Uganda confirmed / 1 Germany confirmed (Stafford) / 139 suspected deaths. Germany now officially counted in WHO totals.
-- **WHO Emergency Committee convened May 19** — EC validated PHEIC retroactively; DG gave opening remarks ("serious concern about scale and speed of epidemic"). Formal EC temporary recommendations pending publication on WHO.int. This resolves open question.
-- **WHO additional $3.4M emergency funds** allocated May 20 → total $3.9M in WHO response budget.
-- **Uganda postponed Martyrs' Day** — annual celebration drawing ~2 million people postponed as mass-gathering prevention. Significant public health measure.
-- **100,000+ newly displaced** due to outbreak (WHO EC opening remarks, May 19).
-- **Stafford stable:** "Feels good," eating, receiving monoclonal antibodies at Charité Berlin. Wife Dr. Rebekah Stafford (38) and Dr. Peter LaRochelle (46) under monitoring — NO positive tests as of May 20.
-- **USAID specific figures confirmed (STAT News, May 19):** HHS DRC funding $33M (FY2024) → $10M (FY2025); USAID DRC: $1.2B → $67M (Q4). IRC Ituri operations: 5 → 2 areas. Former officials say surveillance gutted.
-- **"12 Uganda cases" claim DISMISSED** — search snippet from one agent said 12 Uganda confirmed; ALL primary sources (WHO DG briefing, Al Jazeera, ABC News) confirm still 2 confirmed Uganda cases. Snippet was hallucinated/erroneous.
-- **Fort Portal:** Still not lab-confirmed per all current primary sources.
-- **WHO DON603:** Not yet published.
-- **No dispatch** — case count rise ~10% suspected, ~46% confirmed (below 50% threshold); Germany was already known Stafford location; no new country; no death toll ≥50% jump; EC meeting was expected outcome.
 
