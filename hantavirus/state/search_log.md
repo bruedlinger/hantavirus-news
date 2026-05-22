@@ -1845,3 +1845,38 @@ No new cases, no new deaths. French patient still on ECMO at Bichat (~250+ hours
 - `WHO DON602 hantavirus 2026` — MEDIUM; routine
 - `hantavirus Tristan da Cunha lab result update May 2026` — MEDIUM
 - `favipiravir hantavirus treatment UK patients Andes virus experimental May 2026` — MEDIUM; follow dose/usage
+
+## Cycle 46 — 2026-05-22 (03:28–04:15 UTC)
+
+### Queries run
+1. `hantavirus France Bichat ECMO patient death recovery May 2026` — French patient watch (HIGH)
+2. `ECDC hantavirus Andes virus update May 20 21 22 2026` — ECDC updates (HIGH)
+3. `hantavirus cruise ship MV Hondius update May 20 21 22 2026` — overall (HIGH)
+4. `Oceanwide Expeditions Iceland sailing cancelled confirmed hantavirus MV Hondius May 22 2026` — sailing decision (HIGH)
+5. `UKHSA hantavirus update May 20 21 2026 Arrowe Park Tristan da Cunha` — UK (MEDIUM)
+6. `hantavirus Canada Yukon patient Victoria hospital update May 20 21 2026` — Canada (MEDIUM)
+7. `WHO hantavirus DON602 disease outbreak news 2026 published` — DON check (MEDIUM)
+8. `RIVM hantavirus crew quarantine Rotterdam test results May 2026` — crew results (HIGH)
+9. `hantavirus Tristan da Cunha test result negative confirmed May 2026` — Tristan (MEDIUM)
+10. `NEJM "Andes Hantavirus" cruise ship 2026 New England Journal Medicine outbreak` — science
+11. `Oceanwide Expeditions June 13 Longyearbyen sailing hantavirus Hondius 2026` — sailing confirmation
+
+### Pages fetched
+- hantavirus.one ✓ — May 22 03:30 UTC (data 00:53 UTC): 9+2=11, 3 deaths; French patient alive; no 4th death
+- ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/ ✓ — May 21 update: 11 total (9+2), 3 deaths; "no new cases or deaths"; ship Rotterdam, decontamination; "additional cases anticipated"
+- gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak ✓ — May 18 update (last available): all Arrowe Park contacts negative; Tristan da Cunha WebFetch suggests "samples tested negative" (unresolved vs ECDC 2 probable); Ascension medic not confirmed case
+- en.wikipedia.org/wiki/MV_Hondius_hantavirus_outbreak ✓ — data as of May 18; June 13 Longyearbyen departure mentioned; crew quarantine noted
+- rivm.nl/en/hantavirus/current-information ✓ — May 20 16:50 update (latest RIVM): all 27 Rotterdam crew NEGATIVE; "no Andes virus detected"; RIVM: "no risk for Rotterdam"
+
+### What these queries found
+**KEY NEW (Cycle 46)**: (1) **RIVM May 20**: All 27 Rotterdam crew NEGATIVE — no Andes virus detected; (2) **Oceanwide June 13 Longyearbyen CONFIRMED** — May 29 Iceland cancelled; CEO Rémi Bouysset confirmed June 13 departure from Longyearbyen, 7-night Arctic roundtrip; disinfection complete by EWS Group; (3) **CEO**: "No indication hantavirus linked to vessel conditions" (preemptive liability defense); (4) **ECDC May 21**: count dropped from 12 to 11 — Kornfeld officially removed; 9+2=11, 3 deaths, no new developments; (5) **NEJM article published** (NEJMc2606496); (6) **French patient still alive** — May 22 00:53 UTC, ~355+ hours on ECMO, no 4th death; (7) **Nebraska**: 18 US quarantine through May 31; (8) **Tristan da Cunha**: UKHSA WebFetch suggests "samples tested negative" — conflicts with ECDC still counting 2 probable; unresolved. Canada: no new updates since May 17. WHO DON602: still 404.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient death recovery May 22 23 2026` — HIGH; daily death watch
+- `UKHSA hantavirus update May 22 2026 Tristan da Cunha` — HIGH; clarify Tristan status
+- `ECDC hantavirus update May 22 2026` — MEDIUM; ~14:00 UTC daily update
+- `hantavirus Canada Yukon Victoria patient update May 22 2026` — MEDIUM
+- `WHO DON602 hantavirus 2026` — MEDIUM; routine check
+- `Oceanwide Expeditions CEO liability lawsuit hantavirus 2026` — MEDIUM; legal angle
+- `MV Hondius Longyearbyen June 13 Arctic departure 2026` — MEDIUM; sailing confirmation
+- `hantavirus Tristan da Cunha negative lab confirmed May 2026` — MEDIUM; clarify status

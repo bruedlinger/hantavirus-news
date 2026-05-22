@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hantavirus Monitor — May 22, 2026</title>
+<title>Hantavirus Monitor — May 19, 2026</title>
 <style>
   :root {
     --bg: #0f1117;
@@ -114,6 +114,12 @@
     color: var(--muted);
   }
 
+  summary .subline {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
   .dispatch-alert {
     border: 1px solid var(--alert-border);
     background: var(--alert-bg);
@@ -198,6 +204,12 @@
     border-radius: 4px;
     margin-bottom: 14px;
     font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
   }
 
   .check-dispatch-note.digested {
@@ -296,89 +308,105 @@
 
 <header>
   <h1>Hantavirus Monitor</h1>
-  <div class="meta">MV Hondius outbreak &middot; Daily briefing &middot; Friday, May 22, 2026</div>
+  <div class="meta">MV Hondius outbreak &middot; Daily briefing &middot; Tuesday, May 19, 2026</div>
 </header>
 
 <div class="story-status">
-  <div class="stat">11 cases <span>(9 confirmed + 2 probable)</span></div>
-  <div class="stat">3 deaths <span>(2 Dutch, 1 German — all aboard or en route)</span></div>
-  <div class="stat">7 countries <span>with post-disembarkation cases</span></div>
-  <div class="stat">Last checked <span>3:41 AM UTC</span></div>
+  <div class="stat">12 cases <span>(9 confirmed + 2 probable + 1 inconclusive)</span></div>
+  <div class="stat">3 deaths <span>(no new deaths since May 2, 17+ days)</span></div>
+  <div class="stat">6 countries <span>with post-disembarkation cases</span></div>
+  <div class="stat">Last checked <span>11:53 AM UTC</span></div>
 </div>
 
 <section id="dispatches">
-  <h2>Today's Alerts &mdash; May 22, 2026</h2>
+  <h2>Today's Alerts &mdash; May 19, 2026</h2>
   <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No alerts today.</p>
 </section>
 
 <section id="checks">
-  <h2>News Checks &mdash; May 22, 2026</h2>
+  <h2>News Checks &mdash; May 19, 2026</h2>
 
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">Catch-up cycle: crew all clear, June 13 Arctic sailing confirmed, French ECMO patient alive at 355+ hrs</span>
-        <span class="timestamp">3:41 AM UTC</span>
+        <span class="headline">UK acquires experimental antiviral from Japan; Rotterdam decontamination underway; French patient still on ECMO at 282+ hours</span>
+        <span class="timestamp">11:49 AM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note digested">
         <span class="note-icon">&#9656;</span>
-        Digest dispatched covering May 19&ndash;21 multi-day summary (see digest below)
+        Digest dispatched &mdash; May 18 daily summary (see digest below)
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">Rotterdam crew</span>
-          <span class="fi-value flag-new"><strong>All 27 NEGATIVE</strong> &mdash; RIVM May 20: no Andes virus detected in crew remaining aboard through Rotterdam arrival; 42-day home isolation ongoing</span>
+          <span class="fi-label">UK / favipiravir</span>
+          <span class="fi-value flag-new"><strong>New:</strong> UK received doses of favipiravir from Japan (UKHSA May 18). Preparedness stockpile for potential UK cases; investigational only — no proven human efficacy against ANDV. Experts note no robust RCTs; "investigational treatment."</span>
         </li>
         <li>
-          <span class="fi-label">Oceanwide sailing</span>
-          <span class="fi-value flag-new"><strong>June 13 Longyearbyen confirmed</strong> &mdash; CEO Rémi Bouysset confirmed 7-night North Spitsbergen Arctic roundtrip; May 29 Iceland sailing cancelled; disinfection complete (EWS Group)</span>
+          <span class="fi-label">Rotterdam decon</span>
+          <span class="fi-value flag-new"><strong>Detail confirmed:</strong> 3-day decontamination underway (May 18–21). Oceanwide expects Iceland sailing clarity "by end of this week" (May 22–23). May 29 departure technically still feasible if cleared.</span>
         </li>
         <li>
-          <span class="fi-label">CEO statement</span>
-          <span class="fi-value">&ldquo;No indication hantavirus linked to vessel conditions&rdquo; &mdash; preemptive liability defense ahead of expected passenger lawsuits</span>
+          <span class="fi-label">Arrowe Park</span>
+          <span class="fi-value flag-new">At least 7 contacts cleared for home 45-day isolation by May 16; all tested negative. Remaining contacts asymptomatic and testing negative (UKHSA May 18).</span>
         </li>
         <li>
-          <span class="fi-label">ECDC May 21</span>
-          <span class="fi-value flag-new"><strong>Count updated 12&rarr;11</strong> &mdash; Kornfeld inconclusive officially removed; 9 confirmed + 2 probable; no new cases or deaths; additional cases still anticipated (incubation window)</span>
+          <span class="fi-label">Passengers</span>
+          <span class="fi-value flag-new">All 26 passengers from 2nd/3rd repatriation flights confirmed negative for Andes virus (RIVM May 18).</span>
         </li>
         <li>
-          <span class="fi-label">NEJM article</span>
-          <span class="fi-value flag-new"><strong>Peer-reviewed record published</strong> &mdash; &ldquo;Andes Hantavirus Outbreak on a Cruise Ship, 2026&rdquo; in New England Journal of Medicine (NEJMc2606496)</span>
+          <span class="fi-label">ECMO outcomes</span>
+          <span class="fi-value flag-new">New study (PMC12474361, <em>Viruses</em>): 61.9% of HCPS survivors report incomplete recovery at 3–6 months; ECMO survivors more prone to motor dysfunction and palpitations.</span>
         </li>
         <li>
-          <span class="fi-label">Nebraska / US</span>
-          <span class="fi-value flag-quiet">18 US passengers quarantine through May 31; all 41 monitored remain negative; no US cases</span>
+          <span class="fi-label">France / Bichat</span>
+          <span class="fi-value flag-quiet">Patient still on ECMO, alive as of 10:41 UTC May 19 (~282+ hours). No death or recovery signal.</span>
+        </li>
+        <li>
+          <span class="fi-label">hantavirus.one</span>
+          <span class="fi-value flag-quiet">10:41 UTC: 9+2+1=12 cases, 3 deaths — no change from May 18.</span>
+        </li>
+        <li>
+          <span class="fi-label">ECDC</span>
+          <span class="fi-value flag-quiet">No May 19 update at time of check (11:43 UTC); expected ~14:00 UTC.</span>
+        </li>
+        <li>
+          <span class="fi-label">Canada</span>
+          <span class="fi-value flag-quiet">No May 19 update. Yukon resident (70s), Victoria hospital BC — stable, mild symptoms, no progression.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON602</span>
+          <span class="fi-value flag-quiet">Still unpublished — 45th consecutive cycle without a new Disease Outbreak Notice.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">France / Bichat</span>
-          <span class="fi-value flag-alert">French patient still on ECMO &mdash; <strong>~355+ hours (nearly 15 days)</strong> as of May 22 00:53 UTC; no 4th death; no recovery signal; extraordinary survival duration</span>
+          <span class="fi-label">Crew GGD results</span>
+          <span class="fi-value">27 MV Hondius crew tested on arrival May 18; no symptoms; formal results expected within days while in Rotterdam quarantine.</span>
+        </li>
+        <li>
+          <span class="fi-label">Iceland sailing</span>
+          <span class="fi-value">Oceanwide expects clarity May 22–23 on May 29 departure from Keflavik. Decontamination completes ~May 21. No formal cancellation announced.</span>
+        </li>
+        <li>
+          <span class="fi-label">ECDC May 19</span>
+          <span class="fi-value">Expected ~14:00 UTC today. Will check next cycle.</span>
         </li>
         <li>
           <span class="fi-label">Tristan da Cunha</span>
-          <span class="fi-value">UKHSA page suggests samples &ldquo;tested negative&rdquo; but ECDC May 21 still counts 2 probable; conflict unresolved; checking next cycle for UKHSA update</span>
+          <span class="fi-value flag-quiet">Still UKHSA-classified "suspected" — no lab confirmation after 3+ weeks. Patient last reported stable May 14.</span>
         </li>
         <li>
-          <span class="fi-label">WHO DON602</span>
-          <span class="fi-value flag-quiet">Still 404 &mdash; 46th consecutive cycle without publication</span>
+          <span class="fi-label">France / ECMO</span>
+          <span class="fi-value flag-quiet">~282+ hours on ECMO. Death or recovery would trigger immediate alert. Watching every cycle.</span>
         </li>
         <li>
-          <span class="fi-label">Canada</span>
-          <span class="fi-value flag-quiet">Yukon resident (70s, Victoria BC) &mdash; no new updates since May 17 confirmation; stable, mild symptoms</span>
-        </li>
-        <li>
-          <span class="fi-label">Legal / Oceanwide</span>
-          <span class="fi-value">CEO liability defense signals anticipation of lawsuits; Dutch court (Middelburg) would be venue; no suits filed yet</span>
-        </li>
-        <li>
-          <span class="fi-label">Incubation window</span>
-          <span class="fi-value">42-day max window from May 10 disembarkation runs to June 21; further cases remain possible; all monitoring programs ongoing</span>
+          <span class="fi-label">Favipiravir use</span>
+          <span class="fi-value">Whether UK will administer favipiravir to any patient — would be first human use against ANDV in this outbreak.</span>
         </li>
       </ul>
     </div>
@@ -387,54 +415,54 @@
 </section>
 
 <section id="previous-day">
-  <h2>Previous Days &mdash; May 19&ndash;21, 2026</h2>
+  <h2>Previous Day &mdash; May 18, 2026</h2>
 
   <details class="dispatch-digest">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="badge badge-digest">Digest</span>
       <span class="summary-inner">
-        <span class="headline">May 19&ndash;21 summary: crew clear, June 13 sailing confirmed, ECMO patient alive at 355+ hrs</span>
-        <span class="timestamp">May 22, 2026 at 4:15 AM UTC</span>
+        <span class="headline">May 17 Daily Summary — Canada confirmed first North American case; Hondius approaching Rotterdam</span>
+        <span class="timestamp">May 18, 2026 at 5:29 PM UTC</span>
       </span>
     </summary>
     <div class="dispatch-body">
-      <h3>What changed</h3>
+      <h3>What happened on May 17</h3>
       <ul>
-        <li><strong>All 27 Rotterdam crew NEGATIVE</strong> (<a href="https://www.rivm.nl/en/hantavirus/current-information">RIVM May 20</a>): Testing of all crew remaining on MV Hondius through Rotterdam arrival confirmed no Andes virus detected; 42-day home isolation continues. RIVM: &ldquo;There is no risk for Rotterdam.&rdquo;</li>
-        <li><strong>Oceanwide June 13 Longyearbyen sailing confirmed</strong>: CEO Rémi Bouysset confirmed June 13 departure from Longyearbyen (Svalbard), 7-night North Spitsbergen roundtrip. May 29 Iceland sailing effectively cancelled. Disinfection complete by EWS Group. CEO stated &ldquo;no indication hantavirus linked to vessel conditions.&rdquo;</li>
-        <li><strong>ECDC May 21 update</strong>: Official count revised down to 11 (9 confirmed + 2 probable), 3 deaths &mdash; Kornfeld inconclusive case officially removed. &ldquo;No new cases or deaths reported.&rdquo; Additional cases still anticipated given extended incubation period.</li>
-        <li><strong>French patient still alive</strong>: As of May 22 00:53 UTC, the Bichat Hospital Paris patient remains on ECMO &mdash; now ~355+ hours (nearly 15 days). No 4th death. Still critically ill with no recovery signal.</li>
-        <li><strong>NEJM article published</strong>: &ldquo;Andes Hantavirus Outbreak on a Cruise Ship, 2026&rdquo; (<a href="https://www.nejm.org/doi/full/10.1056/NEJMc2606496">NEJMc2606496</a>) &mdash; first peer-reviewed record in the New England Journal of Medicine.</li>
+        <li><strong>Canada confirms first North American case:</strong> PHAC presumptive positive upgraded to confirmed by ECDC May 17 12:00 UTC update; NML Winnipeg lab confirmation received same day. Patient is a Yukon resident in their 70s, treated at Victoria hospital (BC) with mild symptoms. Travelling companion (also Yukon, 70s) confirmed <strong>NEGATIVE</strong> by NML.</li>
+        <li><strong>ECDC total 12 cases:</strong> 9 confirmed + 2 probable + 1 inconclusive, 3 deaths. Canada classified as 9th confirmed case. All US monitoring (41 people, 16+ states) remains negative.</li>
+        <li><strong>UKHSA / UK contacts:</strong> 9 asymptomatic contacts from St Helena and Ascension Island confirmed arrived Arrowe Park Hospital (Wirral) evening May 17. All contacts asymptomatic and testing negative.</li>
+        <li><strong>Ascension Island medic:</strong> At Guy's and St Thomas' NHS HCID unit — initial samples tested negative; further testing underway; not a confirmed case.</li>
+        <li><strong>French ECMO patient:</strong> Still alive at Bichat Hospital Paris, critically ill on ECMO — ~250+ hours on ECMO. No death reported.</li>
+        <li><strong>MV Hondius:</strong> Approaching Rotterdam overnight, ETA ~05:00 CET May 18. GGD Rotterdam-Rijnmond and RIVM ready to test all 27 aboard on arrival. 23 prefabricated quarantine cabins assembled dockside.</li>
+        <li><strong>Oceanwide language shift:</strong> Multiple May 17 outlets report "not clear when vessel will sail again" — retreat from earlier "no changes foreseen." No formal decision on May 29 Iceland sailing.</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>Crew results and case count stability confirm no new infections from the ship itself. The June 13 sailing marks operational recovery. The French patient&rsquo;s prolonged ECMO course remains the story&rsquo;s sole live clinical unknown.</p>
+      <p>Canada's confirmed case extends the outbreak's geographic footprint to North America, demonstrating ANDV's 42-day incubation window is still producing new cases 46+ days after outbreak onset.</p>
       <h3>What I'm watching next</h3>
       <ul>
-        <li>French patient outcome &mdash; death or recovery (now &gt;14 days on ECMO, extraordinary duration)</li>
-        <li>Tristan da Cunha lab clarification &mdash; ECDC still counts 2 probable; UKHSA may have updated</li>
-        <li>First lawsuit filing against Oceanwide &mdash; CEO&rsquo;s defensive framing signals anticipation</li>
+        <li>GGD crew test results from Rotterdam arrival</li>
+        <li>Ascension Island medic final test result at Guy's and St Thomas' HCID</li>
+        <li>Oceanwide May 29 Iceland sailing decision</li>
       </ul>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://www.rivm.nl/en/hantavirus/current-information">RIVM current information (May 20 update)</a></li>
-        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC surveillance (May 21 update)</a></li>
-        <li><a href="https://hantavirus.one/">hantavirus.one (May 22, 00:53 UTC)</a></li>
-        <li><a href="https://www.seatrade-cruise.com/ship-operations/after-disinfection-hondius-to-resume-cruising-june-13">Seatrade Cruise: June 13 sailing confirmed</a></li>
-        <li><a href="https://www.travelweek.ca/news/oceanwide-expeditions-ceo-says-m-v-hondius-will-be-ready-for-june-13-arctic-sailing/">Travelweek: Oceanwide CEO statement</a></li>
-        <li><a href="https://www.nejm.org/doi/full/10.1056/NEJMc2606496">NEJM: Andes Hantavirus Outbreak on a Cruise Ship, 2026</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/infectious-disease-topics/hantavirus-infection/surveillance-and-updates/andes-hantavirus-outbreak">ECDC May 17 update</a></li>
+        <li><a href="https://www.cbc.ca/news/canada/canadian-hantavirus-case-confirmed-phac-9.7202841">CBC News — Canada case confirmed</a></li>
+        <li><a href="https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak">UKHSA May 17 update</a></li>
+        <li><a href="https://hantavirus.one/">hantavirus.one tracker</a></li>
       </ul>
     </div>
   </details>
 
   <div class="prev-day-link">
-    <a href="hantavirus-2026-05-19.html">&larr; Full briefing for May 19, 2026</a>
+    <a href="hantavirus-2026-05-18.html">&larr; Full briefing for May 18, 2026</a>
   </div>
 
 </section>
 
 <footer>
-  <span style="color: var(--muted); font-size: 11px;">Hantavirus Monitor &mdash; Friday, May 22, 2026</span>
+  <span style="color: var(--muted); font-size: 11px;">Hantavirus Monitor &mdash; Tuesday, May 19, 2026</span>
 </footer>
 
 </body>
