@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebola Monitor — May 22, 2026</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ed;
+    --muted: #7b7f96;
+    --alert-bg: #1f1018;
+    --alert-border: #8b1a1a;
+    --alert-badge: #c0392b;
+    --digest-bg: #0f1a1f;
+    --digest-border: #1a4a5a;
+    --digest-badge: #1a6a8a;
+    --check-bg: #131620;
+    --check-border: #252840;
+    --link: #6ab4ff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 32px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  section > h2 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
+  details[open] summary .chevron { transform: rotate(90deg); }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
+  .dispatch-alert summary { background: rgba(139, 26, 26, 0.1); }
+  .dispatch-alert summary:hover { background: rgba(139, 26, 26, 0.18); }
+
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
+  .dispatch-digest summary { background: rgba(26, 74, 90, 0.1); }
+  .dispatch-digest summary:hover { background: rgba(26, 74, 90, 0.2); }
+
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
+  .check-entry summary { background: rgba(37, 40, 64, 0.15); }
+  .check-entry summary:hover { background: rgba(37, 40, 64, 0.35); }
+
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .badge-alert  { background: var(--alert-badge);  color: #fff; }
+  .badge-digest { background: var(--digest-badge); color: #fff; }
+
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dispatch-body ul { padding-left: 16px; }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
+  .dispatch-body a { color: var(--link); text-decoration: none; }
+  .dispatch-body a:hover { text-decoration: underline; }
+
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .check-dispatch-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
+  .check-dispatch-note .note-icon { font-size: 11px; flex-shrink: 0; }
+
+  .check-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .check-findings { list-style: none; padding: 0; margin: 0; }
+
+  .check-findings li {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
+  }
+
+  .check-findings li:last-child { border-bottom: none; }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
+  .check-findings .fi-value { color: #c4c6d6; flex: 1; }
+  .check-findings .fi-value strong { color: var(--text); font-weight: 600; }
+  .check-findings .fi-value.flag-alert { color: #e08080; }
+  .check-findings .fi-value.flag-new   { color: #90c8a0; }
+  .check-findings .fi-value.flag-quiet { color: #7b7f96; }
+
+  .prev-day-link {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .prev-day-link a { color: var(--link); text-decoration: none; }
+  .prev-day-link a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .story-status .stat span { color: var(--muted); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ebola Monitor</h1>
+  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Friday, May 22, 2026</div>
+</header>
+
+<div class="story-status">
+  <div class="stat">~750 cases <span>(82 confirmed + ~668 suspected)</span></div>
+  <div class="stat">177 deaths <span>(7 confirmed, 177 suspected)</span></div>
+  <div class="stat">4 countries <span>affected (DRC, Uganda, Germany, Czechia)</span></div>
+  <div class="stat">Last checked <span>7:19 PM UTC</span></div>
+</div>
+
+<section id="dispatches">
+  <h2>Today's Alerts &mdash; May 22, 2026</h2>
+
+  <details class="dispatch-alert">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
+      <span class="summary-inner">
+        <span class="headline">Confirmed Cases Jump 61%, Treatment Center Burned, WHO Upgrades Risk to &#8220;Very High&#8221;</span>
+        <span class="timestamp">May 22, 2026 at 7:14 PM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>Confirmed case count jumped 61% in 48 hours.</strong> WHO reports 82 confirmed cases as of May 22 (up from 51 on May 20) with 7 confirmed deaths. Suspected cases now ~750 with 177 suspected deaths. WHO DG Tedros: the epidemic &#8220;is much larger&#8221; than confirmed figures and is &#8220;spreading rapidly.&#8221;</li>
+        <li><strong>WHO upgraded national risk level from &#8220;high&#8221; to &#8220;very high.&#8221;</strong> New assessment: very high at national level, high at regional level, low at global level. Tedros described the situation as &#8220;deeply worrisome.&#8221; Announced May 22. (<a href="https://www.aljazeera.com/news/2026/5/22/who-raises-ebola-public-health-risk-to-very-high-in-dr-congo">Al Jazeera</a>, <a href="https://www.pbs.org/newshour/health/who-chief-says-ebola-outbreak-in-congo-is-spreading-rapidly-and-upgrades-risk-assessment">PBS</a>)</li>
+        <li><strong>Ebola treatment center burned by protesters in Rwampara, Ituri Province.</strong> Residents demanding bodies for traditional burials set two ALIMA-operated medical tents on fire. Six Ebola patients were inside and had to be evacuated. Police intervened to restore order. WHO explicitly warned violence is threatening Ebola response. (<a href="https://www.africanews.com/2026/05/21/drc-ebola-hospital-set-on-fire-as-protesters-demand-access-to-bodies-of-dead-relatives/">Africanews</a>, <a href="https://www.pbs.org/newshour/world/residents-burn-ebola-treatment-center-in-congo-as-anger-grows-over-the-outbreak">PBS</a>)</li>
+        <li><strong>Ituri Province issued new containment orders:</strong> funerals restricted to specialized burial teams, non-medical vehicle transport of bodies banned, public gatherings capped at 50 people, local football league suspended.</li>
+        <li><strong>India-Africa Forum Summit (May 28&ndash;31, New Delhi) postponed indefinitely</strong> by India and the African Union jointly. (<a href="https://www.bloomberg.com/news/articles/2026-05-21/india-africa-summit-postponed-indefinitely-over-ebola-outbreak">Bloomberg</a>, <a href="https://www.aljazeera.com/news/2026/5/21/india-africa-summit-postponed-as-ebola-spreads-to-m23-held-dr-congo-area">Al Jazeera</a>)</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>The 61% confirmed case jump in 48 hours meets the dispatch threshold. More critically, the Rwampara treatment center attack mirrors the ETC attacks that prolonged the 2018&ndash;2020 eastern DRC Zaire outbreak. Six active patients were displaced from isolation. Combined with WHO&#8217;s risk upgrade to &#8220;very high,&#8221; this cycle represents a material escalation on multiple fronts simultaneously.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li><strong>South Kivu:</strong> Major outlets treat the Congo River Alliance/M23-sourced Bukavu death as confirmed. WHO and DRC MOH have not directly confirmed. If officially confirmed, this is a 4th DRC province with cross-border implications for Rwanda and Burundi.</li>
+        <li><strong>Copycat ETC attacks:</strong> Whether the Rwampara attack triggers similar actions at other Ituri facilities. Community trust is the critical variable for containment.</li>
+        <li><strong>WHO DON603:</strong> Expected to reflect the new case count, risk upgrade, and geographic spread &mdash; watch WHO.int.</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.aljazeera.com/news/2026/5/22/who-raises-ebola-public-health-risk-to-very-high-in-dr-congo">Al Jazeera &mdash; WHO raises Ebola risk to &#8216;very high&#8217;</a></li>
+        <li><a href="https://www.pbs.org/newshour/health/who-chief-says-ebola-outbreak-in-congo-is-spreading-rapidly-and-upgrades-risk-assessment">PBS &mdash; WHO chief says outbreak &#8216;spreading rapidly,&#8217; upgrades risk</a></li>
+        <li><a href="https://www.africanews.com/2026/05/21/drc-ebola-hospital-set-on-fire-as-protesters-demand-access-to-bodies-of-dead-relatives/">Africanews &mdash; DRC Ebola hospital set on fire by protesters</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-05-21/india-africa-summit-postponed-indefinitely-over-ebola-outbreak">Bloomberg &mdash; India-Africa Summit postponed indefinitely</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic">Wikipedia &mdash; 2026 Ituri Province Ebola epidemic</a></li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="checks">
+  <h2>News Checks &mdash; May 22, 2026</h2>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">WHO upgrades DRC risk to &#8220;very high&#8221; as confirmed cases surge 61% and protesters burn treatment center in Rwampara</span>
+        <span class="timestamp">7:10 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; Confirmed cases +61%, ETC burned, WHO risk upgraded to &#8220;very high&#8221; (see alert above)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">DRC / cases</span>
+          <span class="fi-value flag-alert"><strong>82 confirmed cases</strong> (up from 51 May 20, +61% in 48h); ~750 suspected; 177 suspected deaths; 7 confirmed deaths</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO / risk</span>
+          <span class="fi-value flag-alert"><strong>Risk upgraded to &#8220;very high&#8221;</strong> at national level (regional: high; global: low). Tedros: &#8220;spreading rapidly,&#8221; &#8220;deeply worrisome,&#8221; &#8220;much larger&#8221; than confirmed figures</span>
+        </li>
+        <li>
+          <span class="fi-label">Rwampara ETC</span>
+          <span class="fi-value flag-alert"><strong>Two ALIMA medical tents burned</strong> by protesters demanding body access; 6 Ebola patients evacuated; police intervened. Widespread &#8220;Ebola is a lie&#8221; belief in Ituri driving community resistance</span>
+        </li>
+        <li>
+          <span class="fi-label">Ituri / orders</span>
+          <span class="fi-value flag-new"><strong>Emergency containment orders:</strong> funerals to specialized teams; body transport ban; gatherings capped at 50; football suspended</span>
+        </li>
+        <li>
+          <span class="fi-label">India / AU</span>
+          <span class="fi-value flag-new"><strong>India-Africa Forum Summit postponed indefinitely</strong> (was May 28&ndash;31, New Delhi). Joint India MEA + AU announcement citing &#8220;evolving health situation&#8221;</span>
+        </li>
+        <li>
+          <span class="fi-label">Kenya</span>
+          <span class="fi-value flag-new"><strong>34,500+ travelers screened;</strong> 7 tested and cleared; national incident management system activated; isolation points at Lokiriama &amp; Nadapal border crossings</span>
+        </li>
+        <li>
+          <span class="fi-label">Burundi</span>
+          <span class="fi-value flag-new">Cross-border surveillance and joint preparedness exercises underway with DRC; AU-level engagement through Ndayishimiye; no confirmed cases</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">South Kivu</span>
+          <span class="fi-value">Al Jazeera, France 24, Bloomberg treating Bukavu death as confirmed. Source: M23/Congo River Alliance. <strong>WHO and DRC MOH have not issued direct confirmation.</strong> Critical watch for WHO DON603.</span>
+        </li>
+        <li>
+          <span class="fi-label">ETC threat / IPC</span>
+          <span class="fi-value">Copycat attack risk at other Ituri ETCs; ALIMA operational status; WHO/DRC govt security guidance for health workers.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON603</span>
+          <span class="fi-value flag-quiet">Still not published. DON602 (May 17) remains latest. Overdue &mdash; should contain risk upgrade rationale and geographic update.</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal / UGA</span>
+          <span class="fi-value flag-quiet">Listed as Uganda affected location (Wikipedia); burial-linked suspects in hospital. Lab confirmation still pending.</span>
+        </li>
+        <li>
+          <span class="fi-label">Ervebo decision</span>
+          <span class="fi-value flag-quiet">WHO R&amp;D Blueprint advisory recommendation issued May 19; DRC/Uganda government approval still pending. No decision found.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">First run of May 22: M23 claims Bukavu death; Oxford vaccine confirmed preclinical-only; May 21 digest written</span>
+        <span class="timestamp">2:59 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note digested">
+        <span class="note-icon">&#9656;</span>
+        Digest dispatched covering May 21 events (see previous day below)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">South Kivu</span>
+          <span class="fi-value">M23/Congo River Alliance claimed 28-year-old Ebola death near Bukavu (patient traveled from Kisangani/Tshopo). DRC govt not confirmed; WHO silent at that time. Epidemiologically anomalous.</span>
+        </li>
+        <li>
+          <span class="fi-label">Vaccine pipeline</span>
+          <span class="fi-value flag-new">Oxford/CEPI/Moderna program <strong>confirmed PRECLINICAL ONLY</strong> &mdash; no shipments possible. Muyembe&#8217;s &#8220;awaiting shipments&#8221; claim inconsistent with program status; what DRC actually expects remains unresolved.</span>
+        </li>
+        <li>
+          <span class="fi-label">Goma airport</span>
+          <span class="fi-value flag-alert">Confirmed closed since January 2025 (M23 seizure) &mdash; major barrier to air-based humanitarian response in North Kivu province.</span>
+        </li>
+        <li>
+          <span class="fi-label">South Africa</span>
+          <span class="fi-value flag-new">Pledged $2.5M to Africa CDC Africa Epidemics Fund for surveillance, lab, IPC, and cross-border preparedness.</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">South Kivu</span>
+          <span class="fi-value">Official DRC MOH / WHO confirmation or denial &mdash; URGENT (now partially resolved: widely reported but officially unconfirmed)</span>
+        </li>
+        <li>
+          <span class="fi-label">Vaccine / DRC</span>
+          <span class="fi-value">What DRC is actually expecting: Ervebo off-label? BARDA mAbs compassionate use? Other product?</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal / UGA</span>
+          <span class="fi-value flag-quiet">Lab results still pending</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON603</span>
+          <span class="fi-value flag-quiet">Still not published as of cycle 11</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="previous-day">
+  <h2>Previous Day &mdash; May 21, 2026</h2>
+
+  <details class="dispatch-digest">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-digest">Digest</span>
+      <span class="summary-inner">
+        <span class="headline">May 21: South Kivu death claimed by M23; vaccine clarified as preclinical; Czechia isolation confirmed; 800+ contacts tracked</span>
+        <span class="timestamp">May 21, 2026 at 3:20 AM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What happened May 21</h3>
+      <ul>
+        <li><strong>South Kivu case claimed, unverified:</strong> M23 militia spokesman announced a 28-year-old from Kisangani died of Ebola in Bukavu (~500km south of Ituri). DRC government did not confirm; WHO silent. Travel history anomalous &mdash; Tshopo province has no documented outbreak cases.</li>
+        <li><strong>Vaccine pipeline critical clarification:</strong> INRB Director Muyembe said DRC is &#8220;awaiting experimental Oxford vaccine shipments from US and UK.&#8221; The Oxford/CEPI/Moderna multivalent filovirus vaccine program ($26.7M, Jan 2026) is <strong>preclinical only</strong> &mdash; no human trials, no shipments possible. What DRC is actually expecting remains unresolved.</li>
+        <li><strong>Czechia contact isolated:</strong> 1 American (not confirmed positive) transported to Bulovka Hospital, Prague at US request; strict isolation up to 21 days. Total evacuees: Stafford + 5 contacts at Charité Berlin; 1 contact at Bulovka Prague.</li>
+        <li><strong>Case count (May 21):</strong> ~575 suspected / 51 confirmed / 148 deaths (DRC/Uganda MOH). 11 health zones across Ituri + Nord-Kivu. 800+ contacts tracked (up from 65 on May 15). WHO airlift: 18 tonnes of medical supplies to Ituri.</li>
+        <li><strong>Goma airport confirmed closed</strong> since M23 seized city in January 2025 &mdash; significant barrier to North Kivu response.</li>
+        <li><strong>South Africa pledged $2.5M</strong> to Africa CDC Africa Epidemics Fund.</li>
+      </ul>
+      <h3>What I was watching</h3>
+      <ul>
+        <li>South Kivu DRC/WHO confirmation or denial (URGENT)</li>
+        <li>What DRC is actually expecting to receive (Ervebo? BARDA mAbs?)</li>
+        <li>Fort Portal (Uganda) lab results still pending</li>
+        <li>WHO DON603 still not published</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.channelstv.com/2026/05/21/ebola-deadly-outbreak-in-dr-congo-spreads-to-m23-held-south-kivu/">Channels TV &mdash; Ebola spreads to M23-held South Kivu</a></li>
+        <li><a href="https://www.aljazeera.com/amp/news/2026/5/21/ebola-outbreak-when-will-a-vaccine-be-developed-for-the-new-strain">Al Jazeera &mdash; When will a vaccine be developed?</a></li>
+        <li><a href="https://www.ovg.ox.ac.uk/news/ambitious-research-aims-to-develop-multivalent-vaccines-to-protect-against-multiple-deadly-filoviruses">Oxford Vaccine Group &mdash; Multivalent filovirus vaccine (preclinical)</a></li>
+        <li><a href="https://outbreaknewstoday.substack.com/p/ebola-update-case-count-south-africa">Outbreak News Today &mdash; South Africa $2.5M pledge</a></li>
+      </ul>
+    </div>
+  </details>
+
+  <div class="prev-day-link">
+    <a href="ebola-2026-05-21.html">&larr; Full briefing for May 21, 2026</a>
+  </div>
+
+</section>
+
+<footer>
+  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Friday, May 22, 2026</span>
+</footer>
+
+</body>
+</html>
