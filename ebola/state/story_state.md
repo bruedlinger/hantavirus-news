@@ -1,6 +1,6 @@
 # Ebola Story State — 2026 Ituri Province (Bundibugyo) Outbreak
 
-*Last updated: 2026-05-23T11:55:00Z — Cycle 13*
+*Last updated: 2026-05-24T01:45:00Z — Cycle 14*
 
 ---
 
@@ -23,7 +23,7 @@ A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late Ap
 - **Detection gap:** Imperial College epidemiologists note the volume of community deaths before official declaration suggests the outbreak "likely went undetected and spread for several weeks or even months" before April 24 symptom onset in first identified case
 - **Detection delay mechanism confirmed:** Three-week delay between first case and official identification caused by **incorrect lab testing cartridges** being used initially — initial samples tested negative for the more common Zaire strain (wrong cartridge type), delaying diagnosis (CIDRAP, May 2026)
 
-### Case Counts (as of May 23, 2026 — Uganda update + DON603)
+### Case Counts (as of May 23–24, 2026)
 
 | Category | Count | Source / Date |
 |---|---|---|
@@ -33,12 +33,12 @@ A Bundibugyo ebolavirus (BDBV) outbreak began in DRC's Ituri Province in late Ap
 | Suspected deaths | 177 | WHO DG, May 22, 2026 |
 | WHO DON603 (May 21) | 85 confirmed (83 DRC + 2 Uganda) / 746 suspected / 176 suspected deaths / 10 confirmed deaths | WHO DON603, May 21, 2026 |
 | Uganda update (May 23) | +3 Uganda confirmed (driver + HCW + DRC woman linked to Case 1) → Uganda total 5 | Bloomberg, May 23, 2026 |
-| Wikipedia count (May 22–23) | ~839 total (834 DRC + 5 Uganda) / 186 deaths; 82 confirmed per WHO DG | Wikipedia, May 23 edit |
+| Wikipedia count (May 23) | 968 suspected (963 DRC + 5 Uganda) / 96 confirmed / 216 deaths | Wikipedia, May 23–24 edit |
 | WHO DG briefing May 20 | ~600 suspected / 51 confirmed / 139 suspected deaths | WHO DG, May 20, 2026 |
 | DRC/CNN count | ~575 suspected / 148 deaths | CNN "by the numbers," DRC statement, May 20, 2026 |
 | Africa CDC count at PHECS declaration | ~395 suspected / 106 deaths | Africa CDC, May 18, 2026 |
 
-**Note on discrepancy:** Wikipedia (May 22) shows 836 suspected / 186 deaths; WHO DG (May 22) shows ~750 suspected / 177 deaths. Wikipedia may aggregate additional sources. Both confirm the confirmed case count jumped significantly.
+**Note on discrepancy:** Wikipedia (May 23) shows 968 suspected / 216 deaths / 96 confirmed; WHO DG (May 22) shows ~750 suspected / 177 deaths / 82 confirmed. Wikipedia aggregates additional DRC MOH/regional sources beyond WHO official count. Tshopo province listed on Wikipedia but no confirmed cases there — patient traveled *from* Kisangani (Tshopo) to South Kivu; Tshopo itself unconfirmed. Kinshasa still listed on Wikipedia but WHO previously ruled out; treat as unresolved.
 
 Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 536/34/134 (CNN/Wikipedia, May 19 evening, cycle 6); 513/131 (DRC MOH, May 19 morning); 336/89/12 (WHO DON602, May 17); 246/80 (WHO DON, May 15–16). Healthcare workers dead: 4 (Mongbwalu General Referral Hospital, within 4 days of symptom onset).
 
@@ -62,8 +62,11 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 **DRC — South Kivu (WHO-CONFIRMED, DON603):**
 - **Bukavu, South Kivu: Ebola spread OFFICIALLY CONFIRMED by WHO in DON603** (published May 21, 2026). WHO DON603 explicitly states "geographical expansion into North Kivu and South Kivu provinces" — South Kivu is the 4th DRC province affected. Originally sourced from M23/Congo River Alliance spokesman: 28-year-old who reportedly traveled from Kisangani (Tshopo province — no documented Tshopo cases). Kisangani travel history remains epidemiologically anomalous. STATUS: **WHO-CONFIRMED — 4th DRC province. South Kivu borders Rwanda and Burundi at Lake Kivu.**
 
+**DRC — Tshopo Province (Kisangani) — Watch area, not confirmed:**
+- No confirmed Ebola cases in Tshopo. Kisangani (Tshopo's capital) emerged as a "new area of concern" because the South Kivu patient reportedly traveled *from* Kisangani before dying in Bukavu. Kisangani is a major DRC transport hub; authorities racing to trace any spread before detection. (Al Jazeera, Xinhua May 21–22, 2026)
+
 **DRC — Ruled out:**
-- Kinshasa: DISPROVEN — WHO confirmatory tests were negative. Wikipedia still lags on this; treat WHO ruling as authoritative.
+- Kinshasa: DISPUTED — WHO confirmatory tests were negative (prior ruling). Wikipedia (May 23) now lists Kinshasa as having secondary cases. Contradiction unresolved; awaiting official confirmation/denial.
 
 **Uganda — Cross-border:**
 - **5 confirmed cases total** (updated May 23, 2026)
@@ -149,11 +152,13 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **MSF:** Two Ebola transit centres in Ituri (Bwanasura and Bunia); 3 suspected cases isolated at Salama clinic; MSF 403 on fetch attempts — operational details limited
 - **South Africa:** Pledged **$2.5M to Africa CDC Africa Epidemics Fund** to support surveillance, lab systems, IPC, and cross-border preparedness. (Outbreak News Today, May 2026)
 - **Dr. Peter Stafford (American physician/missionary, Bunia/Nyankunde Hospital):** confirmed Bundibugyo-positive; transported to Germany for treatment. Stafford is a medical missionary with **Serge Christian mission organization**. **Seven Americans total** (Stafford + 6 contacts) transported to **Charité university hospital, Berlin** — admitted to special isolation ward. German Health Ministry: "Arrangements are currently being made to admit and treat the patient in Germany." (Honolulu Star-Advertiser, May 19, 2026; The Local DE, May 19, 2026)
-- **Ebola treatment center attack — Rwampara, Ituri Province (May 21, 2026):** Protesters demanding bodies for traditional burials set fire to two ALIMA-operated medical tents at Rwampara Hospital. **6 Ebola patients were evacuated** from the burning tents and moved to the main hospital. Police deployed and restored order. WHO explicitly warned violence is threatening Ebola response. Underlying driver: widespread belief in Ituri that "Ebola is a lie" and community mistrust of burial protocols. (PBS, Africanews, CNN, May 21-22 2026)
+- **Ebola treatment center attack — Rwampara, Ituri Province (May 21, 2026):** Protesters demanding bodies for traditional burials set fire to two ALIMA-operated medical tents at Rwampara Hospital. **Official version:** 6 Ebola patients were evacuated and moved to the main hospital. **Xinhua (May 22) on-the-ground account:** patients "fled into surrounding neighborhoods" — more chaotic than official evacuation narrative. Facility had ~50 suspected cases and 2–4 daily deaths at the time of the attack. Police deployed and restored order. WHO explicitly warned violence is threatening Ebola response. Underlying driver: widespread belief in Ituri that "Ebola is a lie" and community mistrust of burial protocols. (PBS, Africanews, CNN, Xinhua, May 21-22 2026)
 - **Ituri Province emergency containment orders (post-attack):** Funerals restricted to specialized burial teams; non-medical vehicle transport of bodies banned; public gatherings capped at 50 people; local football league suspended. (Al Jazeera, May 22, 2026)
 - **WHO national risk level upgraded to "very high" (May 22, 2026):** From "high" to "very high" at national level; regional level remains "high"; global risk remains "low." WHO DG Tedros described situation as "deeply worrisome" and "spreading rapidly." (Al Jazeera, PBS, May 22, 2026)
 - **India-Africa Forum Summit postponed indefinitely (May 21, 2026):** Summit originally scheduled May 28-31 in New Delhi; India Ministry of External Affairs + AU announced joint postponement citing "the evolving health situation in parts of Africa." Timing: coincides with South Kivu claim going public. (Bloomberg, Al Jazeera, Guardian NG, May 21, 2026)
 - **Kenya Ebola response (May 2026):** Kenya National Public Health Institute activated national incident management system; rapid response teams on 24/7 standby; **34,500+ travelers screened** at entry points; **7 individuals tested and cleared** of Ebola; isolation points established at Lokiriama (Kenya-Uganda border) and Nadapal (Kenya-South Sudan border); ambulance capacity mapping underway in high-risk counties. (Nation Africa, May 2026)
+- **Burundi / Lake Tanganyika (UNICEF, May 2026):** UNICEF deployed health technicians at Rumonge Port screening center on Lake Tanganyika. Between 100 and 250 people cross the lake from DRC into Rumonge on market days. Rumonge and Cibitoke districts identified as most vulnerable among Burundi's 10 at-risk provinces due to their position along Lake Tanganyika and high cross-border movement with DRC South Kivu. Multiple official, unofficial, and uncontrolled entry points in operation. (UNICEF Burundi, May 2026 — direct fetch 403; data from search snippet)
+- **Bunia central hospital capacity (Xinhua, May 22):** Treating 56 suspected cases at a facility "already operating beyond its capacity." Community elder Luc Malembe: "rumors fill information vacuums" — underscoring the communication failure driving mistrust. INRB Director Muyembe: "When people see that instructions and measures are announced by people from their own area, they believe them. If it is someone from Kinshasa, they doubt." (Xinhua, May 22, 2026)
 - **US travel ban (Title 42):** Foreign nationals from DRC, Uganda, South Sudan barred from US entry if present in those countries within past 21 days. Signed by Jay Bhattacharya (NIH director/acting CDC official). Duration: 30 days. South Sudan included preventively (no confirmed cases). Both Rwanda and US now openly defying WHO "no travel restrictions" guidance.
 - US airport screening enhanced at ports of entry
 - **Rwanda border closure (CONFIRMED):** Rubavu-Goma AND Rusizi crossings closed May 17, "indefinitely." Exceptions for nationals only under quarantine. Daily cross-border water-fetching prohibited for DRC residents.
@@ -231,7 +236,11 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 27c. **Contact follow-up surge:** Can DRC scale the 21% follow-up rate? What resources would be needed? Africa CDC PHECS operational deployment status.
 28. **Ituri containment orders enforcement:** Gatherings capped at 50, football suspended — are these being enforced given widespread community mistrust ("Ebola is a lie" sentiment)?
 29. **Kenya: 7 tested individuals — exposure histories?** Travelers from DRC/Uganda, or domestic contacts?
-30. **Burundi specific measures:** What are Burundi's specific screening and preparedness actions at DRC border?
+30. **Burundi specific measures:** UNICEF active at Rumonge Port; 100–250 crossings/day on market days. Partially answered. Full breakdown of official vs. uncontrolled crossing surveillance still unknown.
+31. **Kinshasa re-emergence:** Wikipedia (May 23) lists Kinshasa as having secondary cases. WHO previously ruled out Kinshasa. Is this Wikipedia error, a new case, or a revised WHO position? Needs official confirmation.
+32. **Tshopo (Kisangani) contact tracing:** South Kivu patient traveled from Kisangani. Are DRC authorities actively tracing Kisangani contacts? No confirmed cases there but major transport hub risk.
+33. **WHO DON604 / next situation report:** Not published as of May 24. When expected? Watch who.int.
+34. **Imperial College outbreak size estimate:** WHO emergency page references an Imperial College outbreak size estimation report. Has this been published? What is their estimate of true case burden?
 
 ---
 
@@ -260,9 +269,14 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **Ituri containment orders:** Monitor enforcement and community compliance — critical given "Ebola is a lie" sentiment.
 - **Fort Portal lab confirmation** — still pending; check Uganda MOH.
 - **Ervebo/vaccine deployment decision** — WHO R&D Blueprint recommendation outcome; DRC/Uganda government approval still pending.
-- **Czechia Bulovka contact:** Track testing outcome; 21-day isolation ends ~May 38 UTC — check in when approaching end of isolation window
+- **Czechia Bulovka contact:** Track testing outcome; 21-day isolation ends ~June 8 UTC — check in approaching end of window
 - **800+ contacts: methodology and breakdown:** Check DRC MOH, WHO AFRO or WHO DON for updated contact list methodology
 - **Death count methodology:** Clarify DRC 148 vs WHO 139 — check next WHO DON or DRC MOH statement
+- **Kinshasa re-emergence:** Wikipedia lists secondary Kinshasa cases contradicting prior WHO ruling. Monitor for official confirmation or correction.
+- **Tshopo/Kisangani watch:** South Kivu patient's Kisangani travel history flagged as major concern. DRC authorities tracing Kisangani contacts? Watch DRC MOH.
+- **WHO DON604:** Expected imminently; watch who.int for publication.
+- **Imperial College outbreak size report:** Referenced on WHO emergency page; check for publication and estimated true burden.
+- **Suspected case count approaching 1,000:** Wikipedia: 968 as of May 23. Next official WHO DG briefing or DON may cross this threshold.
 
 ---
 
@@ -300,8 +314,24 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 | 2026-05-21 | **Rwampara ETC attacked by protesters.** Two ALIMA medical tents set on fire at Rwampara Hospital. 6 Ebola patients evacuated. Police restored order. WHO warns violence threatens response. India-Africa Forum Summit (May 28-31) postponed indefinitely by India + AU. |
 | 2026-05-22 | **WHO upgrades national risk to "very high"** (regional: high, global: low). Tedros: "spreading rapidly," "deeply worrisome," outbreak "much larger" than confirmed figures. Case count: 82 confirmed / ~750 suspected / 177 suspected deaths — up 61% confirmed cases in 48 hours. Ituri Province orders: funerals restricted, body transport banned, gatherings capped at 50, football suspended. Kenya confirms 34,500+ travelers screened; 7 tested and cleared. **WHO EC formal temporary recommendations published** (who.int, May 22): key — GeneXpert cannot detect Bundibugyo; no approved vaccines/treatments; 21-day contact monitoring required. |
 | 2026-05-23 | **Uganda confirms 3 new Ebola cases** (driver, healthcare worker, Congolese woman — all linked to Case 1); Uganda total reaches 5. First HCW infection in Uganda confirmed. **DON603 (fetched this cycle):** 15 health zones, 85 confirmed (May 21), 1,603 Ituri contacts, 21% follow-up rate, South Kivu officially confirmed, GeneXpert cannot detect Bundibugyo. **Tanzania** actively screening at Lake Tanganyika border; simulation drills underway. |
+| 2026-05-24 | **First run of new UTC day (Cycle 14).** Wikipedia aggregated count reaches 968 suspected / 96 confirmed / 216 deaths. No new WHO briefing or DON604 found. No Ervebo deployment decision. Tshopo province NOT confirmed — Kisangani only travel origin for South Kivu patient. Bunia hospital at capacity (56 suspected cases). Rwampara ETC fire on-the-ground detail: patients fled into neighborhoods (more chaotic than official "evacuation" narrative). No new alert criteria met. |
 
 ---
+
+### Cycle 14 Findings (2026-05-24 01:17–01:55 UTC)
+
+**FIRST RUN OF MAY 24 — DIGEST CYCLE. No alert criteria met.**
+
+- **Wikipedia (May 23–24):** 968 suspected / 96 confirmed / 216 deaths — up from 750/82/177 (WHO DG May 22). Wikipedia aggregates DRC MOH + regional figures. No official WHO briefing found with these numbers; treat as unverified but directionally credible.
+- **Tshopo province NOT confirmed:** Wikipedia listed Tshopo as affected, but searches confirm no cases there. The South Kivu patient only *traveled from* Kisangani. Kisangani is flagged as a watch area given its role as a major transport hub. Al Jazeera noted "authorities race to determine how far virus may have spread" in Kisangani area.
+- **Kinshasa contradiction:** Wikipedia (May 23) lists Kinshasa as having secondary cases — directly contradicts prior WHO ruling of negative tests. Unresolved; no primary source confirmation found.
+- **Uganda geography:** All 5 confirmed Uganda cases linked to Case 1 Kampala chain per Wikipedia. Fort Portal still unconfirmed by lab.
+- **Ervebo decision:** Still pending. No DRC/Uganda government approval announced.
+- **DON604:** Not yet published. DON603 (May 21) remains most recent official WHO report.
+- **Bunia hospital capacity:** 56 suspected cases at a facility "already operating beyond its capacity" (Xinhua, May 22). Community-level trust breakdown described in detail.
+- **Rwampara ETC fire detail:** Xinhua (May 22) says patients "fled into surrounding neighborhoods" — more alarming than official "6 patients evacuated" narrative. Facility had ~50 suspected cases / 2–4 daily deaths at time of attack.
+- **Burundi/Lake Tanganyika:** UNICEF screening at Rumonge Port (100–250 DRC crossings/market day). Multiple uncontrolled entry points active.
+- **Dispatch:** May 23 digest written to outbox/2026-05-23-digest.md.
 
 ### Cycle 13 Findings (2026-05-23 11:41–12:15 UTC)
 
@@ -316,21 +346,4 @@ Prior figures for reference: 543/35/131 (Wikipedia, May 20 morning, cycle 7); 53
 - **Tanzania preparedness:** Active border screening at Lake Tanganyika crossings; simulation drills at entry points; Lake Tanganyika borders DRC — traders cross within 12 hours. (The Citizen, Xinhua, May 17–23, 2026)
 - **WHO AFRO vaccination page clarified:** The "Ebola vaccination begins in DRC" page is about a September 2025 Kasai Province Zaire strain outbreak (Bulape health zone) — NOT the current 2026 Bundibugyo/Ituri outbreak. Confirmed: no approved vaccines or treatments for Bundibugyo.
 - **Dispatch:** Alert written to outbox/2026-05-23-1150-alert.md; digest for May 22 written to outbox/2026-05-22-digest.md.
-
-### Cycle 12 Findings (2026-05-22 19:10–19:30 UTC)
-
-**ALERT CYCLE — multiple alert-level developments confirmed.**
-
-- **Confirmed cases jumped 61%** in 48 hours: 51 (May 20, WHO DG) → 82 (May 22, WHO DG). Suspected: ~750. Suspected deaths: 177. Confirmed deaths: 7.
-- **WHO upgraded national risk from "high" to "very high"** (regional: high; global: low). Tedros May 22: "spreading rapidly," "deeply worrisome," outbreak "much larger" than confirmed figures. (Al Jazeera, PBS, May 22, 2026)
-- **Rwampara ETC attack confirmed:** Two ALIMA medical tents burned by protesters demanding body access (May 21). Six Ebola patients evacuated. Police intervened. WHO warned violence threatens response. Misinformation driving community distrust: "Ebola is a lie." Multiple outlets confirmed: PBS, Africanews, CNN, ABC.
-- **Ituri Province emergency orders post-attack:** Funerals to specialized teams only; body transport ban; gatherings capped at 50; football suspended.
-- **India-Africa Forum Summit postponed indefinitely** (May 21): Summit scheduled May 28-31 in New Delhi postponed by India MEA + AU jointly due to Ebola outbreak.
-- **South Kivu:** Wikipedia now lists South Kivu as an affected location. Al Jazeera, France 24, Bloomberg report "confirmed" death near Bukavu. Source: Congo River Alliance/M23-affiliated spokesperson. WHO and DRC MOH have not issued direct official confirmation. Status upgraded from "unverified M23 claim" to "widely reported by major outlets, official confirmation still pending."
-- **Kenya:** 34,500+ travelers screened; 7 tested and cleared; national incident management activated; isolation points at Lokiriama and Nadapal.
-- **Burundi:** Stepping up border preparedness with DRC; cross-border surveillance, joint preparedness exercises, AU-level engagement through Ndayishimiye.
-- **Fort Portal:** Wikipedia now lists Fort Portal as an affected location (Uganda), but no direct lab-confirmed report found.
-- **WHO DON603:** Still not published. Overdue.
-- **Ervebo deployment decision:** No DRC/Uganda government approval found.
-- **Dispatch:** ALERT written to outbox/2026-05-22-1914-alert.md.
 

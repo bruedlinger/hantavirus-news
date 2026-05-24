@@ -483,3 +483,34 @@
 - "India-Africa summit" — covered; revisit only for new dates announcement
 - "Kenya screening" — covered; revisit only for confirmed cases
 - "Burundi response" — covered; revisit if Burundi announces new measures
+
+## 2026-05-24 (Cycle 14 — 01:17–01:55 UTC)
+
+**Follow-up queries:**
+1. `Uganda Ebola cases Fort Portal geography location May 23 24 2026` — All 5 Uganda cases linked to Case 1 Kampala chain per Wikipedia; Fort Portal still unconfirmed. Search snippet mentioned "14 cases from 7 districts" — unreliable tracker site; Wikipedia shows 5 cases in Kampala only.
+2. `Ebola DRC case count WHO update May 23 24 2026` — No new WHO DG briefing; DON603 (May 21) still most recent official source. Wikipedia aggregated: 968 suspected/96 confirmed/216 deaths.
+3. `Ervebo Bundibugyo vaccine deployment DRC Uganda decision WHO 2026` — No deployment decision. DRC/Uganda government approval still pending; any decision 2+ months from deployment.
+4. `Ebola South Kivu Bukavu DRC WHO confirmed update May 23 2026` — South Kivu confirmed in DON603 (May 21) already in state. No new developments.
+5. `Ebola DRC 2026 WHO disease outbreak news DON604 situation report` — DON604 not yet published. Most recent is DON603 (May 21).
+
+**Discovery queries:**
+6. `Ebola DRC 2026 clinical trial treatment remdesivir BARDA monoclonal antibody` — Only 2018-2019 PALM trial results; no 2026-specific Bundibugyo RCT updates found. Stale angle.
+7. `Ebola DRC 2026 contact tracing Africa CDC deployment scale up PHECS` — Team of 35 DRC experts from Kinshasa dispatched; CDC in-country resources deployed. No updated follow-up rate.
+8. `Ebola Burundi Lake Tanganyika border DRC screening preparedness May 2026` — UNICEF active at Rumonge Port; 100-250 crossings/market day; multiple uncontrolled entry points. Novel detail.
+
+**URLs fetched this cycle (6 attempted: 4 successful, 2 403):**
+- Wikipedia (cycle 14) — 968/96/216; Tshopo listed but unconfirmed; Uganda 5 cases Kampala-linked
+- WHO AFRO outbreak page — no case counts; stale links
+- UNICEF Burundi (403)
+- IFRC DRC response (403)
+- Xinhua weak clinics feature — novel: Bunia 56 cases at capacity; Rwampara ~50 cases/2-4 deaths/day; patients fled neighborhoods
+- WHO emergency situations page — no new data; references Imperial College report
+
+**Dispatch decision:** May 23 DIGEST written (first run of May 24). No alert criteria met.
+
+**What NOT to search next cycle (covered this cycle):**
+- South Kivu update — covered; no change
+- Ervebo deployment — covered; no change; revisit only if decision announced
+- Uganda geography/Fort Portal — covered; revisit only if Fort Portal confirmed
+- Burundi/Lake Tanganyika — covered; revisit if Burundi announces confirmed case
+- Treatment RCT/BARDA — stale; revisit only if BARDA/WHO announces trial initiation
