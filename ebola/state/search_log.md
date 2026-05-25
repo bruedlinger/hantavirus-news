@@ -514,3 +514,39 @@
 - Uganda geography/Fort Portal — covered; revisit only if Fort Portal confirmed
 - Burundi/Lake Tanganyika — covered; revisit if Burundi announces confirmed case
 - Treatment RCT/BARDA — stale; revisit only if BARDA/WHO announces trial initiation
+
+## 2026-05-25 (Cycle 15 — 12:10–12:19 UTC)
+
+**Follow-up queries:**
+1. `Ebola DRC outbreak case count update May 25 2026` — DRC: 904 suspected/101 confirmed/10 confirmed deaths; Wikipedia: 1,010 total/231 deaths/106 confirmed; Uganda: 5/1 (unchanged)
+2. `WHO disease outbreak news DON604 Ebola DRC May 2026` — DON604 still not published; WHO emergency page at DON603 (May 21)
+3. `Ebola DRC 2026 Ervebo vaccine deployment decision ring vaccination May 2026` — No deployment decision; Gavi 2,000 doses ready but no DRC/Uganda government approval
+4. `Ebola Uganda Fort Portal confirmed cases WHO May 24 25 2026` — Fort Portal still unconfirmed; Wikipedia/CDC confirm Uganda at 5 cases
+5. `Uganda Ebola 12 cases confirmed May 24 2026 WHO` — "12 cases" from unreliable tracker; all authoritative sources (CDC, Wikipedia, WHO) confirm 5 Uganda cases
+6. `Kinshasa Ebola case confirmed DRC capital May 2026` — RESOLVED: WHO May 17 confirmatory test was negative; Kinshasa not affected; Wikipedia entry erroneous
+
+**Discovery queries:**
+7. `Ebola DRC South Kivu Kinshasa Rwanda Burundi new cases May 25 2026` — No new countries; South Sudan joining Kampala coordination; 10 countries named at risk; CDC Level 3 DRC confirmed
+8. `Imperial College Ebola DRC 2026 outbreak size estimation report` — FOUND: Published May 20; estimate 400–900 cases (could exceed 1,000); actual counts now exceed this
+9. `WHO World Health Assembly Ebola resolution pandemic preparedness May 2026` — WHA79 (May 19-23): no Ebola-specific resolution; pandemic preparedness resolutions adopted; concurrent hantavirus outbreak (Andes, Argentina-linked) mentioned
+10. `Ebola DRC 2026 BARDA treatment trial monoclonal antibody remdesivir clinical` — No 2026-specific trial announcement found; PALM trial (2018-2019) still most recent; no new BARDA Bundibugyo program announced
+
+**URLs fetched this cycle (8 attempted: 5 successful, 3 failed):**
+- Wikipedia (success): 1,010 total/106 confirmed/231 deaths; Uganda 5/1; Kinshasa confirmed negative
+- WHO emergency situations page (success): DON604 not yet published; still at DON603 (May 21)
+- NPR May 24 (failed — socket error): "DR Congo Ebola cases rise amid distrust, armed conflict zone" — retry next cycle
+- CDC current situation (success): DRC 904/101/10/119; Uganda 5/1; Level 3/Level 1; airport screening Dulles+Atlanta
+- State Dept May 23 update (failed — technical difficulties): Could not access
+- UN News WHO chief article (success): Kampala cross-border coordination (South Sudan+DRC+Uganda+WHO); WHA closing remarks; global risk low
+- ThinkGlobalHealth WHA article (success but thin): No specific Ebola resolution at WHA79; Andes hantavirus cluster from Argentina mentioned alongside Ebola
+
+**Dispatch decision:** May 24 DIGEST written (first run of May 25). No alert criteria met.
+
+**What NOT to search next cycle (covered this cycle):**
+- Kinshasa — CLOSED; confirmed not affected
+- CDC Level 3 vs 4 — CLOSED; Level 3 confirmed
+- Imperial College report — CLOSED; published May 20 with 400-900 estimate
+- Uganda 12 cases rumor — unfounded; Uganda at 5 confirmed
+- WHA Ebola resolution — WHA concluded; no Ebola resolution
+- Ervebo deployment — no change; revisit only if decision announced
+- Fort Portal — no change; revisit if lab confirmation appears

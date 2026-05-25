@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ebola Monitor — May 25, 2026</title>
+<title>Ebola Monitor — May 24, 2026</title>
 <style>
   :root {
     --bg: #0f1117;
@@ -200,6 +200,12 @@
     font-size: 12px;
   }
 
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
   .check-dispatch-note.digested {
     background: rgba(26, 74, 90, 0.15);
     border: 1px solid rgba(26, 74, 90, 0.35);
@@ -296,101 +302,93 @@
 
 <header>
   <h1>Ebola Monitor</h1>
-  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Monday, May 25, 2026</div>
+  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Sunday, May 24, 2026</div>
 </header>
 
 <div class="story-status">
-  <div class="stat">~1,010 cases <span>(101 DRC confirmed + ~904 suspected + 5 Uganda)</span></div>
-  <div class="stat">~231 deaths <span>(10 confirmed, 119+ suspected)</span></div>
-  <div class="stat">2 countries <span>affected (DRC, Uganda)</span></div>
-  <div class="stat">Last checked <span>12:20 PM UTC</span></div>
+  <div class="stat">~968 cases <span>(96 confirmed; aggregated May 23)</span></div>
+  <div class="stat">216 deaths <span>(suspected + confirmed)</span></div>
+  <div class="stat">3 countries <span>with confirmed cases (DRC, Uganda, Germany)</span></div>
+  <div class="stat">Last checked <span>1:25 AM UTC</span></div>
 </div>
 
 <section id="dispatches">
-  <h2>Today's Alerts &mdash; May 25, 2026</h2>
+  <h2>Today's Alerts &mdash; May 24, 2026</h2>
   <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No alerts today.</p>
 </section>
 
 <section id="checks">
-  <h2>News Checks &mdash; May 25, 2026</h2>
+  <h2>News Checks &mdash; May 24, 2026</h2>
 
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">Cases cross 1,000 total; Kinshasa definitively ruled out; WHA closed without Ebola-specific resolution</span>
-        <span class="timestamp">12:10 PM UTC</span>
+        <span class="headline">Cases near 1,000; Bunia hospital at capacity; Tshopo flagged as watch area; May 23 digest dispatched</span>
+        <span class="timestamp">1:25 AM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note digested">
         <span class="note-icon">&#9656;</span>
-        Digest dispatched covering May 24, 2026 (see Previous Day below)
+        Digest dispatched covering May 23 developments (see digest below)
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">DRC cases</span>
-          <span class="fi-value flag-alert"><strong>101 confirmed</strong> (+23% from 82 on May 22) / 904 suspected / 10 confirmed deaths &mdash; CDC, May 24. Wikipedia: ~1,010 total, crossing the 1,000-case threshold.</span>
+          <span class="fi-label">Cases (Wikipedia)</span>
+          <span class="fi-value flag-alert"><strong>968 suspected / 96 confirmed / 216 deaths</strong> as of May 23 &mdash; up from WHO DG&#39;s 750/82/177 on May 22; approaching 1,000 suspected threshold</span>
         </li>
         <li>
-          <span class="fi-label">Uganda</span>
-          <span class="fi-value flag-quiet"><strong>5 confirmed / 1 death</strong> &mdash; unchanged since May 23. No new Uganda cases on May 24.</span>
+          <span class="fi-label">Tshopo / Kisangani</span>
+          <span class="fi-value flag-new"><strong>No confirmed cases in Tshopo.</strong> Kisangani only the travel origin of the South Kivu patient &mdash; but a flagged watch area given its role as a major DRC transport hub</span>
         </li>
         <li>
           <span class="fi-label">Kinshasa</span>
-          <span class="fi-value flag-new"><strong>Definitively not affected.</strong> WHO confirmatory test (May 17) was negative. Wikipedia entry listing Kinshasa is erroneous. Open question closed.</span>
+          <span class="fi-value flag-alert"><strong>Wikipedia now lists Kinshasa secondary cases</strong> &mdash; contradicts prior WHO ruling of negative tests. No primary source confirmation found; unresolved</span>
         </li>
         <li>
-          <span class="fi-label">CDC advisory</span>
-          <span class="fi-value flag-new"><strong>Level 3 (DRC) / Level 1 (Uganda)</strong> confirmed &mdash; resolves prior contradiction with CIDRAP Level 4 claim. Airport screening active at Washington-Dulles and Atlanta.</span>
+          <span class="fi-label">Bunia hospital</span>
+          <span class="fi-value flag-alert"><strong>56 suspected cases</strong> at Bunia central hospital, &#34;already operating beyond its capacity&#34; (Xinhua May 22)</span>
         </li>
         <li>
-          <span class="fi-label">WHA (May 19&ndash;23)</span>
-          <span class="fi-value"><strong>79th World Health Assembly concluded</strong> &mdash; no Ebola-specific resolution or funding pledge. Tedros briefed member states twice on Ebola. Pandemic preparedness resolutions adopted.</span>
+          <span class="fi-label">Rwampara ETC</span>
+          <span class="fi-value flag-alert">Xinhua (May 22): <strong>~50 suspected cases / 2&ndash;4 daily deaths</strong> at time of attack; patients &#34;fled into surrounding neighborhoods&#34; &mdash; more alarming than official &#34;6 evacuated&#34;</span>
         </li>
         <li>
-          <span class="fi-label">South Sudan</span>
-          <span class="fi-value flag-new"><strong>Joined Kampala cross-border coordination meeting</strong> with WHO, DRC, and Uganda &mdash; first active South Sudan engagement in the coordinated response.</span>
-        </li>
-        <li>
-          <span class="fi-label">Imperial College</span>
-          <span class="fi-value flag-new"><strong>Report found (published May 20).</strong> Estimate: 400&ndash;900 DRC cases as of May 20, possibly &gt;1,000. Actual counts now exceed this range.</span>
-        </li>
-        <li>
-          <span class="fi-label">Hantavirus</span>
-          <span class="fi-value flag-quiet">Concurrent multi-country Andes hantavirus cluster (Argentina-linked) referenced at WHA. Separate outbreak &mdash; no connection to Ebola.</span>
+          <span class="fi-label">Burundi / Tanganyika</span>
+          <span class="fi-value flag-new">UNICEF screening at Rumonge Port; <strong>100&ndash;250 DRC crossings per market day</strong> across Lake Tanganyika; multiple uncontrolled entry points active</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">WHO DON604</span>
-          <span class="fi-value flag-quiet">Overdue &mdash; DON603 was May 21. Next report should update confirmed count, contact tracing rate, and health zone count.</span>
+          <span class="fi-label">DON604</span>
+          <span class="fi-value">Not yet published. DON603 (May 21) is still the most recent official WHO situation report.</span>
         </li>
         <li>
           <span class="fi-label">Ervebo decision</span>
-          <span class="fi-value flag-quiet">DRC/Uganda government approval for off-label Bundibugyo use still pending. Gavi 2,000 doses in DRC ready if approved. No timeline given.</span>
+          <span class="fi-value flag-quiet">DRC/Uganda approval for off-label Ervebo use still pending. No announcement this cycle.</span>
         </li>
         <li>
           <span class="fi-label">Fort Portal, Uganda</span>
-          <span class="fi-value flag-quiet">Burial-linked suspected cases still not lab-confirmed. Uganda MOH/WHO AFRO statement needed.</span>
+          <span class="fi-value flag-quiet">Burial-linked cluster still not lab-confirmed. All 5 Uganda cases remain Kampala-linked per Wikipedia.</span>
         </li>
         <li>
-          <span class="fi-label">Death count</span>
-          <span class="fi-value">CDC: 129 total; Wikipedia: 231; WHO DG May 22: 177 suspected. Three divergent figures &mdash; methodology unclear. Next DON should clarify.</span>
+          <span class="fi-label">Kisangani / Tshopo</span>
+          <span class="fi-value">DRC tracing South Kivu patient&#39;s Kisangani contacts. No confirmed Tshopo cases but major hub risk.</span>
         </li>
         <li>
-          <span class="fi-label">NPR May 24</span>
-          <span class="fi-value">&ldquo;DR Congo Ebola cases rise amid distrust, armed conflict zone&rdquo; &mdash; fetch failed (socket error). Retry next cycle.</span>
+          <span class="fi-label">Imperial College</span>
+          <span class="fi-value">WHO emergency page references an Imperial College outbreak size report &mdash; not yet located; could reveal true burden estimate.</span>
+        </li>
+        <li>
+          <span class="fi-label">Kinshasa claim</span>
+          <span class="fi-value">Wikipedia secondary case listing contradicts WHO ruling. Watch for DRC MOH or WHO clarification.</span>
         </li>
         <li>
           <span class="fi-label">Contact tracing</span>
-          <span class="fi-value flag-quiet">21% follow-up rate (1,603 Ituri contacts; ~1,270 untracked) &mdash; last official figure from DON603 (May 21). No update this cycle.</span>
-        </li>
-        <li>
-          <span class="fi-label">South Sudan measures</span>
-          <span class="fi-value">Joined Kampala coordination meeting. What specific screening/quarantine measures has South Sudan implemented? Watch SS MOH.</span>
+          <span class="fi-value flag-quiet">Follow-up rate still 21% (1,603 Ituri contacts; ~1,270 untracked). No improvement reported this cycle.</span>
         </li>
       </ul>
     </div>
@@ -399,55 +397,55 @@
 </section>
 
 <section id="previous-day">
-  <h2>Previous Day &mdash; May 24, 2026</h2>
+  <h2>Previous Day &mdash; May 23, 2026</h2>
 
   <details class="dispatch-digest">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="badge badge-digest">Digest</span>
       <span class="summary-inner">
-        <span class="headline">Ebola Bundibugyo Outbreak Crosses 1,000 Cases; WHA Concludes With Pandemic Warning</span>
-        <span class="timestamp">May 24, 2026</span>
+        <span class="headline">Uganda HCW infection confirmed; suspected cases near 1,000; contact tracing at 21%; GeneXpert blind to this strain</span>
+        <span class="timestamp">May 23, 2026</span>
       </span>
     </summary>
     <div class="dispatch-body">
       <h3>What changed</h3>
       <ul>
-        <li><strong>Cases cross 1,000:</strong> DRC reports 101 confirmed (+23% from May 22) / 904 suspected / 10 confirmed deaths. Wikipedia: ~1,010 total / 231 deaths. Uganda: 5 confirmed / 1 death (unchanged). Sources: CDC, Wikipedia.</li>
-        <li><strong>79th World Health Assembly concluded (May 19&ndash;23):</strong> Tedros briefed member states on Ebola twice. WHA adopted pandemic preparedness and health architecture reform resolutions. No Ebola-specific emergency resolution or new funding pledge issued. Closing remarks cited Ebola as evidence of ongoing global vulnerability.</li>
-        <li><strong>South Sudan joins Kampala coordination:</strong> Cross-border coordination meeting with WHO, South Sudan, DRC, and Uganda &mdash; first active South Sudan engagement in the coordinated response.</li>
-        <li><strong>CDC travel advisory confirmed Level 3:</strong> DRC at Level 3 (Reconsider Nonessential Travel), Uganda at Level 1 &mdash; resolves the CIDRAP Level 4 contradiction. Airport screening at Washington-Dulles and Atlanta confirmed.</li>
-        <li><strong>Kinshasa definitively not affected:</strong> WHO confirmatory test (May 17) was negative. Wikipedia entry is erroneous.</li>
-        <li><strong>No WHO DON604 published:</strong> DON603 (May 21) remains most recent official report. Contact tracing at 21%, 15 health zones, GeneXpert inadequacy remain last official figures.</li>
-        <li><strong>Concurrent hantavirus cluster:</strong> Multi-country Andes hantavirus (Argentina-linked) referenced at WHA. Separate from Ebola.</li>
+        <li><strong>Uganda reaches 5 confirmed cases &mdash; first healthcare worker infection.</strong> Three new cases confirmed May 23: a driver, a healthcare worker, and a Congolese woman, all linked to Case 1. The HCW case signals local nosocomial transmission has begun in Uganda.</li>
+        <li><strong>Suspected cases approaching 1,000.</strong> Wikipedia&#39;s aggregated count reached 968 suspected / 96 confirmed / 216 deaths as of May 23 &mdash; up from WHO DG&#39;s 750/82/177 on May 22.</li>
+        <li><strong>Contact tracing catastrophically low: 21%.</strong> <a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON603">WHO DON603</a> reports 1,603 contacts identified in Ituri alone; only ~337 actively followed. ~1,270 known contacts untracked.</li>
+        <li><strong>GeneXpert cannot detect Bundibugyo.</strong> WHO EC formal temporary recommendations (May 22) explicitly warned all countries to use RT-PCR only. DRC&#39;s most widely deployed point-of-care diagnostic is blind to this strain.</li>
+        <li><strong>DON603 confirms 15 health zones and South Kivu.</strong> 15 health zones affected across Ituri, Nord-Kivu, and South Kivu &mdash; up from 11. South Kivu is officially the 4th DRC province.</li>
+        <li><strong>Tanzania screening at Lake Tanganyika.</strong> Active border screening and simulation drills; traders cross from DRC within 12 hours.</li>
+        <li><strong>Rwampara ETC conditions.</strong> <a href="https://english.news.cn/africa/20260522/ff746f3064084f6aa30f264890fb6d38/c.html">Xinhua (May 22)</a>: ~50 suspected cases / 2&ndash;4 daily deaths at time of attack; patients &#34;fled into surrounding neighborhoods.&#34;</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>Confirmed cases grew 23% in ~48 hours and total cases crossed 1,000. The WHA concluded without Ebola-specific funding or response commitments, leaving the 34% funding gap ($924M shortfall on $1.4B appeal) unaddressed at the highest level of global health governance.</p>
+      <p>Uganda HCW infection is a qualitative shift &mdash; the virus is establishing transmission chains inside healthcare facilities in the second affected country. Combined with a 21% contact follow-up rate and a diagnostic platform that can&#39;t detect the strain, the outbreak is structurally outpacing the response.</p>
       <h3>What I'm watching next</h3>
       <ul>
-        <li><strong>WHO DON604:</strong> Overdue; will update confirmed count, contact tracing status, health zones, geographic spread</li>
-        <li><strong>Ervebo deployment decision:</strong> DRC/Uganda government approval still pending; Gavi 2,000 doses ready</li>
-        <li><strong>Fort Portal lab confirmation:</strong> Burial-linked Uganda cluster still unconfirmed</li>
+        <li>Fort Portal (Uganda) burial-cluster lab confirmation &mdash; still pending</li>
+        <li>WHO DON604 &mdash; next official situation report expected</li>
+        <li>Ervebo off-label deployment decision &mdash; DRC/Uganda government approval still pending</li>
+        <li>Kisangani/Tshopo contact tracing &mdash; South Kivu patient&#39;s travel origin; major transport hub risk</li>
+        <li>Kinshasa re-emergence on Wikipedia &mdash; contradicts prior WHO ruling; awaiting clarification</li>
       </ul>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC Ebola Disease: Current Situation</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic">2026 Ituri Province Ebola epidemic &mdash; Wikipedia</a></li>
-        <li><a href="https://news.un.org/en/story/2026/05/1167581">WHO chief calls for urgent Ebola action &mdash; UN News</a></li>
-        <li><a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026">Ebola outbreak DRC 2026 &mdash; WHO emergency situations</a></li>
-        <li><a href="https://www.thinkglobalhealth.org/article/the-world-health-assembly-reacts-to-the-bundibugyo-ebola-outbreak">The World Health Assembly Reacts to the Bundibugyo Ebola Outbreak &mdash; ThinkGlobalHealth</a></li>
+        <li>Bloomberg, May 23, 2026 (Uganda Cases 3&ndash;5)</li>
+        <li><a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON603">WHO DON603, May 21, 2026</a></li>
+        <li>WHO EC Temporary Recommendations, May 22, 2026</li>
+        <li><a href="https://english.news.cn/africa/20260522/ff746f3064084f6aa30f264890fb6d38/c.html">Xinhua May 22 &mdash; weak clinics, mistrust, insecurity</a></li>
       </ul>
     </div>
   </details>
 
   <div class="prev-day-link">
-    <a href="ebola-2026-05-24.html">&larr; Full briefing for May 24, 2026</a>
+    <a href="ebola-2026-05-23.html">&larr; Full briefing for May 23, 2026</a>
   </div>
-
 </section>
 
 <footer>
-  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Monday, May 25, 2026</span>
+  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Sunday, May 24, 2026</span>
 </footer>
 
 </body>
