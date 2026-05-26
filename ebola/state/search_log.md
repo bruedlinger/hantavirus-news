@@ -415,3 +415,37 @@
 - Fort Portal — no change; revisit if lab result appears
 - Butembo/Tshopo — no new information
 - BARDA/MBP134 — NBC article inaccessible; retry if accessible
+
+## 2026-05-26 (Cycle 17 — 19:00–19:09 UTC)
+
+**Follow-up queries:**
+1. `WHO DON604 disease outbreak news Ebola DRC 2026` — No DON604 found; WHO emergency page updated to May 25; WHO DG Virtual Ministerial Briefing (May 25) page found
+2. `Ebola DRC 2026 Ervebo vaccine ring vaccination approved DRC Uganda May 26` — No Ervebo deployment decision; WHO AFRO vaccination article was Sept 2025 Kasai/Zaire stale; no approved vaccination for current Bundibugyo outbreak
+3. `BARDA MBP134 Bundibugyo monoclonal antibody Ebola treatment 2026` — BARDA coordinating MBP134 for high-risk Americans; trial pending DRC/Uganda govt approval
+4. `Uganda Ebola Fort Portal confirmed lab results May 26 2026` — No Fort Portal confirmation; Uganda now at 7 cases (all Kampala-linked based on PBS)
+
+**Discovery queries:**
+5. `Uganda Ebola 7 confirmed cases May 25 26 2026 new WHO` — CONFIRMED: Uganda 7 cases (PBS, Uganda MOH May 25); Cases 6-7 both HCWs at private Kampala hospital
+6. `WHO DG Virtual Ministerial Briefing Bundibugyo Ebola May 25 2026` — FOUND: Briefing held May 25; obeldesivir as PEP; 2 mAbs for clinical trials; ~$500M pledges; Xinhua "outbreak outpacing response"; cross-border coordination meeting
+7. `Ebola DRC 2026 funding donors WHO appeal pledges contributions May 26` — Bloomberg: ~$500M pledged (nearly doubled from $208M on May 23); OCHA $60M, Gates $15M, US State Dept $23M, South Africa $5M
+8. `Ebola DRC 2026 clinical trials Regeneron MBP134 treatment compassionate use approved` — WHO prioritizing Regeneron antibody + MBP134 for clinical trials; obeldesivir as PEP; Nature article found (paywalled); Scientific American article fetched (May 18, pending govt approval)
+
+**URLs fetched this cycle (10 attempted: 7 successful, 3 failed):**
+- WHO AFRO vaccination (success but stale — Sept 2025 Zaire outbreak, irrelevant to current Bundibugyo)
+- Wikipedia (success): DRC 105/906/223; Uganda 7/1; total 1,018/234
+- YourNews MBP134 (success): BARDA coordinating shipments for high-risk Americans
+- WHO emergency page (success): No DON604; WHO DG May 25 briefing referenced
+- PBS Uganda 7 cases (success): Cases 6-7 = both HCWs at private Kampala hospital
+- Bloomberg $500M (403 — blocked)
+- Africa CDC funding/leaders (success): $500M pledged; $319M needed for June-Nov plan
+- WHO DG May 25 speech (success): 101 DRC confirmed, 220 suspected deaths, 5 Uganda at time of speech; obeldesivir PEP; 2 mAbs; clinical trial "being developed"
+- Nature drug trials (redirect to paywall): Could not access
+- Scientific American drug race (success, May 18): MBP134 + obeldesivir; pending govt approval; "strong position to quickly launch"
+
+**Dispatch decision:** ALERT issued (outbox/2026-05-26-1930-alert.md) — Uganda HCW cluster: Cases 6-7 both HCWs at private Kampala hospital.
+
+**What NOT to search next cycle (covered this cycle):**
+- Uganda 7 cases — confirmed; watch for cases 8+
+- $500M pledges — covered; watch for disbursement details
+- Obeldesivir/MBP134 status — covered; watch for formal trial registration
+- WHO AFRO vaccination result — STALE Zaire article; ignore this URL
