@@ -449,3 +449,36 @@
 - $500M pledges — covered; watch for disbursement details
 - Obeldesivir/MBP134 status — covered; watch for formal trial registration
 - WHO AFRO vaccination result — STALE Zaire article; ignore this URL
+
+## 2026-05-27 (Cycle 18 — 15:15–16:00 UTC)
+
+**Follow-up queries:**
+1. `WHO DON604 Ebola DRC 2026 disease outbreak news May 27` — No DON604; WHO emergency page still shows DON603 only; ECDC updated May 27 16:45 UTC
+2. `Ebola DRC Uganda new cases May 27 2026` — Italy 2 suspected cases ruled out; no new Uganda cases beyond 7
+3. `Ebola Bundibugyo vaccine Ervebo ring vaccination approved DRC 2026` — No ring vaccination decision; still awaiting DRC/Uganda govt approval; NBC notes vaccine for Bundibugyo "could take months" for human trials
+4. `Ebola Uganda Kampala private hospital Cases 6 7 contact tracing 2026` — Private hospital still unnamed; comprehensive contact tracing underway but no specific count
+
+**Discovery queries:**
+5. `Ebola Italy suspected cases ruled out Lombardy Uganda 2026` — Two Como province aid workers (Lurate Caccivio + Bulgarograsso) returned from Uganda; both NEGATIVE at Milan Sacco Hospital (May 25); family contacts monitored
+6. `Ebola DRC 2026 obeldesivir clinical trial ClinicalTrials WHO Africa CDC` — KEY: DRC ethics board approved obeldesivir trial protocol; awaiting regulatory sign-off. CDC deployed 20 epidemiologists to DRC + 23 to Uganda + 7 more planned
+7. `Ebola DRC 2026 WHO DON604 situation report update May 27` — No DON604; Tedros announced DRC visit "on Tuesday"
+
+**URLs fetched this cycle (10 attempted: 7 successful, 3 failed):**
+- Africanews May 27 (success): Uganda public transport to DRC suspended; hospital screening; no private hospital name
+- ABC News (success): Tedros "will get worse before it gets better"; DRC visit planned; new religious leader body incident (warning shots fired)
+- Wikipedia (success): 119 confirmed / 1,086 suspected / 264 deaths (May 27); article renamed to "2026 Central Africa Ebola epidemic"
+- WHO emergency page (success, no useful data): No DON604 found
+- Science.org (403): paywalled — clinical trials article inaccessible
+- CDC current situation (success): Shows May 26 data still 105/906/10/223 DRC + 7 Uganda — not yet updated
+- NPR May 26 (socket error): 5th consecutive failure — marked irrelevant
+- Euronews Italy (success): Both Italian cases confirmed NEGATIVE; symptoms (fever + neurological/intestinal); family contacts monitored
+- ECDC May 27 16:45 (success, MOST CURRENT): DRC 121 confirmed / 17 confirmed deaths / 1,077 suspected / 238 suspected deaths; Uganda 7/1
+- Monitor Uganda (success): No hospital name; contact tracing initiated; no specific count
+
+**Dispatch decision:** May 26 DIGEST written. No alert criteria met (no new country, death toll not ≥50% total increase, Tedros visit = response action not escalation).
+
+**What NOT to search next cycle (covered this cycle):**
+- Italy suspected cases — resolved negative; close unless new cases emerge
+- CDC personnel deployment — confirmed; no need to re-search
+- Obeldesivir status — ethics board approved; next step is regulatory approval; check ClinicalTrials.gov
+- Wikipedia title — confirmed renamed; use new title going forward
