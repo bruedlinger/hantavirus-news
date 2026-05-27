@@ -73,3 +73,39 @@
 - `MV Hondius Longyearbyen June 13 sailing departed 2026` — MEDIUM
 - `WHO DON602 hantavirus 2026` — MEDIUM; routine
 - `Oceanwide Expeditions lawsuit hantavirus filed 2026` — MEDIUM
+
+## Cycle 48 — 2026-05-27 (14:41–14:47 UTC)
+
+### Queries run
+1. `hantavirus France Bichat patient ECMO death recovery May 27 2026` — French patient watch (HIGH)
+2. `ECDC hantavirus Andes virus update May 27 2026` — ECDC update (HIGH)
+3. `UKHSA hantavirus update May 27 2026 Tristan da Cunha` — UK (HIGH)
+4. `hantavirus MV Hondius new case update May 27 28 2026` — overall (HIGH)
+5. `WHO DON602 hantavirus Andes virus cruise ship 2026` — WHO (MEDIUM)
+6. `MV Hondius June 13 Longyearbyen sailing departed scheduled 2026` — sailing status (MEDIUM)
+7. `hantavirus Lancet article "cruise ship" Andes virus 2026 published findings` — science (LOW)
+8. `MV Hondius GGD additional cleaning inspection June 13 sailing delay 2026` — GGD follow-up (MEDIUM)
+9. `hantavirus Argentina rodent investigation genomic Ushuaia index case 2026` — science (MEDIUM)
+10. `hantavirus Canada British Columbia patient confirmed new case May 27 2026` — Canada (MEDIUM)
+11. `Oceanwide Expeditions hantavirus lawsuit filed passenger claim 2026` — legal (MEDIUM)
+
+### Pages fetched
+- hantavirus.one ✓ — still May 27 00:30 UTC data; French patient still on ECMO; no death/recovery; 13 cases, 3 deaths
+- ecdc.europa.eu ✓ — no May 27 update; still May 26 15:00 data (13 cases, 3 deaths)
+- clickondetroit.com ✓ — GGD ordered additional cleaning after post-decontamination inspection; June 13 sailing still on schedule per Oceanwide
+- thelancet.com ✗ (HTTP 403) — Lancet article not accessible
+- afludiary.blogspot.com ✓ — Argentina MOH May 5 report: Cerro Centinela cluster 99.99% genomic similarity; one rodent seropositive but rodent genomic sequencing pending
+- gov.uk UKHSA ✓ — no update since May 26; Tristan still "suspected"; Arrowe Park winding down (16/22 departed)
+
+### What these queries found
+**KEY NEW (Cycle 48)**: (1) **GGD ordered additional cleaning (May 26)**: After EWS Group initial decontamination, GGD inspection found gaps and ordered supplemental cleaning with final inspection required before ship departs. Oceanwide confirmed June 13 sailing still scheduled; (2) **Argentine Ushuaia rodent investigation**: ~140 traps deployed May 19, 40-50% success, one rodent positive for hantavirus. Genomic sequencing pending — cannot yet formally link to index case. ANLIS-Malbrán doing human case sequencing (99.99% similarity); (3) **Lancet article**: "up to 4 generations H2H transmission"; onset April 24-28 consistent with incubation (not fetched — 403); (4) **No new cases or deaths** this cycle; ECDC still at May 26 data as of 14:41 UTC; (5) **WHO DON602** still not published (48th cycle); (6) **No lawsuits filed** — Dutch forum clause + high gross-negligence bar under Dutch law are main barriers.
+
+### What to search next cycle (do NOT repeat for 24h)
+- `hantavirus France Bichat patient recovery death discharge June 2026` — HIGH; daily
+- `ECDC hantavirus update May 28 June 1 2026` — HIGH
+- `MV Hondius GGD clearance final inspection Rotterdam June 2026` — HIGH; sailing clearance
+- `hantavirus Argentina Ushuaia rodent genomic sequencing ANLIS-Malbran results 2026` — HIGH; rodent link
+- `UKHSA hantavirus update Tristan da Cunha lab confirmed June 2026` — MEDIUM
+- `hantavirus Netherlands home quarantine new case June 2026` — MEDIUM
+- `hantavirus Canada B.C. third case Victoria hospital June 2026` — MEDIUM
+- `WHO DON602 hantavirus 2026` — MEDIUM

@@ -1,5 +1,5 @@
 # Hantavirus Cruise Ship Story State
-*Last updated: 2026-05-27 (Cycle 47)*
+*Last updated: 2026-05-27 (Cycle 48)*
 
 ---
 
@@ -111,12 +111,24 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 - WHO: Level 3 emergency response; DG Tedros traveled to Tenerife
 - ECDC: EU Health Task Force deployed; 2,500 diagnostic kits shipped
 - CDC: HAN00528 (May 8) + **HAN00529 (May 18)** — testing availability for ANDV; 18 US passengers at Nebraska quarantine through May 31
-- **MV Hondius decontamination COMPLETE** (EWS Group, May 18–21)
+- **MV Hondius decontamination**: EWS Group initial work May 18–21 completed, but **GGD (Rotterdam public health) ordered additional cleaning** (May 26) after post-decontamination inspection found gaps. GGD will conduct final inspection before vessel can depart. Oceanwide (May 26): "no further disruption expected"; June 13 Longyearbyen sailing still confirmed.
 - **JUNE 13 LONGYEARBYEN SAILING CONFIRMED** (CEO Rémi Bouysset): 7-night North Spitsbergen roundtrip; May 29 Iceland sailing cancelled
 - **CEO liability defense** (Oceanwide): "No indication hantavirus linked to vessel conditions" (Cruise Industry News, ~May 22); **no lawsuits filed yet**
 - **NEJM article** (NEJMc2606496) + **Lancet article** (PIIS0140-6736(26)00934-7) — two major journals have published papers on outbreak
 - **UK favipiravir stockpile**: UK received favipiravir from Japan as preparedness measure; investigational only, no proven ANDV human efficacy
 - 14 Spanish nationals: 45-day quarantine at Gómez Ulla Hospital, Madrid; now 2 confirmed positive
+
+### Cycle 48 Findings (2026-05-27 14:41–15:05 UTC)
+
+- **GGD additional cleaning order (May 26)**: After EWS Group initial decontamination (May 18–21), GGD's Rotterdam health authority inspection found additional cleaning was required. Oceanwide confirmed June 13 sailing still scheduled; "no further disruption expected." GGD will do final clearance inspection before departure. This revises our earlier "decontamination COMPLETE" status — ship is still in Rotterdam pending GGD clearance.
+- **Argentine Ushuaia rodent investigation** (via search snippets, sourced from secondary coverage): ~140 rodent traps deployed May 19; 40–50% daily trap success; one trapped rodent tested positive for hantavirus. Genomic sequencing of rodent specimen pending — cannot yet formally link to index case. Argentina's ANLIS-Malbrán doing whole-genome sequencing of human samples. Argentina MOH May 5 report (Cerro Centinela domestic cluster) also shows 99.99% genomic similarity among 3 confirmed human cases there. Ushuaia-rodent / cruise-ship-index-case genomic link not yet established.
+- **Lancet article key findings (via search snippet)**: "Up to four generations of human-to-human transmission" confirmed; symptom onset dates (April 24–28) consistent with 9–33 day incubation from April 1 boarding; article references Epuyén 2018 cluster (3 patients → 21 of 33 secondary infections). Article not successfully fetched (403).
+- **ECDC**: No May 27 update published as of 14:41 UTC (typical publish ~14:00 UTC); still showing May 26 data (13 cases, 3 deaths).
+- **WHO DON602**: Still not published — confirmed again this cycle (48th consecutive non-appearance).
+- **French patient**: Still on ECMO ~489+ hours as of 14:41 UTC May 27 (no update since 00:30 UTC). Still alive; no death or recovery.
+- **No new cases, no new deaths** identified this cycle.
+- **No lawsuits filed** against Oceanwide — confirmed again. Articles remain speculative/legal analysis only; barriers include Dutch forum clause, high gross-negligence threshold under Dutch law, and Oceanwide's "no vessel liability" waiver.
+- **Canada**: No new case confirmation for B.C. person in 50s. Yukon patient (confirmed) still stable in Victoria hospital.
 
 ### Cycle 47 Findings (2026-05-27 01:10–01:25 UTC)
 
@@ -137,29 +149,29 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 
 ## Open Questions
 
-1. **French patient outcome** — will she recover or die? 20 days on ECMO is unprecedented for ANDV. Any clinical updates?
+1. **French patient outcome** — will she recover or die? Now ~489+ hours (~21 days) on ECMO, unprecedented for ANDV. Any clinical updates from Bichat?
 2. **Tristan da Cunha** — lab confirmation still pending? UKHSA "suspected" vs. ECDC "probable" — has a sample been lab-confirmed?
 3. **Who are the 2 ECDC probables?** Tristan da Cunha is one. What is the other?
-4. **Will more home-quarantine cases emerge?** Dutch patient emerged ~May 22 (~16 days into quarantine). Quarantine runs to ~June 17 (42 days from May 6). More cases possible.
-5. **Canada B.C. person in 50s** — are they just being monitored, or do they become a confirmed case?
-6. **MV Hondius June 13 sailing** — did it depart from Longyearbyen as scheduled?
-7. **Argentine rodent investigation** — any genomic results published?
-8. **Oceanwide lawsuits** — first filing expected; CEO's preemptive "no vessel fault" defense is staged; when does first suit appear?
-9. **WHO DON602** — still not published?
+4. **Will more home-quarantine cases emerge?** Dutch patient emerged ~May 22. Quarantine runs to ~June 17 (42 days from May 6). More cases possible.
+5. **Canada B.C. person in 50s** — monitored or confirmed?
+6. **MV Hondius June 13 sailing** — will GGD grant final clearance in time? Ship still in Rotterdam pending inspection.
+7. **Argentine rodent genomics** — will sequencing of Ushuaia rodent positive confirm genomic link to index case?
+8. **Oceanwide lawsuits** — first filing?
+9. **WHO DON602** — still not published (48 cycles).
 
 ---
 
 ## Active Threads to Pull Next Cycle
 
 - `hantavirus France Bichat patient recovery death discharge June 2026` — HIGH; daily
-- `ECDC hantavirus update May 27 28 2026` — HIGH
-- `UKHSA hantavirus update May 27 28 Tristan da Cunha lab confirmed 2026` — HIGH; Tristan lab result
-- `hantavirus Canada B.C. patient Victoria hospital new case May 2026` — MEDIUM; clarify B.C. person status
-- `hantavirus new home quarantine case Netherlands Dutch May June 2026` — MEDIUM; more from Dutch quarantine?
-- `MV Hondius June 13 Longyearbyen Arctic departure hantavirus 2026` — MEDIUM; did it sail?
-- `hantavirus Lancet article cruise ship South Atlantic 2026` — LOW; read scientific paper
-- `Oceanwide Expeditions lawsuit filed passenger hantavirus 2026` — MEDIUM; first suit
-- `WHO DON602 hantavirus 2026` — MEDIUM; routine check
+- `ECDC hantavirus update May 28 June 2026` — HIGH
+- `UKHSA hantavirus update Tristan da Cunha lab confirmed June 2026` — HIGH; lab result
+- `MV Hondius GGD clearance final inspection June 13 sailing Rotterdam 2026` — HIGH; GGD must clear ship before June 13
+- `hantavirus Argentina Ushuaia rodent genomic sequencing ANLIS-Malbran 2026` — HIGH; rodent + human genomic link to index case
+- `hantavirus Canada B.C. patient Victoria third case confirmed June 2026` — MEDIUM
+- `hantavirus Netherlands new home quarantine case June 2026` — MEDIUM; more from Dutch quarantine?
+- `Oceanwide Expeditions lawsuit filed passenger hantavirus 2026` — MEDIUM
+- `WHO DON602 hantavirus 2026` — MEDIUM; routine
 
 ---
 
@@ -173,17 +185,20 @@ An outbreak of Andes virus hantavirus (ANDV) has occurred aboard the MV Hondius,
 
 ## Timeline of Developments
 
-See Case Timeline table above plus Cycle 47 Findings section.
+See Case Timeline table above plus Cycle 47 and Cycle 48 Findings sections.
 
 ---
 
 ## Sources Contacted / Logged This Cycle
 
-- hantavirus.one (May 27 00:30 UTC) — count + French patient status
-- ECDC outbreak page (May 26 15:00 update) — 13 cases, case definition revision
-- Euronews Spain 2nd case (May 25) — confirmed 2nd Spanish case details
-- UKHSA (May 26 update) — British patient evacuation, Arrowe Park progress
-- RIVM (May 22 update) — Dutch home-quarantine positive case
-- CDC situation summary (May 19) — 0 US cases confirmed
-- WHO DON601 (search snippet, ~May 13 data) — third WHO disease outbreak notice
-- Victoria Times Colonist (search snippet, ~May 22) — 3 in hospital Victoria, Canada
+- hantavirus.one (May 27 00:30 UTC, Cycle 47) — count + French patient ECMO status
+- ECDC outbreak page (May 26 15:00 update, Cycle 47+48) — 13 cases, case definition revision; no May 27 update as of 14:41 UTC
+- Euronews Spain 2nd case (May 25, Cycle 47) — confirmed 2nd Spanish case details
+- UKHSA (May 26 update, Cycle 47+48) — British patient evacuation; Tristan still "suspected"; Arrowe Park winding down
+- RIVM (May 22 update, Cycle 47) — Dutch home-quarantine positive case
+- CDC situation summary (May 19, Cycle 47) — 0 US confirmed cases
+- WHO DON601 (search snippet, ~May 13 data, Cycle 47) — third WHO DON; DON602 still not published (48 cycles)
+- Victoria Times Colonist (search snippet, ~May 22, Cycle 47) — 3 in hospital Victoria
+- ClickOnDetroit / AP (May 26, Cycle 48) — GGD additional cleaning order; June 13 sailing still confirmed
+- Argentina MOH / Avian Flu Diary (May 5, Cycle 48) — rodent investigation; rodent positive; genomic sequencing pending
+- Lancet article search snippet (Cycle 48) — up to 4 generations H2H; onset April 24–28
