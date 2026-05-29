@@ -1,241 +1,5 @@
 # Search Log
 
-## 2026-05-19 (Cycle 5 — Alert: PHECS + 513 cases + Butembo + Fort Portal)
-
-**Queries run:**
-1. `Ebola 2026 Stafford Germany hospital treatment Bundibugyo` — IBTimes confirms Germany transfer; The Local DE (May 19) has specific article; German Health Ministry says "preparations underway"; hospital undisclosed
-2. `Africa CDC PHECS declaration Ebola 2026 Emergency Consultative Group` — **ALERT**: Africa CDC formally declared PHECS on May 18; ECG chaired by Prof. Salim Abdool Karim; primary source URL confirmed
-3. `Ebola DRC case count May 19 2026 WHO situation report update` — Wikipedia shows 513/131; ABC News has DRC Health Ministry wire; 9 health zones in Ituri mentioned
-4. `WHO Emergency Committee Ebola 2026 convene date temporary recommendations` — Still "as soon as possible"; no specific date
-5. `Ebola 2026 Germany hospital isolation Stafford Leipzig Hamburg Frankfurt RKI` — The Local DE May 19 article surfaced; CIDRAP new article surfaced
-6. `Ebola 2026 Butembo North Kivu DRC confirmed spread` — Butembo confirmed as case location; multiple sources; Wikipedia + search snippets
-7. `Ebola 2026 Uganda Fort Portal western Uganda burial transmission chain` — Confirmed: Ugandans attended DRC burial, returned to western Uganda, some taken to Fort Portal; NICD South Africa updates surfaced
-
-**URLs fetched this cycle (8 attempts, 6 successful):**
-- https://africacdc.org/news-item/africa-cdc-declares-the-ongoing-bundibugyo-ebola-outbreak-a-public-health-emergency-of-continental-security/ (**novel**: PHECS details, ECG, $2M, IMST)
-- https://www.thelocal.de/20260519/us-doctor-infected-with-ebola-virus-to-be-treated-in-germany (**novel**: 6 contacts to Germany, hospital undisclosed, German Health Ministry statement)
-- https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic (**updated**: 513/131, Fort Portal, Butembo; Kinshasa lag continues)
-- https://www.cnn.com/2026/05/18/africa/ebola-outbreak-global-efforts-americans-intl-hnk (failed — truncated again)
-- https://abcnews.com/Health/wireStory/congo-health-ministry-reports-131-deaths-513-suspected-133098976 (**novel**: official DRC Health Ministry 513/131, Minister Kamba caution on suspected deaths)
-- https://www.usnews.com/news/world/articles/2026-05-18/health-workers-race-to-respond-to-congos-fast-spreading-ebola-outbreak (failed — timeout)
-- https://www.cidrap.umn.edu/ebola/who-declares-ebola-outbreak-emergency-cdc-restricts-travel-confirms-us-doctor-infected (**novel**: Title 42 mechanism; incorrect lab cartridges = detection delay; DRC Level 4 claim)
-- https://www.pbs.org/newshour/health/congo-will-open-3-ebola-treatment-centers-as-a-rare-strain-spreads (**novel**: 3 new treatment centers; Butembo confirmed; 7 Americans in Germany)
-- https://www.cdc.gov/media/releases/2026/cdc-mobilizes-international-ebola-response.html (novel but stale: May 17 data, Ituri-focused, no new info)
-
-**Dispatch decisions:** DIGEST for May 18 written (outbox/2026-05-18-digest.md); ALERT written (outbox/2026-05-19-1130-alert.md). notify.sh absent — all 3 outbox files pending delivery.
-
-**Priority for Cycle 6:**
-- Fort Portal lab confirmation: search Uganda MOH, WHO AFRO for confirmed Fort Portal Ebola case
-- Butembo primary source: search for WHO DON or DRC MOH directly naming Butembo with lab confirmation
-- German hospital name: watch BMG (German Health Ministry), RKI, The Local DE for hospital identification
-- WHO Emergency Committee: first concrete date announcement
-- DRC travel advisory Level 4: verify CDC.gov travel advisories page
-- NICD South Africa Bundibugyo updates: https://www.nicd.ac.za/bundibugyo-virus-disease-updates/
-- Next WHO DON: check https://www.who.int/emergencies/disease-outbreak-news
-
-**What NOT to search next cycle (covered):**
-- "US travel ban" — fully resolved
-- "Rwanda border" — fully resolved
-- "Africa CDC PHECS" — declared; watch for implementation details only
-- "Stafford Germany" — known; watch for hospital name only
-
-## 2026-05-19 (Cycle 6 — Quiet: genomics preprint + Charité + case count update)
-
-**Queries run:**
-1. `Ebola Uganda Fort Portal 2026 lab confirmed cases WHO AFRO` — no lab confirmation found; still suspected only
-2. `WHO disease outbreak news Ebola DRC situation report May 2026` — DON602 still latest; no new DON published
-3. `Ebola Bundibugyo RKI Germany Stafford 2026 hospital treatment` — **NEW: Charité Berlin identified as hospital; Serge Christian mission org named**
-4. `virological.org Bundibugyo BDBV sequencing phylogenetic 2026 Ituri` — **NEW: preprint found; 3 genomes; INRB+CPHL; new spillover event confirmed**
-5. `Ebola 2026 DRC case count update May 19 evening WHO situation` — **NEW: 536/105/34/134; CNN WHO chief alarm headline**
-6. `Africa CDC Ebola 2026 response teams deployed neighboring countries preparedness` — IMST activated; no specific country deployment list
-7. `OCHA DRC Ebola humanitarian crisis May 2026 sitrep displacement` — humanitarian plan 34% funded; WFP airlift 5+ tonnes
-
-**URLs fetched this cycle (4 attempts, 4 complete):**
-- https://virological.org/t/initial-genomes-from-may-2026-bundibugyo-virus-disease-outbreak-in-the-democratic-republic-of-the-congo-and-uganda/1032 (**novel**: 3 genomes INRB+CPHL; new spillover event; phylogenetics vs 2007/2012 strains)
-- https://www.cnn.com/2026/05/19/africa/ebola-outbreak-drc-uganda-who-chief-intl (truncated — content not available; headline confirms WHO chief alarm + snippet confirms 536/134 case counts)
-- https://english.news.cn/africa/20260519/9eda072e7c8a488bb74e96ffcc68a15b/c.html (**partially novel**: security/humanitarian context; WFP airlift; 34% funding; largely confirms existing facts)
-- https://www.staradvertiser.com/2026/05/19/breaking-news/germany-to-treat-u-s-missionary-who-contracted-ebola-in-congo/ (**novel**: Charité Berlin special isolation ward; Serge Christian mission org confirmed)
-- WHO DON page (fetch returned error; DON602 confirmed as still latest)
-
-**Dispatch decision:** QUIET — no alert criteria met. Case count rise ~4.5% (not ≥50%); Charité confirmation = factual update; genomic preprint confirms new spillover (already known conceptually); no new country; no new healthcare worker case.
-
-**Priority for Cycle 7:**
-- Fort Portal lab confirmation — keep watching Uganda MOH / WHO AFRO
-- WHO Emergency Committee convening date — watch WHO.int
-- WHO DON603 — expected; check WHO DON page directly
-- WHO chief specific statement (May 19 CNN article still truncated)
-- Stafford colleagues' test results (Charité)
-- DRC Level 4 travel advisory — CDC.gov verify
-- Treatment RCT timeline — BARDA monoclonal antibodies
-- Africa CDC deployment specifics — which countries?
-- Funding gap — donor response
-
-**What NOT to search next cycle (covered):**
-- "Stafford Germany hospital" — RESOLVED: Charité Berlin
-- "virological.org BDBV" — fetched; no need to revisit unless new preprint published
-- "OCHA humanitarian" — low new signal; revisit in 48h unless funding breakthrough
-
-## 2026-05-20 (Cycle 7 — First run of May 20; quiet; digest written for May 19)
-
-**Queries run (via subagents):**
-1. `WHO disease outbreak news Ebola DRC situation report May 20 2026` — DON602 still latest; WHO PHEIC news page current
-2. `Ebola Fort Portal Uganda lab confirmed cases May 2026` — still suspected only; no lab confirmation
-3. `WHO Emergency Committee Ebola PHEIC meeting convening date May 2026` — Al Jazeera: EC meeting scheduled May 19; vaccine advisory group convened
-4. `Ebola case count update DRC deaths May 20 2026` — Wikipedia 543/35/131 as of May 20; ECDC 500+/130/30 (May 19)
-5. `MSF Médecins Sans Frontières Ebola response field update Ituri DRC May 2026` — MSF preparing large-scale response; 55 deaths in Mongwalu by early May (pre-declaration)
-6. `South Sudan Ebola screening response border DRC 2026` — State Dept May 19: borders monitored; US providing PPE/screening assistance
-7. `Ebola 2026 BARDA treatment compassionate use RCT monoclonal antibodies remdesivir` — no BARDA-specific update; WHO recommended mAb114, REGN-EB3 for Zaire (not Bundibugyo)
-8. `Ebola DRC case fatality rate Bundibugyo 2026 epidemic curve reproduction number` — no R-number published; historical CFR 30-50%
-9. `Africa CDC Ebola 2026 deployment teams preparedness countries` — PHECS operational pillars confirmed; no specific country deployment list
-10. `WHO Emergency Committee Ebola Bundibugyo May 19 2026 meeting vaccine Ervebo recommendations outcome` — meeting confirmed but outcome not yet published
-11. `Ebola 2026 WHO vaccine advisory group decision Ervebo deploy Bundibugyo cross-protection` — CNBC Africa found; 2000 Gavi doses; no decision
-12. `Ebola Bundibugyo outbreak update May 20 2026 vaccine WHO advisory group recommendation` — no new May 20 publications found
-
-**URLs fetched this cycle (6 successful, 3 failed/partial):**
-- https://www.aljazeera.com/news/2026/5/19/who-to-hold-emergency-committee-meeting-as-ebola-death-toll-rises-to-131 (**novel**: EC meeting date May 19; vaccine committee; spread 200km; WHO chief "serious concern")
-- https://en.wikipedia.org/wiki/2026_Ituri_Province_Ebola_epidemic (**update**: 543 susp/35 conf/131 deaths May 20)
-- https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-19-may-2026 (**novel**: EURL-PH-ERZV EU/EEA diagnostic support activated)
-- https://www.statnews.com/2026/05/18/ebola-outbreak-update-experts-weigh-use-merck-vaccine-ervebo/ (**novel**: Ervebo cross-protection evidence; 2011/2013 primate studies; ~50% efficacy; Gavi 2000 doses; 2-month supply timeline)
-- https://www.cdc.gov/han/php/notices/han00530.html (**novel**: HAN 530, May 16; Level 3 DRC, Level 1 Uganda; clinical screening criteria)
-- https://www.cnbcafrica.com/2026/international-health-experts-meet-in-search-for-ebola-bundibugyo-vaccine-options (**novel**: WHO R&D Blueprint advisory met May 19; no decision; Gavi 2000 doses confirmed)
-- WHO DON page (failed — empty filter response)
-- Washington Post (403 forbidden)
-- NPR (timeout)
-
-**Dispatch decision:** QUIET (first-of-day digest written for May 19). No alert criteria met: case count +7 suspected (<2%); no new country; no new containment failure; advisory meeting outcome pending.
-
-**Priority for Cycle 8:**
-- WHO R&D Blueprint advisory final recommendation — watch WHO.int, DRC/Uganda health ministry
-- Fort Portal lab confirmation — Uganda MOH / WHO AFRO
-- WHO EC convening date — watch WHO.int
-- WHO DON603 — check WHO DON page directly
-- Stafford colleagues test results (Charité)
-- CDC.gov live travel advisory page for DRC (Level 3 vs Level 4)
-
-**What NOT to search next cycle (covered):**
-- "ECDC May 19" — fetched; revisit in 24h
-- "CNBC Africa vaccine" — fetched; no decision yet
-- "Gavi Ervebo doses" — resolved: 2,000 in DRC
-
-## 2026-05-21 (Cycle 8 — First run of May 21; quiet; digest written for May 20)
-
-**Queries run (via subagents — 5 parallel search agents):**
-1. `WHO disease outbreak news Ebola DRC DON603 May 2026` — DON603 still not published; WHO DG held May 20 media briefing with updated figures
-2. `Ebola DRC case count update May 21 2026 deaths` — ~600 suspected / 51 DRC confirmed / 139 deaths (WHO DG May 20 briefing)
-3. `Fort Portal Uganda Ebola confirmed lab results May 2026` — still not lab-confirmed; Uganda maintains 2 confirmed (Kampala)
-4. `Uganda Ebola cases update May 20 21 2026` — Uganda postponed Martyrs' Day (2M people); 2 Uganda confirmed per WHO
-5. `Ebola Bundibugyo vaccine Ervebo approved deployment DRC Uganda May 2026` — no decision yet; 45,000 doses potentially available
-6. `WHO Emergency Committee Ebola PHEIC meeting date May 2026` — EC DID convene May 19; validated PHEIC; formal recommendations pending
-7. `Stafford Charite Berlin Ebola 2026 colleagues results` — Stafford stable, receiving monoclonal antibodies; wife Rebekah + LaRochelle: no positive tests
-8. `Germany Ebola patient 2026 update` — Germany = 1 officially confirmed (Stafford per WHO DG briefing)
-9. `Tanzania Burundi CAR Ebola preparedness 2026 DRC` — Burundi/Tanzania in enhanced surveillance; no confirmed cases
-10. `Ebola DRC 2026 contact tracing update contacts listed high risk` — CDC providing assistance in 11 health zones; no updated total contact count
-11. `USAID Ebola DRC 2026 funding cuts response capacity` — HHS: $33M→$10M; USAID: $1.2B→$67M (Q4); IRC: 5→2 areas in Ituri
-
-**URLs fetched this cycle (6 successful, 1 failed):**
-- https://www.aljazeera.com/news/2026/5/20/who-says-600-cases-139-suspected-deaths-in-growing-ebola-outbreak (novel: 600/51/139; Germany 1 confirmed)
-- https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-media-briefing-on-ebola-outbreak-in-drc-and-uganda-20-may-2026 (novel: $3.4M added → $3.9M; Uganda Martyrs Day postponed; 100K+ displaced)
-- https://www.who.int/news-room/speeches/item/who-director-general-s-opening-remarks-at-the-emergency-committee-on-ebola-epidemic-in-the-democratic-republic-of-the-congo-and-uganda---19-may-2026 (novel: EC convened May 19; validated PHEIC; formal recommendations pending)
-- https://abcnews.go.com/International/ebola-outbreak-suspected-death-toll-rises-139-warns/story?id=133142454 (novel: Stafford stable, eating, receiving monoclonal antibodies; wife Rebekah + LaRochelle no positives)
-- https://www.statnews.com/2026/05/19/us-aid-cuts-hamper-drc-ebola-response/ (novel: USAID HHS $33M→$10M; USAID $1.2B→$67M Q4; IRC 5→2 areas; 300K additional deaths estimate)
-- https://health.go.ug/download/press-statement-ebola-bundibugyo-virus-disease-outbreak-2026/ (failed — SSL error)
-
-**Dispatch decision:** QUIET (digest written for May 20). No alert criteria met: confirmed cases ~46% jump below 50% threshold; deaths +3-6% (not ≥50%); Germany was already known Stafford location; EC meeting was expected; no new country; no containment breach.
-
-**Priority for Cycle 9:**
-- WHO EC formal temporary recommendations — watch WHO.int for IHR statement
-- Fort Portal lab confirmation — Uganda MOH / WHO AFRO
-- Ervebo deployment decision — DRC/Uganda health ministries
-- WHO DON603 — check WHO DON page directly
-- Stafford colleagues test results (Charité)
-- Contact tracing updated figures (11 health zones now)
-
-**What NOT to search next cycle (covered):**
-- "USAID cuts" — fetched; core figures now documented; revisit in 48h if new IRC/STAT update
-- "WHO DG May 20 briefing" — fetched
-- "Stafford condition" — fetched; stable; revisit only if new development
-
-## 2026-05-21 (Cycle 9 — 10:44–10:48 UTC; not first-of-day)
-
-**Queries run (via 4 parallel subagents):**
-1. `WHO Emergency Committee Ebola DRC temporary recommendations IHR 2026` — snippets suggest recommendations published (supportive care, IPC, contact tracing, safe burials, community engagement) but could not fetch authoritative text; WHO.int pages returned same known URLs
-2. `Ebola DRC Congo outbreak case count May 21 2026` — no count newer than May 20 WHO DG briefing (~600 suspected / 51 DRC confirmed / 139 deaths); Wikipedia still at 543/35/131
-3. `Ervebo vaccine Bundibugyo DRC approval ring vaccination 2026` — no decision found; DRC has 2,000 doses "available" but no approved deployment; STAT/NBC/Scientific American confirm no decision
-4. `WHO disease outbreak news Ebola 2026 DON` — DON603 still not published; DON602 (May 17) remains latest
-5. `Fort Portal Uganda Ebola confirmed lab results 2026` — still not lab-confirmed; Uganda MOH: 2 confirmed (Kampala only); "12 Uganda cases" claim from one snippet not supported by primary sources
-6. `ebola Congo Ouganda Radio Okapi mai 2026` — Radio Okapi confirms EAC activation, MONUSCO support, US funding; note: Radio Okapi "$250M" headline is misleading (likely CDF not USD)
-7. `Ebola Bundibugyo clinical trial treatment RCT BARDA monoclonal antibodies 2026` — no new ClinicalTrials.gov registrations found; BARDA "actively investigating" but no registration
-8. `Tanzania Burundi Ebola preparedness DRC Congo 2026 screening` — generic results only; no country-specific measures confirmed
-9. `DRC Congo Ebola humanitarian funding gap 2026 million dollars donors` — $1.4B 2026 DRC appeal; 34% funded = ~$924M gap; humanitarian funding dropped $900M→$179M/yr (Biden→Trump)
-
-**URLs fetched this cycle (5 successful, 4 failed/stale):**
-- https://www.radiookapi.net/...us-financing: US State Dept $13M Ebola-specific (novel)
-- https://www.afro.who.int/...outbreak-drc-26: stale; no new data (aggregator)
-- https://www.rescue.org/...funding-cuts: IRC detection delay quote confirmed (novel)
-- https://www.radiookapi.net/...eac-lab-network: EAC regional lab activated May 18 (novel)
-- https://www.wfp.org/...eastern-drc-hunger: WFP $10M Ebola-specific + $214M eastern DRC (novel)
-- ReliefWeb OCHA funding gap: 403
-- MSF Bundibugyo challenge: 403
-- State.gov May 19 update: garbled/redirect
-- WHO Rapid Risk Assessment PDF: binary content
-
-**Dispatch decision:** QUIET — no alert criteria met; not first of day (no digest needed).
-
-**Priority for Cycle 10:**
-- WHO EC IHR formal temporary recommendations — try direct URL construction on who.int (format: who.int/news/item/YYYY-MM-DD-statement-...-emergency-committee...)
-- Fort Portal lab confirmation
-- Ervebo deployment decision (DRC/Uganda health ministries)
-- WHO DON603
-- EAC country-level activations — which specific states?
-
-**What NOT to search next cycle (covered):**
-- "IRC funding cuts" — fetched; core narrative documented; revisit in 48h
-- "WFP funding" — fetched; figures now documented
-- "EAC lab network" — fetched; revisit in 48h for country-level specifics
-
-## 2026-05-21 (Cycle 10 — 17:43–17:52 UTC)
-
-**Follow-up queries:**
-1. `WHO Ebola emergency committee temporary recommendations IHR 2026 published` — snippets suggest published (supportive care, IPC, contact tracing, safe burials) but no direct URL; EC meeting confirmed May 19 and validated PHEIC; formal IHR recommendations text still not directly accessible
-2. `Ebola DRC Congo outbreak case count update May 21 2026` — ECDC cites WHO May 20: ~600 suspected / 139 deaths / 51 DRC confirmed. CDC: still showing May 19 data (536/34/134). No May 21 count update found. 11 health zones confirmed across Ituri + Nord-Kivu. Contact tracing 800+.
-3. `Fort Portal Uganda Ebola confirmed lab results May 2026` — still not lab-confirmed; search results only show burial-linked suspected cases being taken for treatment; Uganda MOH: 2 confirmed (Kampala only)
-4. `Ervebo rVSV-ZEBOV vaccine DRC Uganda approval deployment Bundibugyo 2026` — no approval; Al Jazeera May 21 article reports INRB Muyembe says DRC awaiting Oxford experimental vaccine from US/UK; Africa CDC evaluating Ervebo trial separately
-5. `WHO disease outbreak news DON Ebola DRC 2026 new report` — DON603 still not published; DON602 May 17 remains latest
-
-**Discovery queries:**
-6. `Ebola Burundi Tanzania CAR preparedness response May 2026` — generic: Burundi/Tanzania stepped up surveillance per AI summary; CGTN May 20 reports 136 deaths; no primary source on specific Burundi/Tanzania actions found
-7. `Ebola Europe Belgium France UK evacuees confirmed cases May 2026` — no new European confirmed cases; only Germany (Stafford) + Czechia (1 contact, not confirmed); ReliefWeb Sitrep #1 May 20 found (403 on fetch); PAHO Americas reinforcing preparedness
-8. `Ebola DRC contact tracing contacts May 21 2026 update` — **800+ contacts being tracked in DRC** (CNN May 20); 575 suspected cases; 148 deaths (DRC May 20 statement — vs. 139 WHO DG)
-9. `Ebola Czechia Czech Republic contacts evacuees 2026` — CONFIRMED: 1 American contact sent to Bulovka Hospital, Prague; US ambassador requested; Czech HM Vojtěch confirmed; not positive; Radio Prague International, expats.cz (Czech news brief May 21)
-10. `Ebola outbreak 2026 Wikipedia latest case count deaths May 21` — Wikipedia: 543/35/131 (May 19 data, stale). 11 health zones confirmed.
-11. `Ebola experimental vaccine shipment US UK DRC May 2026` — CONFIRMED: INRB Muyembe (Al Jazeera May 21) states DRC awaiting experimental Oxford vaccine from US and UK; WHO sent 12+6 tonnes supplies
-
-**URLs fetched this cycle (5 successful, 4 failed/403):**
-- https://www.aljazeera.com/amp/news/2026/5/21/ebola-outbreak-when-will-a-vaccine-be-developed-for-the-new-strain (novel: Muyembe quotes Oxford vaccine; WHO 18 tonnes supplies; May 21 data uses stale 513/131)
-- https://www.unfpa.org/resources/unfpa-flash-update-ebola-outbreak-drc-14-19-may-2026 (novel: 10 health zones / 443,278 people; Nyankunde = frontline HCWs; nosocomial maternal risk)
-- https://www.cdc.gov/ebola/situation-summary/index.html (seen; May 19 data; confirms 11 health zones Ituri+Nord-Kivu; Czechia mentioned alongside Germany for contacts)
-- https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda-19-may-2026 (seen; cites WHO May 20: ~600/139/51; EU Health Task Force deployed May 18)
-- https://english.radio.cz/us-doctor-exposed-ebola-be-treated-prague-under-strict-isolation-8887076 (403 — not fetched)
-- https://www.washingtonpost.com/health/2026/05/19/this-us-doctor-went-congo-heal-others-then-ebola-hit-his-hospital/ (403)
-- https://reliefweb.int/report/democratic-republic-congo/ebola-outbreak-drc-and-uganda-situation-report-1-may-20-2026 (403)
-- https://www.unicef.org/press-releases/unicef-scaling-efforts-protect-and-support-children-and-families-following-ebola (403)
-- https://www.cnn.com/2026/05/20/health/ebola-by-the-numbers (truncated — no data extracted)
-
-**Dispatch decision:** QUIET — no alert criteria met; not first-of-day (no digest).
-
-**Priority for Cycle 11:**
-- Oxford vaccine shipment: verify product identity, timeline, CEPI/BARDA sources
-- Czechia Bulovka: test result update; 21-day isolation end date
-- 800+ contacts: primary source from DRC MOH or WHO AFRO
-- WHO DON603 — check WHO DON page directly
-- Fort Portal lab confirmation
-- ReliefWeb Sitrep #1 (403 in this cycle) — try again
-
-**What NOT to search next cycle (covered):**
-- "Ervebo approval DRC" — no decision; revisit in 24h
-- "EU/European cases" — no new cases; revisit in 24h
-- "Contact tracing general" — 800+ confirmed; revisit only if update
-
 ## 2026-05-22 (Cycle 11 — 02:59–03:20 UTC) — First run of May 22
 
 **Follow-up queries:**
@@ -482,3 +246,39 @@
 - CDC personnel deployment — confirmed; no need to re-search
 - Obeldesivir status — ethics board approved; next step is regulatory approval; check ClinicalTrials.gov
 - Wikipedia title — confirmed renamed; use new title going forward
+
+## 2026-05-29 (Cycle 19 — 01:00–01:45 UTC)
+
+**Context: First run of May 29. Covering May 27-28 developments plus May 23 Mongbwalu incident missed in prior cycles.**
+
+**Follow-up queries:**
+1. `WHO DON604 Ebola DRC 2026 disease outbreak news May 28` — No DON604; WHO emergency page shows May 28 news item on expert advisory; latest case count 121 confirmed / 1,077 suspected from May 27. A reference to "DON 2026-E000253" on WHO page — may be DON604 under different numbering; unconfirmed.
+2. `Tedros WHO DG visit DRC Congo Ebola May 27 28 2026` — CONFIRMED: Tedros visited DRC on May 28 with WHO emergencies chief Chikwe Ihekweazu; called for immediate ceasefire; "catastrophic collision of disease and conflict"; "We cannot build community trust or isolate the sick while bombs are falling."
+3. `Ebola DRC Uganda new cases May 28 2026 update` — US State Dept finalized additional $80M bilateral assistance (May 27); CDC upgraded Uganda travel advisory from Level 1 to Level 2 (May 27). Case counts still at May 27 levels (no new update yet).
+4. `Ebola Bundibugyo Ervebo ring vaccination DRC approved decision May 2026` — WHO experts (May 28) advise Ervebo NOT to be used outside clinical trials. All candidate products should be evaluated exclusively within clinical trials.
+
+**Discovery queries:**
+5. `Mongbwalu Ebola treatment center patients escaped 2026 DRC` — CONFIRMED MISSED INCIDENT: May 23 (Friday night), residents attacked and burned MSF tent at Mongbwalu hospital; 18 suspected patients escaped; lab results: 3 negative, 1 POSITIVE = confirmed case circulating in community; Hospital director Dr. Richard Lokudi confirmed (PBS, CNN, NBC, BNO News).
+6. `Ebola 2026 DRC obeldesivir Maftivimab clinical trial initiated approved May 28` — WHO May 28 advisory: Three therapeutics for confirmed cases: MBP134 + Maftivimab® (Regeneron) + Remdesivir; combination therapy recommended; obeldesivir for PEP contacts; Maftivimab supply ALREADY ON GROUND in DRC (Regeneron confirmed); Science.org/AAAS article on fast trials available.
+7. `Ebola DRC 2026 Rwanda Burundi Tanzania border measures South Sudan May 28` — Rwanda mandatory quarantine for DRC returnees (May 22). Tanzania tightened border checks, health screening, traveler forms. Africa CDC flagged 9 at-risk countries: Angola, Burundi, CAR, Ethiopia, Kenya, Rwanda, South Sudan, Tanzania, Zambia. Uganda border closed 4 weeks from May 27.
+8. `Uganda Ebola border closed DRC restrictions May 28 2026` — Uganda closed border for 4 weeks; only response teams, humanitarian, food/cargo, security allowed; mandatory 21-day self-isolation for DRC returnees; restrictions on mass gatherings in Kampala and border districts.
+
+**URLs fetched this cycle (10 attempted: 7 successful, 3 failed):**
+- WHO expert advisory May 28 (success): Three therapeutics (MBP134, Maftivimab, Remdesivir); combination therapy; obeldesivir for PEP; Ervebo excluded; Oxford/Serum ChAdOx1 Bundibugyo (2-3 months); IAVI rVSV Bundibugyo (7-9 months)
+- State Dept $80M (technical difficulties/failed): Cannot confirm full details; additional $80M in bilateral assistance confirmed by search snippet
+- Wikipedia (success): 919 suspected / 119 confirmed / 241 deaths as of May 28 WHO site; Uganda border closed 4 weeks from May 27; Mongbwalu escape confirmed
+- Al Jazeera Tedros/catastrophic collision (success): Tedros called for ceasefire; "catastrophic collision of disease and conflict"; visited DRC May 28 with Ihekweazu
+- ECDC (success): May 27 still latest data: 121 confirmed / 1,077 suspected / 17 confirmed deaths / 238 suspected deaths DRC; Uganda 7/1
+- NPR May 27 (timeout/failed): Could not access after 60s timeout
+- CDC current situation May 28 (success): DRC 1,077 suspected / 121 confirmed / 246 suspected deaths / 17 confirmed deaths; Uganda 7/1; DRC Level 3, Uganda now Level 2
+- NBCNews ETC attacks article (403 forbidden): Could not access
+- WHO emergency page (success): DON604 not published; most recent item is May 28 expert advisory; DON 2026-E000253 reference unclear
+
+**Dispatch decision:** DIGEST written (first run of May 29; prior day = May 28). No new alert — Uganda border closure is a containment measure (not failure), WHO advisory is a planning document; Mongbwalu escape (May 23) is 6 days old and known to responders. All covered in digest.
+
+**What NOT to search next cycle (covered this cycle):**
+- Uganda border closure — confirmed; next check: reopening (4-week mark = late June)
+- WHO expert advisory — confirmed; next check: when trials initiate, not recommendations
+- Tedros DRC visit — complete; watch for concrete announcements from the visit
+- Maftivimab supply on ground — confirmed; next: trial regulatory approval
+- Mongbwalu escape — documented; next: trace outcome of escaped confirmed case

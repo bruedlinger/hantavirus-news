@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebola Monitor — May 27, 2026</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e2e4ed;
+    --muted: #7b7f96;
+    --alert-bg: #1f1018;
+    --alert-border: #8b1a1a;
+    --alert-badge: #c0392b;
+    --digest-bg: #0f1a1f;
+    --digest-border: #1a4a5a;
+    --digest-badge: #1a6a8a;
+    --check-bg: #131620;
+    --check-border: #252840;
+    --link: #6ab4ff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 32px 20px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.02em;
+  }
+
+  header .meta {
+    color: var(--muted);
+    font-size: 11px;
+    margin-top: 4px;
+  }
+
+  section { margin-bottom: 40px; }
+
+  section > h2 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  details {
+    margin-bottom: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    user-select: none;
+  }
+
+  summary::-webkit-details-marker { display: none; }
+
+  summary .chevron {
+    flex-shrink: 0;
+    color: var(--muted);
+    font-size: 10px;
+    margin-top: 3px;
+    transition: transform 0.15s;
+  }
+
+  details[open] summary .chevron { transform: rotate(90deg); }
+
+  summary .summary-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+  }
+
+  summary .headline {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  summary .timestamp {
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .dispatch-alert {
+    border: 1px solid var(--alert-border);
+    background: var(--alert-bg);
+  }
+
+  .dispatch-alert summary { background: rgba(139, 26, 26, 0.1); }
+  .dispatch-alert summary:hover { background: rgba(139, 26, 26, 0.18); }
+
+  .dispatch-digest {
+    border: 1px solid var(--digest-border);
+    background: var(--digest-bg);
+  }
+
+  .dispatch-digest summary { background: rgba(26, 74, 90, 0.1); }
+  .dispatch-digest summary:hover { background: rgba(26, 74, 90, 0.2); }
+
+  .check-entry {
+    border: 1px solid var(--check-border);
+    background: var(--check-bg);
+  }
+
+  .check-entry summary { background: rgba(37, 40, 64, 0.15); }
+  .check-entry summary:hover { background: rgba(37, 40, 64, 0.35); }
+
+  .badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+
+  .badge-alert  { background: var(--alert-badge);  color: #fff; }
+  .badge-digest { background: var(--digest-badge); color: #fff; }
+
+  .dispatch-body {
+    padding: 0 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .dispatch-body h3 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .dispatch-body ul { padding-left: 16px; }
+
+  .dispatch-body li {
+    margin-bottom: 7px;
+    line-height: 1.55;
+    color: #c8cad8;
+  }
+
+  .dispatch-body p {
+    color: #c8cad8;
+    line-height: 1.55;
+  }
+
+  .dispatch-body a { color: var(--link); text-decoration: none; }
+  .dispatch-body a:hover { text-decoration: underline; }
+
+  .check-body {
+    padding: 14px 16px 16px 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .check-dispatch-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
+  }
+
+  .check-dispatch-note.digested {
+    background: rgba(26, 74, 90, 0.15);
+    border: 1px solid rgba(26, 74, 90, 0.35);
+    color: #70aac0;
+  }
+
+  .check-dispatch-note.quiet {
+    background: rgba(37, 40, 64, 0.3);
+    border: 1px solid rgba(37, 40, 64, 0.6);
+    color: var(--muted);
+  }
+
+  .check-dispatch-note .note-icon { font-size: 11px; flex-shrink: 0; }
+
+  .check-section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 6px;
+    margin-top: 12px;
+  }
+
+  .check-findings { list-style: none; padding: 0; margin: 0; }
+
+  .check-findings li {
+    display: flex;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 12px;
+    line-height: 1.5;
+    color: #b0b2c4;
+  }
+
+  .check-findings li:last-child { border-bottom: none; }
+
+  .check-findings .fi-label {
+    flex-shrink: 0;
+    min-width: 110px;
+    color: var(--muted);
+    font-size: 11px;
+    padding-top: 1px;
+  }
+
+  .check-findings .fi-value { color: #c4c6d6; flex: 1; }
+  .check-findings .fi-value strong { color: var(--text); font-weight: 600; }
+  .check-findings .fi-value.flag-alert { color: #e08080; }
+  .check-findings .fi-value.flag-new   { color: #90c8a0; }
+  .check-findings .fi-value.flag-quiet { color: #7b7f96; }
+
+  .prev-day-link {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .prev-day-link a { color: var(--link); text-decoration: none; }
+  .prev-day-link a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+
+  .story-status {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+  }
+
+  .story-status .stat {
+    display: inline-block;
+    padding-right: 24px;
+    color: var(--text);
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .story-status .stat span { color: var(--muted); font-size: 11px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ebola Monitor</h1>
+  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Wednesday, May 27, 2026</div>
+</header>
+
+<div class="story-status">
+  <div class="stat">~1,205 cases <span>(128 confirmed + 1,077 suspected)</span></div>
+  <div class="stat">~255 deaths <span>(18 confirmed + 238 suspected)</span></div>
+  <div class="stat">2 countries <span>affected (DRC, Uganda)</span></div>
+  <div class="stat">Last checked <span>3:25 PM UTC</span></div>
+</div>
+
+<section id="dispatches">
+  <h2>Today's Alerts &mdash; May 27, 2026</h2>
+  <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No alerts today.</p>
+</section>
+
+<section id="checks">
+  <h2>News Checks &mdash; May 27, 2026</h2>
+
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Cases surge to ~1,205 total; second ETC confrontation; Tedros DRC visit; obeldesivir ethics approval confirmed</span>
+        <span class="timestamp">3:25 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note digested">
+        <span class="note-icon">&#9656;</span>
+        Digest dispatched covering May 26 (see Previous Day below)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">DRC / counts</span>
+          <span class="fi-value flag-alert"><strong>ECDC (May 27, 16:45 UTC):</strong> 121 confirmed (+16 since May 25) / 1,077 suspected (+171) / 17 confirmed deaths (+7) / 238 suspected deaths. Total: ~1,205 cases / ~255 deaths. Confirmed cases up ~15%, suspected up ~19% in 2 days.</span>
+        </li>
+        <li>
+          <span class="fi-label">DRC / security</span>
+          <span class="fi-value flag-alert"><strong>Second community confrontation:</strong> Police and military fired warning shots at protesters demanding return of a prominent religious leader's body at a northeastern DRC hospital. Facility secured; body not removed. Follows Rwampara ETC attack (May 21).</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO / Tedros</span>
+          <span class="fi-value flag-new"><strong>Tedros DRC visit announced.</strong> WHO DG: "It will get worse before it gets better." Plans to travel to DRC — first WHO chief visit to outbreak region. Signals top-priority response posture.</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment</span>
+          <span class="fi-value flag-new"><strong>Obeldesivir trial: DRC ethics board approved</strong> protocol. Awaiting DRC regulatory authority sign-off. Step forward from "being developed" status as of May 25.</span>
+        </li>
+        <li>
+          <span class="fi-label">CDC / personnel</span>
+          <span class="fi-value flag-new"><strong>CDC deployment:</strong> 20 epidemiologists to DRC + 23 to Uganda + 7 more SMEs planned. 50 community health workers being trained in DRC.</span>
+        </li>
+        <li>
+          <span class="fi-label">Uganda</span>
+          <span class="fi-value flag-new"><strong>Public transport to DRC suspended.</strong> Temperature checks at hospitals and public venues. Private hospital where Cases 6–7 worked still unnamed.</span>
+        </li>
+        <li>
+          <span class="fi-label">Italy</span>
+          <span class="fi-value flag-new"><strong>Two Italian aid workers ruled out (May 25).</strong> Returned from Uganda with hemorrhagic-fever symptoms; both tested <strong>negative</strong> at Milan Sacco Hospital. Family contacts being monitored.</span>
+        </li>
+        <li>
+          <span class="fi-label">Wikipedia</span>
+          <span class="fi-value">Article renamed to <strong>"2026 Central Africa Ebola epidemic"</strong> — reflects broader geographic scope recognized.</span>
+        </li>
+        <li>
+          <span class="fi-label">DON604</span>
+          <span class="fi-value flag-quiet">Still absent — 6+ days overdue since DON603 (May 21). Not found on WHO emergency page.</span>
+        </li>
+        <li>
+          <span class="fi-label">Ervebo</span>
+          <span class="fi-value flag-quiet">No ring vaccination decision. NBC: Bundibugyo vaccine could take months to reach human trials. DRC/Uganda govt approval still pending.</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Obeldesivir</span>
+          <span class="fi-value">Ethics board approved; awaiting DRC regulatory sign-off. Watch DRC MOH, Africa CDC, ClinicalTrials.gov.</span>
+        </li>
+        <li>
+          <span class="fi-label">Tedros visit</span>
+          <span class="fi-value">Announced for "Tuesday." Watch for confirmed itinerary, response commitments, and any new funding or deployment announcements.</span>
+        </li>
+        <li>
+          <span class="fi-label">ETC incident</span>
+          <span class="fi-value">Northeastern DRC hospital where warning shots fired — identity unknown. Which health zone? Patient impact? Watch WHO DON604.</span>
+        </li>
+        <li>
+          <span class="fi-label">Uganda case 8+</span>
+          <span class="fi-value">Private Kampala hospital contacts under 21-day surveillance. Nosocomial chain may produce more HCW cases. Watch Uganda MOH daily updates.</span>
+        </li>
+        <li>
+          <span class="fi-label">Deaths +7</span>
+          <span class="fi-value">Confirmed deaths jumped 10 &rarr; 17 per ECDC. Which zones, which cases? DON604 needed for attribution.</span>
+        </li>
+        <li>
+          <span class="fi-label">DON604</span>
+          <span class="fi-value flag-quiet">Overdue 6+ days. Expected to update health zones, contact tracing rate, geographic spread, and death methodology. Check who.int each cycle.</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal</span>
+          <span class="fi-value flag-quiet">Burial-linked suspected cases still not lab-confirmed. Check Uganda MOH each cycle.</span>
+        </li>
+        <li>
+          <span class="fi-label">Italy contacts</span>
+          <span class="fi-value flag-quiet">Both aid workers negative; family contacts monitored. Expected to clear within 21-day window.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+</section>
+
+<section id="previous-day">
+  <h2>Previous Day &mdash; May 26, 2026</h2>
+
+  <details class="dispatch-digest">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="badge badge-digest">Digest</span>
+      <span class="summary-inner">
+        <span class="headline">Uganda HCW cluster (43% of Uganda cases), $500M pledged, obeldesivir named as PEP candidate</span>
+        <span class="timestamp">May 26, 2026 at 7:30 PM UTC</span>
+      </span>
+    </summary>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>Uganda HCW cluster confirmed; alert issued.</strong> Cases 6 and 7 are both healthcare workers at an unnamed private Kampala hospital, exposed through patients linked to Case 1. Uganda total: 7 confirmed / 1 death. Three of seven Uganda cases (43%) are HCWs &mdash; nosocomial amplification signal in the capital. Uganda suspended public transport to DRC.</li>
+        <li><strong>Case count growing fast.</strong> DRC hit 112 confirmed (Wikipedia, May 25&ndash;26), up from 101 on May 24 (+11%). Suspected held at ~906. ECDC updated to 121 confirmed / 1,077 suspected by end of day.</li>
+        <li><strong>$500M pledged at May 25 ministerial meeting.</strong> Nearly doubled from $208M on May 23. Key donors: OCHA ($60M), US State Dept ($23M), Gates Foundation ($15M), South Africa ($5M). Disbursement timelines unknown.</li>
+        <li><strong>Obeldesivir named as PEP candidate.</strong> WHO DG May 25 briefing: Gilead GS-5245 (oral remdesivir prodrug) for post-exposure prophylaxis alongside two mAbs (MBP134 + Regeneron). Trial "being developed" with Africa CDC &mdash; not yet initiated as of May 26.</li>
+        <li><strong>DON604 still absent.</strong> 5+ days overdue since DON603 (May 21). No new geographic spread confirmed.</li>
+      </ul>
+      <h3>Why this matters</h3>
+      <p>Uganda's HCW rate (43%) signals healthcare settings are becoming amplifying nodes &mdash; the same dynamic that accelerated the 2018&ndash;2020 DRC Zaire outbreak. Nosocomial chains in Kampala's private hospital sector would make containment significantly harder.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li>WHO DON604 &mdash; contact tracing rate, health zone count, confirmed death attribution</li>
+        <li>Obeldesivir regulatory approval in DRC &mdash; ethics board approved; awaiting sign-off</li>
+        <li>Uganda Cases 8+ &mdash; private Kampala hospital contacts still under surveillance</li>
+        <li>Tedros DRC visit &mdash; announced for "Tuesday"; watch for response commitments</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li>Africa CDC funding statement (May 25&ndash;26)</li>
+        <li>PBS / Uganda MOH: Cases 6&ndash;7 confirmed (May 25)</li>
+        <li>WHO DG Virtual Ministerial Briefing (May 25)</li>
+        <li>Wikipedia: 112 confirmed / 906 suspected / 234 deaths (May 25&ndash;26)</li>
+        <li>UN News May 26: "two antibodies in clinical trials; antiviral evaluation"</li>
+      </ul>
+    </div>
+  </details>
+
+  <div class="prev-day-link">
+    <a href="ebola-2026-05-26.html">&larr; Full briefing for May 26, 2026</a>
+  </div>
+
+</section>
+
+<footer>
+  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Wednesday, May 27, 2026</span>
+</footer>
+
+</body>
+</html>
