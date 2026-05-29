@@ -114,12 +114,6 @@
     color: var(--muted);
   }
 
-  summary .subline {
-    font-size: 11px;
-    color: var(--muted);
-    font-style: italic;
-  }
-
   .dispatch-alert {
     border: 1px solid var(--alert-border);
     background: var(--alert-bg);
@@ -312,10 +306,10 @@
 </header>
 
 <div class="story-status">
-  <div class="stat">~1,205 cases <span>(121 confirmed + 1,084 suspected)</span></div>
-  <div class="stat">~256 deaths <span>(17 confirmed + 239 suspected)</span></div>
-  <div class="stat">2 countries <span>affected (+ 1 import)</span></div>
-  <div class="stat">Last checked <span>1:24 AM UTC</span></div>
+  <div class="stat">134 confirmed <span>(125 DRC + 9 Uganda)</span></div>
+  <div class="stat">241 deaths <span>(all categories; 18 confirmed)</span></div>
+  <div class="stat">3 countries <span>affected</span></div>
+  <div class="stat">Last checked <span>12:56 PM UTC</span></div>
 </div>
 
 <section id="dispatches">
@@ -326,89 +320,135 @@
 <section id="checks">
   <h2>News Checks &mdash; May 29, 2026</h2>
 
+  <!-- Cycle 20 — most recent, no dispatch -->
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">Missed May 23 ETC escape documented; Uganda closes DRC border for 4 weeks; WHO publishes first countermeasure guidance</span>
+        <span class="headline">Uganda reaches 9 confirmed; US total commitment $462M; DON604 is Hantavirus not Ebola</span>
+        <span class="timestamp">12:56 PM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; continued growth in known outbreak areas; no alert criteria met
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Uganda</span>
+          <span class="fi-value flag-alert"><strong>9 confirmed / 1 death</strong> (up from 7). Cases 8&ndash;9 confirmed as of May 28 per ECDC 13:30 UTC update. Identities/locations unknown &mdash; likely ongoing Kampala nosocomial chain.</span>
+        </li>
+        <li>
+          <span class="fi-label">DRC counts</span>
+          <span class="fi-value flag-new"><strong>125 confirmed / 906 suspected / 17 confirmed deaths / 223 suspected deaths.</strong> Suspected count dropped 1,077&rarr;906: authorities removed non-cases + reclassified some as confirmed &mdash; data quality improvement, not outbreak decline.</span>
+        </li>
+        <li>
+          <span class="fi-label">US funding</span>
+          <span class="fi-value flag-new"><strong>$462M total US commitment:</strong> $112M bilateral + $50M OCHA (50 clinics) + $300M OCHA pooled. Partners: UNICEF/WFP (PPE), IOM (screening), Interchurch Medical Assistance/World Vision/UNICEF (contact tracing), FHI 360 (diagnostics).</span>
+        </li>
+        <li>
+          <span class="fi-label">DON604</span>
+          <span class="fi-value flag-new"><strong>DON604 = Hantavirus (M/V Hondius cruise ship, 13 cases, 3 deaths).</strong> Not Ebola. Prior "DON604 overdue for Ebola" tracking was a categorization error. Next Ebola situation report = DON605 or E000253 series.</span>
+        </li>
+        <li>
+          <span class="fi-label">Ceasefire appeal</span>
+          <span class="fi-value">Tedros direct appeal to "all warring parties" confirmed: "Please, declare a ceasefire. Even briefly." No armed group response as of May 29. France 24: outbreak "can be stopped."</span>
+        </li>
+        <li>
+          <span class="fi-label">Frontline docs</span>
+          <span class="fi-value flag-alert">Dr. Kojan: <strong>"The outbreak is completely out of control."</strong> Dr. Lokudi (Mongbwalu): "exponential speed"; ongoing patient escapes creating "chains and chains of contamination." Police/military now permanently guarding Mongbwalu Hospital.</span>
+        </li>
+        <li>
+          <span class="fi-label">Detection gap</span>
+          <span class="fi-value">Bundibugyo circulated <strong>undetected up to 3 months</strong> before identification (frontline medical sources) &mdash; more specific than prior "weeks or months" estimate.</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">Uganda 8&ndash;9</span>
+          <span class="fi-value">Cases 8&ndash;9 identities and locations unknown. Watch Uganda MOH daily updates for cluster confirmation.</span>
+        </li>
+        <li>
+          <span class="fi-label">Clinical trials</span>
+          <span class="fi-value">Obeldesivir + Maftivimab trials being developed with Africa CDC + Collaborative Open Research Consortium on filoviruses. DRC ethics board approved; awaiting regulatory sign-off. Watch ClinicalTrials.gov.</span>
+        </li>
+        <li>
+          <span class="fi-label">Ceasefire</span>
+          <span class="fi-value flag-quiet">No armed group response to Tedros appeal. Watch for M23, ADF, or other party statement.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO DON605</span>
+          <span class="fi-value flag-quiet">Next Ebola situation report still pending. Watch who.int.</span>
+        </li>
+        <li>
+          <span class="fi-label">Mongbwalu escape</span>
+          <span class="fi-value flag-quiet">May 23 confirmed escaped case: no trace outcome found. Ongoing escapes from hospital. Watch DRC MOH, WHO.</span>
+        </li>
+        <li>
+          <span class="fi-label">Fort Portal</span>
+          <span class="fi-value flag-quiet">Burial-linked suspected cluster still not lab-confirmed. Watch Uganda MOH.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- Cycle 19 — digest dispatched -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Digest dispatched: Uganda border closure, WHO treatment advisory, Tedros DRC visit, Mongbwalu escape documented</span>
         <span class="timestamp">1:11 AM UTC</span>
       </span>
     </summary>
     <div class="check-body">
       <div class="check-dispatch-note digested">
         <span class="note-icon">&#9656;</span>
-        Digest dispatched &mdash; covering May 27&ndash;28 developments (see digest below)
+        Digest dispatched covering May 27&ndash;28 (see digest below)
       </div>
-
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">DRC / Mongbwalu</span>
-          <span class="fi-value flag-alert"><strong>MISSED (May 23):</strong> Residents burned MSF tent at Mongbwalu hospital; 18 suspected patients escaped into community. Of 4 tested: 1 POSITIVE &mdash; a confirmed Ebola case circulated freely in the community. Hospital director Dr. Richard Lokudi confirmed. Second ETC attack in 2 days (after Rwampara May 21).</span>
+          <span class="fi-label">Mongbwalu (May 23)</span>
+          <span class="fi-value flag-alert"><strong>Second ETC attack documented (missed in prior cycles).</strong> 18 suspected escaped; 1 of 4 tested = POSITIVE &mdash; confirmed case circulating in community. Dr. Lokudi confirmed. First confirmed case released into community via attack.</span>
         </li>
         <li>
           <span class="fi-label">Uganda border</span>
-          <span class="fi-value flag-alert"><strong>Closed for 4 weeks (May 27).</strong> Only response/humanitarian/cargo/security allowed to cross. Mandatory 21-day self-isolation for all DRC returnees. Mass gatherings banned in Kampala and border districts. Third country defying WHO no-travel-restrictions guidance (after Rwanda, US).</span>
+          <span class="fi-value flag-alert"><strong>DRC border closed 4 weeks (May 27).</strong> Only response/humanitarian/cargo/security allowed. Mandatory 21-day self-isolation for all DRC returnees. Third country defying WHO guidance.</span>
         </li>
         <li>
-          <span class="fi-label">WHO advisory</span>
-          <span class="fi-value flag-new"><strong>First countermeasure guidance (May 28):</strong> Three therapeutics for confirmed cases: MBP134 + Maftivimab&reg; (Regeneron) + Remdesivir; combination therapy recommended. Obeldesivir for PEP contacts. <strong>Ervebo explicitly excluded</strong> from use outside clinical trials. Maftivimab supply already on ground in DRC.</span>
-        </li>
-        <li>
-          <span class="fi-label">Vaccine pipeline</span>
-          <span class="fi-value flag-new">Oxford/Serum Institute ChAdOx1 Bundibugyo: <strong>2&ndash;3 months</strong> from trial readiness (needs animal data). IAVI rVSV Bundibugyo: <strong>7&ndash;9 months</strong>. All products must be tested in clinical trials only.</span>
+          <span class="fi-label">WHO treatment</span>
+          <span class="fi-value flag-new"><strong>Expert advisory (May 28):</strong> MBP134 + Maftivimab (on ground in DRC) + Remdesivir for cases. Obeldesivir for PEP. Ervebo explicitly NOT recommended. Oxford/Serum ChAdOx1 Bundibugyo 2&ndash;3 months to trial readiness.</span>
         </li>
         <li>
           <span class="fi-label">Tedros / DRC</span>
-          <span class="fi-value flag-new">WHO DG and emergencies chief Ihekweazu visited DRC (May 28). Called for <strong>"immediate ceasefire."</strong> "We cannot build community trust or isolate the sick while bombs are falling." &gt;90% of cases are in Ituri Province.</span>
+          <span class="fi-value"><strong>Tedros visited DRC (May 28)</strong> with Ihekweazu. "Catastrophic collision of disease and conflict." Called for immediate ceasefire. &gt;90% of cases in Ituri.</span>
         </li>
         <li>
           <span class="fi-label">US funding</span>
-          <span class="fi-value flag-new">State Dept finalized additional <strong>$80M bilateral assistance</strong> (May 27). Brings US total significantly above $23M pledged May 25.</span>
-        </li>
-        <li>
-          <span class="fi-label">CDC / Uganda</span>
-          <span class="fi-value flag-new">Uganda travel advisory upgraded <strong>Level 1 &rarr; Level 2</strong> (May 27). DRC remains Level 3.</span>
-        </li>
-        <li>
-          <span class="fi-label">Case counts</span>
-          <span class="fi-value flag-quiet">No May 28&ndash;29 update yet. Latest (ECDC, May 27): DRC 121 confirmed / 1,077 suspected / 17 confirmed deaths / 238 suspected deaths. Uganda 7/1.</span>
+          <span class="fi-value flag-new"><strong>+$80M bilateral announced May 27</strong> (later confirmed as $112M bilateral + $50M + $300M OCHA = $462M total).</span>
         </li>
       </ul>
-
-      <div class="check-section-label">Things we&rsquo;re following</div>
+      <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">Mongbwalu case</span>
-          <span class="fi-value">Confirmed positive patient escaped May 23 &mdash; has this case been traced and isolated? Watch DRC MOH, WHO DON604.</span>
+          <span class="fi-label">Mongbwalu trace</span>
+          <span class="fi-value flag-quiet">Whether May 23 confirmed escaped case was traced/isolated. Still unknown.</span>
         </li>
         <li>
           <span class="fi-label">Trial initiation</span>
-          <span class="fi-value">Maftivimab on ground; obeldesivir DRC ethics-approved. When do formal trials register and open? Watch ClinicalTrials.gov, Africa CDC, DRC MOH.</span>
+          <span class="fi-value">DRC ethics board approved obeldesivir protocol; awaiting regulatory sign-off. Maftivimab on ground.</span>
         </li>
         <li>
-          <span class="fi-label">Tedros outcomes</span>
-          <span class="fi-value">Outcomes of DRC visit: ceasefire response? New response commitments? Health zone access agreements? Watch WHO, Reuters.</span>
+          <span class="fi-label">Ceasefire</span>
+          <span class="fi-value flag-quiet">Any armed group response to Tedros appeal.</span>
         </li>
         <li>
-          <span class="fi-label">WHO DON604</span>
-          <span class="fi-value flag-quiet">Still absent &mdash; 8+ days overdue since DON603 (May 21). "DON 2026-E000253" seen on WHO page; may be new numbering. Watch who.int.</span>
-        </li>
-        <li>
-          <span class="fi-label">Obeldesivir reg.</span>
-          <span class="fi-value flag-quiet">DRC ethics board approved; awaiting DRC regulatory authority sign-off. Watch DRC MOH, Africa CDC.</span>
-        </li>
-        <li>
-          <span class="fi-label">Fort Portal</span>
-          <span class="fi-value flag-quiet">Burial-linked suspected cases still not lab-confirmed by Uganda MOH. Stalled.</span>
-        </li>
-        <li>
-          <span class="fi-label">Uganda case 8+</span>
-          <span class="fi-value">Kampala private hospital (Cases 6&ndash;7) contacts still under surveillance. Watch Uganda MOH.</span>
-        </li>
-        <li>
-          <span class="fi-label">Bulovka Prague</span>
-          <span class="fi-value flag-quiet">American contact under 21-day isolation; ~June 8 end date. No test result update.</span>
+          <span class="fi-label">WHO DON605</span>
+          <span class="fi-value flag-quiet">DON604 was Hantavirus. Next Ebola situation report pending.</span>
         </li>
       </ul>
     </div>
@@ -424,46 +464,45 @@
       <span class="chevron">&#9658;</span>
       <span class="badge badge-digest">Digest</span>
       <span class="summary-inner">
-        <span class="headline">Uganda closes border; WHO names treatment candidates; Tedros calls for ceasefire; Mongbwalu ETC escape documented</span>
+        <span class="headline">Uganda closes border; WHO names treatment candidates; Tedros calls for ceasefire; Mongbwalu confirmed escape</span>
         <span class="timestamp">May 28, 2026 at 1:11 AM UTC</span>
       </span>
     </summary>
     <div class="dispatch-body">
       <h3>What changed</h3>
       <ul>
-        <li><strong>Uganda closed its DRC border for 4 weeks (May 27).</strong> Mandatory 21-day self-isolation for all DRC returnees. Only response/humanitarian/cargo/security allowed to cross. Third country defying WHO guidance. (<a href="https://www.aljazeera.com/video/newsfeed/2026/5/28/uganda-closes-border-with-drc-in-an-effort-to-contain-ebola-outbreak">Al Jazeera</a>, <a href="https://www.euronews.com/2026/05/28/uganda-shuts-border-with-dr-congo-as-cases-of-rare-ebola-type-surge">Euronews</a>)</li>
-        <li><strong>WHO expert advisory (May 28)</strong> prioritizes MBP134 + Maftivimab&reg; + Remdesivir for confirmed cases; obeldesivir for PEP; <strong>Ervebo excluded</strong>. Maftivimab already on ground in DRC. Oxford/Serum Institute ChAdOx1 Bundibugyo: 2&ndash;3 months to trial readiness. IAVI rVSV Bundibugyo: 7&ndash;9 months. (<a href="https://www.who.int/news/item/28-05-2026-experts-convened-by-who-advise-on-candidate-treatments-and-vaccines-for-ebola-disease-caused-by-bundibugyo-virus">WHO.int</a>)</li>
-        <li><strong>Tedros visited DRC (May 28)</strong> with Ihekweazu; called for "immediate ceasefire." "We cannot build community trust or isolate the sick while bombs are falling." (<a href="https://www.who.int/news/item/28-05-2026-message-by-the-who-director-general-to-the-people-of-the-democratic-republic-of-the-congo">WHO.int</a>, <a href="https://www.aljazeera.com/news/2026/5/27/drc-facing-catastrophic-collision-of-ebola-and-war-who-chief-warns">Al Jazeera</a>)</li>
-        <li><strong>US State Dept additional $80M bilateral assistance (May 27)</strong> &mdash; brings US total significantly above $23M pledged May 25. (<a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/05/ebola-response-update-may-28-2026">State.gov</a>)</li>
-        <li><strong>CDC upgraded Uganda advisory Level 1 &rarr; Level 2 (May 27).</strong> DRC remains Level 3.</li>
-        <li><strong>Missed: Second ETC attack at Mongbwalu (May 23).</strong> Residents burned MSF tent; 18 suspected patients escaped. One of 4 tested = <strong>POSITIVE</strong>: a confirmed case circulated in community. Hospital director Dr. Richard Lokudi confirmed. (<a href="https://www.pbs.org/newshour/world/eighteen-suspected-ebola-patients-escape-after-treatment-tent-is-set-on-fire-for-a-second-time-in-congo">PBS</a>)</li>
-        <li>Case counts (ECDC, May 27): DRC 121 confirmed / 1,077 suspected / 17 confirmed deaths / 238 suspected deaths. Uganda 7/1. No May 28 update seen.</li>
+        <li><strong>Uganda closed its DRC border for 4 weeks (May 27).</strong> All DRC returnees face mandatory 21-day self-isolation. Mass gatherings banned in Kampala and border districts. Third country explicitly defying WHO's no-travel-restriction guidance (after Rwanda, US). (<a href="https://www.aljazeera.com/video/newsfeed/2026/5/28/uganda-closes-border-with-drc-in-an-effort-to-contain-ebola-outbreak">Al Jazeera</a>, <a href="https://www.euronews.com/2026/05/28/uganda-shuts-border-with-dr-congo-as-cases-of-rare-ebola-type-surge">Euronews</a>)</li>
+        <li><strong>WHO expert advisory (May 28) settles the treatment question.</strong> Confirmed cases: MBP134 + Maftivimab&reg; + Remdesivir (combination). PEP contacts: obeldesivir. <strong>Ervebo explicitly ruled out</strong> outside trials. Vaccine pipeline: Oxford/Serum ChAdOx1 Bundibugyo 2&ndash;3 months to trial readiness; IAVI rVSV 7&ndash;9 months. Maftivimab already on the ground in DRC. (<a href="https://www.who.int/news/item/28-05-2026-experts-convened-by-who-advise-on-candidate-treatments-and-vaccines-for-ebola-disease-caused-by-bundibugyo-virus">WHO.int</a>)</li>
+        <li><strong>Tedros visited DRC (May 28) and called for ceasefire.</strong> "We cannot build community trust or isolate the sick while bombs are falling." "A catastrophic collision of disease and conflict." &gt;90% of cases in Ituri. (<a href="https://www.aljazeera.com/news/2026/5/27/drc-facing-catastrophic-collision-of-ebola-and-war-who-chief-warns">Al Jazeera</a>)</li>
+        <li><strong>US +$80M bilateral assistance (May 27)</strong> &mdash; brings US total significantly above $23M pledged May 25. (Later confirmed: $112M bilateral + $50M + $300M OCHA = $462M total.)</li>
+        <li><strong>CDC upgraded Uganda travel advisory to Level 2 (May 27).</strong></li>
+        <li><strong>Mongbwalu ETC attack (May 23) documented</strong> &mdash; missed in prior cycles. 18 suspected escaped; 1 of 4 tested = POSITIVE. Confirmed Ebola case was circulating in community. Dr. Lokudi confirmed. (<a href="https://www.pbs.org/newshour/world/eighteen-suspected-ebola-patients-escape-after-treatment-tent-is-set-on-fire-for-a-second-time-in-congo">PBS</a>)</li>
+        <li><strong>Case counts (cycle 19 baseline):</strong> DRC 121 confirmed / 1,077 suspected / 17 confirmed deaths. Uganda: 7 confirmed / 1 death. (ECDC May 27. Updated: ECDC May 29 shows DRC 125/906, Uganda 9.)</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>Three countries now defy WHO's no-travel-restriction guidance. The Mongbwalu escape is worse than Rwampara: a confirmed case was directly released into the community. The WHO advisory is the first concrete countermeasure roadmap &mdash; with Maftivimab already in DRC, trial initiation could be imminent.</p>
+      <p>Three countries defying WHO guidance signals international coordination breakdown. The Mongbwalu escape is qualitatively the worst containment failure yet &mdash; a confirmed positive was directly released into the community. WHO's treatment advisory is the first concrete roadmap; Maftivimab is already on the ground.</p>
       <h3>What I'm watching next</h3>
       <ul>
-        <li>Mongbwalu confirmed escaped case &mdash; traced/isolated? Watch DRC MOH, WHO DON604</li>
-        <li>Formal trial registration for obeldesivir and Maftivimab &mdash; watch ClinicalTrials.gov, Africa CDC</li>
-        <li>Outcomes of Tedros DRC visit: ceasefire response, access agreements, new commitments</li>
-        <li>WHO DON604 &mdash; still absent 8+ days after DON603; "DON 2026-E000253" reference seen</li>
+        <li>Whether the Mongbwalu confirmed escaped case was traced and isolated</li>
+        <li>Formal trial initiation for obeldesivir and Maftivimab (ClinicalTrials.gov, Africa CDC)</li>
+        <li>Armed group response to Tedros ceasefire appeal</li>
+        <li>WHO DON605 &mdash; next Ebola situation report</li>
       </ul>
       <h3>Sources</h3>
       <ul>
         <li><a href="https://www.who.int/news/item/28-05-2026-experts-convened-by-who-advise-on-candidate-treatments-and-vaccines-for-ebola-disease-caused-by-bundibugyo-virus">WHO expert advisory &mdash; treatments/vaccines</a></li>
-        <li><a href="https://www.who.int/news/item/28-05-2026-message-by-the-who-director-general-to-the-people-of-the-democratic-republic-of-the-congo">WHO DG message to DRC people</a></li>
-        <li><a href="https://www.aljazeera.com/video/newsfeed/2026/5/28/uganda-closes-border-with-drc-in-an-effort-to-contain-ebola-outbreak">Al Jazeera &mdash; Uganda border closure</a></li>
-        <li><a href="https://www.euronews.com/2026/05/28/uganda-shuts-border-with-dr-congo-as-cases-of-rare-ebola-type-surge">Euronews &mdash; Uganda border closure</a></li>
+        <li><a href="https://www.who.int/news/item/28-05-2026-message-by-the-who-director-general-to-the-people-of-the-democratic-republic-of-the-congo">WHO DG message to DRC</a></li>
         <li><a href="https://www.aljazeera.com/news/2026/5/27/drc-facing-catastrophic-collision-of-ebola-and-war-who-chief-warns">Al Jazeera &mdash; catastrophic collision</a></li>
         <li><a href="https://www.pbs.org/newshour/world/eighteen-suspected-ebola-patients-escape-after-treatment-tent-is-set-on-fire-for-a-second-time-in-congo">PBS &mdash; Mongbwalu ETC escape</a></li>
-        <li><a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/05/ebola-response-update-may-28-2026">State Dept &mdash; $80M assistance</a></li>
-        <li><a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda">ECDC &mdash; May 27 situation update</a></li>
+        <li><a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/05/ebola-response-update-may-28-2026">State Dept &mdash; US response update</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda">ECDC outbreak page</a></li>
       </ul>
     </div>
   </details>
 
   <div class="prev-day-link">
     <a href="ebola-2026-05-27.html">&larr; Full briefing for May 27, 2026</a>
+    <span style="color: var(--muted); font-size: 11px;"> &nbsp;(May 28 briefing not archived &mdash; no monitoring cycle ran that UTC day)</span>
   </div>
 
 </section>

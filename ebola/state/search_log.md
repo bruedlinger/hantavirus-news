@@ -282,3 +282,35 @@
 - Tedros DRC visit — complete; watch for concrete announcements from the visit
 - Maftivimab supply on ground — confirmed; next: trial regulatory approval
 - Mongbwalu escape — documented; next: trace outcome of escaped confirmed case
+
+## 2026-05-29 (Cycle 20 — 12:48–13:30 UTC)
+
+**Follow-up queries:**
+1. `WHO DON604 Ebola DRC situation report May 2026` — DON604 = Hantavirus (M/V Hondius), not Ebola. Latest WHO Ebola items are May 28 expert advisory + Tedros message. No DON605 yet.
+2. `Ebola DRC Uganda new cases May 29 2026 update` — No new DRC MOH update; ECDC updated 13:30 showing 125 DRC confirmed / Uganda 9 confirmed (Cases 8-9 new).
+3. `Tedros Ebola ceasefire DRC response armed groups May 2026` — Tedros made direct appeal to "all warring parties"; no armed group response. France 24: "Can be stopped."
+4. `Ebola Bundibugyo clinical trial obeldesivir Maftivimab initiated 2026` — Trials still being developed with Africa CDC + Collaborative Open Research Consortium on filoviruses; not yet initiated. Maftivimab supply on ground.
+
+**Discovery queries:**
+5. `Ebola DRC Uganda Fort Portal confirmed cases lab results May 29 2026` — Fort Portal still unconfirmed; no lab results published. Uganda cases 8-9 identity unknown.
+6. `Ebola 2026 DRC cases May 29 latest WHO Africa CDC count update` — ECDC 13:30 May 29 = most current: Uganda 9 / DRC 125 confirmed / 906 suspected.
+7. `US $80 million Ebola bilateral assistance partners DRC Uganda May 2026` — Total US: $112M bilateral + $50M OCHA + $300M OCHA pooled = $462M. Partners documented.
+8. `Ebola 2026 DRC Mongbwalu escaped patient traced community transmission` — No trace outcome found. Ongoing escapes from Mongbwalu; police/military deployed.
+
+**URLs fetched this cycle (8 attempted: 7 informative, 1 failed):**
+- US Embassy Uganda (technical difficulties/failed): binary content
+- ABC News "out of control" (success): Dr. Kojan "completely out of control"; Dr. Lokudi "exponential"; 7+ Mongbwalu escapes; 3 months undetected
+- Wikipedia May 28 (success): 132 confirmed (125 DRC + 7 Uganda); 241 deaths; reclassification noted
+- WHO DON604 (success but irrelevant): Hantavirus/M/V Hondius — NOT Ebola
+- UN News Tedros ceasefire (success): Direct appeal to all warring parties; no response
+- WHO emergency page (success): No DON605; latest = May 28 advisory
+- Social News XYZ (success): $112M + $50M + $300M US commitment; partners named
+- ECDC May 29 (success — MOST CURRENT): Uganda 9 / DRC 125 confirmed / 906 suspected; data reclassification explained
+
+**Dispatch decision:** No alert (Uganda 7→9 is ongoing cluster in known country; not new country/50% death jump/new failure); not first run of day (no digest).
+
+**What NOT to search next cycle (covered this cycle):**
+- Tedros ceasefire — issued; watch for armed group response only
+- US funding breakdown — fully documented now
+- DON604 — resolved as Hantavirus; watch for DON605 (Ebola)
+- Uganda cases 8-9 — confirmed exist; next: identity/location from Uganda MOH
