@@ -114,12 +114,6 @@
     color: var(--muted);
   }
 
-  summary .subline {
-    font-size: 11px;
-    color: var(--muted);
-    font-style: italic;
-  }
-
   .dispatch-alert {
     border: 1px solid var(--alert-border);
     background: var(--alert-bg);
@@ -204,12 +198,6 @@
     border-radius: 4px;
     margin-bottom: 14px;
     font-size: 12px;
-  }
-
-  .check-dispatch-note.alerted {
-    background: rgba(139, 26, 26, 0.15);
-    border: 1px solid rgba(139, 26, 26, 0.3);
-    color: #e08080;
   }
 
   .check-dispatch-note.digested {
@@ -312,10 +300,10 @@
 </header>
 
 <div class="story-status">
-  <div class="stat">~235 cases <span>(~234 confirmed + 1 probable)</span></div>
-  <div class="stat">~19 deaths <span>(18 confirmed + 1 probable, excl. suspected)</span></div>
+  <div class="stat">291 cases <span>(282 DRC + 9 Uganda confirmed; +1 probable)</span></div>
+  <div class="stat">43 deaths <span>(42 DRC confirmed + 1 Uganda confirmed)</span></div>
   <div class="stat">3 countries <span>affected (DRC, Uganda, Germany)</span></div>
-  <div class="stat">Last checked <span>1:38 AM UTC</span></div>
+  <div class="stat">Last checked <span>12:44 PM UTC</span></div>
 </div>
 
 <section id="dispatches">
@@ -326,71 +314,119 @@
 <section id="checks">
   <h2>News Checks &mdash; June 1, 2026</h2>
 
+  <!-- Cycle 22 — most recent check -->
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">DON605 published; DRC confirmed cases nearly double via expanded testing; first recovery; Uganda spreads to Wakiso</span>
-        <span class="timestamp">1:38 AM UTC</span>
+        <span class="headline">Brazil's two suspected cases both ruled out; 291 total confirmed (CDC May 31); 5 recoveries; new ETC opened in Bunia</span>
+        <span class="timestamp">12:44 PM UTC</span>
       </span>
     </summary>
     <div class="check-body">
-      <div class="check-dispatch-note digested">
-        <span class="note-icon">&#9656;</span>
-        Digest dispatched covering May 30&ndash;31 (see digest below)
+      <div class="check-dispatch-note quiet">
+        <span class="note-icon">&mdash;</span>
+        No dispatch &mdash; Brazil cases ruled out; CDC death count jump is reclassification not a new surge; no new countries
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">WHO DON605</span>
-          <span class="fi-value flag-new">Published May 29. Health zones: Bunia 37, Rwampara 33, Mongbwalu 20, Nyankunde 10 + 3 others in Ituri (7 total); North Kivu 5; South Kivu 1 = <strong>13 total</strong> (revised from 15). Contacts: <strong>2,635 Ituri/N.Kivu + 436 Uganda</strong>. Test positivity 19.2%.</span>
+          <span class="fi-label">Brazil</span>
+          <span class="fi-value flag-new"><strong>Both suspected cases ruled out.</strong> S&atilde;o Paulo (37yo DRC male): Ebola-negative. Rio de Janeiro (Ugandan male): malaria-positive. No confirmed Ebola in South America.</span>
         </li>
         <li>
-          <span class="fi-label">DRC cases</span>
-          <span class="fi-value flag-alert"><strong>~210&ndash;225 confirmed</strong> (up from 125, May 29). CDC: 210 conf / 349 susp; Al Jazeera: 225 conf / 1,028 susp. DRC MOH: expanded testing explains jump &mdash; NOT a transmission surge. Confirmed deaths unchanged at 17.</span>
+          <span class="fi-label">DRC counts</span>
+          <span class="fi-value"><strong>CDC May 31:</strong> 282 DRC confirmed / 42 confirmed deaths / 220 suspected / 0 suspected deaths. Suspected deaths removed from CDC table; confirmed deaths rose 17&rarr;42 via reclassification. Total confirmed: 291.</span>
         </li>
         <li>
-          <span class="fi-label">Uganda / Wakiso</span>
-          <span class="fi-value flag-new">DON605: <strong>Wakiso district (1 case)</strong> confirmed, alongside Kampala (8 cases) &mdash; first Uganda case outside Kampala.</span>
+          <span class="fi-label">Recoveries</span>
+          <span class="fi-value flag-new"><strong>5 total patients recovered</strong> as of June 1. WHO DG: 4 discharged May 31 + 1 ~May 29&ndash;30. Symptomatic care enabling survival without approved treatments.</span>
         </li>
         <li>
-          <span class="fi-label">Uganda probable</span>
-          <span class="fi-value flag-alert">CDC May 30: <strong>1 probable case + 1 probable death</strong> in Uganda. Identity/district unknown; possibly Fort Portal burial cluster (suspected since May 19).</span>
+          <span class="fi-label">New ETC / Bunia</span>
+          <span class="fi-value flag-new"><strong>Evangelical Medical Center opened May 31</strong> in Bunia (Ituri Province epicenter). WHO leadership attended inauguration. Adds critical treatment capacity.</span>
         </li>
         <li>
-          <span class="fi-label">First recovery</span>
-          <span class="fi-value flag-new"><strong>First confirmed Ebola recovery</strong> in outbreak reported ~May 30 (Al Jazeera). No further details.</span>
-        </li>
-        <li>
-          <span class="fi-label">MSF</span>
-          <span class="fi-value">"One of the fastest-spreading Ebola outbreaks ever recorded." (May 30)</span>
+          <span class="fi-label">WHO-DRC</span>
+          <span class="fi-value">Joint WHO-DRC statement issued May 31, 2026. Full text not fetched.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
+          <span class="fi-label">Kenya legal</span>
+          <span class="fi-value">Kenya pushing ahead with Ebola quarantine facility in US partnership despite a court order (CNN May 29 &mdash; blocked). Need: who filed challenge, grounds, facility details.</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment trials</span>
+          <span class="fi-value flag-quiet">Obeldesivir awaiting DRC regulatory sign-off. Maftivimab on ground. No formal trial initiation. Science.org article paywalled.</span>
+        </li>
+        <li>
+          <span class="fi-label">DON606</span>
+          <span class="fi-value flag-quiet">Not yet published. DON605 (May 29) still latest WHO situation report.</span>
+        </li>
+        <li>
           <span class="fi-label">Uganda probable</span>
-          <span class="fi-value">Which district? Fort Portal? Contact count? Watch Uganda MOH daily updates.</span>
-        </li>
-        <li>
-          <span class="fi-label">DRC stabilize</span>
-          <span class="fi-value flag-quiet">Reclassification wave should settle; DON606 will show true transmission rate. Still pending.</span>
-        </li>
-        <li>
-          <span class="fi-label">Trials</span>
-          <span class="fi-value flag-quiet">Obeldesivir regulatory sign-off + Maftivimab/MBP134 trial launch still pending. Watch ClinicalTrials.gov, Africa CDC.</span>
+          <span class="fi-value flag-quiet">1 probable case / 1 probable death (CDC May 30). Identity and district unknown. Fort Portal link unconfirmed.</span>
         </li>
         <li>
           <span class="fi-label">Ceasefire</span>
-          <span class="fi-value flag-quiet">No response from ADF or M23 to Tedros appeal. Mongbwalu under police/military guard.</span>
+          <span class="fi-value flag-quiet">No response from ADF or M23 to Tedros ceasefire appeal. Conflict continues to obstruct response in Ituri and North Kivu.</span>
+        </li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- Cycle 21 — earlier today (1:28 AM UTC) -->
+  <details class="check-entry">
+    <summary>
+      <span class="chevron">&#9658;</span>
+      <span class="summary-inner">
+        <span class="headline">Confirmed cases nearly doubled via expanded testing; DON605 breakdown reveals Wakiso as new Uganda district; May 30&ndash;31 digest dispatched</span>
+        <span class="timestamp">1:28 AM UTC</span>
+      </span>
+    </summary>
+    <div class="check-body">
+      <div class="check-dispatch-note digested">
+        <span class="note-icon">&#9656;</span>
+        Digest dispatched covering May 30&ndash;31, 2026 (see digest in Previous Day section below)
+      </div>
+      <div class="check-section-label">New findings</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">DRC counts</span>
+          <span class="fi-value"><strong>CDC May 30:</strong> ~210&ndash;225 confirmed / 17 confirmed deaths / 349&ndash;1,028 suspected. DRC MOH: expanded testing accounts for jump, not new transmission spike.</span>
+        </li>
+        <li>
+          <span class="fi-label">DON605</span>
+          <span class="fi-value flag-new"><strong>WHO DON605 (May 29):</strong> 13 health zones (7 Ituri, 5 N.Kivu, 1 S.Kivu). Contacts: 2,635 DRC + 436 Uganda. Positivity 19.2%. Uganda: Kampala 8 cases, <strong>Wakiso 1</strong> (first case outside Kampala in Uganda).</span>
+        </li>
+        <li>
+          <span class="fi-label">First recovery</span>
+          <span class="fi-value flag-new">First confirmed Ebola recovery in outbreak reported ~May 30 (Al Jazeera).</span>
+        </li>
+        <li>
+          <span class="fi-label">Uganda probable</span>
+          <span class="fi-value flag-alert">1 probable case / 1 probable death added to Uganda figures (CDC May 30). Possibly Fort Portal burial-linked cluster.</span>
+        </li>
+        <li>
+          <span class="fi-label">MSF</span>
+          <span class="fi-value">&ldquo;One of the fastest-spreading Ebola outbreaks ever recorded.&rdquo;</span>
+        </li>
+      </ul>
+      <div class="check-section-label">Things we're following</div>
+      <ul class="check-findings">
+        <li>
+          <span class="fi-label">DON606</span>
+          <span class="fi-value flag-quiet">Not yet published. Expected to clarify whether case surge represents genuine new transmission.</span>
+        </li>
+        <li>
+          <span class="fi-label">Trial initiation</span>
+          <span class="fi-value flag-quiet">Obeldesivir / Maftivimab RCT still pending DRC regulatory sign-off. Watch ClinicalTrials.gov, Africa CDC.</span>
         </li>
         <li>
           <span class="fi-label">Fort Portal</span>
-          <span class="fi-value flag-quiet">Still unconfirmed by primary source. Uganda probable case may resolve this.</span>
-        </li>
-        <li>
-          <span class="fi-label">Outbox backlog</span>
-          <span class="fi-value flag-quiet">notify.sh absent &mdash; 16 dispatches pending in outbox since May 18.</span>
+          <span class="fi-value flag-quiet">Burial-linked suspected cases in western Uganda still unconfirmed by primary source.</span>
         </li>
       </ul>
     </div>
@@ -407,33 +443,32 @@
       <span class="badge badge-digest">Digest</span>
       <span class="summary-inner">
         <span class="headline">Ebola confirmed cases nearly double via expanded testing; first recovery; trials still pending</span>
-        <span class="timestamp">May 31, 2026 &mdash; covering May 30&ndash;31 (pending delivery)</span>
+        <span class="timestamp">May 31, 2026 at 1:35 AM UTC</span>
       </span>
     </summary>
     <div class="dispatch-body">
       <h3>What changed</h3>
       <ul>
-        <li><strong>DRC confirmed 125 &rarr; ~210&ndash;225 (May 30):</strong> DRC MOH expanded testing explains jump &mdash; confirmed deaths unchanged at 17. Not a transmission surge.</li>
-        <li><strong>WHO DON605 (May 29):</strong> 13 health zones (Ituri 7 + N.Kivu 5 + S.Kivu 1). Contacts: 2,635 Ituri/N.Kivu + 436 Uganda. Test positivity 19.2%.</li>
-        <li><strong>Uganda / Wakiso:</strong> Kampala 8, Wakiso 1 (DON605). First Uganda case outside the capital.</li>
-        <li><strong>Uganda probable case / death (CDC May 30):</strong> Identity and district unknown; possibly Fort Portal cluster.</li>
-        <li><strong>First confirmed recovery</strong> in outbreak (~May 30, Al Jazeera).</li>
-        <li><strong>MSF:</strong> "One of the fastest-spreading Ebola outbreaks ever recorded."</li>
-        <li>No new country spread. No ceasefire. No formal trial initiation.</li>
+        <li><strong>DRC confirmed cases jumped 125 &rarr; ~210&ndash;225 (May 30):</strong> CDC reports 210 confirmed / 349 suspected; Al Jazeera reports 225 confirmed / 1,028 suspected. DRC Ministry of Health attributes surge to expanded testing &mdash; NOT a new transmission spike. Confirmed deaths held at 17.</li>
+        <li><strong>WHO DON605 published May 29:</strong> 13 health zones (Ituri 7, N.Kivu 5, S.Kivu 1). Test positivity 19.2%. Contacts: 2,635 DRC + 436 Uganda. Uganda: Kampala 8, Wakiso 1 &mdash; first case outside Kampala in Uganda.</li>
+        <li><strong>Uganda 1 probable case / 1 probable death (CDC May 30):</strong> Identity and district unknown; possibly Fort Portal burial cluster suspected since May 19.</li>
+        <li><strong>First confirmed Ebola recovery</strong> in the outbreak reported ~May 30 (Al Jazeera).</li>
+        <li><strong>MSF:</strong> &ldquo;One of the fastest-spreading Ebola outbreaks ever recorded.&rdquo;</li>
+        <li><strong>No new country spread.</strong> No ceasefire from armed groups. No formal clinical trial initiation.</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>The confirmed case surge is a data quality event, not an acceleration. The Uganda probable case is the more operationally significant signal &mdash; if it&rsquo;s Fort Portal, a second Uganda transmission chain has been running undetected for two weeks.</p>
+      <p>The case surge is a data quality event &mdash; expanded testing revealing true outbreak size. The Uganda probable case/death is more operationally concerning: if it&rsquo;s Fort Portal, it represents a second Uganda transmission chain running undetected.</p>
       <h3>What I'm watching next</h3>
       <ul>
-        <li>Uganda probable case: district identity, contact count, Fort Portal link.</li>
-        <li>DRC transmission rate post-reclassification: watch DON606.</li>
-        <li>Obeldesivir/Maftivimab trial initiation: watch ClinicalTrials.gov, Africa CDC.</li>
+        <li>Uganda probable case identity &mdash; which district? Fort Portal? Watch Uganda MOH.</li>
+        <li>DRC case stabilization &mdash; when reclassification ends, what is genuine transmission rate? DON606 should clarify.</li>
+        <li>Trial initiation &mdash; obeldesivir regulatory sign-off and MBP134/Maftivimab trial launch still pending.</li>
       </ul>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605">WHO DON605 (May 29, 2026)</a></li>
-        <li><a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC Ebola Current Situation (May 30, 2026)</a></li>
-        <li><a href="https://www.aljazeera.com/news/2026/5/30/confirmed-ebola-cases-nearly-double-in-days-as-who-chief-visits-dr-congo">Al Jazeera: Confirmed cases nearly double (May 30, 2026)</a></li>
+        <li><a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605">WHO DON605</a></li>
+        <li><a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC Ebola Situation Summary</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/5/30/confirmed-ebola-cases-nearly-double-in-days-as-who-chief-visits-dr-congo">Al Jazeera May 30</a></li>
       </ul>
     </div>
   </details>

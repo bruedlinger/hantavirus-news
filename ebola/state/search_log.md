@@ -346,3 +346,35 @@
 - Case count reclassification — explained; next: stabilization in DON606
 - DRC geography — unchanged (Ituri, N.Kivu, S.Kivu)
 - Treatment trial status — still pending; check ClinicalTrials.gov
+
+## 2026-06-01 (Cycle 22 — 12:36–12:42 UTC)
+
+**Follow-up queries:**
+1. `Ebola DRC Uganda June 1 2026 cases update` — CDC/ECDC still showing May 29-31 data; no June 1 WHO update found. CDC May 31 shows DRC 282 confirmed / 42 deaths.
+2. `WHO DON606 Ebola DRC 2026 situation report` — No DON606 published yet; latest is DON605 (May 29). WHO emergency page shows May 31 joint statement.
+3. `Ebola Uganda Fort Portal probable case confirmed June 2026` — Fort Portal still unconfirmed. Uganda still at 9 confirmed + 1 probable. No new Uganda case updates.
+4. `Ebola treatment trial obeldesivir Maftivimab clinical trial initiated 2026` — Trials still being designed; Maftivimab supply on ground; no formal initiation. Science.org article paywalled.
+
+**Discovery queries:**
+5. `Ebola 2026 neighboring countries Kenya Rwanda Burundi June 1` — No new cases in neighboring countries. Kenya: CNN article on court order vs. quarantine facility (451 error — not fetched). 3 Kenya suspects all cleared.
+6. `Ebola 2026 new country imported case international spread June` — Brazil: 2 suspected cases investigated. Both RULED OUT (Ebola-negative / malaria-positive). No new country confirmed.
+7. `Africa CDC PHECS Ebola expert deployment countries operations June 2026` — EU expert deployed to Africa CDC HQ; ECDC in discussions for additional deployments. No country-specific deployment list found.
+8. `Ebola Brazil 2026 case confirmed imported` — São Paulo: 37yo DRC male, Ebola-negative. Rio: Ugandan male, malaria-positive. Both cases ruled out May 31.
+
+**URLs fetched this cycle (8 attempted: 5 successful, 2 failed 451/403, 1 stale):**
+- CNN Kenya court order (451 error): not fetched; new thread opened
+- CDC current situation (success, May 31): DRC 282/42/220/0; methodology change
+- Wikipedia (success, June 1): 225 confirmed / 1037 suspected / 5 discharged
+- WHO emergency page (success): May 31 joint statement; no DON606
+- ECDC (success, stale): May 29 data only; no update
+- CBS News 5 recoveries (success): Brazil ruled out; 5 recoveries; Evangelical Medical Center Bunia opened May 31
+- RTE Brazil (success): Both Brazil cases ruled out details
+- Science.org clinical trials (403 paywalled): not fetched
+
+**Dispatch decision:** No alert (Brazil ruled out — no new country; death count jump is reclassification; no new ETC attack; no 50%+ genuine death surge). No digest (not first run of June 1). Quiet cycle.
+
+**What NOT to search next cycle (covered this cycle):**
+- Brazil — fully resolved (both cases ruled out)
+- CDC May 31 count — documented; watch for May 31+ update or DON606
+- Africa CDC deployments — not resolved but low-yield; try Africa CDC website directly next cycle
+
