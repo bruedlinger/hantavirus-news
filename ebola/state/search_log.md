@@ -314,3 +314,35 @@
 - US funding breakdown — fully documented now
 - DON604 — resolved as Hantavirus; watch for DON605 (Ebola)
 - Uganda cases 8-9 — confirmed exist; next: identity/location from Uganda MOH
+
+## 2026-06-01 (Cycle 21 — 01:28–01:36 UTC)
+
+**Follow-up queries:**
+1. `Ebola DRC Uganda new cases May 31 June 1 2026 update` — DON605 published May 29; CDC May 30: DRC 210 conf / 349 susp; Uganda 9 conf / 1 prob. Al Jazeera May 30: DRC 225 conf / 1028 susp.
+2. `WHO DON605 Ebola DRC situation report 2026` — DON605 confirmed at who.int/emergencies/disease-outbreak-news/item/2026-DON605
+3. `Ebola Uganda cases 10 Kampala hospital June 2026` — No Uganda case 10 found; still at 9 confirmed + 1 probable as of May 30.
+4. `Ebola DRC treatment trial obeldesivir Maftivimab MBP134 clinical trial initiated approved 2026` — Still awaiting regulatory approval; ethics board approved protocol; not yet initiated.
+5. `Ebola DRC new geographic spread new country province June 2026` — No new countries; outbreak confined to DRC (Ituri, N.Kivu, S.Kivu) + Uganda.
+6. `Ebola DRC confirmed cases 210 reclassification May 30 2026` — Al Jazeera May 30 headline confirms "cases nearly double"; expanded testing explains jump per DRC MOH.
+7. `Uganda Ebola probable case Fort Portal death June 2026` — CDC May 30 shows 1 probable / 1 probable death; district unknown.
+8. `Ebola DRC June 1 2026 cases update WHO` — No June 1 update found; most current is CDC/Al Jazeera May 30.
+9. `Ebola DRC ceasefire armed groups ADF M23 response outbreak May 31 June 2026` — No ceasefire from ADF or M23.
+10. `Ebola DRC WHO vaccine Ervebo trial authorized approved 2026` — WHO advisory: Ervebo not recommended outside clinical trials; no change.
+
+**URLs fetched this cycle (8 attempted: 6 successful, 1 SSL error, 1 stale):**
+- WHO DON605 (success): 125 DRC conf / 7 Ituri HZs / 5 N.Kivu HZs / 1 S.Kivu HZ = 13 total; Uganda Kampala 8 / Wakiso 1; contacts 2635+436; positivity 19.2%
+- ECDC (success): May 29 data only; no June update
+- Wikipedia (success): 263 DRC confirmed / 409 suspected — possibly post-May 30 update
+- Standard Media Kenya (success): confirms WHO May 28 vaccine advisory; no new info
+- CDC current situation (success, May 30): DRC 210 conf / 349 susp / 17 deaths; Uganda 9 conf / 1 prob / 1 prob death
+- Al Jazeera May 30 (success): DRC 225 conf / 1028 susp; first confirmed recovery; MSF characterization
+- NICD South Africa (SSL error): could not access
+- GOV.UK (success but stale): only May 17 data; not useful
+
+**Dispatch decision:** DIGEST (first run of June 1; case count jump explained by testing, not new failure; no new country; first recovery is positive news; Uganda probable is concerning but below alert threshold — identity unconfirmed). Digest covers May 30–31 consolidated.
+
+**What NOT to search next cycle (covered this cycle):**
+- DON605 — fetched and documented; watch for DON606
+- Case count reclassification — explained; next: stabilization in DON606
+- DRC geography — unchanged (Ituri, N.Kivu, S.Kivu)
+- Treatment trial status — still pending; check ClinicalTrials.gov
