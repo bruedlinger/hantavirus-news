@@ -378,3 +378,35 @@
 - CDC May 31 count — documented; watch for May 31+ update or DON606
 - Africa CDC deployments — not resolved but low-yield; try Africa CDC website directly next cycle
 
+
+## 2026-06-06 (Cycle 23 — 18:04–18:25 UTC)
+
+**Note: First run since June 1 — 5-day gap. First run of new UTC day (June 6). Archived index.html as ebola-2026-06-01.html.**
+
+**Follow-up queries:**
+1. `Ebola DRC Uganda case count June 2026 update confirmed deaths` — DRC 381-452 confirmed/64-82 deaths; Uganda 19/2. ECDC and CDC showing different figures (381/64 vs 452/82) — timing difference.
+2. `WHO DON606 Ebola DRC 2026 situation report` — No DON606 published; latest is May 31 joint WHO-DRC statement. WHO DG briefed June 3.
+3. `Ebola new country imported case June 2026 spread` — No new countries. Geographic spread within DRC and Uganda continuing.
+4. `Ebola DRC treatment trial obeldesivir Maftivimab approved initiated June 2026` — PARTNERS and EBO-PEP BUNDI trials "expected to begin shortly"; EMA met June 3. Not yet formally initiated.
+
+**Discovery queries:**
+5. `WHO drastically downsizes Ebola case count DRC Congo 2026` — Suspected 906→116 (testing cleared most). Confirmed DRC rose to 321/48. Not an improvement signal.
+6. `Uganda Ebola 19 cases 2026 Kampala Fort Portal health workers` — Uganda at 19/2 June 5. All cases traced to DRC importation; no independent Kampala transmission.
+7. `Ebola DRC June 5 6 2026 CDC update cases deaths` — CDC June 5: DRC 452/82, Uganda 19/2. CDC projections: 20% isolation→>20,000 cases/3mo.
+8. `Kenya Ebola quarantine facility court order US partnership June 2026` — 2 protesters killed; High Court blocked; Kenya pushing ahead; next hearing June 23.
+9. `Ebola Islamic State control area DRC June 2026 spread` — Mambasa confirmed under ADF/IS control; health workers cannot enter; burial team attacked in South Kivu.
+
+**URLs fetched this cycle (7 attempted: 5 successful, 1 image-only, 1 partially useful):**
+- CDC June 5 media release (partial — press conference transcript): projections 20K+ worst case; Uganda all cases traced to DRC.
+- ECDC June 5 (success): DRC 381/64/233 hospitalized; Uganda 19/2; Ituri 359/17HZ; NKivu 19/7HZ; SKivu 3/1HZ.
+- CIDRAP IS/Mambasa article (success): Mambasa confirmed ADF/IS; health workers excluded; South Kivu burial team attack; 363/62 DRC.
+- CDC current situation (success): DRC 452/82; Uganda 19/2+1prob/1prob.
+- CIDRAP WHO downsize (success): 906→116 suspected; 321/48 DRC confirmed; IMC: still serious; 6+ months.
+- WHO emergency page (success): Africa CDC+WHO joint plan June 5; WHO DG briefing June 3; DON606 not published.
+- State Dept June 5 (failed — image-heavy): no useful content.
+
+**What NOT to search next cycle (covered this cycle):**
+- WHO case downsize — documented; not a methodology change to track further
+- Kenya court order — covered; next hearing June 23
+- CDC projections — documented in state; next: actual isolation rate data
+- Uganda all-DRC-origin claim — documented; watch for any departure

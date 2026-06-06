@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ebola Monitor — June 1, 2026</title>
+<title>Ebola Monitor — June 6, 2026</title>
 <style>
   :root {
     --bg: #0f1117;
@@ -114,6 +114,12 @@
     color: var(--muted);
   }
 
+  summary .subline {
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
   .dispatch-alert {
     border: 1px solid var(--alert-border);
     background: var(--alert-bg);
@@ -198,6 +204,12 @@
     border-radius: 4px;
     margin-bottom: 14px;
     font-size: 12px;
+  }
+
+  .check-dispatch-note.alerted {
+    background: rgba(139, 26, 26, 0.15);
+    border: 1px solid rgba(139, 26, 26, 0.3);
+    color: #e08080;
   }
 
   .check-dispatch-note.digested {
@@ -296,137 +308,142 @@
 
 <header>
   <h1>Ebola Monitor</h1>
-  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Monday, June 1, 2026</div>
+  <div class="meta">May 2026 outbreak &middot; Daily briefing &middot; Saturday, June 6, 2026</div>
 </header>
 
 <div class="story-status">
-  <div class="stat">291 cases <span>(282 DRC + 9 Uganda confirmed; +1 probable)</span></div>
-  <div class="stat">43 deaths <span>(42 DRC confirmed + 1 Uganda confirmed)</span></div>
-  <div class="stat">3 countries <span>affected (DRC, Uganda, Germany)</span></div>
-  <div class="stat">Last checked <span>12:44 PM UTC</span></div>
+  <div class="stat">400+ cases <span>(381 DRC + 19 Uganda confirmed)</span></div>
+  <div class="stat">66+ deaths <span>(64 DRC + 2 Uganda confirmed)</span></div>
+  <div class="stat">2 countries <span>affected (DRC, Uganda)</span></div>
+  <div class="stat">Last checked <span>6:15 PM UTC</span></div>
 </div>
 
 <section id="dispatches">
-  <h2>Today's Alerts &mdash; June 1, 2026</h2>
-  <p style="color: var(--muted); font-size: 12px; padding: 4px 0;">No alerts today.</p>
-</section>
+  <h2>Today's Alerts &mdash; June 6, 2026</h2>
 
-<section id="checks">
-  <h2>News Checks &mdash; June 1, 2026</h2>
-
-  <!-- Cycle 22 — most recent check -->
-  <details class="check-entry">
+  <details class="dispatch-alert">
     <summary>
       <span class="chevron">&#9658;</span>
+      <span class="badge badge-alert">Alert</span>
       <span class="summary-inner">
-        <span class="headline">Brazil's two suspected cases both ruled out; 291 total confirmed (CDC May 31); 5 recoveries; new ETC opened in Bunia</span>
-        <span class="timestamp">12:44 PM UTC</span>
+        <span class="headline">Ebola Confirmed in ADF/IS-Controlled Mambasa &mdash; Zero Response Access; CDC Projects 20,000+ Cases</span>
+        <span class="timestamp">June 6, 2026 at 6:15 PM UTC</span>
       </span>
     </summary>
-    <div class="check-body">
-      <div class="check-dispatch-note quiet">
-        <span class="note-icon">&mdash;</span>
-        No dispatch &mdash; Brazil cases ruled out; CDC death count jump is reclassification not a new surge; no new countries
-      </div>
-      <div class="check-section-label">New findings</div>
-      <ul class="check-findings">
-        <li>
-          <span class="fi-label">Brazil</span>
-          <span class="fi-value flag-new"><strong>Both suspected cases ruled out.</strong> S&atilde;o Paulo (37yo DRC male): Ebola-negative. Rio de Janeiro (Ugandan male): malaria-positive. No confirmed Ebola in South America.</span>
-        </li>
-        <li>
-          <span class="fi-label">DRC counts</span>
-          <span class="fi-value"><strong>CDC May 31:</strong> 282 DRC confirmed / 42 confirmed deaths / 220 suspected / 0 suspected deaths. Suspected deaths removed from CDC table; confirmed deaths rose 17&rarr;42 via reclassification. Total confirmed: 291.</span>
-        </li>
-        <li>
-          <span class="fi-label">Recoveries</span>
-          <span class="fi-value flag-new"><strong>5 total patients recovered</strong> as of June 1. WHO DG: 4 discharged May 31 + 1 ~May 29&ndash;30. Symptomatic care enabling survival without approved treatments.</span>
-        </li>
-        <li>
-          <span class="fi-label">New ETC / Bunia</span>
-          <span class="fi-value flag-new"><strong>Evangelical Medical Center opened May 31</strong> in Bunia (Ituri Province epicenter). WHO leadership attended inauguration. Adds critical treatment capacity.</span>
-        </li>
-        <li>
-          <span class="fi-label">WHO-DRC</span>
-          <span class="fi-value">Joint WHO-DRC statement issued May 31, 2026. Full text not fetched.</span>
-        </li>
+    <div class="dispatch-body">
+      <h3>What changed</h3>
+      <ul>
+        <li><strong>Mambasa, Ituri Province confirmed Ebola case location</strong> &mdash; Mambasa is run by Allied Democratic Forces (ADF), an Islamic State-affiliated militia. Health workers cannot travel there; area is &ldquo;chaotic and violent,&rdquo; making contact tracing and isolation impossible. (<a href="https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount">CIDRAP</a>)</li>
+        <li><strong>South Kivu burial team attack</strong> &mdash; Residents attacked an Ebola burial team in South Kivu province, exposing the coffin and body of a confirmed Ebola patient. Community resistance has now reached the third confirmed province. (<a href="https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount">CIDRAP</a>)</li>
+        <li><strong>DRC cases and deaths surged June 1&ndash;5</strong> &mdash; DRC: 381&ndash;452 confirmed / 64&ndash;82 confirmed deaths (ECDC vs. CDC as of June 5), up from 282/42 on June 1. Ituri now has <strong>17 health zones</strong> confirmed (up from 7 in DON605, May 29). (<a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda">ECDC June 5</a>; <a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC June 5</a>)</li>
+        <li><strong>Uganda doubled to 19 confirmed / 2 deaths</strong> &mdash; up from 9/1 on June 1. Three new cases June 5, all contacts of prior confirmed cases. All Uganda cases traced to DRC importation per CDC; no independent community transmission in Kampala confirmed. (<a href="https://www.cdc.gov/media/releases/2026/update-on-ebola-outbreak-in-the-democratic-republic-of-the-congo-and-uganda-6-5-2026.html">CDC Newsroom June 5</a>)</li>
+        <li><strong>CDC worst-case projection released June 5</strong> &mdash; If only 20% of cases enter isolation within 2 days of symptom onset (current trajectory), more than 20,000 cases are projected in 2 of 3 model scenarios over the next 3 months. At 70% isolation rate: 94% probability of staying under 10,000. Some scenarios could exceed the 2014&ndash;2016 West Africa outbreak (28,000+ cases). (<a href="https://www.cdc.gov/media/releases/2026/update-on-ebola-outbreak-in-the-democratic-republic-of-the-congo-and-uganda-6-5-2026.html">CDC Newsroom June 5</a>)</li>
       </ul>
-      <div class="check-section-label">Things we're following</div>
-      <ul class="check-findings">
-        <li>
-          <span class="fi-label">Kenya legal</span>
-          <span class="fi-value">Kenya pushing ahead with Ebola quarantine facility in US partnership despite a court order (CNN May 29 &mdash; blocked). Need: who filed challenge, grounds, facility details.</span>
-        </li>
-        <li>
-          <span class="fi-label">Treatment trials</span>
-          <span class="fi-value flag-quiet">Obeldesivir awaiting DRC regulatory sign-off. Maftivimab on ground. No formal trial initiation. Science.org article paywalled.</span>
-        </li>
-        <li>
-          <span class="fi-label">DON606</span>
-          <span class="fi-value flag-quiet">Not yet published. DON605 (May 29) still latest WHO situation report.</span>
-        </li>
-        <li>
-          <span class="fi-label">Uganda probable</span>
-          <span class="fi-value flag-quiet">1 probable case / 1 probable death (CDC May 30). Identity and district unknown. Fort Portal link unconfirmed.</span>
-        </li>
-        <li>
-          <span class="fi-label">Ceasefire</span>
-          <span class="fi-value flag-quiet">No response from ADF or M23 to Tedros ceasefire appeal. Conflict continues to obstruct response in Ituri and North Kivu.</span>
-        </li>
+      <h3>Why this matters</h3>
+      <p>Mambasa is the first confirmed outbreak location in this epidemic that is structurally inaccessible to the response apparatus. Unlike the ETC attacks in Rwampara and Mongbwalu &mdash; one-time incidents that could be addressed with security forces &mdash; Mambasa cannot be entered at all while ADF controls it. The CDC projection quantifies the containment stakes: current isolation rates may be heading toward a catastrophic scenario exceeding the largest Ebola outbreak in history.</p>
+      <h3>What I'm watching next</h3>
+      <ul>
+        <li><strong>Mambasa case count:</strong> Can DRC MOH or WHO quantify the Mambasa cluster separately? Any humanitarian negotiation with ADF for access?</li>
+        <li><strong>South Kivu burial attack:</strong> Was the exposed body recovered? How many people were exposed at the attack scene?</li>
+        <li><strong>Treatment trials (PARTNERS + EBO-PEP BUNDI):</strong> Expected to begin &ldquo;shortly&rdquo; per EMA June 3. Watch ClinicalTrials.gov and ANRS for formal registration.</li>
+        <li><strong>DON606:</strong> No new WHO situation report since May 31. Overdue &mdash; watch who.int/emergencies/disease-outbreak-news.</li>
+      </ul>
+      <h3>Sources</h3>
+      <ul>
+        <li><a href="https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount">CIDRAP &mdash; Ebola spreads to area under Islamic State control</a></li>
+        <li><a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC Current Situation &mdash; Ebola Outbreak</a></li>
+        <li><a href="https://www.cdc.gov/media/releases/2026/update-on-ebola-outbreak-in-the-democratic-republic-of-the-congo-and-uganda-6-5-2026.html">CDC Newsroom &mdash; June 5 Update</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda">ECDC &mdash; Ebola Outbreak DRC and Uganda (June 5)</a></li>
       </ul>
     </div>
   </details>
 
-  <!-- Cycle 21 — earlier today (1:28 AM UTC) -->
+</section>
+
+<section id="checks">
+  <h2>News Checks &mdash; June 6, 2026</h2>
+
   <details class="check-entry">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="summary-inner">
-        <span class="headline">Confirmed cases nearly doubled via expanded testing; DON605 breakdown reveals Wakiso as new Uganda district; May 30&ndash;31 digest dispatched</span>
-        <span class="timestamp">1:28 AM UTC</span>
+        <span class="headline">5-day catch-up: Mambasa confirmed under ADF/IS with no response access; CDC projects 20,000+ worst-case; alert + digest dispatched</span>
+        <span class="timestamp">6:15 PM UTC</span>
       </span>
     </summary>
     <div class="check-body">
-      <div class="check-dispatch-note digested">
-        <span class="note-icon">&#9656;</span>
-        Digest dispatched covering May 30&ndash;31, 2026 (see digest in Previous Day section below)
+      <div class="check-dispatch-note alerted">
+        <span class="note-icon">&#9888;</span>
+        Alert dispatched &mdash; Ebola in ADF/IS-controlled Mambasa; CDC 20,000+ projection (see alert above). Digest dispatched covering June 2&ndash;5.
       </div>
       <div class="check-section-label">New findings</div>
       <ul class="check-findings">
         <li>
-          <span class="fi-label">DRC counts</span>
-          <span class="fi-value"><strong>CDC May 30:</strong> ~210&ndash;225 confirmed / 17 confirmed deaths / 349&ndash;1,028 suspected. DRC MOH: expanded testing accounts for jump, not new transmission spike.</span>
+          <span class="fi-label">Mambasa / ADF</span>
+          <span class="fi-value flag-alert"><strong>Structural containment failure:</strong> Ebola confirmed in Mambasa (Ituri Province), run by ADF/IS militia &mdash; health workers excluded, contact tracing impossible.</span>
         </li>
         <li>
-          <span class="fi-label">DON605</span>
-          <span class="fi-value flag-new"><strong>WHO DON605 (May 29):</strong> 13 health zones (7 Ituri, 5 N.Kivu, 1 S.Kivu). Contacts: 2,635 DRC + 436 Uganda. Positivity 19.2%. Uganda: Kampala 8 cases, <strong>Wakiso 1</strong> (first case outside Kampala in Uganda).</span>
+          <span class="fi-label">South Kivu</span>
+          <span class="fi-value flag-alert"><strong>Burial team attacked:</strong> Residents exposed coffin and body of confirmed Ebola patient &mdash; third province with active community resistance.</span>
         </li>
         <li>
-          <span class="fi-label">First recovery</span>
-          <span class="fi-value flag-new">First confirmed Ebola recovery in outbreak reported ~May 30 (Al Jazeera).</span>
+          <span class="fi-label">DRC cases</span>
+          <span class="fi-value flag-alert"><strong>381&ndash;452 confirmed / 64&ndash;82 deaths</strong> as of June 5 (ECDC/CDC). Up from 282/42 on June 1. Ituri now 17 health zones (was 7 per DON605).</span>
         </li>
         <li>
-          <span class="fi-label">Uganda probable</span>
-          <span class="fi-value flag-alert">1 probable case / 1 probable death added to Uganda figures (CDC May 30). Possibly Fort Portal burial-linked cluster.</span>
+          <span class="fi-label">Uganda</span>
+          <span class="fi-value flag-alert"><strong>19 confirmed / 2 deaths</strong> (up from 9/1 on June 1). All traced to DRC importation; no community transmission in Kampala.</span>
         </li>
         <li>
-          <span class="fi-label">MSF</span>
-          <span class="fi-value">&ldquo;One of the fastest-spreading Ebola outbreaks ever recorded.&rdquo;</span>
+          <span class="fi-label">CDC projection</span>
+          <span class="fi-value flag-alert"><strong>Worst case: 20,000+ cases/3 months</strong> at 20% isolation rate. Some scenarios exceed 2014&ndash;2016 West Africa outbreak.</span>
+        </li>
+        <li>
+          <span class="fi-label">WHO revision</span>
+          <span class="fi-value flag-new"><strong>Suspected count revised 906&rarr;116</strong> (June 3, laboratory testing cleared most). Not an improvement signal &mdash; confirmed cases rising.</span>
+        </li>
+        <li>
+          <span class="fi-label">Africa CDC + WHO</span>
+          <span class="fi-value flag-new"><strong>Joint continental Ebola response plan launched</strong> June 5.</span>
+        </li>
+        <li>
+          <span class="fi-label">Kenya protests</span>
+          <span class="fi-value flag-alert"><strong>2 protesters killed</strong> opposing US-Kenya Ebola quarantine facility. High Court temporarily blocked facility. Next hearing: June 23.</span>
+        </li>
+        <li>
+          <span class="fi-label">Treatment trials</span>
+          <span class="fi-value flag-quiet">PARTNERS (treatment) + EBO-PEP BUNDI (PEP) trials expected &ldquo;shortly&rdquo; per EMA June 3 &mdash; not yet initiated; no ClinicalTrials.gov registration found.</span>
         </li>
       </ul>
       <div class="check-section-label">Things we're following</div>
       <ul class="check-findings">
         <li>
+          <span class="fi-label">Mambasa cluster</span>
+          <span class="fi-value">How many confirmed cases in ADF-controlled territory? Any WHO/OCHA engagement with ADF for humanitarian access?</span>
+        </li>
+        <li>
           <span class="fi-label">DON606</span>
-          <span class="fi-value flag-quiet">Not yet published. Expected to clarify whether case surge represents genuine new transmission.</span>
+          <span class="fi-value flag-quiet">No new WHO Disease Outbreak Notice since May 31 joint statement. Overdue &mdash; watch who.int/emergencies/disease-outbreak-news.</span>
         </li>
         <li>
-          <span class="fi-label">Trial initiation</span>
-          <span class="fi-value flag-quiet">Obeldesivir / Maftivimab RCT still pending DRC regulatory sign-off. Watch ClinicalTrials.gov, Africa CDC.</span>
+          <span class="fi-label">Trial registration</span>
+          <span class="fi-value">PARTNERS adaptive platform trial (ISARIC) + EBO-PEP BUNDI (ANRS) &mdash; watch ClinicalTrials.gov for formal registration.</span>
         </li>
         <li>
-          <span class="fi-label">Fort Portal</span>
-          <span class="fi-value flag-quiet">Burial-linked suspected cases in western Uganda still unconfirmed by primary source.</span>
+          <span class="fi-label">Kenya hearing</span>
+          <span class="fi-value">June 23 court hearing on Ebola quarantine facility &mdash; will government disclose US agreement terms?</span>
+        </li>
+        <li>
+          <span class="fi-label">Ceasefire / ADF</span>
+          <span class="fi-value flag-quiet">Tedros ceasefire appeal (May 28) had no response from ADF or M23. Mambasa spread makes ADF engagement more urgent.</span>
+        </li>
+        <li>
+          <span class="fi-label">Uganda Fort Portal</span>
+          <span class="fi-value flag-quiet">Probable case + probable death still not lab-confirmed by WHO/Uganda MOH primary source.</span>
+        </li>
+        <li>
+          <span class="fi-label">Czechia contact</span>
+          <span class="fi-value flag-quiet">American at Bulovka Prague: 21-day isolation window ends ~June 8 &mdash; check for test result or clearance.</span>
         </li>
       </ul>
     </div>
@@ -435,52 +452,58 @@
 </section>
 
 <section id="previous-day">
-  <h2>Previous Day &mdash; May 31, 2026</h2>
+  <h2>Previous Day &mdash; June 5, 2026</h2>
 
   <details class="dispatch-digest">
     <summary>
       <span class="chevron">&#9658;</span>
       <span class="badge badge-digest">Digest</span>
       <span class="summary-inner">
-        <span class="headline">Ebola confirmed cases nearly double via expanded testing; first recovery; trials still pending</span>
-        <span class="timestamp">May 31, 2026 at 1:35 AM UTC</span>
+        <span class="headline">June 2&ndash;5 catch-up: WHO revised suspected count down, confirmed cases keep rising; Mambasa breached; Kenya protests killed 2; CDC models worst case</span>
+        <span class="timestamp">June 5, 2026 (compiled June 6 at 6:15 PM UTC)</span>
       </span>
     </summary>
     <div class="dispatch-body">
       <h3>What changed</h3>
       <ul>
-        <li><strong>DRC confirmed cases jumped 125 &rarr; ~210&ndash;225 (May 30):</strong> CDC reports 210 confirmed / 349 suspected; Al Jazeera reports 225 confirmed / 1,028 suspected. DRC Ministry of Health attributes surge to expanded testing &mdash; NOT a new transmission spike. Confirmed deaths held at 17.</li>
-        <li><strong>WHO DON605 published May 29:</strong> 13 health zones (Ituri 7, N.Kivu 5, S.Kivu 1). Test positivity 19.2%. Contacts: 2,635 DRC + 436 Uganda. Uganda: Kampala 8, Wakiso 1 &mdash; first case outside Kampala in Uganda.</li>
-        <li><strong>Uganda 1 probable case / 1 probable death (CDC May 30):</strong> Identity and district unknown; possibly Fort Portal burial cluster suspected since May 19.</li>
-        <li><strong>First confirmed Ebola recovery</strong> in the outbreak reported ~May 30 (Al Jazeera).</li>
-        <li><strong>MSF:</strong> &ldquo;One of the fastest-spreading Ebola outbreaks ever recorded.&rdquo;</li>
-        <li><strong>No new country spread.</strong> No ceasefire from armed groups. No formal clinical trial initiation.</li>
+        <li><strong>WHO drastically revised suspected case count (June 3):</strong> Suspected cases dropped from ~906 to 116 after laboratory testing cleared most patients. Not an improvement signal &mdash; IMC: &ldquo;could be beyond six months before this outbreak is put under control.&rdquo; (<a href="https://www.cidrap.umn.edu/ebola/who-drastically-downsizes-ebola-case-count-dr-congo-outbreak">CIDRAP</a>)</li>
+        <li><strong>DRC cases surged June 2&ndash;5:</strong> From 321 confirmed (June 3 WHO revision) to 381&ndash;452 confirmed / 64&ndash;82 deaths (June 5). Ituri now 17 health zones, up from 7 in DON605. (<a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda">ECDC June 5</a>)</li>
+        <li><strong>Uganda doubled:</strong> From 9 (June 1) to 19 confirmed / 2 deaths (June 5). Three new June 5 cases all contacts of confirmed cases. All Uganda cases traced to DRC importation. (<a href="https://www.cdc.gov/media/releases/2026/update-on-ebola-outbreak-in-the-democratic-republic-of-the-congo-and-uganda-6-5-2026.html">CDC June 5</a>)</li>
+        <li><strong>Ebola confirmed in ADF/IS-controlled Mambasa:</strong> Health workers excluded; contact tracing impossible. (<a href="https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount">CIDRAP</a>)</li>
+        <li><strong>South Kivu burial team attacked:</strong> Residents exposed coffin and body of confirmed Ebola patient &mdash; third province with community resistance. (<a href="https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount">CIDRAP</a>)</li>
+        <li><strong>CDC worst-case projection (June 5):</strong> 20% isolation rate &rarr; &gt;20,000 cases in 3 months in 2 of 3 scenarios. Could exceed 2014&ndash;2016 West Africa outbreak. (<a href="https://www.cdc.gov/media/releases/2026/update-on-ebola-outlook-6-5-2026.html">CDC Newsroom</a>)</li>
+        <li><strong>Africa CDC + WHO launched joint continental Ebola response plan (June 5).</strong> WHO DG held media briefing June 3. (<a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026">WHO</a>)</li>
+        <li><strong>Kenya quarantine facility:</strong> Two protesters killed. High Court (Judge Nyaundi) temporarily blocked US-Kenya facility. Kenya pushing ahead. Next hearing June 23. (<a href="https://www.aljazeera.com/news/2026/6/2/high-court-orders-kenya-government-to-release-details-of-ebola-facility">Al Jazeera</a>; <a href="https://www.cnbcafrica.com/2026/two-killed-in-kenya-protest-against-us-ebola-quarantine-facility-protest-organiser-says">CNBC Africa</a>)</li>
+        <li><strong>Treatment trials progressing but not yet initiated:</strong> EMA Emergency Task Force met June 3. PARTNERS (treatment) and EBO-PEP BUNDI (PEP) trials expected &ldquo;shortly.&rdquo; (<a href="https://www.pharmtech.com/view/ema-collaborates-with-african-regulators-on-ebola-treatments">Pharma Tech</a>)</li>
       </ul>
       <h3>Why this matters</h3>
-      <p>The case surge is a data quality event &mdash; expanded testing revealing true outbreak size. The Uganda probable case/death is more operationally concerning: if it&rsquo;s Fort Portal, it represents a second Uganda transmission chain running undetected.</p>
+      <p>The 5-day gap saw the outbreak grow substantially while spreading into territory structurally inaccessible to the public health response. The CDC has now publicly quantified the worst case: an outbreak comparable in scale to 2014&ndash;2016 West Africa if isolation rates don&rsquo;t improve.</p>
       <h3>What I'm watching next</h3>
       <ul>
-        <li>Uganda probable case identity &mdash; which district? Fort Portal? Watch Uganda MOH.</li>
-        <li>DRC case stabilization &mdash; when reclassification ends, what is genuine transmission rate? DON606 should clarify.</li>
-        <li>Trial initiation &mdash; obeldesivir regulatory sign-off and MBP134/Maftivimab trial launch still pending.</li>
+        <li>Mambasa cluster size and any ADF humanitarian engagement</li>
+        <li>Treatment trial formal initiation (ClinicalTrials.gov, ANRS, ISARIC)</li>
+        <li>Kenya quarantine facility hearing June 23</li>
+        <li>DON606 &mdash; no new WHO situation report since May 31; overdue</li>
       </ul>
       <h3>Sources</h3>
       <ul>
-        <li><a href="https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON605">WHO DON605</a></li>
-        <li><a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC Ebola Situation Summary</a></li>
-        <li><a href="https://www.aljazeera.com/news/2026/5/30/confirmed-ebola-cases-nearly-double-in-days-as-who-chief-visits-dr-congo">Al Jazeera May 30</a></li>
+        <li><a href="https://www.cidrap.umn.edu/new-world-screwworm/ebola-spreads-area-under-islamic-state-control-cases-mount">CIDRAP &mdash; Ebola spreads to IS-controlled area</a></li>
+        <li><a href="https://www.cidrap.umn.edu/ebola/who-drastically-downsizes-ebola-case-count-dr-congo-outbreak">CIDRAP &mdash; WHO drastically downsizes case count</a></li>
+        <li><a href="https://www.cdc.gov/ebola/situation-summary/index.html">CDC Current Situation</a></li>
+        <li><a href="https://www.ecdc.europa.eu/en/ebola-virus-disease-outbreak-democratic-republic-congo-and-uganda">ECDC June 5</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/6/2/high-court-orders-kenya-government-to-release-details-of-ebola-facility">Al Jazeera &mdash; Kenya High Court</a></li>
       </ul>
     </div>
   </details>
 
   <div class="prev-day-link">
-    <a href="ebola-2026-05-29.html">&larr; Full briefing for May 29, 2026</a>
+    <a href="ebola-2026-06-01.html">&larr; Full briefing for June 1, 2026</a>
   </div>
 
 </section>
 
 <footer>
-  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Monday, June 1, 2026</span>
+  <span style="color: var(--muted); font-size: 11px;">Ebola Monitor &mdash; Saturday, June 6, 2026</span>
 </footer>
 
 </body>
